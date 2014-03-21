@@ -32,7 +32,7 @@ There are four types of files:
 - **components** are general and may be used at will;
 - **vendor** files are external dependencies, either installed directly or by bower
 
-Everything is linked together in the correct order in `core.less`, which is the only file which should be included when using Jobs UI.
+Everything is linked together in the correct order in `jobs/ui.less`, which is the only file which should be included when using Jobs UI.
 
 ```
 viktor/
