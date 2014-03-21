@@ -1,0 +1,6 @@
+# External components
+lib/bower_components/
+node_modules/
+
+# Generated
+docs/

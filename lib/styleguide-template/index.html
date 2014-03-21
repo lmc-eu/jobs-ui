@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jobs UI v{{argv.version}}</title>
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/kss.css">
+
+</head>
+<body data-current-section="{{rootNumber}}">
+<div id="top" class="kss__header">
+    <div class="wrapper">
+        <div class="grid grid--middle"><!--
+            --><div class="grid__item e-4">
+                <a class="kss__header__logo" href="index.html">Styleguide</a>
+            </div><!--
+            --><div class="grid__item e-12 e-21--desk">
+                {{#eachRoot}}
+                <a class="kss__header__link" href="section-{{reference}}.html">{{header}}</a>
+                {{/eachRoot}}
+            </div><!--
+        --></div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid grid--rev--desk"><!--
+                    --><div class="grid__item e-7--desk e-push-2--desk">
+
+        <div class="kss__sidebar">
+            <ul class="list-unstyled list-spaced">
+                {{#if overview}}
+                <li>
+                    <span class="icon icon--double-angle-right tag__icon" aria-hidden="true"></span>
+                    <a href="#top"><strong>Jobs UI v{{argv.version}}</strong></a>
+                </li>
+                <li>
+                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    <a href="#changelog">Changelog</a>
+                </li>
+                <li>
+                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    <a href="#usage">Usage</a>
+                </li>
+                {{else}}
+
+                {{#eachSection rootNumber}}
+                {{#whenDepth 1}}
+                <li>
+                    <span class="icon icon--double-angle-right tag__icon" aria-hidden="true"></span>
+                    <a href="#top"><strong>{{ header }}</strong></a>
+                </li>
+                {{else}}
+                {{/whenDepth}}
+                {{#whenDepth 2}}
+                <li>
+                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    <a href="#section-{{ reference }}">{{ header }}</a>
+                </li>
+                {{else}}
+                {{/whenDepth}}
+                {{/eachSection}}
+                {{/if}}
+            </ul>
+        </div>
+    </div><!--
+        --><div role="main" class="grid__item e-16">
+            <article id="kss__content">
+                {{#if overview}}
+                <img class="kss__content__logo" src="public/images/viktor_logo.png" />
+
+                {{html overview}}
+                {{else}}
+
+                {{!
+                Find each section, in order.
+                If there's no markup or modifiers supplied, use a Markdown-only
+                layout instead.
+
+                The "root" element comes first in this loop, and can be detected using
+                the "#whenDepth 1" block as seen below.
+                }}
+                {{#eachSection rootNumber}}
+                {{#whenDepth 1}}
+                <h1>{{ header }} <small>{{ reference }}.0</small></h1>
+                {{/whenDepth}}
+                {{#whenDepth 2}}
+                <section>
+                    <h2 id="section-{{ reference }}">{{ header }} <small>{{ reference }}</small></h2>
+                {{/whenDepth}}
+
+                {{#whenDepth 3}}
+                <section>
+                    <h3>{{ header }} <small>{{ reference }}</small></h3>
+                {{/whenDepth}}
+
+                    {{#if description}}
+                        {{html description}}
+                    {{/if}}
+
+                    {{#ifAny markup modifiers}}
+                    <p>Default styling</p>
+                    <div class="kss__example">
+                        {{modifierMarkup}}
+                    </div>
+                    {{#eachModifier}}
+                    <strong>{{name}}</strong>
+                    {{html description}}
+                    <div class="kss__example">
+                        {{modifierMarkup}}
+                    </div>
+                    {{/eachModifier}}
+                    <div class="kss__markup hidden--palm">
+                        <pre class="prettyprint lang-html">{{markup}}</pre>
+                    </div>
+                    {{else}}
+                    {{/ifAny}}
+                    {{#whenDepth 1}} {{else}}
+                </section>
+                {{/whenDepth}}
+                {{/eachSection}}
+                {{/if}}
+            </article>
+        </div><!--
+    --></div>
+</div>
+
+<div class="kss__footer">
+    <div class="wrapper">
+        <div class="grid grid--middle--palm grid--top"><!--
+            --><div class="grid__item e-5--palm e-9 e-16--desk">
+                2014 &copy; LMC s.r.o. All rights reserved.<br />
+                <a href="#top">&uarr; Go to top</a>
+            </div><!--
+            --><div class="grid__item e-3--palm e-6 e-6--desk e-push-1 e-push-3--desk">
+                <a href="http://www.lmc.eu/" title="LMC s.r.o."><img src="public/images/lmc.png" class="e-full--palm"/></a>
+            </div><!--
+        --></div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var current = $('body').data('current-section');
+        if (current > 0) {
+            $('.kss__header a').eq(current).addClass('kss__header__link--active');
+        }
+
+        // Ensure code blocks are highlighted properly...
+        $('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+    });
+</script>
+</body>
+</html>

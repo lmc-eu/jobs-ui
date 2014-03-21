@@ -1,0 +1,19 @@
+{
+  "name": "jobs-ui",
+  "version": "1.1.0",
+  "description": "UI library for jobs.cz",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-legacssy": "~0.2.0",
+    "grunt": "~0.4.4",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-styleguide": "~0.2.15",
+    "grunt-contrib-less": "~0.9.0"
+  },
+  "author": "LMC s.r.o. (https://github.com/lmc-eu)"
+}
