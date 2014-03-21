@@ -9,7 +9,9 @@
     "ignore": [
         "**/.*",
         "node_modules",
-        "lib/bower_components"
+        "lib",
+        "grunt",
+        "Gruntfile.js"
     ],
     "dependencies": {
         "emerald": "~1.1.3",
