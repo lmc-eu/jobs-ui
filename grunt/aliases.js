@@ -4,7 +4,8 @@ module.exports = {
     'default': [
         'bower',
         'styles',
-        'jshint'
+        'jshint',
+        'browserify'
     ],
 
     'styles': [

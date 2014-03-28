@@ -16,6 +16,7 @@
     "dependencies": {
         "emerald": "~1.1.3",
         "normalize-css": "~3.0.0",
-        "lesshat": "~2.0.15"
+        "lesshat": "~2.0.15",
+        "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot"
     }
 }

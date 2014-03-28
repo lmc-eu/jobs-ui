@@ -1,0 +1,167 @@
+// Icons
+//
+// Styleguide 2.7
+
+// Invidual icons
+//
+// Markup:
+// <div class="grid kss__iconshowcase"><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--tag" aria-hidden="true"></span>
+//         <br> tag
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--search" aria-hidden="true"></span>
+//         <br> search
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--reorder" aria-hidden="true"></span>
+//         <br> reorder
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--angle-right" aria-hidden="true"></span>
+//         <br> angle-right
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--angle-left" aria-hidden="true"></span>
+//         <br> angle-left
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--bite-square" aria-hidden="true"></span>
+//         <br> bite-square
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--user" aria-hidden="true"></span>
+//         <br> user
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--house" aria-hidden="true"></span>
+//         <br> house
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--double-angle-right" aria-hidden="true"></span>
+//         <br> double-angle-right
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--facebook" aria-hidden="true"></span>
+//         <br> facebook
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--twitter" aria-hidden="true"></span>
+//         <br> twitter
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--googleplus" aria-hidden="true"></span>
+//         <br> googleplus
+//     </div><!--
+//     --><div class="grid__item e-3--palm">
+//         <span class="icon icon--youtube" aria-hidden="true"></span>
+//         <br> youtube
+//     </div><!--
+// --></div>
+//
+// Styleguide 2.7.1
+
+// Icons within headings
+//
+// An icon as an ilustration in heading is orange and has same space after it.
+//
+// Markup:
+// <h2>
+//     <span class="icon icon--bite-square icon--heading" aria-hidden="true"></span>
+//     I'm an ilustrated heading
+// </h2>
+// <h2>
+//     <span class="icon icon--tag icon--heading" aria-hidden="true"></span>
+//     Pff, so am I
+// </h2>
+//
+// Styleguide 2.7.2
+
+
+// Importing the fonts
+@font-face {
+	font-family: 'jobsicon';
+	src: url('../fonts/jobsicon.eot');
+	src: url('../fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/jobsicon.woff') format('woff'),
+		 url('../fonts/jobsicon.ttf') format('truetype'),
+		 url('../fonts/jobsicon.svg#jobsicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Antialiasing in Chrome in Windows
+// http://icomoon.io/#post/318
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'jobsicon';
+        src: url('../fonts/jobsicon.svg#jobsicon') format('svg');
+    }
+}
+
+// Preparing for icons inspired by IcoMoon App and Boostrap
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    font-family: 'jobsicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &--heading {
+        color: @jobs-orange;
+
+        &:after {
+            content: "\a0";
+        }
+    }
+}
+
+// Individual icons
+// Copy-paste from the bootom of IcoMoon App generated style.css
+.icon--double-angle-right:before {
+	content: "\e600";
+}
+.icon--angle-left:before {
+	content: "\e601";
+}
+.icon--angle-right:before {
+	content: "\e602";
+}
+.icon--reorder:before {
+	content: "\e603";
+}
+.icon--search:before {
+	content: "\e604";
+}
+.icon--tag:before {
+	content: "\e605";
+}
+.icon--googleplus:before {
+	content: "\e606";
+}
+.icon--facebook:before {
+	content: "\e607";
+}
+.icon--youtube:before {
+	content: "\e608";
+}
+.icon--twitter:before {
+	content: "\e609";
+}
+.icon--bite-square:before {
+	content: "\e60a";
+}
+.icon--user:before {
+	content: "\e60b";
+}
+.icon--house:before {
+	content: "\e60c";
+}

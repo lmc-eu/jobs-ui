@@ -11,4 +11,6 @@ module.exports = function(grunt) {
             package: grunt.file.readJSON('package.json')
         }
     });
+
+    // See folder 'grunt/' for tasks’ configurations
 };
