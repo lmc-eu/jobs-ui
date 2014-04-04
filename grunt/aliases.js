@@ -2,19 +2,36 @@
 
 module.exports = {
     'default': [
+        'clean',
         'bower',
-        'styles',
+        'dist',
+        'docs'
+    ],
+
+    'dist': [
+        'scripts',
+        'styles'
+    ],
+
+    'scripts':[
         'jshint',
-        'browserify'
+        'browserify',
+        'uglify'
     ],
 
     'styles': [
+        'less',
+        'legacssy',
+        'cssmin'
+    ],
+
+    'docs': [
         'styleguide',
-        'less'
+        'copy:docs'
     ],
 
     'serve': [
-        'styles',
+        'default',
         'connect:livereload',
         'watch'
     ]

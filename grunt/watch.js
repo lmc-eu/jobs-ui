@@ -6,12 +6,16 @@ module.exports = {
         tasks: ['bower']
     },
     styles: {
-        files: ['src/**/*.{less,md}', 'lib/styleguide_template/**/*'],
-        tasks: ['styleguide', 'less']
+        files: ['src/**/*.{less,md}'],
+        tasks: ['styles', 'docs']
     },
-    js: {
+    scripts: {
         files: ['**/*.js', '!docs/**/*'],
-        tasks: ['jshint']
+        tasks: ['scripts', 'docs']
+    },
+    docs: {
+        files: ['lib/styleguide_template/**/*'],
+        tasks: ['docs']
     },
     configFiles: {
         files: ['Gruntfile.js', 'grunt/{,*/}*.js'],

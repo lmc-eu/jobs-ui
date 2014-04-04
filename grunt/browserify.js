@@ -12,7 +12,7 @@ module.exports = {
 
         },
         files: {
-            'docs/public/viktor.js': 'index.js'
+            '.tmp/index.js': 'index.js'
         }
     }
 };
