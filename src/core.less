@@ -1,9 +1,13 @@
+// Third-party code
+@import (inline) "@{grunt-directory}normalize-css/normalize.css";
+@import "@{grunt-directory}emerald/less/emerald";
+@import "@{grunt-directory}lesshat/build/lesshat";
+
+@import "modules/variables";
 //
 // Core styles for Viktor design
 //
 
-@import "modules/variables";
-
 // ... 
-@import "components/button/button";
-@import "components/icons/icons";
+@import "components/button/style";
+@import "modules/icons/style";

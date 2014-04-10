@@ -7,7 +7,7 @@ module.exports = {
             preserveComments: 'some'
         },
         files: {
-            'dist/index.js': '.tmp/index.js'
+            'dist/index.min.js': '.tmp/index.js'
         }
     }
 };

@@ -6,14 +6,15 @@ module.exports = {
             framework: {
                 name: 'kss',
                 options: {
-                    version: '<%= package.version %>'
+                    version: '<%= package.version %>',
+                    mask: 'docs.less'
                 }
             },
             template: {
                 src: 'lib/styleguide_template'
             }
         },
-        src: 'src/core.less',
+        src: 'src/styleguide.less',
         dest: 'docs'
     }
 };
