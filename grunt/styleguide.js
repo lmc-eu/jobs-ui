@@ -1,13 +1,12 @@
 'use strict';
 
 module.exports = {
-    guideline: {
+    docs: {
         options: {
             framework: {
                 name: 'kss',
                 options: {
-                    version: '<%= package.version %>',
-                    mask: 'docs.less'
+                    version: '<%= package.version %>'
                 }
             },
             template: {

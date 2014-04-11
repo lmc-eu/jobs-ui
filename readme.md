@@ -28,7 +28,8 @@ If not, it is recommended to consider implementing it or upgrading to the
 desired version as unexpected behaviour may occur otherwise.
 Optionally a precompiled build can be used; cf. *Quick use* section.
 
-*Note*: It is recommended to minify the output *CSS*.
+*Note*: It is recommended to minify the output *CSS* as it would include a lot
+of documentation comments otherwise.
 
 *Note*: Had there been a inconquerable problem with the `paths` option, it is
 possible to alternatively set `@bower-directory` variable to represent the
@@ -94,7 +95,6 @@ There are four types of files:
     │   │   ├── …
     │   │   └── component-R/
     │   │       ├── images/
-    │   │       ├── docs.less
     │   │       ├── index.js
     │   │       └── style.less
     │   ├── modules/
