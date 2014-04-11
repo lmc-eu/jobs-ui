@@ -79,41 +79,43 @@ There are four types of files:
 *   **partials** represent high level parts and may be used at most once on a page;
 *   **components** are general and may be used at will;
 
-    ui/
-    ├── dist/
-    │   ├── fonts/
-    │   ├── index.min.js
-    │   ├── style.min.css
-    │   └── style-legacy.min.css
-    ├── grunt/
-    ├── lib/
-    │   ├── bower-components/
-    │   └── styleguide_template/
-    ├── src/
-    │   ├── components/
-    │   │   ├── component-A/
-    │   │   ├── …
-    │   │   └── component-R/
-    │   │       ├── images/
-    │   │       ├── docs.less
-    │   │       ├── index.js
-    │   │       └── style.less
-    │   ├── modules/
-    │   │   ├── module-A/
-    │   │   ├── …
-    │   │   └── module-P/
-    │   │       ├── images/
-    │   │       ├── index.js
-    │   │       └── style.less
-    │   ├── partials/
-    │   ├── core.less
-    │   ├── styleguide.less
-    │   └── styleguide.md
-    ├── about.me.json
-    ├── bower.json
-    ├── Gruntfile.js
-    ├── index.js
-    ├── package.json
-    ├── README.me
-    ├── style.less
-    └── …
+```
+ui/
+├── dist/
+│   ├── fonts/
+│   ├── index.min.js
+│   ├── style.min.css
+│   └── style-legacy.min.css
+├── grunt/
+├── lib/
+│   ├── bower-components/
+│   └── styleguide_template/
+├── src/
+│   ├── components/
+│   │   ├── component-A/
+│   │   ├── …
+│   │   └── component-R/
+│   │       ├── images/
+│   │       ├── docs.less
+│   │       ├── index.js
+│   │       └── style.less
+│   ├── modules/
+│   │   ├── module-A/
+│   │   ├── …
+│   │   └── module-P/
+│   │       ├── images/
+│   │       ├── index.js
+│   │       └── style.less
+│   ├── partials/
+│   ├── core.less
+│   ├── styleguide.less
+│   └── styleguide.md
+├── about.me.json
+├── bower.json
+├── Gruntfile.js
+├── index.js
+├── package.json
+├── README.me
+├── style.less
+└── …
+```
