@@ -1,0 +1,89 @@
+/*
+Promo
+
+Displays a link with an optional figure and description
+
+Markup:
+<div class="grid promo">
+    <div class="grid__item e-2--palm">
+        <a href="#"><img class="promo__image" src="public/images/60x45.jpg" /></a>
+    </div><!--
+    --><div class="grid__item e-6--palm e-5">
+        <span a class="promo__title">
+            <a href="#">Jazykem stranu paliva</a>
+        </span>
+        <p class="promo__text">Pokaždé zoologie hlubšího</p>
+    </div>
+</div>
+<div class="grid promo">
+    <div class="grid__item e-7">
+        <span class="promo__title">
+            <a href="#">Jazykem stranu paliva k nežli smrky pozdější viditelný</a>
+        </span>
+        <p class="promo__text">Pokaždé zoologie hlubšího</p>
+    </div>
+</div>
+
+Styleguide 4.2
+*/
+
+.promo {
+    margin-bottom: 24px;
+
+    &__image {
+        margin-top: 3px;
+        width: 100%;
+        height: auto;
+        border: 1px solid @light-silver;
+        .box-sizing(border-box);
+    }
+
+    &__title {
+        display: inline-block;
+        vertical-align: bottom; // Used to remove space underneath title
+        max-height: (@base-line-height-palm * 2);
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: @screen-lap) {
+    .promo {
+
+        &__image {
+            width: 60px;
+            height: 45px;
+        }
+    }
+}
+@media only screen and (min-width: @screen-desk) {
+    .promo {
+
+        &__title {
+            max-height: (@base-line-height * 2);
+        }
+    }
+}
+
+@media print {
+    .promo {
+
+        &__image {
+            width: auto;
+        }
+    }
+}

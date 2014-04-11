@@ -1,0 +1,122 @@
+//
+// Navigation
+// Is hidden on lap.
+// --------------------------------------------------------------------------
+.nav {
+    position: relative;
+    margin-top: 25px;
+    background-image: url("images/spriteHRepeat.png");
+    background-repeat: repeat-x;
+    font: 12px/1.33 Arial,sans-serif;
+
+    a {
+        border: none;
+    }
+
+    &__item {
+        position: relative;
+        z-index: 10;
+
+        &__link {
+            display: block;
+            margin-top: -5px;
+            padding: 5px 0 3px 0;
+            line-height: 36px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px 3px 0px 0px;
+
+            &--notext {
+                padding-top: 3px;
+                font-size: 18px;
+            }
+
+            &--has-submenu{
+                &:after {
+                    content: "▼";
+                    margin-left: 5px;
+                }
+            }
+
+            &--active {
+                background: #ffffff;
+                color: @dark-blue;
+            }
+        }
+
+        &:hover {
+            .nav__item__link {
+                background: #ffffff;
+                color: @dark-blue;
+            }
+        }
+    }
+
+    &__subnav {
+        position: absolute;
+        left: -9999px;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        border-top: none;
+        list-style: none;
+        line-height: 21px;
+
+        &__action {
+            display: block;
+            margin-top: 10px;
+            padding: 3px 25px;
+            background: #FDF1CE;
+            border-top: 1px solid #FCEBC6;
+            line-height: 25px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .nav__item:hover & {
+            left: 0;
+        }
+
+        ul {
+            margin: 6px 20px 6px 0;
+            list-style-type: square;
+            color: @jobs-orange;
+        }
+
+        a {
+            white-space:nowrap;
+            color: @light-blue;
+            text-decoration: none;
+            line-height: 20px;
+            &:hover {
+                color: @dark-blue;
+            }
+        }
+    }
+
+    &__employer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 17px;
+        color: #990000;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 36px;
+        background: #fddd6e url('../images/sprite.png')
+                    no-repeat -5px -421px;
+    }
+
+    &--advice {
+        ul {
+            list-style-type: none;
+        }
+
+        li:first-child {
+            list-style-type: square;
+            font-weight: bold;
+        }
+    }
+}

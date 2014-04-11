@@ -1,0 +1,25 @@
+// Small search
+//
+// Markup:
+// <form method="get" class="small-search">
+//     <input type="text" placeholder="Hledat" class="small-search__input"><!--
+//     --><button type="submit" class="button button--slim">
+//         <span class="icon icon--search" aria-hidden="true"></span>
+//     </button>
+// </form>
+//
+// Styleguide 3.2
+
+.small-search {
+    &__input {
+        width: 208px;
+        height: 36px;
+        padding: 0 0 0 5px;
+        line-height: 36px;
+        background: #faead3;
+        vertical-align: middle;
+        border: none;
+        border-radius: 0;
+        .box-sizing(border-box); 
+    }
+}

@@ -28,8 +28,7 @@ If not, it is recommended to consider implementing it or upgrading to the
 desired version as unexpected behaviour may occur otherwise.
 Optionally a precompiled build can be used; cf. *Quick use* section.
 
-*Note*: It is recommended to minify the output *CSS* as it would include a lot
-of documentation comments otherwise.
+*Note*: It is recommended to minify the output *CSS*.
 
 *Note*: Had there been a inconquerable problem with the `paths` option, it is
 possible to alternatively set `@bower-directory` variable to represent the
@@ -63,11 +62,11 @@ directly incorporate a precompiled build of stylesheets and JavaScript.
 It is **discouraged** to use such JavaScipt and **strongly discouraged** to use
 such stylesheets in long-term production projects.
 
-    <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style-legacy.min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style.min.css"> <!--<![endif]-->
+    <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/josb-ui-legacy.min.css"> <![endif]-->
+    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/jobs-ui.min.css"> <!--<![endif]-->
     <body>
     …
-    <script src="$bower_components$/jobs-ui/dist/index.min.js"></script>
+    <script src="$bower_components$/jobs-ui/dist/jobs-ui.min.js"></script>
     </body>
 
 ## Contributing
@@ -76,12 +75,13 @@ such stylesheets in long-term production projects.
 
 There are four types of files:
 
-*   **modules** are utilities and do not produce code on them own;
+*   **modules** are common utilities;
 *   **partials** represent high level parts and may be used at most once on a page;
 *   **components** are general and may be used at will;
 
     ui/
     ├── dist/
+    │   ├── fonts/
     │   ├── index.min.js
     │   ├── style.min.css
     │   └── style-legacy.min.css
@@ -95,6 +95,7 @@ There are four types of files:
     │   │   ├── …
     │   │   └── component-R/
     │   │       ├── images/
+    │   │       ├── docs.less
     │   │       ├── index.js
     │   │       └── style.less
     │   ├── modules/

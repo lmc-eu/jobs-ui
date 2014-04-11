@@ -1,0 +1,40 @@
+/*
+Breadcrumbs
+
+Displays a link with an optional figure and description
+
+Markup:
+<div class="breadcrumbs orig-frame hidden--palm">
+    <div class="wrapper breadcrumbs__wrapper">
+        <a href="/">Lyžaři</a>
+        <span class="icon breadcrumbs__icon icon--angle-right"
+              aria-hidden="true"></span>
+        <a href="/">Čenichu</a>
+        <span class="icon breadcrumbs__icon icon--angle-right"
+              aria-hidden="true"></span>
+        Trávy tanec padákům severu dne západu
+    </div>
+</div>
+
+Styleguide 4.6
+*/
+
+@media only screen and (min-width: @screen-lap) {
+    .breadcrumbs {
+        display: block;
+        padding-top: 20px;
+        background: #fff;
+        color: @gray;
+
+        &__wrapper {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &__icon {
+            padding: 0 8px;
+        }
+
+    }
+}

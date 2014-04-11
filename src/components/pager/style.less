@@ -1,0 +1,90 @@
+/*
+Pager
+
+Multi-page pagination links
+
+Markup:
+<ul class="pager hidden-print list-inline">
+    <li>
+        <a class="button button--slim" href="#">
+            <span class="icon icon--angle-left" aria-hidden="true"></span>
+        </a>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>1</a>
+    </li>
+    <li>
+        <span class='pager__item pager__item--active'>2</span>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>3</a>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>4</a>
+    </li>
+    <li>
+        <span class="pager__item pager__item--ellipsis"></span>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>25</a>
+    </li>
+    <li>
+        <a class="button button--slim" href="#">
+            <span class="icon icon--angle-right" aria-hidden="true"></span>
+        </a>
+    </li>
+</ul>
+
+Styleguide 4.5
+*/
+
+.pager {
+    margin: @double-standalone-bottom-margin 0px;
+
+    li {
+        padding: 0;
+    }
+
+    &__item {
+        display: block;
+        padding: 0 12px;
+        text-decoration: none;
+        line-height: 34px;
+        color: black;
+
+        &--active {
+            background-color: @light-silver;
+            border-bottom: 3px solid @jobs-orange;
+        }
+
+        &--ellipsis {
+            width: 1px;
+            padding: 0;
+            border-left: 1px dotted @gray;
+            &:before {
+                content: "\a0";
+            }
+        }
+
+        a&:hover {
+            background-color: #f5f5f5;
+            border: none;
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        &__item {
+            padding: 0 14px;
+
+            &--ellipsis {
+                width: auto;
+                border-left: 0;
+
+                &:before {
+                    content: "\2026";
+                    color: @gray;
+                }
+            }
+        }
+    }
+}

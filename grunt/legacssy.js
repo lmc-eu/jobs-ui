@@ -3,7 +3,7 @@
 module.exports = {
     dist: {
         files: {
-            '.tmp/style-legacy.css': '.tmp/style.css'
+            '.tmp/jobs-ui-legacy.css': '.tmp/jobs-ui.css'
         }
     }
 };

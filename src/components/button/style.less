@@ -7,7 +7,7 @@ Markup:
 
 .button--slim - Slimmer button with smaller horizontal padding
 
-Styleguide 4.2
+Styleguide 3.1
 */
 
 .button {
@@ -23,7 +23,9 @@ Styleguide 4.2
     white-space: nowrap;
     border: 1px solid @jobs-orange;
     background-color: @jobs-orange;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    // Reset unusual Firefox-on-Android default style;
+    // see https://github.com/necolas/normalize.css/issues/214
+    background-image: none;
 
     &--slim {
         padding: 0 12px;
@@ -34,10 +36,8 @@ Styleguide 4.2
         border: 1px solid @jobs-orange;
         background-color: @dark-orange;
     }
-}
 
-@media only screen and (min-width: @screen-lap) {
-    .button {
+    @media only screen and (min-width: @screen-lap) {
         &--slim {
             padding: 0 18px;
         }

@@ -1,13 +1,87 @@
+// ==========================================================================
+// Jobs UI
+//
+// http://jobs.cz/ui/
+// ==========================================================================
+
+//
 // Third-party code
-@import (inline) "@{grunt-directory}normalize-css/normalize.css";
-@import "@{grunt-directory}emerald/less/emerald";
-@import "@{grunt-directory}lesshat/build/lesshat";
+//     (1) Makes browsers render consistently
+//     (2) Responsive grid system
+//     (3) Set of universal mixins
+// --------------------------------------------------------------------------
+@import (inline) "@{grunt-directory}normalize-css/normalize.css";   // (1)
+@import "@{grunt-directory}emerald/less/emerald";                   // (2)
+@import "@{grunt-directory}lesshat/build/lesshat";                  // (3)
 
-@import "modules/variables";
 //
-// Core styles for Viktor design
-//
+// Documentation main sections
+// --------------------------------------------------------------------------
 
-// ... 
-@import "components/button/style";
+/*
+Layout
+
+The layout is based on [normalize.css](http:necolas.github.io/normalize.css/) and [Emerald](http:lmc-eu.github.io/emerald/) grid system.
+
+See the demo page (**TBD**).
+
+Styleguide 1.
+*/
+
+/*
+Typography
+
+Basic typography rules
+
+Styleguide 2.
+*/
+
+/*
+Forms
+
+Inputs and labels, buttons and fieldsets
+
+Styleguide 3.
+*/
+
+/*
+Components
+
+Stand-alone UI components
+
+Styleguide 4.
+*/
+
+//
+// Modules - common utilities
+// --------------------------------------------------------------------------
+@import "modules/variables/style";
+@import "modules/layout/style";
+@import "modules/print/style";
 @import "modules/icons/style";
+@import "modules/widget/style";
+
+//
+// Components - general and may be used at will
+// --------------------------------------------------------------------------
+@import "components/typography/style";
+@import "components/lists/style";
+@import "components/small-search/style";
+@import "components/button/style";
+@import "components/breadcrumbs/style";
+@import "components/listing/style";
+@import "components/promo/style";
+@import "components/featured/style";
+@import "components/tags/style";
+@import "components/pager/style";
+
+
+//
+// Partials - high level parts that may be used at most once on a page
+// --------------------------------------------------------------------------
+@import "partials/header/style";
+@import "partials/navigation/style";
+@import "partials/content/style";
+@import "partials/article/style";
+@import "partials/footer/style";
+@import "partials/copyright/style";

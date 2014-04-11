@@ -8,7 +8,7 @@ module.exports = {
             paths: ['lib/bower_components/']
         },
         files: {
-            '.tmp/style.css': 'style.less'
+            '.tmp/jobs-ui.css': 'style.less'
         }
     }
 };

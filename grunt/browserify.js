@@ -12,7 +12,7 @@ module.exports = {
 
         },
         files: {
-            '.tmp/index.js': 'index.js'
+            '.tmp/jobs-ui.js': 'index.js'
         }
     }
 };

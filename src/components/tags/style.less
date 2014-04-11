@@ -1,0 +1,38 @@
+/*
+Tags
+
+Markup:
+<ul class="list-inline">
+    <li>
+        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>&nbsp;
+        <a class="tag" href="#">CSS</a>
+    </li>
+    <li>
+        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>&nbsp;
+        <a class="tag" href="#">PHP</a>
+    </li>
+    <li>
+        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>&nbsp;
+        <a class="tag" href="#">JavaScript</a>
+    </li>
+</ul>
+
+Styleguide 4.4
+*/
+
+.tag {
+    padding-right: 5px;
+    text-decoration: none;
+
+    &__icon {
+        padding-right: 5px;
+        font-size: 7px;
+        color: @gray;
+        line-height: 19px;
+        vertical-align: text-top;
+
+        &--large {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,198 @@
+/*
+Headings and paragraphs
+
+Markup:
+<h1>Heading 1 <a href="#">link</a></h1>
+<h2>Heading 2 <a href="#">link</a></h2>
+<h3>Heading 3 <a href="#">link</a></h3>
+<h4>Heading 4 <a href="#">link</a></h4>
+<h5>Heading 5 <a href="#">link</a></h5>
+<h6>Heading 6 <a href="#">link</a></h6>
+<p>Filosofa v nazvaného s mcintoshe větších. Vlastním polonica základní
+duchovní od lanovku pochopily, skoro zlata střechami zářivě šanci fotografie
+starověké rozhlédnu polapen si mor. I do. Nuly té kmenových moc kvalitnější
+léčení, 110 k společně jakkoli větší rogera mi mi komfort původu. Počasím větší
+svahu dosavadní němž modrém, výkon položená zuří paprsky – když pochopitelně,
+její maňána terénních cílem.</p>
+<p>Vítr tvarů vymírání. Obchod provincií neškodný půdorysem nízko ověšeny, dne
+z plyne srpnu, náklady hlídá zastavil, stroj původním postupující prostředí jí
+vždyť spolufinancuje závisí jiní novinářů tvořené aula dlouhá mé jachtaři.</p>
+
+Styleguide 2.1
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #333333;
+}
+
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: @base-font-size-palm;
+    line-height: @base-line-height-palm;
+    font-weight: 300;
+}
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    color: @blue;
+    text-decoration: none;
+    
+    &:hover {
+        color: @dark-blue;
+        border-bottom: 1px dotted @dark-blue;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #000000;
+    word-wrap: break-word;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+h1 {
+    margin-bottom: 14px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+h2 {
+    margin-bottom: 14px;
+    font-weight: 300;
+    font-size: @h2-font-size-palm;
+    line-height: @h2-line-height-palm;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 14px;
+    font-size: @base-font-size-palm;
+    line-height: @base-line-height-palm;
+}
+
+p {
+    margin: 0 0 14px 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: @screen-lap) {
+    h1 {
+        margin-bottom: 28px;
+        font-size: 43px;
+        line-height: 65px;
+    }
+}
+
+@media only screen and (min-width: @screen-desk) {
+    body {
+        font-size: @base-font-size;
+        line-height: @base-line-height;
+        font-weight: 400;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 400
+    }
+
+    h2 {
+        margin-bottom: 12px;
+        font-size: @h2-font-size;
+        line-height: @h2-line-height;
+        font-weight: 400
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 12px;
+        font-size: @base-font-size;
+        line-height: @base-line-height;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+}
+
+// Styling of the horizontal rule
+.dotted-fading {
+    .box-sizing(border-box);
+    height: 1px;
+    .background-image(linear-gradient(to right, #ffffff 0%,#cccccc 20%,#cccccc 80%,#ffffff 100%));
+    border-style: dotted;
+    border-color: #fff;
+    border-top: none;
+    .ie8 & {
+        border-top: 1px dotted #cccccc;
+    }
+}
+
+.list-spaced {
+    line-height: 43px;
+}
+
+.flat-rule {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Image replace from HTML5Boilerplate
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.shadow--no-top {
+    border: 1px solid #eee;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+}
+
+.muted {
+    color: @gray;
+}
+
+@media only screen and (min-width: @screen-desk) {
+    .list-spaced {
+        line-height: 36px;
+    }
+}

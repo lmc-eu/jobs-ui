@@ -10,7 +10,8 @@ module.exports = {
 
     'dist': [
         'scripts',
-        'styles'
+        'styles',
+        'copy:dist'
     ],
 
     'scripts':[

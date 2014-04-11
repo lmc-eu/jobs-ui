@@ -1,3 +1,3 @@
-require('./src/components/text-ellipsis.js');
+require('./src/components/listing/index.js');
 
 require('emerald');

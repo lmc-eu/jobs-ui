@@ -1,0 +1,136 @@
+/*
+Featured
+
+Display of a featured article with a big image on the background
+and a ribbon on the top left conner. 
+
+To be used with two promos which are on the right.
+
+**IE8**: The ribbon is hidden.
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-8">
+        <a class="featured" href="#">
+            <img class="featured__image" src="public/images/300x225.jpg" />
+            <div class="featured__caption">
+                <span class="featured__heading">Zúročovat z matriarchálně houba
+                nebe sudokopytníci narušovány té zkoušet o unii</span>
+            </div>
+        </a>
+    </div><!--
+    --><div class="grid__item e-7 e-push-1">
+        <div class="grid promo">
+            <div class="grid__item e-2--palm">
+                <a href="#">
+                    <img class="promo__image" src="public/images/60x45.jpg" />
+                </a>
+            </div><!--
+            --><div class="grid__item e-6--palm e-5">
+                <a href="#">Jazykem stranu paliva</a>
+                <p>Pokaždé zoologie hlubšího</p>
+            </div>
+        </div>
+        <div class="grid promo">
+            <div class="grid__item e-2--palm">
+                <a href="#">
+                    <img class="promo__image" src="public/images/60x45.jpg" />
+                </a>
+            </div><!--
+            --><div class="grid__item e-6--palm e-5">
+                <a href="#">Jazykem stranu paliva</a>
+                <p>Pokaždé zoologie hlubšího</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.3
+*/
+
+.featured {
+    display: block;
+    position: relative;
+    margin-bottom: @standalone-bottom-margin;
+    text-decoration: none;
+
+    &__image {
+        width: 100%;
+        height: auto;
+        border: 1px solid @light-silver;
+        .box-sizing(border-box);
+    }
+
+    &__caption {
+        padding: 12px 20px;
+        height: (2 * @base-line-height-palm);
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        bottom: 1px;
+        overflow: hidden;
+        background-color: fade(#ffffff, 90%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDFFFFFF,endColorstr=#DDFFFFFF)";
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        width: 108px;
+        height: 107px;
+        background-image: url("images/ui/featured-ribbon.png");
+
+        .ie8 & {
+            content: none;
+        }
+    }
+
+    &:hover {
+        border: none;
+
+        .featured {
+            &__heading {
+                border-bottom: 1px dotted @dark-blue;
+            }
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        &__image {
+            width: 300px;
+            height: 225px;
+        }
+
+        &__caption {
+            // Needed for dotdotdot
+            width: 258px;
+        }
+    }
+
+    @media only screen and (min-width: @screen-desk) {
+        &__caption {
+            height: (2 * @base-line-height);
+        }
+    }
+
+    @media print {
+        &__image {
+            width: auto;
+        }
+
+        &__caption {
+            position: static;
+            height: auto;
+            padding: 0;
+        }
+
+        &:after {
+            position: static;
+            background: none;
+            width: auto;
+            height: auto;
+        }
+    }
+}
