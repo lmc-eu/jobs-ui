@@ -9,7 +9,6 @@ module.exports = {
             transform: [
                 'debowerify'
             ]
-
         },
         files: {
             '.tmp/jobs-ui.js': 'index.js'

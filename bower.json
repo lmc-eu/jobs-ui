@@ -19,6 +19,7 @@
         "emerald": "~1.2.0",
         "normalize-css": "~3.0.0",
         "lesshat": "~2.0.15",
+        "src-n-polyfill": "~0.5.1",
         "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot"
     }
 }

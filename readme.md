@@ -45,8 +45,9 @@ Then just require the 'jobs-ui' module.
 
 Optionally the precompiled build can be used; cf. *Quick use* section.
 
-Note that *jQuery* is a dependency and must be included; however it is **not**
-included neither when required as a module nor in the precompiled build!
+Note that *jQuery* is a dependency and must be accessible via `$`.
+However it is **not** included neither when required as a module nor in the
+precompiled build!
 
 It is recommended to take an advantage of a CDN.
 E.g. *Google Hosted Libraries*:
