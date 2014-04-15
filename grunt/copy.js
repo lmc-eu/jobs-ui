@@ -32,6 +32,11 @@ module.exports = {
                 expand: true,
                 src: ['dist/**'],
                 dest: '<%= styleguide.docs.dest %>'
+            },
+            {
+                expand: false,
+                src: ['lib/styleguide_template/_htaccess'],
+                dest: '<%= styleguide.docs.dest %>/.htaccess'
             }
         ]
     }

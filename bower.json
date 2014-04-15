@@ -17,9 +17,10 @@
     ],
     "dependencies": {
         "emerald": "~1.2.0",
-        "normalize-css": "~3.0.0",
+        "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot",
         "lesshat": "~2.0.15",
+        "normalize-css": "~3.0.0",
         "src-n-polyfill": "~0.5.1",
-        "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot"
+        "src-n-parse": "~0.3.3"
     }
 }
