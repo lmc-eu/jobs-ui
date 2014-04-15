@@ -5,6 +5,7 @@ module.exports = {
         options: {
             strictMath: true,
             strictUnits: true,
+            relativeUrls: false,
             paths: ['lib/bower_components/']
         },
         files: {

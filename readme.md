@@ -43,7 +43,15 @@ Recommended use consists of a combination of [browserify](http://browserify.org/
 and its transform [debowerify](https://github.com/eugeneware/debowerify).
 Then just require the 'jobs-ui' module.
 
-Optionally a precompiled build can be used; cf. *Quick use* section.
+Optionally the precompiled build can be used; cf. *Quick use* section.
+
+Note that *jQuery* is a dependency and must be included; however it is **not**
+included neither when required as a module nor in the precompiled build!
+
+It is recommended to take an advantage of a CDN.
+E.g. *Google Hosted Libraries*:
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/x.y.z/jquery.min.js"></script>
 
 #### Assets
 
@@ -51,15 +59,14 @@ When possible assets are inlined using `base64` format.
 
 Other files are contained in subdirectories of the `dist/` directory.
 These are to be copied to the same level as the resulting CSS file.
-This behaviour may be overwritten setting the `@assets-parent-directory` *less*
-variable to either relative or absolute path.
+This behaviour may be overwritten setting the `rootpath` option in *less*.
 
 ### Quick use
 
 For testing purposes or for easy use in temporary projects it is possible to
 directly incorporate a precompiled build of stylesheets and JavaScript.
 
-It is **discouraged** to use such JavaScipt and **strongly discouraged** to use
+It is **discouraged** to use such JavaScript and **strongly discouraged** to use
 such stylesheets in long-term production projects.
 
     <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/josb-ui-legacy.min.css"> <![endif]-->
@@ -70,6 +77,11 @@ such stylesheets in long-term production projects.
     </body>
 
 ## Contributing
+
+### KSS
+`styleguide.less` is blank.
+
+### Grunt tasks
 
 ### Directory structure
 
