@@ -1,4 +1,7 @@
-# Jobs UI
+# [Jobs UI](http://jobs.cz/ui/)
+
+Jobs UI is a complete underlayer for uniform visual appearance of the brand;
+including **styles**, **scripts**, and **assets** (e.g. images).
 
 ## How to use
 
@@ -80,9 +83,34 @@ such stylesheets in long-term production projects.
 ## Contributing
 
 ### KSS
-`styleguide.less` is blank.
+For documentation of components [KSS](https://github.com/hughsk/kss-node) is
+used. Every component must have an appropriate description and a sample in the
+matching file.
 
-### Grunt tasks
+Note that the `styleguide.less` file is left blank as the styles are copied to
+the documentation from the distribution folder to insure consistency.
+
+### Available Grunt tasks
+
+#### Complete: `grunt`
+
+Prepares the workspace by deleting temporary, distribution, and documentation
+directories. Downloads needed *bower* components. Builds styles and scripts
+for production use, copies assets into the distribution folder. Generates
+full featured documentation.
+
+#### Distribution: `grunt dist`
+
+Creates just the production distribution folder.
+
+#### Develop: `grunt serve`
+
+Conveniently opens documentation in a browser window and reloads it when a
+change has happened.
+
+#### Individually: `grunt scripts`, `grunt styles`, and `grunt docs`
+
+Runs compilation of that one element, including the minimization.
 
 ### Directory structure
 
@@ -96,6 +124,7 @@ There are four types of files:
 ui/
 ├── dist/
 │   ├── fonts/
+│   ├── images/
 │   ├── index.min.js
 │   ├── style.min.css
 │   └── style-legacy.min.css
@@ -132,3 +161,7 @@ ui/
 ├── style.less
 └── …
 ```
+
+### Versioning
+
+Versions in the form of `vMAJOR.MINOR.PATCH` must comply with the [Semantic Versioning 2.0.0](http://semver.org/spec/v2.0.0.html).
