@@ -23,7 +23,7 @@ If `less#v1.7.0` is already used in the project, just do these two steps:
 
 1.  Include `$bower_components$` in the `paths` option of *less*. E.g.
     `grunt-contrib-less` task supports this option directly.
-2.  Import `jobs-ui/style.less` in the project style, preferably somewhere at
+2.  Import `jobs-ui/style` in the project style, preferably somewhere at
     the beginning. This file makes sure everything is linked together in the
     correct order.
 
@@ -74,7 +74,7 @@ It is **discouraged** to use such JavaScript and **strongly discouraged** to use
 such stylesheets in long-term production projects.
 
     <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/josb-ui-legacy.min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/jobs-ui.min.css"> <!--<![endif]-->
+    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/jobs-ui.min.css">        <!--<![endif]-->
     <body>
     …
     <script src="$bower_components$/jobs-ui/dist/jobs-ui.min.js"></script>
@@ -138,7 +138,6 @@ ui/
 │   │   ├── …
 │   │   └── component-R/
 │   │       ├── images/
-│   │       ├── docs.less
 │   │       ├── index.js
 │   │       └── style.less
 │   ├── modules/
@@ -157,7 +156,7 @@ ui/
 ├── Gruntfile.js
 ├── index.js
 ├── package.json
-├── README.me
+├── readme.md
 ├── style.less
 └── …
 ```

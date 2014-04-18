@@ -1,6 +1,6 @@
-require('./src/components/listing/index.js');
-require('./src/partials/navigation/index.js');
-require('./src/modules/layout/index.js');
+require('./src/components/listing');
+require('./src/partials/navigation');
+require('./src/modules/layout');
 
 require('emerald');
 require('src-n-polyfill');
