@@ -27,13 +27,13 @@ body {
 
 .orig-frame {
     @media only screen and (min-width: @screen-lap) {
-        max-width: 640px + (2 * @orig-frame-width);
+        max-width: (640px + (2 * @orig-frame-width));
         margin-left: auto;
         margin-right: auto;
     }
 
     @media only screen and (min-width: @screen-desk) {
-        max-width: 1000px + (2 * @orig-frame-width);
+        max-width: (1000px + (2 * @orig-frame-width));
     }
 
     .ie8 & {

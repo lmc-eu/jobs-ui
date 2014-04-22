@@ -2,6 +2,14 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.0.0
+
+- Code refactoring:
+    - Group files by components instead of by technology
+    - Add two loading points - one for styles, one for scripts
+- Turn into a Bower component
+- Breadcrumbs have new incompatible syntax
+
 ## v1.1.0
 
 - Add breadcrumbs navigation
@@ -10,6 +18,6 @@
 
 - Initial release
 - Redesign the styleguide
-- First entry the changelog
+- First entry in the changelog
 
 No details about development versions.
