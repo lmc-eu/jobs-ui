@@ -2,6 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
+
+## v2.1.0
+
+- Introduce the first accessibility class for visually hidden elements
+- Add *Icon description* component
+- Upgrade [LESS Hat](http://lesshat.com) to *3.0* version
+
 ## v2.0.0
 
 - Code refactoring:
