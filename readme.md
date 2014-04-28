@@ -73,11 +73,11 @@ directly incorporate a precompiled build of stylesheets and JavaScript.
 It is **discouraged** to use such JavaScript and **strongly discouraged** to use
 such stylesheets in long-term production projects.
 
-    <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/josb-ui-legacy.min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/jobs-ui.min.css">        <!--<![endif]-->
+    <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style-legacy.min.css"> <![endif]-->
+    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style.min.css">        <!--<![endif]-->
     <body>
     …
-    <script src="$bower_components$/jobs-ui/dist/jobs-ui.min.js"></script>
+    <script src="$bower_components$/jobs-ui/dist/index.min.js"></script>
     </body>
 
 ## Contributing

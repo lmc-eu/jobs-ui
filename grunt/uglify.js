@@ -7,7 +7,7 @@ module.exports = {
             preserveComments: 'some'
         },
         files: {
-            'dist/jobs-ui.min.js': '.tmp/jobs-ui.js'
+            'dist/index.min.js': '.tmp/index.js'
         }
     }
 };

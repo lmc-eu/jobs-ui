@@ -11,7 +11,7 @@ module.exports = {
             ]
         },
         files: {
-            '.tmp/jobs-ui.js': 'index.js'
+            '.tmp/index.js': 'index.js'
         }
     }
 };
