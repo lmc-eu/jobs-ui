@@ -5,7 +5,8 @@ Markup:
 <a class="button {$modifiers}" href="#">Link</a>
 <button class="button {$modifiers}" type="submit">Button</button>
 
-.button--secondary - Secondary button for the less important actions
+.button--toogle - Status button non-activated
+.button--toogle--on - Status button activated
 .button--slim - Slimmer button with smaller horizontal padding
 
 Styleguide 3.1
@@ -34,19 +35,27 @@ Styleguide 3.1
 
     &:hover {
         color: #fff;
-        border: 1px solid @jobs-orange;
+        border: 1px solid @dark-orange;
         background-color: @dark-orange;
     }
     
-    &--secondary {
-        background-color: transparent;
-        color: @blue;
-        border-color: @blue;
+    &--toogle {
+        background-color: #fff;
+        color: @light-gray;
+        border-color: @light-gray;
 
         &:hover {
-            background-color: transparent;
-            color: @light-blue;
-            border-color: @light-blue;
+            background-color: #fff;
+            color: @gray;
+            border-color: @dark-orange;
+        }
+
+        &--on {
+            color: @jobs-orange;
+
+            &:hover {
+                color: @jobs-orange;
+            }
         }
     }
 

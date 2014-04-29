@@ -6,9 +6,12 @@
 ## v2.1.0
 
 - Introduce the first accessibility class for visually hidden elements
-- Add *Icon description* component
-- Add a *secondary* button style
-- Upgrade [LESS Hat](http://lesshat.com) to *3.0* version
+- Add an *icon description* component
+- Add a *toogle* button style
+- Add a *button group* component with spacing
+- Edit *primary button* border colours
+- Add style for *horizontal line*
+- Upgrade [LESS Hat](http://lesshat.com) to 3.0 version
 
 ## v2.0.0
 
