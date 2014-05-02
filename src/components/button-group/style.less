@@ -14,6 +14,12 @@ Styleguide 3.2
 .button-group {
 
     &--spaced {
-        word-spacing: 20px;
+        .button {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
