@@ -54,10 +54,6 @@ Markup:
         <br> hourglass
     </div><!--
     --><div class="grid__item e-3--palm">
-        <span class="icon icon--hourglass-alt" aria-hidden="true"></span>
-        <br> hourglass-alt
-    </div><!--
-    --><div class="grid__item e-3--palm">
         <span class="icon icon--house" aria-hidden="true"></span>
         <br> house
     </div><!--
@@ -66,8 +62,16 @@ Markup:
         <br> library
     </div><!--
     --><div class="grid__item e-3--palm">
+        <span class="icon icon--like" aria-hidden="true"></span>
+        <br> like
+    </div><!--
+    --><div class="grid__item e-3--palm">
         <span class="icon icon--map-marker" aria-hidden="true"></span>
         <br> map-marker
+    </div><!--
+    --><div class="grid__item e-3--palm">
+        <span class="icon icon--money" aria-hidden="true"></span>
+        <br> money
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--print" aria-hidden="true"></span>
@@ -179,11 +183,11 @@ Styleguide 2.7.2
 
 // Individual icons
 // Copy-paste from the bottom of IcoMoon App generated style.css
+.icon--money:before {
+    content: "\e601";
+}
 .icon--library:before {
     content: "\e600";
-}
-.icon--hourglass-alt:before {
-    content: "\e601";
 }
 .icon--hourglass:before {
     content: "\e602";
@@ -223,6 +227,9 @@ Styleguide 2.7.2
 }
 .icon--share:before {
     content: "\e60e";
+}
+.icon--like:before {
+    content: "\e619";
 }
 .icon--bell:before {
     content: "\e60f";
