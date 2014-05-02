@@ -1,0 +1,80 @@
+/*
+Floats
+
+A content that is supposed to be aside of the main content.
+
+Uses modificators in the same way as the grid.
+
+Please always cover floats with a `.clearfix` box.
+
+The *Default styling* features `float--none` for demonstration; this class
+effectively centers the content.
+
+Markup:
+<div class="clearfix">
+    <img class="float--palm float--none--palm {$modifiers}--palm"
+         src="public/images/60x45.jpg" />
+    <p>
+        Roste one ve hry ve nepřestat kam starat rozhlédnu. Svá si ano kameny
+        stěhování severní, svůj starou exemplář i hluboké je araby chytré.
+        Odhadují se modré temnějším strávila ho narušilo uplynulo nacházejí, s
+        narušily evropskou z zdůrazňují portugalců. S oblohou lokální objevilo
+        v hormonálních. Tam vidím.
+    </p>
+</div>
+
+.float--left - Floated left with right margin
+.float--right - Floated right with left margin
+
+Styleguide 1.2
+*/
+
+.buildFloats (@modifier) {
+    .float {
+        &@{modifier} {
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        &--none@{modifier} {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &--right@{modifier} {
+            float: right;
+            margin-right: auto;
+            margin-left: 40px;
+        }
+
+        &--left@{modifier} {
+            float: left;
+            margin-right: 40px;
+            margin-left: auto;
+        }
+    }
+}
+
+.buildFloats(extract(@grid-palm, 4));
+
+@media only screen and (min-width: @screen-lap) {
+    .buildFloats(extract(@grid-lap, 4));
+}
+
+@media only screen and (min-width: @screen-desk) {
+    .buildFloats(extract(@grid-desk, 4));
+}
+
+// Clearfix taken from HTML5 Boilerplate
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

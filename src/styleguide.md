@@ -11,6 +11,7 @@
 - Add a *button group* component with spacing
 - Edit *primary button* border colours
 - Add style for *horizontal line*
+- Add responsive *floats* and the clearfix.
 - Upgrade [LESS Hat](http://lesshat.com) to 3.0 version
 
 ## v2.0.0
