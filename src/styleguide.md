@@ -6,10 +6,23 @@
 ## v2.1.0
 
 - Introduce the first accessibility class for visually hidden elements
+- Edit *primary button* border colours
 - Add an *icon description* component
 - Add a *toogle* button style
 - Add a *button group* component with spacing
-- Edit *primary button* border colours
+- Add new icons:
+    - *bell*
+    - *building*
+    - *comment-alt*
+    - *folder-open-alt*
+    - *hourglass*
+    - *library*
+    - *like*
+    - *map-marker*
+    - *money*
+    - *print*
+    - *star*
+- Add animated *rotating icon*
 - Add style for *horizontal line*
 - Add responsive *floats* and the clearfix.
 - Upgrade [LESS Hat](http://lesshat.com) to 3.0 version

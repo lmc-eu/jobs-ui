@@ -136,6 +136,25 @@ Markup:
 Styleguide 2.7.2
 */
 
+/*
+Animated icons
+
+Smooth rotation of an icon
+
+Markup:
+<span class="icon icon--star icon--rotating" aria-hidden="true"></span>
+
+Styleguide 2.7.3
+*/
+// To be used when the following issue is resolved:
+// https://github.com/madebysource/lesshat/issues/108
+//.keyframes(~'animation-rotate, 0%{ transform: rotate(0); } 100%{ transform: rotate(360deg); }');
+
+@-webkit-keyframes animation-rotate{ 0%{ -webkit-transform: rotate(0); } 100%{ -webkit-transform: rotate(360deg); }}
+@-moz-keyframes animation-rotate{ 0%{ -moz-transform: rotate(0); } 100%{ -moz-transform: rotate(360deg); }}
+@-o-keyframes animation-rotate{ 0%{ -o-transform: rotate(0); } 100%{ -o-transform: rotate(360deg); }}
+@keyframes animation-rotate{ 0%{-webkit-transform: rotate(0);-moz-transform: rotate(0);-ms-transform: rotate(0);transform: rotate(0); } 100%{-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg); }}
+
 // Importing the fonts
 @font-face {
 	font-family: 'jobsicon';
@@ -178,6 +197,10 @@ Styleguide 2.7.2
         &:after {
             content: "\a0";
         }
+    }
+
+    &--rotating {
+        .animation(animation-rotate 2s linear infinite);
     }
 }
 
