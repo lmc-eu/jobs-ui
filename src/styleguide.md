@@ -3,6 +3,13 @@
 # <a name="changelog"></a>Changelog
 
 
+## v2.2.0
+
+- Add general *forms*
+- Add *text inputs, textareas, and file inputs*
+- Add *banded* and *grouped* fieldset styles
+- Add *block* button style
+
 ## v2.1.0
 
 - Introduce the first accessibility class for visually hidden elements

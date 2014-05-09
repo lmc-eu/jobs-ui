@@ -1,0 +1,124 @@
+/*
+Form basic components
+
+The example features most elements and modification together.
+
+Fieldsets are required inside forms.
+
+**Banded** fieldsets have a contrast background.
+
+**Grouped** fieldsets connect containing `.text-input`s to a visually unite component.
+
+Markup:
+<form class="form">
+    <div class="grid grid--center--palm"><!--
+            --><div class="grid__item e-6--palm e-10">
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">Hlavě pole vědecké</legend>
+        <textarea placeholder="Dosáhl sen údaje podobu v mobilní severně"
+                  class="form__textarea" rows="5"></textarea>
+    </fieldset>
+    <fieldset class="form__fieldset form__fieldset--banded">
+        <legend class="form__legend">Návštěvníky dost gladiátora</legend>
+        <input class="form__file-input" type="file">
+        <input class="form__file-input" type="file">
+    </fieldset>
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">Kolektivního nervózně zdajízní</legend>
+        <label class="form__label" for="name">Jméno</label>
+        <input class="form__text-input" id="name"
+               type="text" placeholder="Otakar Houba">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__text-input" id="email"
+               type="email" placeholder="otakar@houba.cz">
+        <label class="form__label" for="phone">Telefon</label>
+        <input class="form__text-input" id="phone"
+               type="tel" placeholder="+420 200 570 862">
+    </fieldset>
+    <fieldset class="form__fieldset form__fieldset--grouped">
+        <legend class="form__legend">Pohled slavnost</legend>
+        <input class="form__text-input" id="user"
+               type="text" placeholder="Uživatelské jméno">
+        <input class="form__text-input" id="password"
+               type="password" placeholder="Heslo">
+        <input class="form__text-input" id="code"
+               type="text" placeholder="Kód">
+    </fieldset>
+    <fieldset class="form__fieldset">
+        <label for="option" class="form__checkbox">
+            <input id="option" type="checkbox" value="">
+            Vyčíslená zrovna ke uvelebil <a href="#">dobyvačné u duší</a>.
+        </label>
+        <button class="button button--block" type="submit">Odeslat</button>
+    </fieldset>
+    </div><!--
+    --></div>
+</form>
+
+Styleguide 3.1
+*/
+
+.form {
+    padding-top: @standalone-bottom-margin;
+    padding-bottom: @standalone-bottom-margin;
+    background-color: @light-silver;
+    border: 1px solid @light-gray;
+
+    &__legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        font-weight: 700;
+        color: #000000;
+        word-wrap: break-word;
+    }
+
+    &__fieldset {
+        margin: 0 0 @standalone-bottom-margin 0;
+        padding: 0;
+        border: 0;
+
+        &--banded {
+            padding: 5px 0;
+            background: @light-gray;
+
+            legend {
+                background: @light-silver;
+            }
+
+            input {
+                padding: 0 5px;
+            }
+        }
+
+        &--grouped {
+            .form__text-input {
+                margin: 0;
+                position: relative;
+                top: -1px;
+
+                &:focus {
+                    z-index: 2;
+                }
+                &:first-of-type {
+                    top: 1px;
+                }
+                &:last-of-type {
+                    top: -2px;
+                }
+            }
+
+            // IE8 does not support :first-of-type and :last-of-type
+            .ie8 & {
+                legend + .form__text-input,
+                .form__text-input:first-child {
+                    top: 1px;
+                }
+
+                .form__text-input:last-child {
+                    top: -2px;
+                }
+            }
+        }
+    }
+}

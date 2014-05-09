@@ -8,8 +8,9 @@ Markup:
 .button--toggle - Status button non-activated
 .button--toggle.button--toggle--on - Status button activated
 .button--slim - Slimmer button with smaller horizontal padding
+.button--block - Full width button
 
-Styleguide 3.1
+Styleguide 3.2
 */
 
 .button {
@@ -31,6 +32,12 @@ Styleguide 3.1
 
     &--slim {
         padding: 0 12px;
+    }
+
+    &--block {
+        width: 100%;
+        margin-bottom: 3px;
+        .box-sizing(border-box);
     }
 
     &:hover {

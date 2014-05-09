@@ -1,0 +1,45 @@
+// Inputs
+//
+// The example are part of the form component
+
+.form {
+
+    &__text-input,
+    &__textarea {
+        .box-sizing(border-box);
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 0 12px;
+        border: 1px solid @light-gray;
+        border-radius: 0;
+        box-shadow: inset 0 1px 3px #ddd;
+    }
+
+    // Fix for FF - https://bugzilla.mozilla.org/show_bug.cgi?id=349259
+    &__text-input {
+        line-height: 34px;
+        height: 34px;
+    }
+
+    &__textarea {
+        min-height: 60px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        resize: vertical;
+    }
+
+    &__file-input {
+        width: 100%;
+    }
+
+    &__label {
+        display: block;
+        margin: 5px 0;
+    }
+
+    &__checkbox {
+        margin: 10px 0;
+        display: block;
+    }
+}
