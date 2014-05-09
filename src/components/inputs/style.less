@@ -14,6 +14,16 @@
         border: 1px solid @light-gray;
         border-radius: 0;
         box-shadow: inset 0 1px 3px #ddd;
+
+        &:focus {
+            outline: 0;
+            border-color: @dark-blue;
+        }
+
+        &--invalid {
+            border-color: @warning-red;
+            z-index: 10;
+        }
     }
 
     // Fix for FF - https://bugzilla.mozilla.org/show_bug.cgi?id=349259

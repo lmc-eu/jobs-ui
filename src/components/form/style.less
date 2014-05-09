@@ -11,8 +11,8 @@ Fieldsets are required inside forms.
 
 Markup:
 <form class="form">
-    <div class="grid grid--center--palm"><!--
-            --><div class="grid__item e-6--palm e-10">
+<div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-6--palm e-10">
     <fieldset class="form__fieldset">
         <legend class="form__legend">Hlavě pole vědecké</legend>
         <textarea placeholder="Dosáhl sen údaje podobu v mobilní severně"
@@ -37,7 +37,7 @@ Markup:
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--grouped">
         <legend class="form__legend">Pohled slavnost</legend>
-        <input class="form__text-input" id="user"
+        <input class="form__text-input form__text-input--invalid" id="user"
                type="text" placeholder="Uživatelské jméno">
         <input class="form__text-input" id="password"
                type="password" placeholder="Heslo">
@@ -52,7 +52,7 @@ Markup:
         <button class="button button--block" type="submit">Odeslat</button>
     </fieldset>
     </div><!--
-    --></div>
+--></div>
 </form>
 
 Styleguide 3.1
@@ -80,13 +80,14 @@ Styleguide 3.1
 
         &--banded {
             padding: 5px 0;
-            background: @light-gray;
+            background-color: @light-gray;
 
             legend {
-                background: @light-silver;
+                background-color: @light-silver;
             }
 
             input {
+                .box-sizing(border-box);
                 padding: 0 5px;
             }
         }
