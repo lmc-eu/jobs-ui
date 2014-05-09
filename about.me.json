@@ -1,16 +1,18 @@
 {
-    "uid": "lmc_jobs_ui",
-    "name": "Jobs.cz - UI",
-    "shortdesc": "Jobs UI is a complete underlayer for uniform visual appearance of the brand",
-    "owner": "robert.plematl@lmc.eu",
-    "sla": "max",
-    "provides": [
-        {
-            "uid": "userInterface",
-            "href": [
-                "readme.md",
-                "http://www.jobs.cz/ui/"
-            ]
-        }
-    ]
+  "apps":[ 
+    {
+        "uid": "lmc_jobs_ui",
+        "name": "Jobs.cz - UI",
+        "shortdesc": "Jobs UI is a complete underlayer for uniform visual appearance of the brand",
+        "owner": "robert.plematl@lmc.eu",
+        "sla": "max",
+        "provides": [
+            {
+                "uid": "userInterface",
+                "href": "readme.md",
+                "desc": "http://www.jobs.cz/ui/"
+            }
+        ]
+    }
+  ]
 }
