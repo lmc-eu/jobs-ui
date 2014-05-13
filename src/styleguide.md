@@ -3,6 +3,10 @@
 # <a name="changelog"></a>Changelog
 
 
+## v2.1.1
+
+- Fix *print* styles
+
 ## v2.1.0
 
 - Introduce the first accessibility class for visually hidden elements
