@@ -20,7 +20,8 @@
             border-color: @dark-blue;
         }
 
-        &--invalid {
+        &--invalid,
+        &:invalid {
             border-color: @warning-red;
             z-index: 10;
         }
@@ -39,8 +40,13 @@
         resize: vertical;
     }
 
+    // Fix for mobiles
     &__file-input {
-        width: 100%;
+        width: 90%;
+
+        @media only screen and (min-width: @screen-lap) {
+            width: auto;
+        }
     }
 
     &__label {

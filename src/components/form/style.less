@@ -26,13 +26,13 @@ Markup:
     <fieldset class="form__fieldset">
         <legend class="form__legend">Kolektivního nervózně zdajízní</legend>
         <label class="form__label" for="name">Jméno</label>
-        <input class="form__text-input" id="name"
+        <input class="form__text-input" id="name" required
                type="text" placeholder="Otakar Houba">
         <label class="form__label" for="email">Email</label>
         <input class="form__text-input" id="email"
                type="email" placeholder="otakar@houba.cz">
         <label class="form__label" for="phone">Telefon</label>
-        <input class="form__text-input" id="phone"
+        <input class="form__text-input" id="phone" pattern="[0-9]+"
                type="tel" placeholder="+420 200 570 862">
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--grouped">
@@ -88,7 +88,7 @@ Styleguide 3.1
 
             input {
                 .box-sizing(border-box);
-                padding: 0 5px;
+                margin: 0 5px;
             }
         }
 
