@@ -8,6 +8,7 @@
 - Add general *forms*
 - Add *text inputs, textareas, and file inputs*
 - Add *banded* and *grouped* fieldset styles
+- Add *validation error* warning
 - Add *block* button style
 
 ## v2.1.1

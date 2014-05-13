@@ -9,11 +9,10 @@
         .box-sizing(border-box);
         display: block;
         width: 100%;
-        margin: 5px 0;
+        margin-bottom: 10px;
         padding: 0 12px;
         border: 1px solid @light-gray;
         border-radius: 0;
-        box-shadow: inset 0 1px 3px #ddd;
 
         &:focus {
             outline: 0;
@@ -22,7 +21,7 @@
 
         &--invalid,
         &:invalid {
-            border-color: @warning-red;
+            border-color: @light-red;
             z-index: 10;
         }
     }
@@ -51,11 +50,18 @@
 
     &__label {
         display: block;
-        margin: 5px 0;
     }
 
     &__checkbox {
         margin: 10px 0;
         display: block;
+    }
+
+    &__validation-error {
+        margin-top: -10px;
+        margin-bottom: 10px;
+        padding: 5px 13px;
+        background: @light-red;
+        color: rgb(129, 7, 7);
     }
 }

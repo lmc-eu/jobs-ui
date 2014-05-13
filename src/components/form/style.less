@@ -28,6 +28,7 @@ Markup:
         <label class="form__label" for="name">Jméno</label>
         <input class="form__text-input" id="name" required
                type="text" placeholder="Otakar Houba">
+        <div class="form__validation-error">Vyplňte prosím Jméno</div>
         <label class="form__label" for="email">Email</label>
         <input class="form__text-input" id="email"
                type="email" placeholder="otakar@houba.cz">
@@ -37,10 +38,11 @@ Markup:
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--grouped">
         <legend class="form__legend">Pohled slavnost</legend>
-        <input class="form__text-input form__text-input--invalid" id="user"
+        <input class="form__text-input" id="user"
                type="text" placeholder="Uživatelské jméno">
-        <input class="form__text-input" id="password"
+        <input class="form__text-input form__text-input--invalid" id="password"
                type="password" placeholder="Heslo">
+        <div class="form__validation-error">Vyplňte prosím Heslo</div>
         <input class="form__text-input" id="code"
                type="text" placeholder="Kód">
     </fieldset>
@@ -67,7 +69,7 @@ Styleguide 3.1
     &__legend {
         display: block;
         width: 100%;
-        padding: 0;
+        padding-bottom: 10px;
         font-weight: 700;
         color: #000000;
         word-wrap: break-word;
@@ -79,7 +81,7 @@ Styleguide 3.1
         border: 0;
 
         &--banded {
-            padding: 5px 0;
+            padding: 10px 0 5px 0;
             background-color: @light-gray;
 
             legend {
@@ -88,11 +90,20 @@ Styleguide 3.1
 
             input {
                 .box-sizing(border-box);
-                margin: 0 5px;
+                margin: 0 10px 5px;
+            }
+
+            .form__file-input {
+                color: #fff;
             }
         }
 
         &--grouped {
+
+            .form__validation-error {
+                margin-top: -1px;
+            }
+
             .form__text-input {
                 margin: 0;
                 position: relative;
