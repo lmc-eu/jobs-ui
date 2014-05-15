@@ -11,6 +11,7 @@
 - Add *validation error* warning
 - Add the *pit*
 - Add *block* button style
+- Add a *center* text alignment
 
 ## v2.1.1
 
