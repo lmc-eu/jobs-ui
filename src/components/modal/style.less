@@ -1,0 +1,133 @@
+/*
+Modal
+
+Displays a link with an optional figure and description.
+
+For accessibility please always set the `role` and `aria-labelledby` atrributes
+
+Markup:
+<div class="remodal wrapper" data-remodal-id="modal" role="dialog" aria-labelledby="dialog1Title">
+    <div class="grid">
+        <div class="grid__item e-6--palm e-10">
+            <a class="remodal-cancel remodal__close" href="#">
+                <span class="icon icon--remove" aria-hidden="true"></span>
+                <span class="visuallyhidden">Zavřít</span>
+            </a>
+            <h2 id="dialog1Title">Mozkovou úrovni</h2>
+            <p>
+              Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme potřeli
+              částicím. Látky slabých původních nosu je křídy cesta celá vystoupáte
+              pro, anténou už tábory samostatného slábnou normálem smetánka. Pozorované
+               s činná k uspořádaných okouzlí migračních u kromě ukončil 1 permanentek
+               nim otroky ne bojovníka. Působil kréta expedice až pralesa postavit řádu
+               pocit dělat genetice, těm krásy hlasové techniku pomáhá. Přijela co
+               fronty, k 1.050 Kč do borci laně dialozích nakrásně dobře, já vývojovou.
+               Pevnostní zdvihla softwarové.
+            </p>
+            <br>
+            <a class="remodal-confirm button button--block" href="#">Souhlasím</a>
+        </div>
+    </div>
+</div>
+<a href="#modal">Open modal</a>
+
+Styleguide 4.8
+*/
+
+html,
+body {
+    &.remodal_lock {
+        overflow: hidden;
+    }
+}
+
+.remodal {
+    display: inline-block;
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding-top: @standalone-bottom-margin;
+    padding-bottom: @standalone-bottom-margin;
+    vertical-align: middle;
+    background: @light-silver;
+    background-clip: padding-box;
+    .box-sizing(border-box);
+    .scale(0.95);
+    .transition(transform 0.2s linear);
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 34px;
+
+        color: @light-gray;
+        text-decoration: none;
+        line-height: 34px;
+        text-align: center;
+        border: 1px solid @light-gray;
+        border-top: none;
+        border-right: none;
+
+        &:hover {
+            color: #333;
+            border-bottom: 1px solid @light-gray;
+        }
+    }
+
+    &-bg {
+        .transition(filter 0.2s linear);
+    }
+
+    &-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10000;
+        display: none;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        text-align: center;
+        opacity: 0;
+        background: fade(#333, 90%);
+        .transition(opacity 0.2s linear);
+
+        &:after {
+            display: inline-block;
+            height: 100%;
+            margin-left: -0.05em;
+            vertical-align: middle;
+
+            content: '';
+        }
+
+        /* Fix iPad, iPhone glitches */
+        > * {
+            -webkit-transform: translateZ(0px);
+        }
+    }
+
+    &_active {
+        .remodal {
+            .scale(1);
+        }
+
+        .remodal-overlay {
+            opacity: 1;
+        }
+
+        .remodal-bg {
+            .blur(3px);
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        width: 460px;
+        min-height: 0;
+    }
+}
+
+

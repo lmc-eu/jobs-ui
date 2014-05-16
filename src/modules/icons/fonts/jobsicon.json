@@ -1,7 +1,7 @@
 {
 	"metadata": {
-		"name": "jobsicon",
-		"lastOpened": 1399967367770,
+		"name": "jobsicon 1",
+		"lastOpened": 1400232767362,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -25,7 +25,8 @@
 					"grid": 0,
 					"tags": [
 						"coins"
-					]
+					],
+					"matchesSearch": false
 				},
 				{
 					"id": 7,
@@ -105,7 +106,7 @@
 			],
 			"selection": [
 				{
-					"order": 28,
+					"order": 26,
 					"id": 4,
 					"prevSize": 32,
 					"code": 58881,
@@ -114,7 +115,7 @@
 					"ligatures": ""
 				},
 				{
-					"order": 24,
+					"order": 23,
 					"id": 3,
 					"prevSize": 32,
 					"code": 58880,
@@ -368,14 +369,10 @@
 					],
 					"width": 805,
 					"tags": [
-						"remove",
-						"cancel",
-						"close",
-						"delete",
-						"mutiply"
+						"remove"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 14,
@@ -460,7 +457,7 @@
 						"bin"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 20,
@@ -501,7 +498,7 @@
 						"clock"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 23,
@@ -1323,7 +1320,7 @@
 						"sign"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 82,
@@ -1340,7 +1337,7 @@
 						"sign"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 83,
@@ -1416,7 +1413,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 88,
@@ -1571,7 +1568,7 @@
 						"subtract"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 99,
@@ -3677,7 +3674,7 @@
 						"square"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 251,
@@ -4270,7 +4267,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 295,
@@ -4285,7 +4282,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 296,
@@ -5206,8 +5203,13 @@
 					"id": 13
 				},
 				{
-					"order": 0,
-					"id": 14
+					"order": 27,
+					"id": 14,
+					"prevSize": 28,
+					"code": 58906,
+					"name": "remove",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -5242,12 +5244,12 @@
 					"id": 22
 				},
 				{
-					"order": 27,
+					"order": 25,
 					"id": 23,
 					"prevSize": 28,
 					"code": 58882,
 					"name": "clock",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5324,7 +5326,7 @@
 					"prevSize": 28,
 					"code": 58891,
 					"name": "tag",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5345,7 +5347,7 @@
 					"prevSize": 28,
 					"code": 58892,
 					"name": "print",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5418,7 +5420,7 @@
 					"prevSize": 28,
 					"code": 58893,
 					"name": "map-marker",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5439,7 +5441,7 @@
 					"prevSize": 28,
 					"code": 58894,
 					"name": "share",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5688,12 +5690,12 @@
 					"id": 127
 				},
 				{
-					"order": 25,
+					"order": 24,
 					"id": 128,
 					"prevSize": 28,
 					"code": 58905,
 					"name": "like",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5799,7 +5801,7 @@
 					"prevSize": 28,
 					"code": 58895,
 					"name": "bell",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5904,7 +5906,7 @@
 					"prevSize": 28,
 					"code": 58896,
 					"name": "reorder",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6013,7 +6015,7 @@
 					"prevSize": 28,
 					"code": 58897,
 					"name": "comment-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6086,7 +6088,7 @@
 					"prevSize": 28,
 					"code": 58898,
 					"name": "building",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6127,7 +6129,7 @@
 					"prevSize": 28,
 					"code": 58899,
 					"name": "double-angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6144,7 +6146,7 @@
 					"prevSize": 28,
 					"code": 58900,
 					"name": "angle-left",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6153,7 +6155,7 @@
 					"prevSize": 28,
 					"code": 58901,
 					"name": "angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6218,7 +6220,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -7705,7 +7707,7 @@
 						"archive"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 72,
@@ -7718,7 +7720,7 @@
 						"schedule"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 73,
@@ -7731,7 +7733,7 @@
 						"schedule"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 74,
@@ -7744,7 +7746,7 @@
 						"time"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 75,
@@ -7757,7 +7759,7 @@
 						"time"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 76,
@@ -7785,7 +7787,7 @@
 						"chronometer"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 78,
@@ -7800,7 +7802,7 @@
 						"day"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 79,
@@ -7815,7 +7817,7 @@
 						"day"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 80,
@@ -8013,7 +8015,7 @@
 						"upload"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 94,
@@ -9075,7 +9077,7 @@
 						"dispose"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 168,
@@ -9091,7 +9093,7 @@
 						"dispose"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 169,
@@ -10229,7 +10231,7 @@
 						"delete"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 251,
@@ -10271,7 +10273,7 @@
 						"cross"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 254,
@@ -14761,7 +14763,7 @@
 						"delete"
 					],
 					"grid": 32,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 7,
@@ -15063,7 +15065,7 @@
 						"watch"
 					],
 					"grid": 32,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 30,
@@ -15721,7 +15723,7 @@
 						"minus"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 15,
@@ -15761,7 +15763,7 @@
 						"cancel"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 18,
@@ -16030,7 +16032,7 @@
 						"time"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 39,
@@ -16057,7 +16059,7 @@
 						"garbage"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 41,
@@ -16071,7 +16073,7 @@
 						"garbage"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 42,
@@ -16187,7 +16189,7 @@
 						"notification"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 51,
@@ -16199,7 +16201,7 @@
 						"time"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 52,
@@ -17742,7 +17744,7 @@
 						"history"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 62,
@@ -17769,7 +17771,7 @@
 						"time"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 64,
@@ -18527,7 +18529,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 121,
@@ -18541,7 +18543,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 122,
@@ -18569,7 +18571,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 124,
@@ -18583,7 +18585,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 125,
@@ -18611,7 +18613,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 127,
@@ -18625,7 +18627,7 @@
 						"substract"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 128,
@@ -18652,7 +18654,7 @@
 						"backspace"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 130,
@@ -18840,7 +18842,7 @@
 						"time"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 145,
@@ -19070,7 +19072,7 @@
 						"clear"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 162,
@@ -20642,7 +20644,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20731,7 +20733,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{

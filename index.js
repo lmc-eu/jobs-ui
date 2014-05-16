@@ -5,3 +5,4 @@ require('./src/components/inputs');
 
 require('emerald');
 require('src-n-polyfill');
+require('remodal');
