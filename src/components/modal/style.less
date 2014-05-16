@@ -3,26 +3,31 @@ Modal
 
 Displays a link with an optional figure and description.
 
+Uses [remodal](http://vodkabears.github.io/remodal).
+Set width on tablet using grid item width classes.
+
 For accessibility please always set the `role` and `aria-labelledby` atrributes
 
 Markup:
-<div class="remodal wrapper" data-remodal-id="modal" role="dialog" aria-labelledby="dialog1Title">
+<div class="remodal e-12" data-remodal-id="modal"
+     role="dialog" aria-labelledby="dialog1Title">
     <div class="grid">
-        <div class="grid__item e-6--palm e-10">
+        <div class="grid__item e-7--palm e-10">
             <a class="remodal-cancel remodal__close" href="#">
                 <span class="icon icon--remove" aria-hidden="true"></span>
                 <span class="visuallyhidden">Zavřít</span>
             </a>
             <h2 id="dialog1Title">Mozkovou úrovni</h2>
             <p>
-              Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme potřeli
-              částicím. Látky slabých původních nosu je křídy cesta celá vystoupáte
-              pro, anténou už tábory samostatného slábnou normálem smetánka. Pozorované
-               s činná k uspořádaných okouzlí migračních u kromě ukončil 1 permanentek
-               nim otroky ne bojovníka. Působil kréta expedice až pralesa postavit řádu
-               pocit dělat genetice, těm krásy hlasové techniku pomáhá. Přijela co
-               fronty, k 1.050 Kč do borci laně dialozích nakrásně dobře, já vývojovou.
-               Pevnostní zdvihla softwarové.
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta
+                celá vystoupáte pro, anténou už tábory samostatného slábnou
+                normálem smetánka. Pozorované s činná k uspořádaných okouzlí
+                migračních u kromě ukončil 1 permanentek nim otroky ne
+                bojovníka. Působil kréta expedice až pralesa postavit řádu
+                pocit dělat genetice, těm krásy hlasové techniku pomáhá.
+                Přijela co fronty, k 1.050 Kč do borci laně dialozích nakrásně
+                dobře, já vývojovou. Pevnostní zdvihla softwarové.
             </p>
             <br>
             <a class="remodal-confirm button button--block" href="#">Souhlasím</a>
@@ -45,7 +50,6 @@ body {
     display: inline-block;
     visibility: hidden;
     position: relative;
-    width: 100%;
     min-height: 100%;
     padding-top: @standalone-bottom-margin;
     padding-bottom: @standalone-bottom-margin;
@@ -124,9 +128,13 @@ body {
         }
     }
 
+    @media only screen and (max-width: @screen-lap-max) {
+        width: 100%;
+    }
+
     @media only screen and (min-width: @screen-lap) {
-        width: 460px;
         min-height: 0;
+        margin: 60px 0;
     }
 }
 

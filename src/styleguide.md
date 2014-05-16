@@ -12,7 +12,9 @@
 - Add the *pit*
 - Add *block* button style
 - Add a *center* text alignment
-- Add *modal* dialog - uses [remodal](http://vodkabears.github.io/remodal)
+- Add *modal* dialog
+- Add new icons:
+    - *remove*
 
 ## v2.1.1
 
