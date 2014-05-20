@@ -15,6 +15,7 @@
 - Add *modal* dialog
 - Add new icons:
     - *remove*
+- Add *light red* colour
 
 ## v2.1.1
 
