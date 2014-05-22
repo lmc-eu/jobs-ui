@@ -2,7 +2,6 @@
 
 # <a name="changelog"></a>Changelog
 
-
 ## v2.2.0
 
 - Add general *forms*
@@ -11,10 +10,13 @@
 - Add *validation error* warning
 - Add the *pit*
 - Add *block* button style
+- Add a *secondary* button style
 - Add a *center* text alignment
 - Add *modal* dialog
 - Add new icons:
     - *remove*
+- Add *gold* colour
+- Add *red* colour
 - Add *light red* colour
 
 ## v2.1.1
