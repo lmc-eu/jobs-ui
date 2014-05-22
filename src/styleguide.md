@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.3.0
+
+- Add a *right* text alignment
+
 ## v2.2.0
 
 - Add general *forms*
