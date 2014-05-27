@@ -6,6 +6,10 @@
 
 - Add a *right* text alignment
 
+## v2.2.1
+
+- Fix *modal* background in IE8 and IE9
+
 ## v2.2.0
 
 - Add general *forms*
