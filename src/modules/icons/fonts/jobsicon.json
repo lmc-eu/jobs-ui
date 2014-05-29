@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "jobsicon 1",
-		"lastOpened": 1400232767362,
+		"lastOpened": 1401281746958,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -6171,8 +6171,13 @@
 					"id": 237
 				},
 				{
-					"order": 0,
-					"id": 238
+					"order": 28,
+					"id": 238,
+					"prevSize": 28,
+					"code": 58907,
+					"name": "laptop",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -6220,7 +6225,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20644,7 +20649,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20733,7 +20738,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
