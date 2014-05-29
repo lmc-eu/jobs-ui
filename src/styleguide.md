@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## Dev
+
+- Add the *hero *
+
 ## v2.2.1
 
 - Fix *modal* background in IE8 and IE9
