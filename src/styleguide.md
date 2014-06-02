@@ -4,7 +4,13 @@
 
 ## Dev
 
+- Add new icons:
+    - *share-alt*
+    - *calendar-empty*
+    - *list*
 - Add the *hero *
+- Add new icon:
+    - *laptop*
 
 ## v2.2.1
 

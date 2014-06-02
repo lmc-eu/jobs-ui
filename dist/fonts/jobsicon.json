@@ -1,7 +1,7 @@
 {
 	"metadata": {
-		"name": "jobsicon 1",
-		"lastOpened": 1401281746958,
+		"name": "jobsicon",
+		"lastOpened": 1401713751414,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -346,7 +346,7 @@
 						"ul"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 12,
@@ -372,7 +372,7 @@
 						"remove"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 14,
@@ -457,7 +457,7 @@
 						"bin"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 20,
@@ -624,7 +624,7 @@
 						"list-alt"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 32,
@@ -954,7 +954,7 @@
 						"menu"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 56,
@@ -1320,7 +1320,7 @@
 						"sign"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 82,
@@ -1337,7 +1337,7 @@
 						"sign"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 83,
@@ -1413,7 +1413,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 88,
@@ -1568,7 +1568,7 @@
 						"subtract"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 99,
@@ -2673,7 +2673,7 @@
 						"menu"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 178,
@@ -2685,7 +2685,7 @@
 						"bullets"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 179,
@@ -2697,7 +2697,7 @@
 						"numbered list"
 					],
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 180,
@@ -3674,7 +3674,7 @@
 						"square"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 251,
@@ -4267,7 +4267,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 295,
@@ -4282,7 +4282,7 @@
 						"delete"
 					],
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 296,
@@ -5391,8 +5391,13 @@
 					"id": 55
 				},
 				{
-					"order": 0,
-					"id": 56
+					"order": 31,
+					"id": 56,
+					"prevSize": 28,
+					"code": 58908,
+					"name": "list",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -5420,7 +5425,7 @@
 					"prevSize": 28,
 					"code": 58893,
 					"name": "map-marker",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5441,7 +5446,7 @@
 					"prevSize": 28,
 					"code": 58894,
 					"name": "share",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5557,8 +5562,13 @@
 					"id": 94
 				},
 				{
-					"order": 0,
-					"id": 95
+					"order": 29,
+					"id": 95,
+					"prevSize": 28,
+					"code": 58909,
+					"name": "share-alt",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -5695,7 +5705,7 @@
 					"prevSize": 28,
 					"code": 58905,
 					"name": "like",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5801,7 +5811,7 @@
 					"prevSize": 28,
 					"code": 58895,
 					"name": "bell",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5906,7 +5916,7 @@
 					"prevSize": 28,
 					"code": 58896,
 					"name": "reorder",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6015,7 +6025,7 @@
 					"prevSize": 28,
 					"code": 58897,
 					"name": "comment-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6088,7 +6098,7 @@
 					"prevSize": 28,
 					"code": 58898,
 					"name": "building",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6129,7 +6139,7 @@
 					"prevSize": 28,
 					"code": 58899,
 					"name": "double-angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6146,7 +6156,7 @@
 					"prevSize": 28,
 					"code": 58900,
 					"name": "angle-left",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6155,7 +6165,7 @@
 					"prevSize": 28,
 					"code": 58901,
 					"name": "angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6176,7 +6186,7 @@
 					"prevSize": 28,
 					"code": 58907,
 					"name": "laptop",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6225,7 +6235,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6337,8 +6347,13 @@
 					"id": 276
 				},
 				{
-					"order": 0,
-					"id": 277
+					"order": 30,
+					"id": 277,
+					"prevSize": 28,
+					"code": 58910,
+					"name": "calendar-empty",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -7190,7 +7205,7 @@
 						"document"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 35,
@@ -7238,7 +7253,7 @@
 						"document"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 38,
@@ -8020,7 +8035,7 @@
 						"upload"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 94,
@@ -9082,7 +9097,7 @@
 						"dispose"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 168,
@@ -9098,7 +9113,7 @@
 						"dispose"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 169,
@@ -9267,7 +9282,7 @@
 						"menu"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 181,
@@ -9282,7 +9297,7 @@
 						"menu"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 182,
@@ -9296,7 +9311,7 @@
 						"nl"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 183,
@@ -9323,7 +9338,7 @@
 						"options"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 185,
@@ -10236,7 +10251,7 @@
 						"delete"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 251,
@@ -10278,7 +10293,7 @@
 						"cross"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 254,
@@ -14768,7 +14783,7 @@
 						"delete"
 					],
 					"grid": 32,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 7,
@@ -15728,7 +15743,7 @@
 						"minus"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 15,
@@ -15768,7 +15783,7 @@
 						"cancel"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 18,
@@ -16064,7 +16079,7 @@
 						"garbage"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 41,
@@ -16078,7 +16093,7 @@
 						"garbage"
 					],
 					"grid": 16,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 42,
@@ -16119,7 +16134,7 @@
 						"nav"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 45,
@@ -16132,7 +16147,7 @@
 						"options"
 					],
 					"grid": 16,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 46,
@@ -18534,7 +18549,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 121,
@@ -18548,7 +18563,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 122,
@@ -18576,7 +18591,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 124,
@@ -18590,7 +18605,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 125,
@@ -18618,7 +18633,7 @@
 						"delete"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 127,
@@ -18632,7 +18647,7 @@
 						"substract"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 128,
@@ -18659,7 +18674,7 @@
 						"backspace"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 130,
@@ -18887,7 +18902,7 @@
 						"bullet"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 148,
@@ -18900,7 +18915,7 @@
 						"list"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 149,
@@ -18928,7 +18943,7 @@
 						"lines"
 					],
 					"grid": 20,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 151,
@@ -19077,7 +19092,7 @@
 						"clear"
 					],
 					"grid": 20,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 162,
@@ -20649,7 +20664,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20738,7 +20753,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
