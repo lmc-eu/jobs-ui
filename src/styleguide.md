@@ -4,6 +4,7 @@
 
 ## Dev
 
+- Add class for text modifier: nowrap
 - Add new icons:
     - *share-alt*
     - *calendar-empty*
