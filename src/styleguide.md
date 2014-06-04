@@ -4,6 +4,7 @@
 
 ## Dev
 
+- Add basic styles for select
 - Add class for text modifier: nowrap
 - Add new icons:
     - *share-alt*
