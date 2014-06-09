@@ -57,11 +57,10 @@ body {
     background: @light-silver;
     background-clip: padding-box;
     .box-sizing(border-box);
-    .scale(0.95);
     .transition(transform 0.2s linear);
 
     &__close {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 34px;
@@ -107,18 +106,9 @@ body {
 
             content: '';
         }
-
-        /* Fix iPad, iPhone glitches */
-        > * {
-            -webkit-transform: translateZ(0px);
-        }
     }
 
     &_active {
-        .remodal {
-            .scale(1);
-        }
-
         .remodal-overlay {
             opacity: 1;
         }
@@ -128,6 +118,11 @@ body {
         }
     }
 
+    // Fix screen size on palm
+    > .grid {
+        margin: 0;
+    }
+
     @media only screen and (max-width: @screen-lap-max) {
         width: 100%;
     }
@@ -135,6 +130,24 @@ body {
     @media only screen and (min-width: @screen-lap) {
         min-height: 0;
         margin: 60px 0;
+        .scale(0.95);
+
+        &__close {
+            position: absolute;
+        }
+
+        &-overlay {
+            /* Fix iPad, iPhone glitches */
+            > * {
+                -webkit-transform: translateZ(0px);
+            }
+        }
+
+        &_active {
+            .remodal {
+                .scale(1);
+            }
+        }
     }
 }
 
