@@ -109,6 +109,10 @@ hr {
     border-top: 1px solid @light-silver;
 }
 
+del {
+    text-decoration: line-through;
+}
+
 @media only screen and (min-width: @screen-lap) {
     h1 {
         margin-bottom: 28px;
@@ -156,6 +160,9 @@ hr {
 .text {
     &--center {
         text-align: center;
+    }
+    &--nowrap {
+        white-space: nowrap;
     }
 }
 

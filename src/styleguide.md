@@ -2,6 +2,22 @@
 
 # <a name="changelog"></a>Changelog
 
+## Dev
+
+- Add basic styles for select
+- Add class for text modifier: nowrap
+- Add new icons:
+    - *share-alt*
+    - *calendar-empty*
+    - *list*
+- Add the *hero *
+- Add new icon:
+    - *laptop*
+
+## v2.2.1
+
+- Fix *modal* background in IE8 and IE9
+
 ## v2.2.0
 
 - Add general *forms*

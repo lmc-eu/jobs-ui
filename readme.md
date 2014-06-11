@@ -90,6 +90,18 @@ matching file.
 Note that the `styleguide.less` file is left blank as the styles are copied to
 the documentation from the distribution folder to insure consistency.
 
+### How to manage icons
+1. Go to [IcoMoon](http://icomoon.io/app/)
+2. In menu choose Manage projects
+3. Import project (json file)
+4. Load project
+5. Add/remove/update icons
+6. Download font
+7. Update font files
+8. Update style.less
+ - KSS documentation
+ - Copy-paste from the bottom of IcoMoon App generated style.css (.icon--*)
+
 ### Available Grunt tasks
 
 #### Complete: `grunt`
