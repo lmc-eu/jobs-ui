@@ -4,15 +4,15 @@
 
 ## Dev
 
+- Fix word wrapping in paragraphs and links
 - Add basic styles for select
 - Add class for text modifier: nowrap
 - Add new icons:
     - *share-alt*
     - *calendar-empty*
     - *list*
-- Add the *hero *
-- Add new icon:
     - *laptop*
+- Add the *hero*
 
 ## v2.2.1
 
