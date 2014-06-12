@@ -12,7 +12,7 @@
     - *calendar-empty*
     - *list*
     - *laptop*
-- Add the *hero*
+- Add the *hero* and *hero--collapsed*
 
 ## v2.2.1
 
