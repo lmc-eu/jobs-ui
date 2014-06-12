@@ -4,6 +4,7 @@
 
 ## Dev
 
+- Removed pseudoclass *:invalid* on inputs
 - Fix word wrapping in paragraphs and links
 - Add basic styles for select
 - Add class for text modifier: nowrap
