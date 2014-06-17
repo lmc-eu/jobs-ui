@@ -9,10 +9,11 @@
 - Add basic styles for select
 - Add class for text modifier: nowrap
 - Add new icons:
-    - *share-alt*
     - *calendar-empty*
-    - *list*
+    - *info-sign*
     - *laptop*
+    - *list*
+    - *share-alt*
 - Add the *hero* and *hero--collapsed*
 
 ## v2.2.1

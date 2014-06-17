@@ -101,6 +101,8 @@ the documentation from the distribution folder to insure consistency.
 8. Update style.less
  - KSS documentation
  - Copy-paste from the bottom of IcoMoon App generated style.css (.icon--*)
+9. Save project in Icomoon and replace jobsicon.json
+10. Regenerate project by Grunt
 
 ### Available Grunt tasks
 
