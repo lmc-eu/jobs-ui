@@ -13,6 +13,7 @@
     - *list*
     - *laptop*
 - Add the *hero*
+- Add a *right* text alignment
 
 ## v2.2.1
 
