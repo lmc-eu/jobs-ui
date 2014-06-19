@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "jobsicon",
-		"lastOpened": 1401713751414,
+		"lastOpened": 1402986889153,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -5526,8 +5526,13 @@
 					"id": 85
 				},
 				{
-					"order": 0,
-					"id": 86
+					"order": 32,
+					"id": 86,
+					"prevSize": 28,
+					"code": 58911,
+					"name": "info-sign",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -5567,7 +5572,7 @@
 					"prevSize": 28,
 					"code": 58909,
 					"name": "share-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5705,7 +5710,7 @@
 					"prevSize": 28,
 					"code": 58905,
 					"name": "like",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5811,7 +5816,7 @@
 					"prevSize": 28,
 					"code": 58895,
 					"name": "bell",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5916,7 +5921,7 @@
 					"prevSize": 28,
 					"code": 58896,
 					"name": "reorder",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6025,7 +6030,7 @@
 					"prevSize": 28,
 					"code": 58897,
 					"name": "comment-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6098,7 +6103,7 @@
 					"prevSize": 28,
 					"code": 58898,
 					"name": "building",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6139,7 +6144,7 @@
 					"prevSize": 28,
 					"code": 58899,
 					"name": "double-angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6156,7 +6161,7 @@
 					"prevSize": 28,
 					"code": 58900,
 					"name": "angle-left",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6165,7 +6170,7 @@
 					"prevSize": 28,
 					"code": 58901,
 					"name": "angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6186,7 +6191,7 @@
 					"prevSize": 28,
 					"code": 58907,
 					"name": "laptop",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6235,7 +6240,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6352,7 +6357,7 @@
 					"prevSize": 28,
 					"code": 58910,
 					"name": "calendar-empty",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20664,7 +20669,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20753,7 +20758,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{

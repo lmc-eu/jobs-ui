@@ -3,19 +3,23 @@
 # <a name="changelog"></a>Changelog
 
 ## Dev
-
 - Edit *banded fieldset*
-- Fix word wrapping in paragraphs and links
-- Add basic styles for select
-- Add class for text modifier: nowrap
-- Add new icons:
-    - *share-alt*
-    - *calendar-empty*
-    - *list*
-    - *laptop*
-- Add the *hero*
 - Add a *right* text alignment
 - Add *silver* colour
+
+## v2.3.0
+
+- Removed pseudoclass *:invalid* on inputs
+- Fix *word wrapping* in paragraphs and links
+- Add basic styles for *select*
+- Add *nowrap* class for text modifier
+- Add new icons:
+    - *calendar-empty*
+    - *info-sign*
+    - *laptop*
+    - *list*
+    - *share-alt*
+- Add the *hero* and *hero--collapsed*
 
 ## v2.2.1
 
