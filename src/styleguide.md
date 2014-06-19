@@ -2,12 +2,12 @@
 
 # <a name="changelog"></a>Changelog
 
-## Dev
+## v2.3.0
 
 - Removed pseudoclass *:invalid* on inputs
-- Fix word wrapping in paragraphs and links
-- Add basic styles for select
-- Add class for text modifier: nowrap
+- Fix *word wrapping* in paragraphs and links
+- Add basic styles for *select*
+- Add *nowrap* class for text modifier
 - Add new icons:
     - *calendar-empty*
     - *info-sign*
