@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## Dev
+## v2.4.0
 - Edit *banded fieldset*
 - Add a *right* text alignment
 - Add *silver* colour
