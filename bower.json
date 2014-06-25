@@ -16,7 +16,7 @@
         "Gruntfile.js"
     ],
     "dependencies": {
-        "emerald": "~1.2.0",
+        "emerald": "rotation-dirty-fix",
         "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot",
         "lesshat": "~3.0.0",
         "normalize-css": "~3.0.0",

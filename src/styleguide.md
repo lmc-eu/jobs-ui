@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## Dev
+- Edit *banded fieldset*
+- Add a *right* text alignment
+- Add *silver* colour
+
 ## v2.3.0
 
 - Removed pseudoclass *:invalid* on inputs
