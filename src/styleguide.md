@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.4.1
+- Update copyright links
+
 ## v2.4.0
 - Edit *banded fieldset*
 - Add a *right* text alignment
