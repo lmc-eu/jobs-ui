@@ -9,8 +9,8 @@
 
     a {
         color: #fff;
-        font-size: 16px;
         text-decoration: none;
+        border: none;
     }
 
     &__separator {
@@ -27,6 +27,15 @@
     @media only screen and (min-width: @screen-lap) {
         margin: 20px 0 50px 0;
         color: #bababa;
+
+        a {
+            color: #bababa;
+            font-size: 11px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
 
         p {
             text-align: center;
