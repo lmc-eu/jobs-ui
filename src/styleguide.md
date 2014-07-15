@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add new class *headline-position*
+
 ## v2.4.1
 - Update copyright links
 
