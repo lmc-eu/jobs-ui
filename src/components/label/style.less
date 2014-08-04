@@ -1,0 +1,25 @@
+/*
+Label
+
+Displays an element as a label.
+
+Add any of the below mentioned modifier classes to change the appearance of a label.
+
+Markup:
+<span class="label {$modifiers}">label text</span>
+
+.label--important - Important label
+
+Styleguide 4.9
+*/
+
+.label {
+    padding: 0px 10px;
+    background-color: @light-gray; // default color
+    border-radius: 3px;
+    color: #ffffff;
+
+    &--important {
+        background-color: @red;
+    }
+}
