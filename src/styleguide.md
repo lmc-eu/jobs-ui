@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV v3
+- New *header* with refactored *navigation*
+- Remove *orig-frame*
+
 ## v2.5.0
 - Add new class *headline-position* in H1
 

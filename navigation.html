@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jobs Navigation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>     <link rel="stylesheet" href="dist/style-legacy.min.css"> <![endif]-->
+    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="dist/style.min.css">        <!--<![endif]-->
+
+</head>
+<body>
+
+<div class="header" role="navigation">
+    <div class="wrapper">
+        <div class="grid grid--middle--palm"><!--
+            --><div class="grid__item e-3--palm e-4">
+                <a class="header__logo-link" href="//www.jobs.cz">
+                    <img class="header__logo" src="jobs.svg" alt="Jobs.cz" />
+                </a>
+            </div><!--
+            --><div class="grid__item e-1--palm e-13--desk">
+
+                <ul class="navigation list-unstyled visible--desk" id="navigation" role="menubar">
+                    <li role="presentation">
+                        <a href="#" class="navigation__item" role="menuitem">Nabídky práce</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" class="navigation__item" role="menuitem">Brigády</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" class="navigation__item" role="menuitem">Kurzy</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" class="navigation__item" role="menuitem">Vysoké školy</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" class="navigation__item" role="menuitem">Inspirace a rady</a>
+                    </li>
+                </ul>
+
+            </div><!--
+            --><div class="grid__item e-0--palm e-0 e-8--desk">
+                <div style="text-align: right" class="button-group button-group--spaced">
+                    <a class="button" href="#">Přihlásit</a>
+                    <a class="button button--secondary" href="#">Vstup pro firmy</a>
+                </div>
+            </div><!--
+            --><div style="text-align: right" class="grid__item e-4--palm e-11 e-0--desk">
+                <a href="#" class="navigation__toggle" aria-haspopup="true" onclick="$('#navigation').toggle(); return false">MENU <span class="icon icon--reorder" aria-hidden="true"></span></a>
+            </div><!--
+        --></div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="dist/index.min.js"></script>
+</body>
+</html>
