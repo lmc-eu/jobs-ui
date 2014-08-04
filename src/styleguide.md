@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.6.0
+- add *label component*
+
 ## v2.5.0
 - Add new class *headline-position* in H1
 
