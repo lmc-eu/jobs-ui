@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.6.3
+- fixed *label component* in firefox browser, changed to *inline-block*
+
 ## v2.6.2
 - added *nowrap* on *label component*
 
