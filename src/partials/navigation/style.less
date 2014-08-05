@@ -1,0 +1,68 @@
+.navigation {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    max-height: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: @dark-blue;
+    overflow-y: hidden;
+    .transition(max-height .5s ease-in-out);
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        height: 15px;
+    }
+
+    &--open {
+        max-height: 400px;
+    }
+
+    &__item {
+        margin: 0 6%;
+    }
+
+    &__link {
+        color: #ffffff;
+
+        &:hover {
+            color: @gray;
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        top: 70px;
+    }
+
+    @media only screen and (min-width: @screen-desk) {
+        position: static;
+        max-height: none;
+        background-color: transparent;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+
+        &__item {
+            display: inline-block;
+            margin: 0;
+            padding-right: 18px;
+        }
+
+        &__link {
+            display: inline-block;
+            line-height: 67px;
+            border-top: 3px solid transparent;
+
+            &:hover {
+                color: #ffffff;
+                border-bottom: none;
+                border-top-color: @jobs-orange;
+            }
+        }
+    }
+}

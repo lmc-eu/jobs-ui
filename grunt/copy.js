@@ -9,7 +9,6 @@ module.exports = {
                 cwd: 'src/',
                 src: [
                     'partials/header/images/*',
-                    'partials/navigation/images/*',
                     'partials/footer/images/*',
                     'components/featured/images/*'
                 ],
