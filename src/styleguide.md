@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.6.1
+- fixed padding on *label component*
+
 ## v2.6.0
 - add *label component*
 
