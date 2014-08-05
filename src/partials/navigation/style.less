@@ -26,15 +26,20 @@
     }
 
     &__link {
-        color: #ffffff;
+        color: @silver;
 
         &:hover {
-            color: @gray;
+            color: #ffffff;
         }
     }
 
     @media only screen and (min-width: @screen-lap) {
         top: 70px;
+
+        &__item {
+            margin: 0 auto;
+            width: 620px;
+        }
     }
 
     @media only screen and (min-width: @screen-desk) {
@@ -49,19 +54,19 @@
 
         &__item {
             display: inline-block;
+            width: auto;
             margin: 0;
             padding-right: 18px;
         }
 
         &__link {
             display: inline-block;
-            line-height: 67px;
+            line-height: 84px;
             border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
 
             &:hover {
-                color: #ffffff;
-                border-bottom: none;
-                border-top-color: @jobs-orange;
+                border-bottom: 3px solid @jobs-orange;
             }
         }
     }
