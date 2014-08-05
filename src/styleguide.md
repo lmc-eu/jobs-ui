@@ -2,8 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.6.2
+- added *nowrap* on *label component*
+
 ## v2.6.1
-- fixed padding on *label component*
+- fixed *top and bottom padding* on *label component*
 
 ## v2.6.0
 - add *label component*
