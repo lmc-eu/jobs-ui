@@ -1,4 +1,5 @@
 require('./src/modules/layout');
+require('./src/partials/navigation');
 require('./src/components/listing');
 require('./src/components/inputs');
 
