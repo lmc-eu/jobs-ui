@@ -4,6 +4,7 @@
 
 ## DEV v3
 - New *header* with refactored *navigation*
+- Add *glass* panel component
 - Remove *orig-frame*
 
 ## v2.5.0
