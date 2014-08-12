@@ -8,6 +8,7 @@
     padding: 0;
     background: @dark-blue;
     overflow-y: hidden;
+    z-index: 1000; // To be above select2
     .transition(max-height .5s ease-in-out);
 
     &:before,
@@ -61,12 +62,12 @@
 
         &__link {
             display: inline-block;
-            line-height: 84px;
-            border-top: 3px solid transparent;
-            border-bottom: 3px solid transparent;
+            line-height: 72px;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
 
             &:hover {
-                border-bottom: 3px solid @jobs-orange;
+                border-bottom: 4px solid @jobs-orange;
             }
         }
     }
