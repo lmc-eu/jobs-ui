@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV v3
+## v3.0.0-dev
 - New *header* with refactored *navigation*
 - Add *glass* panel component
 - Remove *orig-frame*
