@@ -17,33 +17,56 @@
 
 </head>
 <body data-current-section="{{rootNumber}}">
-<div id="top" class="kss__header">
+<div class="header  kss__header" role="navigation">
     <div class="wrapper">
-        <div class="grid grid--middle"><!--
-            --><div class="grid__item e-4">
-                <a class="kss__header__logo" href="index.html">Styleguide</a>
+        <div class="grid  grid--middle--palm"><!--
+            --><div class="grid__item  e-3--palm  e-4">
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="dist/images/logo-jobs.svg" alt="Jobs.cz" />
+            </a>
+        </div><!--
+            --><div class="grid__item  e-1--palm  e-16--desk">
+
+                <div class="navigation" id="navigation" role="menubar">
+                    <ul class="list-unstyled">
+                        {{#eachRoot}}
+                        <li role="presentation" class="navigation__item">
+                            <a href="section-{{reference}}.html" class="navigation__link" role="menuitem">{{header}}</a>
+                        </li>
+                        {{/eachRoot}}
+                    </ul>
+                </div>
+
             </div><!--
-            --><div class="grid__item e-12 e-21--desk">
-                {{#eachRoot}}
-                <a class="kss__header__link" href="section-{{reference}}.html">{{header}}</a>
-                {{/eachRoot}}
+
+            --><div class="grid__item  e-0--palm  e-0  e-5--desk">
+                <div aria-hidden="true" class="text--right">
+                    <a class="button header__secondary-button" href="index.html#changelog">Jobs UI v{{argv.version}}</a>
+                </div>
+            </div><!--
+
+            --><div class="grid__item  e-4--palm  e-11  e-0--desk">
+                <div class="text--right">
+                    <a href="#" class="header__toggle" data-navigation-toggle aria-haspopup="true">Menu <span class="icon icon--reorder" aria-hidden="true"></span></a>
+                </div>
             </div><!--
         --></div>
     </div>
 </div>
+
 <div class="wrapper">
     <div class="grid grid--rev--desk"><!--
-                    --><div class="grid__item e-7--desk e-push-2--desk">
+                    --><div class="grid__item  e-7--desk  e-push-2--desk">
 
         <div class="kss__sidebar">
             <ul class="list-unstyled list-spaced">
                 {{#if overview}}
                 <li>
-                    <span class="icon icon--double-angle-right tag__icon" aria-hidden="true"></span>
+                    <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
                     <a href="#top"><strong>Jobs UI v{{argv.version}}</strong></a>
                 </li>
                 <li>
-                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
                     <a href="#changelog">Changelog</a>
                 </li>
                 {{else}}
@@ -51,14 +74,14 @@
                 {{#eachSection rootNumber}}
                 {{#whenDepth 1}}
                 <li>
-                    <span class="icon icon--double-angle-right tag__icon" aria-hidden="true"></span>
+                    <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
                     <a href="#top"><strong>{{ header }}</strong></a>
                 </li>
                 {{else}}
                 {{/whenDepth}}
                 {{#whenDepth 2}}
                 <li>
-                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
                     <a href="#section-{{ reference }}">{{ header }}</a>
                 </li>
                 {{else}}
@@ -68,7 +91,7 @@
             </ul>
         </div>
     </div><!--
-        --><div role="main" class="grid__item e-16">
+        --><div role="main" class="grid__item  e-16">
             <article id="kss__content">
                 {{#if overview}}
                 <img class="kss__content__logo" src="public/images/viktor_logo.png" />
@@ -114,8 +137,8 @@
                         {{modifierMarkup}}
                     </div>
                     {{/eachModifier}}
-                    <div class="kss__markup hidden--palm">
-                        <pre class="prettyprint lang-html">{{markup}}</pre>
+                    <div class="kss__markup  hidden--palm">
+                        <pre class="prettyprint  lang-html">{{markup}}</pre>
                     </div>
                     {{else}}
                     {{/ifAny}}
@@ -131,12 +154,12 @@
 
 <div class="kss__footer">
     <div class="wrapper">
-        <div class="grid grid--middle--palm grid--top"><!--
-            --><div class="grid__item e-5--palm e-9 e-16--desk">
+        <div class="grid grid--middle--palm  grid--top"><!--
+            --><div class="grid__item  e-5--palm  e-9  e-16--desk">
                 2014 &copy; LMC s.r.o. All rights reserved.<br />
                 <a href="#top">&uarr; Go to top</a>
             </div><!--
-            --><div class="grid__item e-3--palm e-6 e-6--desk e-push-1 e-push-3--desk">
+            --><div class="grid__item  e-3--palm  e-6  e-6--desk  e-push-1  e-push-3--desk">
                 <a href="http://www.lmc.eu/" title="LMC s.r.o."><img src="public/images/lmc.png" class="e-full--palm"/></a>
             </div><!--
         --></div>
@@ -150,11 +173,6 @@
 <script src="dist/index.min.js"></script>
 <script>
     $(document).ready(function(){
-
-        var current = $('body').data('current-section');
-        if (current > 0) {
-            $('.kss__header a').eq(current).addClass('kss__header__link--active');
-        }
 
         // Ensure code blocks are highlighted properly...
         $('pre>code').addClass('prettyprint');
