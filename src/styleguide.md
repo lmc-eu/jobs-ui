@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.7.0
+- Add new icons:
+    - *arrow-down*
+    - *arrow-right*
+
 ## v2.6.3
 - fixed *label component* in firefox browser, changed to *inline-block*
 

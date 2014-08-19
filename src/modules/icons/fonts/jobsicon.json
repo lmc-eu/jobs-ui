@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "jobsicon",
-		"lastOpened": 1402986889153,
+		"lastOpened": 1408455397794,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -21432,16 +21432,26 @@
 					"id": 202
 				},
 				{
-					"order": 0,
-					"id": 203
+					"order": 34,
+					"id": 203,
+					"prevSize": 20,
+					"code": 58912,
+					"name": "arrow-down",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
 					"id": 204
 				},
 				{
-					"order": 0,
-					"id": 205
+					"order": 33,
+					"id": 205,
+					"prevSize": 20,
+					"code": 58913,
+					"name": "arrow-right",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -21766,7 +21776,7 @@
 					"id": 284
 				}
 			],
-			"invisible": true
+			"invisible": false
 		}
 	],
 	"preferences": {
