@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.8.0
+- Add new icon:
+    - *file-alt*
+
 ## v2.7.0
 - Add new icons:
     - *arrow-down*

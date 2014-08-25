@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "jobsicon",
-		"lastOpened": 1408455397794,
+		"lastOpened": 1408958905786,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -6094,8 +6094,13 @@
 					"id": 219
 				},
 				{
-					"order": 0,
-					"id": 220
+					"order": 35,
+					"id": 220,
+					"prevSize": 28,
+					"code": 58914,
+					"name": "file-alt",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 15,
@@ -6103,7 +6108,7 @@
 					"prevSize": 28,
 					"code": 58898,
 					"name": "building",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6144,7 +6149,7 @@
 					"prevSize": 28,
 					"code": 58899,
 					"name": "double-angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6161,7 +6166,7 @@
 					"prevSize": 28,
 					"code": 58900,
 					"name": "angle-left",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6170,7 +6175,7 @@
 					"prevSize": 28,
 					"code": 58901,
 					"name": "angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6191,7 +6196,7 @@
 					"prevSize": 28,
 					"code": 58907,
 					"name": "laptop",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6240,7 +6245,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6357,7 +6362,7 @@
 					"prevSize": 28,
 					"code": 58910,
 					"name": "calendar-empty",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20669,7 +20674,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20758,7 +20763,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -21437,7 +21442,7 @@
 					"prevSize": 20,
 					"code": 58912,
 					"name": "arrow-down",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -21450,7 +21455,7 @@
 					"prevSize": 20,
 					"code": 58913,
 					"name": "arrow-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
