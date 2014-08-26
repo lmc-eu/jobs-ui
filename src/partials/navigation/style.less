@@ -11,8 +11,7 @@
     z-index: 1000; // To be above select2
     .transition(max-height .5s ease-in-out);
 
-    &:before,
-    &:after {
+    &:before {
         content: "";
         display: block;
         height: 15px;
@@ -34,6 +33,14 @@
         }
     }
 
+    &__profile {
+        margin-top: 15px;
+        padding: 15px 0;
+        background-color: @silver;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid @light-gray;
+    }
+
     @media only screen and (min-width: @screen-lap) {
         top: 70px;
 
@@ -44,9 +51,12 @@
     }
 
     @media only screen and (min-width: @screen-desk) {
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
         max-height: none;
         background-color: transparent;
+        overflow: visible;
 
         &:before,
         &:after {
@@ -69,6 +79,13 @@
             &:hover {
                 border-bottom: 4px solid @jobs-orange;
             }
+        }
+
+        &__profile {
+            position: absolute;
+            top: 65px;
+            left: 570px;
+            width: 250px;
         }
     }
 }
