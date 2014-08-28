@@ -1,0 +1,27 @@
+/*
+Label
+
+Displays an element as a label.
+
+Add any of the below mentioned modifier classes to change the appearance of a label.
+
+Markup:
+<span class="label {$modifiers}">malém půl</span>
+
+.label--important - Used for example as sale label
+
+Styleguide 4.9
+*/
+
+.label {
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: @light-gray;
+    border-radius: 3px;
+    color: #ffffff;
+    white-space: nowrap;
+
+    &--important {
+        background-color: @red;
+    }
+}

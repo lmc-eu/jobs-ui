@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "jobsicon",
-		"lastOpened": 1402986889153,
+		"lastOpened": 1408958999255,
 		"created": 1381083457739
 	},
 	"iconSets": [
@@ -5742,8 +5742,13 @@
 					"id": 135
 				},
 				{
-					"order": 0,
-					"id": 136
+					"order": 36,
+					"id": 136,
+					"prevSize": 28,
+					"code": 58915,
+					"name": "signin",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -5816,7 +5821,7 @@
 					"prevSize": 28,
 					"code": 58895,
 					"name": "bell",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -5921,7 +5926,7 @@
 					"prevSize": 28,
 					"code": 58896,
 					"name": "reorder",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6030,7 +6035,7 @@
 					"prevSize": 28,
 					"code": 58897,
 					"name": "comment-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6094,8 +6099,13 @@
 					"id": 219
 				},
 				{
-					"order": 0,
-					"id": 220
+					"order": 35,
+					"id": 220,
+					"prevSize": 28,
+					"code": 58914,
+					"name": "file-alt",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 15,
@@ -6103,7 +6113,7 @@
 					"prevSize": 28,
 					"code": 58898,
 					"name": "building",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6144,7 +6154,7 @@
 					"prevSize": 28,
 					"code": 58899,
 					"name": "double-angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6161,7 +6171,7 @@
 					"prevSize": 28,
 					"code": 58900,
 					"name": "angle-left",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6170,7 +6180,7 @@
 					"prevSize": 28,
 					"code": 58901,
 					"name": "angle-right",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6191,7 +6201,7 @@
 					"prevSize": 28,
 					"code": 58907,
 					"name": "laptop",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6240,7 +6250,7 @@
 					"prevSize": 28,
 					"code": 58902,
 					"name": "folder-open-alt",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -6357,7 +6367,7 @@
 					"prevSize": 28,
 					"code": 58910,
 					"name": "calendar-empty",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20669,7 +20679,7 @@
 					"prevSize": 20,
 					"code": 58903,
 					"name": "user",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -20758,7 +20768,7 @@
 					"prevSize": 20,
 					"code": 58904,
 					"name": "house",
-					"tempChar": "",
+					"tempChar": "",
 					"ligatures": ""
 				},
 				{
@@ -21432,16 +21442,26 @@
 					"id": 202
 				},
 				{
-					"order": 0,
-					"id": 203
+					"order": 34,
+					"id": 203,
+					"prevSize": 20,
+					"code": 58912,
+					"name": "arrow-down",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
 					"id": 204
 				},
 				{
-					"order": 0,
-					"id": 205
+					"order": 33,
+					"id": 205,
+					"prevSize": 20,
+					"code": 58913,
+					"name": "arrow-right",
+					"tempChar": "",
+					"ligatures": ""
 				},
 				{
 					"order": 0,
@@ -21766,7 +21786,7 @@
 					"id": 284
 				}
 			],
-			"invisible": true
+			"invisible": false
 		}
 	],
 	"preferences": {

@@ -7,6 +7,31 @@
 - Add *glass* panel component
 - Remove *orig-frame*
 
+## v2.9.0
+- Add new icon:
+    - *signin*
+
+## v2.8.0
+- Add new icon:
+    - *file-alt*
+
+## v2.7.0
+- Add new icons:
+    - *arrow-down*
+    - *arrow-right*
+
+## v2.6.3
+- fixed *label component* in firefox browser, changed to *inline-block*
+
+## v2.6.2
+- added *nowrap* on *label component*
+
+## v2.6.1
+- fixed *top and bottom padding* on *label component*
+
+## v2.6.0
+- add *label component*
+
 ## v2.5.0
 - Add new class *headline-position* in H1
 
