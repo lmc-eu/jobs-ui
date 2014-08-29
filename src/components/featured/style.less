@@ -6,12 +6,10 @@ and a ribbon on the top left conner.
 
 To be used with two promos which are on the right.
 
-**IE8**: The ribbon is hidden.
-
 Markup:
 <div class="grid">
     <div class="grid__item e-8">
-        <a class="featured" href="#">
+        <a class="featured {$modifiers}" href="#">
             <img class="featured__image" src="public/images/300x225.jpg" />
             <div class="featured__caption">
                 <span class="featured__heading">Zúročovat z matriarchálně houba
@@ -19,31 +17,19 @@ Markup:
             </div>
         </a>
     </div><!--
-    --><div class="grid__item e-7 e-push-1">
-        <div class="grid promo">
-            <div class="grid__item e-2--palm">
-                <a href="#">
-                    <img class="promo__image" src="public/images/60x45.jpg" />
-                </a>
-            </div><!--
-            --><div class="grid__item e-6--palm e-5">
-                <a href="#">Jazykem stranu paliva</a>
-                <p>Pokaždé zoologie hlubšího</p>
+    --><div class="grid__item e-8">
+        <a class="featured {$modifiers}" href="#">
+            <div class="featured__icon">
+                <span class="icon icon--chart" aria-hidden="true"></span>
             </div>
-        </div>
-        <div class="grid promo">
-            <div class="grid__item e-2--palm">
-                <a href="#">
-                    <img class="promo__image" src="public/images/60x45.jpg" />
-                </a>
-            </div><!--
-            --><div class="grid__item e-6--palm e-5">
-                <a href="#">Jazykem stranu paliva</a>
-                <p>Pokaždé zoologie hlubšího</p>
+            <div class="featured__caption featured__caption--single">
+                <span class="featured__heading">Kalkulačky</span>
             </div>
-        </div>
+        </a>
     </div>
 </div>
+
+.featured--ribboned - Decorate with a ribbon (hidden in **IE8**)
 
 Styleguide 4.3
 */
@@ -53,12 +39,20 @@ Styleguide 4.3
     position: relative;
     margin-bottom: @standalone-bottom-margin;
     text-decoration: none;
+    background-color: @light-silver;
 
     &__image {
         width: 100%;
         height: auto;
         border: 1px solid @light-silver;
         .box-sizing(border-box);
+    }
+
+    &__icon {
+        text-align: center;
+        font-size: 60px;
+        line-height: 176px;
+        padding-bottom: 49px;
     }
 
     &__caption {
@@ -71,9 +65,13 @@ Styleguide 4.3
         overflow: hidden;
         background-color: fade(#ffffff, 90%);
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDFFFFFF,endColorstr=#DDFFFFFF)";
+
+        &--single {
+            height: @base-line-height-palm;
+        }
     }
     
-    &:after {
+    &--ribboned:after {
         content: "";
         position: absolute;
         left: -4px;
@@ -112,6 +110,10 @@ Styleguide 4.3
     @media only screen and (min-width: @screen-desk) {
         &__caption {
             height: (2 * @base-line-height);
+
+            &--single {
+                height: @base-line-height;
+            }
         }
     }
 
