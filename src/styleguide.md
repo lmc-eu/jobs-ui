@@ -5,6 +5,8 @@
 ## v3.0.0-dev
 - New *header* with refactored *navigation*
 - Add *glass* panel component
+- Add new icon:
+    - *chart*
 - Remove *orig-frame*
 
 ## v2.9.0
