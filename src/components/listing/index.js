@@ -18,7 +18,7 @@ var runDotDotDot = function () {
             ellipsis: '\u2026'
         },
         {
-            selector: '.featured__caption',
+            selector: '.featured__caption:not(.featured__caption--simple)',
             ellipsis: '\u2026'
         }
     ];
