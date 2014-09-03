@@ -4,6 +4,7 @@
 
 ## v3.0.0-dev
 - New *header* with refactored *navigation*
+- New non-responsive *typography*
 - Ribbon at *featured component* is now not present by default
 - Add *glass* panel component
 - Add ability to have an *icon* in a *featured component*

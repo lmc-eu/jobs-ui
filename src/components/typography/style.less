@@ -34,8 +34,8 @@ textarea {
 
 body {
     font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: @base-font-size-palm;
-    line-height: @base-line-height-palm;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
     font-weight: 300;
 }
 
@@ -77,10 +77,10 @@ h6 {
 }
 
 h1 {
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     font-weight: 300;
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 39px;
 
     .headline-position {
         border-bottom: 1px dotted @dark-blue;
@@ -88,23 +88,23 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-weight: 300;
-    font-size: @h2-font-size-palm;
-    line-height: @h2-line-height-palm;
+    font-size: @h2-font-size;
+    line-height: @h2-line-height;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 14px;
-    font-size: @base-font-size-palm;
-    line-height: @base-line-height-palm;
+    margin-bottom: 12px;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
 }
 
 p {
-    margin: 0 0 14px 0;
+    margin: 0 0 12px 0;
     padding: 0;
     font-weight: 300;
     word-wrap: break-word;
@@ -120,44 +120,10 @@ del {
     text-decoration: line-through;
 }
 
-@media only screen and (min-width: @screen-lap) {
-    h1 {
-        margin-bottom: 28px;
-        font-size: 43px;
-        line-height: 65px;
-    }
-}
-
 @media only screen and (min-width: @screen-desk) {
-    body {
-        font-size: @base-font-size;
-        line-height: @base-line-height;
-        font-weight: 400;
-    }
-
-    h1 {
-        margin-bottom: 24px;
-        font-size: 36px;
-        line-height: 54px;
-        font-weight: 400
-    }
-
-    h2 {
-        margin-bottom: 12px;
-        font-size: @h2-font-size;
-        line-height: @h2-line-height;
-        font-weight: 400
-    }
-
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-bottom: 12px;
-        font-size: @base-font-size;
-        line-height: @base-line-height;
-    }
-
+    body,
+    h1,
+    h2,
     p {
         font-weight: 400;
     }

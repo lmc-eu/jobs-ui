@@ -57,7 +57,7 @@ Styleguide 4.3
 
     &__caption {
         padding: 12px 20px;
-        height: (2 * @base-line-height-palm);
+        height: (2 * @base-line-height);
         position: absolute;
         left: 1px;
         right: 1px;
@@ -67,7 +67,7 @@ Styleguide 4.3
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDFFFFFF,endColorstr=#DDFFFFFF)";
 
         &--single {
-            height: @base-line-height-palm;
+            height: @base-line-height;
         }
     }
     
@@ -104,16 +104,6 @@ Styleguide 4.3
         &__caption {
             // Needed for dotdotdot
             width: 258px;
-        }
-    }
-
-    @media only screen and (min-width: @screen-desk) {
-        &__caption {
-            height: (2 * @base-line-height);
-
-            &--single {
-                height: @base-line-height;
-            }
         }
     }
 
