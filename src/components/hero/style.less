@@ -5,11 +5,15 @@ Displays the key content of the page.
 
 Markup:
 <div class="hero">
-    <h1>Nám společné traektorii</h1>
+    <span class="hero__title">Nám společné traektorii</span>
 </div>
 
 <div class="hero hero--collapsed">
-    <h1>Nám společné traektorii</h1>
+    <span class="hero__title">Nám společné traektorii</span>
+</div>
+
+<div class="hero hero--bold">
+    <span class="hero__title hero__title--bold">Nám společné traektorii</span>
 </div>
 
 Styleguide 1.3
@@ -18,7 +22,18 @@ Styleguide 1.3
 .hero {
     padding: 20px 0 @standalone-bottom-margin;
     background-color: @light-silver;
+
     &--collapsed {
         padding: 20px 0;
+    }
+
+    &--bold {
+        color: white;
+        background-color: @light-blue;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 39px;
     }
 }

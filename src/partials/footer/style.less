@@ -18,6 +18,10 @@
         border-top: 1px solid @footer-separator-color;
     }
 
+    &__list {
+        margin-bottom: 12px;
+    }
+
     &__social-link {
         display: block;
         height: 32px;
@@ -49,7 +53,6 @@
 
     @media only screen and (min-width: @screen-lap) {
         padding-top: 30px;
-        font: 12px/1.33 Arial,sans-serif;
 
         a {
             color: @light-gray;
@@ -70,10 +73,6 @@
                     text-decoration: underline;
                 }
             }
-        }
-
-        li {
-            padding-bottom: 4px;
         }
 
         &__description {
@@ -99,10 +98,6 @@
 
         &__social-link {
             margin-top: 0px;
-        }
-
-        &__item {
-            margin-bottom: 14px;
         }
     }
 
