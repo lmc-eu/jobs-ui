@@ -14,15 +14,23 @@
     &:before {
         content: "";
         display: block;
-        height: 15px;
+        height: (@standalone-bottom-margin / 2);
     }
 
     &--open {
-        max-height: 400px;
+        max-height: 800px;
+    }
+
+    &__list {
+        line-height: @standalone-bottom-margin;
+
+        &--profile {
+            margin-bottom: (@standalone-bottom-margin / 2);
+        }
     }
 
     &__item {
-        margin: 0 3%;
+        margin: 0 6%;
     }
 
     &__link {
@@ -34,7 +42,7 @@
     }
 
     &__profile {
-        margin-top: 15px;
+        margin-top: (@standalone-bottom-margin / 2);
         overflow-y: hidden;
         background-color: @silver;
         border-top: 1px solid #ffffff;
@@ -45,7 +53,12 @@
         &:after {
             content: "";
             display: block;
-            height: 15px;
+            height: (@standalone-bottom-margin / 2);
+        }
+
+        &__image {
+            width: 30px;
+            margin-right: 10px;
         }
     }
 
@@ -56,6 +69,7 @@
             margin: 0 auto;
             width: 620px;
         }
+
     }
 
     @media only screen and (min-width: @screen-desk) {
@@ -74,7 +88,7 @@
         &__item {
             width: auto;
             margin: 0;
-            padding: 0 20px;
+            padding: 0 30px;
 
             &--main {
                 display: inline-block;
@@ -97,13 +111,14 @@
             position: absolute;
             top: 65px;
             left: 570px;
+            margin-top: 15px;
             max-height: 0;
             width: 250px;
             background-color: @dark-blue;
             border: none;
 
             &--open {
-                max-height: 250px;
+                max-height: 350px;
             }
 
             &__link {

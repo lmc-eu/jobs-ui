@@ -2,20 +2,15 @@
 
 .footer {
     padding: 20px 0;
-    background: #0c1d34;
+    background: @jobs-blue-basic;
     color: #ffffff;
 
     a {
-        color: #fff;
-        text-decoration: none;
-        border: none;
-    }
-
-    &__separator {
-        height: 0;
-        width: 100%;
-        margin-bottom: 10px;
-        border-top: 1px solid @footer-separator-color;
+        color: @light-gray;
+        text-decoration: underline;
+        &:hover {
+            color: #ffffff;
+        }
     }
 
     &__list {
@@ -30,6 +25,7 @@
         margin-top: 5px;
         margin-right: 7px;
         background-image: url("images/link-social-media-icons.png");
+        border: none;
 
         &--twitter {
             background-position: -64px 0;
@@ -46,21 +42,8 @@
         }
     }
 
-    &__contact {
-        padding-left: 28px;
-        background: url("images/envelope.png") 0 50% no-repeat;
-    }
-
     @media only screen and (min-width: @screen-lap) {
         padding-top: 30px;
-
-        a {
-            color: @light-gray;
-            text-decoration: underline;
-            &:hover {
-                color: #ffffff;
-            }
-        }
 
         h3 {
             font-weight: bold;
@@ -91,32 +74,12 @@
             }
         }
 
-        &__separator {
-            margin-top: 5px;
-            margin-bottom: 36px;
-        }
-
         &__social-link {
             margin-top: 0px;
         }
     }
 
     @media only screen and (min-width: @screen-desk) {
-        &__group {
-            position: relative;
-            height: 100%;
-        }
-
-        &__separator {
-            position: absolute;
-            top: 0;
-            left: 250px;
-            height: 100%;
-            width: 0;
-            border-top: none;
-            border-right: 1px solid @footer-separator-color;
-            margin: 0;
-        }
 
         &__description {
             margin-top: 36px;
