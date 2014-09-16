@@ -6,8 +6,6 @@ Markup:
 <button class="button {$modifiers}" type="submit">Button</button>
 
 .button--secondary - Secondary button for less important actions
-.button--toggle - Status button non-activated
-.button--toggle.button--toggle--on - Status button activated
 .button--slim - Slimmer button with smaller horizontal padding
 .button--block - Full width button
 
@@ -56,26 +54,6 @@ Styleguide 3.2
             background-color: #fff;
             color: @dark-blue;
             border-color: @dark-blue;
-        }
-    }
-
-    &--toggle {
-        background-color: #fff;
-        color: @light-gray;
-        border-color: @light-gray;
-
-        &:hover {
-            background-color: #fff;
-            color: @gray;
-            border-color: @dark-orange;
-        }
-
-        &--on {
-            color: @jobs-orange;
-
-            &:hover {
-                color: @jobs-orange;
-            }
         }
     }
 
