@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.10.0
+- Changed *small-search* width to block with IE8 fix to fixed width
+
 ## v2.9.0
 - Add new icon:
     - *signin*
