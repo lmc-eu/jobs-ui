@@ -6,6 +6,7 @@ Markup:
 <button class="button {$modifiers}" type="submit">Button</button>
 
 .button--secondary - Secondary button for less important actions
+.button--tertiary - Tertiary button for even less eye-catching actions
 .button--slim - Slimmer button with smaller horizontal padding
 .button--block - Full width button
 
@@ -54,6 +55,18 @@ Styleguide 3.2
             background-color: #fff;
             color: @dark-blue;
             border-color: @dark-blue;
+        }
+    }
+
+    &--tertiary {
+        background: transparent;
+        border-color: @silver;
+        color: @silver;
+
+        &:hover {
+            background: transparent;
+            border-color: @jobs-orange;
+            color: white;
         }
     }
 
