@@ -1,4 +1,5 @@
 // Small search
+// This is compact variant of search form
 //
 // Markup:
 // <form method="get" class="small-search">
@@ -13,6 +14,7 @@
 .small-search {
     &__input {
         width: 208px;
+        width: calc(~"100% - 52px");
         height: 36px;
         padding: 0 0 0 5px;
         line-height: 36px;
@@ -20,6 +22,12 @@
         vertical-align: middle;
         border: none;
         border-radius: 0;
-        .box-sizing(border-box); 
+        .box-sizing(border-box);
+        @media only screen and (max-width: @screen-desk-max) {
+            width: calc(~"100% - 54px");
+        }
+        @media only screen and (max-width: @screen-lap-max) {
+            width: calc(~"100% - 43px");
+        }
     }
 }
