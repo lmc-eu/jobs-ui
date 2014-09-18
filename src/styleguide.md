@@ -9,13 +9,16 @@
 - Ribbon at *featured component* is now not present by default
 - Add *glass* panel component
 - Add ability to have an *icon* in a *featured component*
-- Add *tertiary button* style
+- Add *tertiary* and *inverse-tertiary* button style
 - Add *index card* component
 - Add *inversed* and *naked pit*
 - Add new icon:
     - *chart*
 - Remove *orig-frame*
 - Remove *toggle button* style
+
+## v2.10.0
+- Changed *small-search* width to block
 
 ## v2.9.0
 - Add new icon:
