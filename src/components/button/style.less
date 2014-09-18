@@ -7,6 +7,7 @@ Markup:
 
 .button--secondary - Secondary button for less important actions
 .button--tertiary - Tertiary button for even less eye-catching actions
+.button--inverse-tertiary - Tertiary button for even less eye-catching actions on light background
 .button--slim - Slimmer button with smaller horizontal padding
 .button--block - Full width button
 
@@ -67,6 +68,18 @@ Styleguide 3.2
             background: transparent;
             border-color: @jobs-orange;
             color: white;
+        }
+    }
+
+    &--inverse-tertiary {
+        background: transparent;
+        border-color: @blue;
+        color: @blue;
+
+        &:hover {
+            background: transparent;
+            border-color: @dark-blue;
+            color: @dark-blue;
         }
     }
 
