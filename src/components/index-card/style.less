@@ -1,0 +1,27 @@
+/*
+Index card
+
+Great for visually attractive single line lists items.
+
+Markup:
+<div class="title__elite__item {$modifiers}">
+    <a href="#">Poměrně z stopa páté</a> (3)
+</div>
+
+.index-card--naked - No border, no stress (usually for the last item)
+
+Styleguide 4.11
+*/
+
+.index-card {
+    padding: 7px 0 5px 0;
+    border-bottom: 1px solid @light-silver;
+    color: @gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--naked {
+        border: none;
+    }
+}

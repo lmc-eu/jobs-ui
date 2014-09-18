@@ -4,9 +4,12 @@ Pit
 An area reserved or enclosed for a specific purpose
 
 Markup:
-<div class="pit">
+<div class="pit {$modifiers}">
     Oh, boy! I am in the pit!
 </div>
+
+.pit--inverse - To be used to emphasize the contrast
+.pit--naked - No border, no padding, no stress
 
 Styleguide 1.2
 */
@@ -16,4 +19,13 @@ Styleguide 1.2
     padding-bottom: @standalone-bottom-margin;
     background-color: @light-silver;
     border: 1px solid @light-gray;
+
+    &--inverse {
+        background-color: #ffffff;
+    }
+
+    &--naked {
+        padding: 0;
+        border: none;
+    }
 }
