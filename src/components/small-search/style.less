@@ -22,5 +22,11 @@
         border: none;
         border-radius: 0;
         .box-sizing(border-box);
+        @media only screen and (max-width: @screen-desk-max) {
+            width: calc(~"100% - 54px");
+        }
+        @media only screen and (max-width: @screen-lap-max) {
+            width: calc(~"100% - 43px");
+        }
     }
 }
