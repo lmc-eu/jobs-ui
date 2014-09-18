@@ -17,6 +17,9 @@
 - Remove *orig-frame*
 - Remove *toggle button* style
 
+## v2.10.0
+- Changed *small-search* width to block
+
 ## v2.9.0
 - Add new icon:
     - *signin*
