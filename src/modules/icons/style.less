@@ -18,14 +18,6 @@ Markup:
         <br> angle-right
     </div><!--
     --><div class="grid__item e-3--palm">
-        <span class="icon icon--arrow-down" aria-hidden="true"></span>
-        <br> arrow-down
-    </div><!--
-    --><div class="grid__item e-3--palm">
-        <span class="icon icon--arrow-right" aria-hidden="true"></span>
-        <br> arrow-right
-    </div><!--
-    --><div class="grid__item e-3--palm">
         <span class="icon icon--bell" aria-hidden="true"></span>
         <br> bell
     </div><!--
@@ -60,10 +52,6 @@ Markup:
     --><div class="grid__item e-3--palm">
         <span class="icon icon--facebook" aria-hidden="true"></span>
         <br> facebook
-    </div><!--
-    --><div class="grid__item e-3--palm">
-        <span class="icon icon--file-alt" aria-hidden="true"></span>
-        <br> file-alt
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--folder-open-alt" aria-hidden="true"></span>
@@ -126,16 +114,16 @@ Markup:
         <br> share-alt
     </div><!--
     --><div class="grid__item e-3--palm">
-        <span class="icon icon--signin" aria-hidden="true"></span>
-        <br> signin
-    </div><!--
-    --><div class="grid__item e-3--palm">
         <span class="icon icon--star" aria-hidden="true"></span>
         <br> star
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--star-empty" aria-hidden="true"></span>
         <br> star-empty
+    </div><!--
+     --><div class="grid__item e-3--palm">
+        <span class="icon icon--stop" aria-hidden="true"></span>
+        <br> stop
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--tag" aria-hidden="true"></span>
@@ -197,160 +185,163 @@ Styleguide 2.7.3
 
 // Importing the fonts
 @font-face {
-	font-family: 'jobsicon';
-	src: url('fonts/jobsicon.eot');
-	src: url('fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/jobsicon.woff') format('woff'),
-		 url('fonts/jobsicon.ttf') format('truetype'),
-		 url('fonts/jobsicon.svg#jobsicon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'jobsicon';
+  src: url('fonts/jobsicon.eot');
+  src: url('fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
+  url('fonts/jobsicon.woff') format('woff'),
+  url('fonts/jobsicon.ttf') format('truetype'),
+  url('fonts/jobsicon.svg#jobsicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // Antialiasing in Chrome in Windows
 // http://icomoon.io/#post/318
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'jobsicon';
-        src: url('fonts/jobsicon.svg#jobsicon') format('svg');
-    }
+  @font-face {
+    font-family: 'jobsicon';
+    src: url('fonts/jobsicon.svg#jobsicon') format('svg');
+  }
 }
 
 // Preparing for icons inspired by IcoMoon App and Bootstrap
 .icon {
-    display: inline-block;
-    position: relative;
-    top: 1px;
-    font-family: 'jobsicon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  font-family: 'jobsicon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    &--heading {
-        color: @jobs-orange;
+  &--heading {
+    color: @jobs-orange;
 
-        &:after {
-            content: "\a0";
-        }
+    &:after {
+      content: "\a0";
     }
+  }
 
-    &--rotating {
-        .animation(animation-rotate 2s linear infinite);
-    }
+  &--rotating {
+    .animation(animation-rotate 2s linear infinite);
+  }
 }
 
 // Individual icons
 // Copy-paste from the bottom of IcoMoon App generated style.css
 .icon--coins:before {
-    content: "\e601";
+  content: "\e601";
 }
 .icon--library:before {
-    content: "\e600";
+  content: "\e600";
 }
 .icon--bite-square:before {
-    content: "\e603";
+  content: "\e603";
 }
 .icon--youtube:before {
-    content: "\e604";
+  content: "\e604";
 }
 .icon--twitter:before {
-    content: "\e605";
+  content: "\e605";
 }
 .icon--googleplus:before {
-    content: "\e606";
+  content: "\e606";
 }
 .icon--facebook:before {
-    content: "\e607";
+  content: "\e607";
 }
 .icon--search:before {
-    content: "\e608";
+  content: "\e608";
 }
 .icon--star:before {
-    content: "\e609";
+  content: "\e609";
 }
 .icon--star-empty:before {
-    content: "\e60a";
+  content: "\e60a";
 }
 .icon--remove:before {
-    content: "\e61a";
+  content: "\e61a";
 }
 .icon--clock:before {
-    content: "\e602";
+  content: "\e602";
 }
 .icon--tag:before {
-    content: "\e60b";
+  content: "\e60b";
 }
 .icon--print:before {
-    content: "\e60c";
+  content: "\e60c";
 }
 .icon--list:before {
-    content: "\e61c";
+  content: "\e61c";
 }
 .icon--map-marker:before {
-    content: "\e60d";
+  content: "\e60d";
 }
 .icon--share:before {
-    content: "\e60e";
+  content: "\e60e";
+}
+.icon--stop:before {
+  content: "\e624";
 }
 .icon--info-sign:before {
-    content: "\e61f";
+  content: "\e61f";
 }
 .icon--share-alt:before {
-    content: "\e61d";
+  content: "\e61d";
 }
 .icon--like:before {
-    content: "\e619";
-}
-.icon--bell:before {
-    content: "\e60f";
-}
-.icon--reorder:before {
-    content: "\e610";
-}
-.icon--comment-alt:before {
-    content: "\e611";
-}
-.icon--building:before {
-    content: "\e612";
-}
-.icon--double-angle-right:before {
-    content: "\e613";
-}
-.icon--angle-left:before {
-    content: "\e614";
-}
-.icon--angle-right:before {
-    content: "\e615";
-}
-.icon--laptop:before {
-    content: "\e61b";
-}
-.icon--folder-open-alt:before {
-    content: "\e616";
-}
-.icon--calendar-empty:before {
-    content: "\e61e";
-}
-.icon--user:before {
-    content: "\e617";
-}
-.icon--house:before {
-    content: "\e618";
-}
-.icon--arrow-down:before {
-    content: "\e620";
-}
-.icon--arrow-right:before {
-    content: "\e621";
-}
-.icon--file-alt:before {
-    content: "\e622";
+  content: "\e619";
 }
 .icon--signin:before {
-    content: "\e623";
+  content: "\e623";
+}
+.icon--bell:before {
+  content: "\e60f";
+}
+.icon--reorder:before {
+  content: "\e610";
+}
+.icon--comment-alt:before {
+  content: "\e611";
+}
+.icon--file-alt:before {
+  content: "\e622";
+}
+.icon--building:before {
+  content: "\e612";
+}
+.icon--double-angle-right:before {
+  content: "\e613";
+}
+.icon--angle-left:before {
+  content: "\e614";
+}
+.icon--angle-right:before {
+  content: "\e615";
+}
+.icon--laptop:before {
+  content: "\e61b";
+}
+.icon--folder-open-alt:before {
+  content: "\e616";
+}
+.icon--calendar-empty:before {
+  content: "\e61e";
+}
+.icon--user:before {
+  content: "\e617";
+}
+.icon--house:before {
+  content: "\e618";
+}
+.icon--arrow-down:before {
+  content: "\e620";
+}
+.icon--arrow-right:before {
+  content: "\e621";
 }
