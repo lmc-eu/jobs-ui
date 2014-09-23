@@ -5,6 +5,7 @@
 ## v2.11.0
 - Add new icon:
     - *stop*
+- all dt elements aligned to center (text-align: center)
 
 ## v2.10.0
 - Changed *small-search* width to block
