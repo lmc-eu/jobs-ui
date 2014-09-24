@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.12.0
+- Add class hidden, hide element for all devices
+
 ## v2.11.0
 - Add new icon:
     - *stop*
