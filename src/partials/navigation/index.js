@@ -28,13 +28,10 @@ $(function () {
     });
 
     $('body').on('click', function () {
-        if (navigationProfileToggle[0]) {
-            navigationProfile.removeClass('navigation__profile--open');
-            navigationProfileToggle.removeClass('header__toggle--active');
-        }
-        if (navigationToggle[0]) {
-            navigation.removeClass('navigation--open');
-            navigationToggle.removeClass('header__toggle--active');
-        }
+        navigationProfile.removeClass('navigation__profile--open');
+        navigationProfileToggle.removeClass('header__toggle--active');
+
+        navigation.removeClass('navigation--open');
+        navigationToggle.removeClass('header__toggle--active');
     });
 });
