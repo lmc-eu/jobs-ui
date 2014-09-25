@@ -31,10 +31,22 @@ Styleguide 1.3
         color: white;
         background-color: @light-blue;
 
-        a {
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: white;
+        }
+
+        a {
+            border-bottom: 1px dotted white;
+
+            &.button,
             &:hover {
-                border-bottom-color: white;
+                border-bottom: none;
             }
         }
     }
