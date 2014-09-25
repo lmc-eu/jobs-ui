@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## v3.0.0-dev
+## v3.0.0
 - New *header* with refactored *navigation*
 - Refactor *footer* with new look
 - New non-responsive *typography*
@@ -19,6 +19,14 @@
     - *plus*
 - Remove *orig-frame*
 - Remove *toggle button* style
+
+## v2.12.0
+- Add class *hidden* to hide element for all devices
+
+## v2.11.0
+- Add new icon:
+    - *stop*
+- Small edit of *icon description*
 
 ## v2.10.0
 - Changed *small-search* width to block

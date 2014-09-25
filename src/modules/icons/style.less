@@ -70,10 +70,6 @@ Markup:
         <br> facebook
     </div><!--
     --><div class="grid__item e-3--palm">
-        <span class="icon icon--file-alt" aria-hidden="true"></span>
-        <br> file-alt
-    </div><!--
-    --><div class="grid__item e-3--palm">
         <span class="icon icon--folder-open-alt" aria-hidden="true"></span>
         <br> folder-open-alt
     </div><!--
@@ -138,16 +134,16 @@ Markup:
         <br> share-alt
     </div><!--
     --><div class="grid__item e-3--palm">
-        <span class="icon icon--signin" aria-hidden="true"></span>
-        <br> signin
-    </div><!--
-    --><div class="grid__item e-3--palm">
         <span class="icon icon--star" aria-hidden="true"></span>
         <br> star
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--star-empty" aria-hidden="true"></span>
         <br> star-empty
+    </div><!--
+     --><div class="grid__item e-3--palm">
+        <span class="icon icon--stop" aria-hidden="true"></span>
+        <br> stop
     </div><!--
     --><div class="grid__item e-3--palm">
         <span class="icon icon--tag" aria-hidden="true"></span>
@@ -209,57 +205,60 @@ Styleguide 2.7.3
 
 // Importing the fonts
 @font-face {
-	font-family: 'jobsicon';
-	src: url('fonts/jobsicon.eot');
-	src: url('fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/jobsicon.woff') format('woff'),
-		 url('fonts/jobsicon.ttf') format('truetype'),
-		 url('fonts/jobsicon.svg#jobsicon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'jobsicon';
+  src: url('fonts/jobsicon.eot');
+  src: url('fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
+  url('fonts/jobsicon.woff') format('woff'),
+  url('fonts/jobsicon.ttf') format('truetype'),
+  url('fonts/jobsicon.svg#jobsicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // Antialiasing in Chrome in Windows
 // http://icomoon.io/#post/318
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'jobsicon';
-        src: url('fonts/jobsicon.svg#jobsicon') format('svg');
-    }
+  @font-face {
+    font-family: 'jobsicon';
+    src: url('fonts/jobsicon.svg#jobsicon') format('svg');
+  }
 }
 
 // Preparing for icons inspired by IcoMoon App and Bootstrap
 .icon {
-    display: inline-block;
-    position: relative;
-    top: 1px;
-    font-family: 'jobsicon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  font-family: 'jobsicon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    &--heading {
-        color: @jobs-orange;
+  &--heading {
+    color: @jobs-orange;
 
-        &:after {
-            content: "\a0";
-        }
+    &:after {
+      content: "\a0";
     }
+  }
 
-    &--rotating {
-        .animation(animation-rotate 2s linear infinite);
-    }
+  &--rotating {
+    .animation(animation-rotate 2s linear infinite);
+  }
 }
 
 // Individual icons
 // Copy-paste from the bottom of IcoMoon App generated style.css
 .icon--arrow-circle-o-down:before {
     content: "\f01a";
+}
+.icon--stop:before {
+    content: "\f04d";
 }
 .icon--plus:before {
     content: "\f067";
