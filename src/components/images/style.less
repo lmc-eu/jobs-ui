@@ -1,0 +1,24 @@
+/*
+Image
+
+Images that adjust to the width of the parent element and as a bonus are round.
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-4--palm e-6">
+        <img class="image {$modifiers}" src="public/images/viktor_logo.png" />
+    </div>
+</div>
+
+.image--round - should be used only for images with aspect ratio 1:1
+
+Styleguide 4.12
+*/
+
+.image {
+    width: 100%;
+
+    &--round {
+        border-radius: 360px;
+    }
+}

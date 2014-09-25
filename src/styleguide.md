@@ -12,8 +12,11 @@
 - Add *tertiary* and *inverse-tertiary* button style
 - Add *index card* component
 - Add *inversed* and *naked pit*
+- Add *image* component
 - Add new icon:
+    - *arrow-circle-o-down*
     - *chart*
+    - *plus*
 - Remove *orig-frame*
 - Remove *toggle button* style
 
