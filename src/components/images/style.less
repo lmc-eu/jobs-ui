@@ -1,0 +1,18 @@
+/*
+Image
+
+Images that adjust to the width of the parent element and as a bonus are round. Modifier round should be used only for images with aspect ratio 1:1.
+
+Markup:
+<img class="image image--round" style="width: 300px" src="public/images/viktor_logo.png" />
+
+Styleguide 4.12
+*/
+
+.image {
+    width: 100%;
+
+    &--round {
+        border-radius: 360px;
+    }
+}
