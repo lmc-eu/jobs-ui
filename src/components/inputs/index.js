@@ -4,18 +4,18 @@
 if (!('placeholder' in document.createElement('input') &&
     'placeholder' in document.createElement('textarea'))) {
 
-    $('input[placeholder], textarea[placeholder]').each(function() {
+    $('input[placeholder], textarea[placeholder]').each(function () {
         var placeholder = $(this).attr('placeholder');
 
         if (this.value === '') {
             this.value = placeholder;
         }
 
-        $(this).focus(function() {
+        $(this).focus(function () {
             if (this.value === placeholder) {
                 this.value = '';
             }
-        }).blur(function() {
+        }).blur(function () {
             if ($.trim(this.value) === '') {
                 this.value = placeholder;
             }
@@ -23,9 +23,9 @@ if (!('placeholder' in document.createElement('input') &&
     });
 
     // Clear default placeholder values on form submit
-    $('form').submit(function() {
-        $(this).find('input[placeholder], textarea[placeholder]').each(function() {
-            if ( this.value === $(this).attr('placeholder') ) {
+    $('form').submit(function () {
+        $(this).find('input[placeholder], textarea[placeholder]').each(function () {
+            if (this.value === $(this).attr('placeholder')) {
                 this.value = '';
             }
         });
