@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.12.1
+- Add word-wrap for all dd elements from .icon-description
+
 ## v2.12.0
 - Add class hidden, hide element for all devices
 
