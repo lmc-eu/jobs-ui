@@ -2,6 +2,8 @@
 
 /*
  * Replaces SVG images in img elements with PNG alternative
+ *
+ * The PNG file must have the same URL as the SVG file, up to the extension.
  */
 
 $(function () {
@@ -10,8 +12,8 @@ $(function () {
     }
 
     if (!supportsSvg()) {
-        $('img[src$=svg]').attr('src', function (i, src) {
-            return src.replace(/svg$/, 'png');
+        $('img[src$=".svg"], img[src*=".svg?"]').attr('src', function (i, src) {
+            return src.replace(/\.svg(\?|$)/, '.png$1');
         });
     }
 });

@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.0.1
+- Update SVG fallback to match query strings
+
 ## v3.0.0
 - New *header* with refactored *navigation*
 - Refactor *footer* with new look
