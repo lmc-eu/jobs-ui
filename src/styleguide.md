@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.0.2
+- Merge *v2.12.1*
+
 ## v3.0.1
 - Update SVG fallback to match query strings
 
@@ -22,6 +25,9 @@
     - *plus*
 - Remove *orig-frame*
 - Remove *toggle button* style
+
+## v2.12.1
+- Add word-wrap for all dd elements from .icon-description
 
 ## v2.12.0
 - Add class *hidden* to hide element for all devices
