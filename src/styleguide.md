@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.0.3
+- Add new icon:
+    - *stop* (smaller)
+
 ## v3.0.2
 - Merge *v2.12.1*
 
