@@ -30,6 +30,10 @@
 - Remove *orig-frame*
 - Remove *toggle button* style
 
+## v2.13.0
+- Add new icon:
+    - *stop* (smaller)
+
 ## v2.12.1
 - Add word-wrap for all dd elements from .icon-description
 
