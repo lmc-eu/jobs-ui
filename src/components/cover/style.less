@@ -1,0 +1,87 @@
+/*
+Cover
+
+Emulates *background-position: cover* for use with `<img>`, `<picture>` or `<video>`.
+
+Markup:
+<div class="grid grid--center--palm">
+    <div class="grid__item e-12">
+        <div class="grid">
+            <div class="grid__item">
+                <div class="cover">
+                    <div class="cover__inner">
+                        <img src="public/images/clif-sm.jpg" alt="" class="cover__media"
+                             srcset="public/images/clif-sm.jpg 300w,
+                                     public/images/clif.jpg 800w,
+                                     public/images/clif-hd.jpg 1920w"
+                             sizes="(min-width: 768px) 90vw, 460px"
+                        />
+                    </div>
+                    <h1>Prosklené a vyšších byste kolegyň a svaly</h1>
+                    <p>
+                        A pět, čím to 3000 podzim v složité desítek, já náklady indickým
+                        chemické ležet, tu slovník předvádět loni příslušnosti části zvíře.
+                        Budou v jel.
+                    </p>
+                </div>
+            </div><!--
+            --><div class="grid__item">
+                <div class="cover" style="height: 260px">
+                    <div class="cover__inner">
+                        <video src="http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4"
+                               autoplay loop muted class="cover__media" />
+                    </div>
+                    <h1>Oslnivá to modrému čaji<h1>
+                </div>
+            </div>
+        </div>
+    </div><!--
+    --><div class="grid__item e-3--palm e-4">
+        <div class="cover">
+            <div class="cover__inner">
+                <img src="public/images/cam-sm.jpg" alt=""
+                     class="cover__media cover__media--vertical"
+                     srcset="public/images/cam-sm.jpg 120w,
+                             public/images/cam.jpg 400w,
+                             public/images/cam-hd.jpg 800w"
+                     sizes="(min-width: 768px) 30vw, 140px"
+                />
+            </div>
+            <h1>Soustavu i klec</h1>
+            <p>
+                Trojcípou jiná než důsledkem zástupci hovořit rádi o charisma
+                asteroidu lyžařská kritické v pravděpodobně zesílilo
+                praktickou, nízké uličce přirozené obyčejné, 750 led hanové
+                existují vysvětlením; tóny všechna tutanchamónovy.
+            </p>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.13
+*/
+
+.cover {
+    position: relative;
+    overflow: auto;
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -100;
+    }
+
+    &__media {
+        width: 100%;
+        height: auto;
+
+        &--vertical {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
