@@ -4,6 +4,7 @@
 
 ## v4.0.0
 - Compiled *CSS* and *JavaScript* files are not included
+- Fonts are inlined in the CSS (up to EOT for IE8)
 - Add *cover* component
 - Add *picture element* polyfill (includes *matchMedia* support)
 - Remove *src-n attributes* polyfill

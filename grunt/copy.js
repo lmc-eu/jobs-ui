@@ -18,8 +18,8 @@ module.exports = {
             {
                 // Fonts
                 expand: true,
-                cwd: 'src/',
-                src: ['modules/icons/fonts/*'],
+                cwd: 'src/modules/icons/fonts/',
+                src: ['*.eot'],
                 flatten: true,
                 dest: 'dist/fonts/'
             }
