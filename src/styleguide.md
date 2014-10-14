@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.0.0
+- Add *cover* component
+- Add *picture element* polyfill (includes *matchMedia* support)
+- Remove *src-n attributes* polyfill
+
 ## v3.0.3
 - Add new icon:
     - *stop* (smaller)

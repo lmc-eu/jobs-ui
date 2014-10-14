@@ -3,6 +3,10 @@ Cover
 
 Emulates *background-position: cover* for use with `<img>`, `<picture>` or `<video>`.
 
+Cover can be used e.g. inside a *hero* component.
+
+The media may be shorter that the content; in such case add `.cover__media--vertical`.
+
 Markup:
 <div class="grid grid--center--palm">
     <div class="grid__item e-12">
@@ -26,12 +30,17 @@ Markup:
                 </div>
             </div><!--
             --><div class="grid__item">
-                <div class="cover" style="height: 260px">
+                <div class="cover">
                     <div class="cover__inner">
                         <video src="http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4"
                                autoplay loop muted class="cover__media" />
                     </div>
-                    <h1>Oslnivá to modrému čaji<h1>
+                    <div class="glass" style="height: 130px; margin-top: 130px;">
+                        <h2 class="text--center" style="padding-top: 40px;">
+                            <span class="icon icon--bite-square icon--heading" aria-hidden="true"></span>
+                            Nám společné traektorii
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,6 +73,7 @@ Styleguide 4.13
 .cover {
     position: relative;
     overflow: auto;
+    z-index: 100;
 
     &__inner {
         position: absolute;
