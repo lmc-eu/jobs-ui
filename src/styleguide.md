@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## v4.0.0
+- Compiled *CSS* and *JavaScript* files are not included
 - Add *cover* component
 - Add *picture element* polyfill (includes *matchMedia* support)
 - Remove *src-n attributes* polyfill

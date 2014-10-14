@@ -7,7 +7,7 @@ module.exports = {
             preserveComments: 'some'
         },
         files: {
-            'dist/index.min.js': '.tmp/index.js'
+            '<%= styleguide.docs.dest %>/dist/index.min.js': '.tmp/index.js'
         }
     }
 };

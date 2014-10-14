@@ -28,9 +28,9 @@ module.exports = {
     docs: {
         files: [
             {
-                expand: true,
-                src: ['dist/**'],
-                dest: '<%= styleguide.docs.dest %>'
+              expand: true,
+              src: ['dist*//**'],
+              dest: '<%= styleguide.docs.dest %>'
             },
             {
                 expand: false,
