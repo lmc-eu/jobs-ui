@@ -11,6 +11,8 @@ The media may be shorter that the content; in such case add `.cover__media--vert
 
 Modifier `.cover__media--center` will center the image horizontally without any resize. Use only on full-page sized images!
 
+Use `--palm`, `--desk` or none modifier for respective resolutions.
+
 Markup:
 <div class="grid grid--center--palm">
     <div class="grid__item e-12">
@@ -19,7 +21,7 @@ Markup:
                 <div class="cover">
                     <div class="cover__inner">
                         <img src="public/images/clif-sm.jpg" alt=""
-                             class="cover__media cover__media--horizontal"
+                             class="cover__media cover__media--horizontal--palm"
                              srcset="public/images/clif-sm.jpg 300w,
                                      public/images/clif.jpg 800w,
                                      public/images/clif-hd.jpg 1920w"
@@ -38,7 +40,7 @@ Markup:
                 <div class="cover">
                     <div class="cover__inner">
                         <video src="http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4"
-                               autoplay loop muted class="cover__media cover__media--horizontal" />
+                               autoplay loop muted class="cover__media cover__media--horizontal--palm" />
                     </div>
                     <div class="glass" style="height: 130px; margin-top: 130px;">
                         <h2 class="text--center" style="padding-top: 40px;">
@@ -54,7 +56,7 @@ Markup:
         <div class="cover">
             <div class="cover__inner">
                 <img src="public/images/cam-sm.jpg" alt=""
-                     class="cover__media cover__media--vertical"
+                     class="cover__media cover__media--vertical--palm"
                      srcset="public/images/cam-sm.jpg 120w,
                              public/images/cam.jpg 400w,
                              public/images/cam-hd.jpg 800w"
@@ -91,20 +93,33 @@ Styleguide 4.13
     }
 
     &__media {
-        width: auto;
-        height: auto;
+        .media-modifications(~"--palm");
 
-        &--horizontal {
-            width: 100%;
+        @media only screen and (min-width: @screen-lap) {
+            .media-modifications(~"");
         }
 
-        &--vertical {
-            height: 100%;
-        }
-
-        &--center {
-            // !!!!!!
-            transform: translateX(calc(50vw - 50%))
+        @media only screen and (min-width: @screen-desk) {
+            .media-modifications(~"--desk");
         }
     }
+}
+
+.media-modifications(@modifier) {
+    &--horizontal@{modifier} {
+        width: 100%;
+        height: auto;
+    }
+
+    &--vertical@{modifier} {
+        width: auto;
+        height: 100%;
+    }
+
+    &--center@{modifier} {
+        width: auto;
+        height: auto;
+        .translateX(calc(50vw - 50%));
+    }
+
 }

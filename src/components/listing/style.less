@@ -7,10 +7,10 @@ Markup:
 <div class="grid post-listing">
     <div class="grid__item hidden--print e-2--palm e-6">
         <a href="#">
-            <img class="post-listing__image"
-                src="public/images/300x225.jpg"
-                src-1="18% (768px) 220px; public/images/60x45.jpg 60, public/images/300x225.jpg 300"
-            />
+            <picture>
+                <source media="(max-width: 768px)" srcset="public/images/60x45.jpg">
+                <img src="public/images/300x225.jpg" alt="" class="post-listing__image"/>
+            </picture>
         </a>
     </div><!--
     --><div class="grid__item e-6--palm e-10">
