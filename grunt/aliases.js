@@ -4,12 +4,12 @@ module.exports = {
     'default': [
         'clean',
         'bower',
+        'copy:dist',
         'docs',
         'dist'
     ],
 
     'dist': [
-        'copy:dist',
         'styles',
         'scripts'
     ],
