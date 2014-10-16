@@ -1,11 +1,15 @@
 /*
 Cover
 
-Emulates *background-position: cover* for use with `<img>`, `<picture>` or `<video>`.
+Graphical background of any element; to be used with `<img>`, `<picture>` or `<video>`.
 
 Cover can be used e.g. inside a *hero* component.
 
+To emulate *background-position: cover* add `.cover__media--horizontal`.
+
 The media may be shorter that the content; in such case add `.cover__media--vertical`.
+
+Modifier `.cover__media--center` will center the image horizontally without any resize. Use only on full-page sized images!
 
 Markup:
 <div class="grid grid--center--palm">
@@ -14,7 +18,8 @@ Markup:
             <div class="grid__item">
                 <div class="cover">
                     <div class="cover__inner">
-                        <img src="public/images/clif-sm.jpg" alt="" class="cover__media"
+                        <img src="public/images/clif-sm.jpg" alt=""
+                             class="cover__media cover__media--horizontal"
                              srcset="public/images/clif-sm.jpg 300w,
                                      public/images/clif.jpg 800w,
                                      public/images/clif-hd.jpg 1920w"
@@ -33,7 +38,7 @@ Markup:
                 <div class="cover">
                     <div class="cover__inner">
                         <video src="http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4"
-                               autoplay loop muted class="cover__media" />
+                               autoplay loop muted class="cover__media cover__media--horizontal" />
                     </div>
                     <div class="glass" style="height: 130px; margin-top: 130px;">
                         <h2 class="text--center" style="padding-top: 40px;">
@@ -86,12 +91,20 @@ Styleguide 4.13
     }
 
     &__media {
-        width: 100%;
+        width: auto;
         height: auto;
 
+        &--horizontal {
+            width: 100%;
+        }
+
         &--vertical {
-            width: auto;
             height: 100%;
+        }
+
+        &--center {
+            // !!!!!!
+            transform: translateX(calc(50vw - 50%))
         }
     }
 }

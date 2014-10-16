@@ -52,6 +52,23 @@
             </div><!--
         --></div>
     </div>
+    {{#if overview}}
+    <div class="cover" style="min-height: 200px;">
+        <div class="cover__inner">
+            <picture>
+                <source media="(max-width: 768px)" srcset="public/images/clif.jpg">
+                <img src="public/images/clif-hd.jpg" alt="" class="cover__media cover__media--center"/>
+            </picture>
+        </div>
+        <div class="wrapper">
+            <div class="grid"><!--
+                --><div class="grid__item ">
+                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" />
+                </div><!--
+            --></div>
+        </div>
+    </div>
+    {{/if}}
 </div>
 
 <div class="wrapper">
@@ -94,7 +111,6 @@
         --><div role="main" class="grid__item  e-16">
             <article id="kss__content">
                 {{#if overview}}
-                <img class="kss__content__logo" src="public/images/viktor_logo.png" />
 
                 {{html overview}}
                 {{else}}
