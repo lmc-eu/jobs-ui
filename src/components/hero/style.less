@@ -12,6 +12,10 @@ Markup:
     <span class="hero__title">Nám společné traektorii</span>
 </div>
 
+<div class="hero hero--cover">
+    <span class="hero__title">Nám společné traektorii</span>
+</div>
+
 <div class="hero hero--bold">
     <span class="hero__title hero__title--bold">Nám společné traektorii</span>
 </div>
@@ -52,6 +56,15 @@ Styleguide 1.3
             &.button--tertiary {
                 border: 1px solid @silver;
             }
+        }
+    }
+
+    &--cover {
+        background-color: transparent;
+        padding: 70px 0;
+
+        @media only screen and (max-width: @screen-lap-max) {
+            padding: 32px 0;
         }
     }
 
