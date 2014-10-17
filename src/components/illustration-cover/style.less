@@ -1,0 +1,37 @@
+/*
+Illustational cover
+
+Illustational cover element; to be used with `<img>` or `<picture>`.
+
+Shouldn't be used with content.
+
+Markup:
+<div class="grid grid--center--palm">
+    <div class="grid__item e-12">
+        <div class="illustration-cover">
+            <img src="public/images/cam-sm.jpg" alt=""
+                 class="illustration-cover__picture"
+                 />
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.14
+*/
+.illustration-cover {
+    background-color: @light-silver;
+
+    &__picture {
+        height: 140px;
+        transform: translateX(calc(~"50vw - 50%"));
+
+        @media only screen and (min-width: @screen-lap) {
+            height: 225px;
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            height: 300px;
+        }
+    }
+}
