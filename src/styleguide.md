@@ -8,6 +8,7 @@
 - Remove *src-n attributes* polyfill
 - Add new modifier for *hero*:
     - *hero--cover* for content in cover
+- Add *illustration-cover* component
 
 ## v3.0.3
 - Add new icon:
