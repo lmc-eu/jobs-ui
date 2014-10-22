@@ -1,0 +1,67 @@
+/*
+Tabs
+
+Tabs as list
+
+Markup:
+<div class="grid">
+    <div class="grid__item">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Tab1</a><span class="x"></span></li>
+            <li><a href="#">Tab2</a><span></span></li>
+            <li><a href="#">Tab3</a><span></span></li>
+            <li><a href="#">Tab4</a><span></span></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 4.13
+*/
+
+.nav-tabs {
+    border: 1px solid @dark-blue;
+    border-radius: 2px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: table;
+
+    li {
+        display: table-cell;
+        border-left: 1px solid @dark-blue;
+        min-width: 154px;
+        text-align: center;
+        position: relative;
+
+        &:first-child {
+         border-left: none;
+        }
+
+        a {
+            color:@dark-blue;
+            background-color: #fff;
+            display: block;
+
+            :hover {
+                border-bottom: none;
+            }
+        }
+
+        :hover,&.active a {
+            color:#fff;
+            background-color: @dark-blue;
+            border-bottom: none;
+
+
+        }
+
+        .x {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 8.7px 5px 0 5px;
+            border-color: @dark-blue transparent transparent transparent;
+        }
+    }
+}
