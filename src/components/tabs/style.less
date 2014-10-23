@@ -6,11 +6,11 @@ Tabs as list
 Markup:
 <div class="grid">
     <div class="grid__item">
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Tab1</a><span class="x"></span></li>
-            <li><a href="#">Tab2</a><span></span></li>
-            <li><a href="#">Tab3</a><span></span></li>
-            <li><a href="#">Tab4</a><span></span></li>
+        <ul class="tabs">
+            <li class="tabs__item tabs__item--active e-2--palm"><a class="tabs__link" href="#">Tab1</a><span class="tabs__triangle"></span></li>
+            <li class="tabs__item e-2--palm"><a class="tabs__link" href="#">Tab2</a><span class="tabs__triangle"></span></li>
+            <li class="tabs__item e-2--palm"><a class="tabs__link" href="#">Tab3</a><span class="tabs__triangle"></span></li>
+            <li class="tabs__item last e-2 e-0--palm"><a class="tabs__link" href="#">Tab4</a><span class="tabs__triangle"></span></li>
         </ul>
     </div>
 </div>
@@ -18,50 +18,66 @@ Markup:
 Styleguide 4.13
 */
 
-.nav-tabs {
-    border: 1px solid @dark-blue;
-    border-radius: 2px;
-    margin-bottom: 0;
-    padding-left: 0;
+.tabs {
     list-style: none;
-    display: table;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
 
-    li {
-        display: table-cell;
-        border-left: 1px solid @dark-blue;
-        min-width: 154px;
+    &__item {
+        border-right: 1px solid @dark-blue;
+        border-top: 1px solid @dark-blue;
+        border-bottom: 1px solid @dark-blue;
         text-align: center;
         position: relative;
+        display: inline-block;
+        box-sizing: border-box;
 
         &:first-child {
-         border-left: none;
+            border-left: 1px solid @dark-blue;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
 
-        a {
-            color:@dark-blue;
-            background-color: #fff;
-            display: block;
+        &--active {
 
-            :hover {
-                border-bottom: none;
+            background-color: @dark-blue;
+
+            .tabs__link {
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .tabs__triangle {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                margin-left: -10px;
+                border-style: solid;
+                border-width: 8px 8px 0;
+                border-color: @dark-blue transparent transparent transparent;
             }
         }
+    }
 
-        :hover,&.active a {
-            color:#fff;
-            background-color: @dark-blue;
+    .last {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    &__link {
+        display: block;
+        color: @dark-blue;
+        font-size: 15px;
+
+        &:hover {
             border-bottom: none;
-
-
-        }
-
-        .x {
-            position: absolute;
-            width: 0px;
-            height: 0px;
-            border-style: solid;
-            border-width: 8.7px 5px 0 5px;
-            border-color: @dark-blue transparent transparent transparent;
+            font-weight: bold;
         }
     }
 }
+
+
+
+
