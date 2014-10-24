@@ -1,0 +1,73 @@
+/*
+Cover box
+
+Displays elita cover.
+
+Can be used primary in search-list.
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-16">
+        <div class="cover-box">
+            <a href="#">
+                <img class="cover-box__image"
+                     src="public/images/cover-box.jpg">
+            </a>
+            <div class="cover-box__content">
+                <div class="cover-box__content__links">
+                    <a class="cover-box__content__links__link cover-box__content__links__link--left"
+                       href="#">Do borci</a>
+                    <a class="cover-box__content__links__link cover-box__content__links__link--right"
+                       href="#">Zoologie hlubšího</a>
+                    <a class="cover-box__content__links__link"
+                       href="#">Veřejný cíp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.16
+*/
+
+.cover-box {
+    @margin-size: 20px;
+
+    margin-top: @margin-size;
+    margin-bottom: (@margin-size / 2);
+    border: 1px solid @silver;
+
+    &__image {
+        width: 100%;
+    }
+    &__content {
+        padding: (@margin-size - 5px) @margin-size;
+
+        &__links {
+            text-align: center;
+
+            &__link {
+                &--left {
+                    float: left;
+                }
+                &--right {
+                    float: right;
+                }
+            }
+        }
+        &__article {
+            margin-top: @margin-size;
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        &__image {
+            height: 181px;
+        }
+    }
+    @media only screen and (max-width: @screen-lap-max) {
+        &__content {
+            display: none;
+        }
+    }
+}

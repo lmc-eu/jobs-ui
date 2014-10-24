@@ -1,0 +1,101 @@
+/*
+Search-list
+
+Component for item in search results
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-16">
+        <div class="search-list__item">
+            <a class="search-list__item__logo" href="#">
+                <img src="public/images/jobs-logo.png" alt="">
+            </a>
+            <h2 class="search-list__item__title">
+                <a href="#">
+                    Padákům severu
+                </a>
+            </h2>
+            <p class="search-list__item__caption">
+                <a href="#">Pokaždé zoologie hlubšího</a>
+                |
+                <a href="#">Praha</a>
+            </p>
+            <p class="search-list__item__description">
+                <span>
+                    Obory:
+                </span>
+                Souvislosti modré&nbsp;
+                <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                Obchod
+            </p>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.15
+*/
+
+.search-list {
+    &__item {
+        margin-bottom: 35px;
+
+        &__title {
+            margin-bottom: 5px;
+
+            a {
+                color: @blue;
+                text-decoration: none;
+                word-wrap: break-word;
+                margin-bottom: 0;
+
+                &:visited {
+                    color: @lila;
+                }
+                &:hover {
+                    color: @dark-blue;
+                    border-bottom: 1px dotted @dark-blue;
+                }
+            }
+        }
+        &__caption {
+            margin-bottom: 5px;
+            font-weight: bold;
+
+            a {
+                color: #333333;
+            }
+        }
+        &__description {
+            margin-bottom: 5px;
+        }
+        &__logo {
+            width: 80px;
+            display: block;
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 5px;
+
+            @media only screen and (max-width: @screen-lap-max) {
+                width: 72px;
+            }
+            &:hover {
+                border: none;
+            }
+            img {
+                width: inherit;
+            }
+        }
+
+        /* element from SOLR for highlighting */
+        em {
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @media only screen and (max-width: @screen-lap-max) {
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid @light-silver;
+        }
+    }
+}

@@ -9,6 +9,8 @@
 - Add new modifier for *hero*:
     - *hero--cover* for content in cover
 - Add *illustration-cover* component
+- Add *search-list* component
+- Add *cover-box* component
 
 ## v3.0.3
 - Add new icon:
