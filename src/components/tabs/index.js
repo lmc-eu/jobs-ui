@@ -3,52 +3,41 @@
 var Tabs = (function () {
 
     /**
-     * @param String tabCollectionAttributeName
-     * @param String blockCollectionAttributeName
-     * @param String tabAttributeName
-     * @param String blockAttributeName
+     * @param String tabsCollection, name of collection
+     * @param String activeClass, name of active class
      * @constructor
      */
-    function Tabs(tabCollectionAttributeName, blockCollectionAttributeName, tabAttributeName, blockAttributeName) {
-        this.tabCollectionAttributeName = tabCollectionAttributeName;
-        this.blockCollectionAttributeName = blockCollectionAttributeName;
-        this.tabAttributeName = tabAttributeName;
-        this.blockAttributeName = blockAttributeName;
+    function Tabs(tabsCollection, activeClass) {
+        var self = this;
+
+        self.tabs = $('[data-tab-toggle][href^=#' + tabsCollection + ':]');
+        self.panels = $('[id^="' + tabsCollection + ':"]');
+        self.activeClass = activeClass || 'tabs__link--active';
+
+        $('[data-tab-toggle]').on('click', function (e) {
+            e.preventDefault();
+            self.process(this);
+        });
     }
 
-    Tabs.prototype.execute = function () {
-            this.init();
-            var activeTab = this.findActive();
-            var showBlock = $(activeTab).find('.tabs__link').data(this.tabAttributeName);
-        this.showBlock(showBlock);
+    Tabs.prototype.process = function (el) {
+        var $el = $(el),
+            target = $el.attr('href').substring(1);
 
-    };
+        this.tabs.removeClass(this.activeClass);
+        $el.addClass(this.activeClass);
 
-    Tabs.prototype.hideAll = function () {
-        $('[data-'+this.blockCollectionAttributeName+']').find('[data-'+this.blockAttributeName+']').hide();
-
-    };
-
-    Tabs.prototype.showBlock = function (block) {
-       var orig =  $('[data-'+this.blockCollectionAttributeName+']').find('[data-'+this.blockAttributeName+']='+this.blockAttributeName);
-
-    };
-
-    Tabs.prototype.findActive = function () {
-        return $('[data-' + this.tabCollectionAttributeName + ']').find('.tabs__item--active');
-    }
-
-    Tabs.prototype.init = function () {
-        this.hideAll();
-
+        this.panels
+            .hide()
+            .filter('[id="' + target + '"]')
+            .show();
     };
 
     return Tabs;
 })();
 
-
 $(function () {
-    new Tabs('toggle-collection', 'collection', 'activate', 'source').execute();
+    new Tabs('tabs1', 'tabs__link--active');
 });
 
 
