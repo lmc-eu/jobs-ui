@@ -1,6 +1,6 @@
 'use strict';
 
-var Tabs = (function () {
+window.Tabs = (function () {
 
     /**
      * @param String tabsCollection, name of collection
@@ -35,10 +35,6 @@ var Tabs = (function () {
 
     return Tabs;
 })();
-
-$(function () {
-    new Tabs('tabs1', 'tabs__link--active');
-});
 
 
 
