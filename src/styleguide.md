@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.1.0
+- Add new *Tabs* component
+
 ## v3.0.3
 - Add new icon:
     - *stop* (smaller)

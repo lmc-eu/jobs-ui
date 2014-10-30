@@ -3,8 +3,8 @@
 window.Tabs = (function () {
 
     /**
-     * @param String tabsCollection, name of collection
-     * @param String activeClass, name of active class
+     * @param String tabsCollection, name of collection (specifies a collection of elements which would be toggled)
+     * @param String activeClass, name of active class, default 'tabs__link--active'
      * @constructor
      */
     function Tabs(tabsCollection, activeClass) {

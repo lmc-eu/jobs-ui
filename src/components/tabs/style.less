@@ -1,12 +1,14 @@
 /*
 Tabs
 
-4 tabs on desktop or tablet, 3 tabs on smartphones <br/>
-Each link element must have data-tab-toggle attribute.<br/>
-Href content contains collection and target element to show on format: (collection:target)<br/>
-Element to show must have id in same format (collection:target)
+4 tabs on desktop or tablet, 3 tabs on smartphones.<br/>
+To activate tab navigation without writing any JavaScript add **data-tab-toggle** attribute on an link element.<br/>
+An **href** contains **collection** and **target** element to show in format: *(collection:target)*<br/>
+Element to show must have *id* in **same format** *(collection:target)*.<br/>
+For the functionality you need to **call** the constructor *Tabs* as below.
 
 Markup:
+<!-- Tabs -->
 <div class="grid">
     <div class="grid__item">
         <ul class="tabs">
@@ -17,6 +19,7 @@ Markup:
         </ul>
     </div>
 </div>
+<!-- Panels -->
 <div class="grid">
     <div id="tabs1:first" class="grid__item" style="display:none;">
         <p>Vyhynul podíval květiny.</p>
@@ -31,6 +34,7 @@ Markup:
         <p>Filosofa v nazvaného s mcintoshe větších.</p>
     </div>
 </div>
+<!-- Javascript -->
 <script>
 $(function () {
     new Tabs('tabs1', 'tabs__link--active');
