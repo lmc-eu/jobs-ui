@@ -3,8 +3,8 @@
 window.Tabs = (function () {
 
     /**
-     * @param String tabsCollection, name of collection (specifies a collection of elements which would be toggled)
-     * @param String activeClass, name of active class, default 'tabs__link--active'
+     * @param {String} tabsCollection, name of collection (specifies a collection of elements which would be toggled)
+     * @param {String} activeClass, name of active class, default 'tabs__link--active'
      * @constructor
      */
     function Tabs(tabsCollection, activeClass) {
@@ -21,8 +21,8 @@ window.Tabs = (function () {
     }
 
     Tabs.prototype.process = function (el) {
-        var $el = $(el),
-            target = $el.attr('href').substring(1);
+        var $el = $(el);
+        var target = $el.attr('href').substring(1);
 
         this.tabs.removeClass(this.activeClass);
         $el.addClass(this.activeClass);
