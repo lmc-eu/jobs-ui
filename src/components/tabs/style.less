@@ -50,21 +50,26 @@ Styleguide 4.13
 */
 
 .tabs {
-    list-style: none;
-    font-size: 0;
     padding: 0;
     margin: 0;
+    list-style: none;
+    font-size: 0;
     border: 1px solid @dark-blue;
     border-radius: 2px;
 
     &__item {
-        border-left: 1px solid @dark-blue;
-        text-align: center;
         position: relative;
         display: inline-block;
-        box-sizing: border-box;
         min-width: 25%;
         height: 34px;
+        box-sizing: border-box;
+        text-align: center;
+        border-left: 1px solid @dark-blue;
+
+        &:first-child {
+            border-left: none;
+        }
+
         @media only screen and (max-width: @screen-lap) {
             min-width: 33.3333%;
 
@@ -72,36 +77,32 @@ Styleguide 4.13
                 display: none;
             }
         }
-
-        &:first-child {
-            border-left: none;
-        }
     }
 
     &__link {
         display: block;
-        color: @dark-blue;
-        font-size: 15px;
         height: 34px;
         line-height: 30px;
+        color: @dark-blue;
+        font-size: 15px;
         border-bottom: none;
 
         &:hover,
         &--active {
-            background-color: @dark-blue;
             color: #fff;
+            background-color: @dark-blue;
         }
 
         &--active::after {
-            content: "";
             position: absolute;
+            left: 48%;
+            bottom: -5px;
             width: 0px;
             height: 0px;
-            bottom: -5px;
-            left: 48%;
             border-style: solid;
             border-width: 5px 6px 0;
             border-color: @dark-blue transparent transparent transparent;
+            content: "";
         }
     }
 }
