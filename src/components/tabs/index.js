@@ -32,7 +32,3 @@ Tabs.prototype.process = function (el) {
 };
 
 module.exports = Tabs;
-
-
-
-
