@@ -41,6 +41,16 @@ Markup:
         <select class="form__select" id="terms">
             <option value="1">leden</option>
             <option value="2">únor</option>
+            <option value="3">březen</option>
+        </select>
+        <label class="form__label" for="locality">Města</label>
+        <select class="form__select form__select__filterable" id="locality">
+            <option>choose</option>
+            <option value="1">Prague</option>
+            <option value="2">Bratislava</option>
+            <option value="3">Berlin</option>
+            <option value="4">Warszawa</option>
+            <option value="5">Wien</option>
         </select>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--grouped">
@@ -75,6 +85,20 @@ Styleguide 3.1
         font-weight: 700;
         color: #000000;
         word-wrap: break-word;
+    }
+
+    &__select {
+        &__filterable {
+            &--selected {
+                background-color: @dark-blue;
+                color: #ffffff;
+
+                option {
+                    background-color: #ffffff;
+                    color: #333333;
+                }
+            }
+        }
     }
 
     &__fieldset {
