@@ -1,0 +1,44 @@
+/*
+Form filter
+
+Special form of select with *active* modifier.
+
+Markup:
+<form class="form pit">
+<div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-3--palm e-5">
+    <select class="form__select form-filter" id="animals">
+        <option>choose</option>
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Cow</option>
+        <option value="4">Crocodile</option>
+    </select></div><!--
+    --><div class="grid__item e-3--palm e-5">
+    <select class="form__select form-filter" id="animals2">
+        <option>choose</option>
+        <option value="1">Cat</option>
+        <option value="2" selected>Dog</option>
+        <option value="3">Cow</option>
+        <option value="4">Crocodile</option>
+    </select>
+    </div><!--
+--></div>
+</form>
+
+Styleguide 3.5
+*/
+
+.form-filter {
+    font-size: 13px;
+
+    &--active {
+        background-color: @dark-blue;
+        color: #ffffff;
+
+        option {
+            background-color: #ffffff;
+            color: #333333;
+        }
+    }
+}

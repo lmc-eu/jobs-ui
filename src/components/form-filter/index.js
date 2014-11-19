@@ -1,15 +1,15 @@
-(function() {
+$(function () {
     'use strict';
 
-    var selectClassName = 'form__select__filterable';
-    $('select.' + selectClassName).each(function() {
+    var selectClassName = 'form-filter';
+    $('.' + selectClassName).each(function () {
         chooseSelect(this);
-    }).on('change', function() {
+    }).on('change', function () {
         chooseSelect(this);
     });
 
     function chooseSelect(el) {
-        var className = selectClassName + '--selected';
+        var className = selectClassName + '--active';
         var select = $(el);
 
         if (select.prop('selectedIndex') > 0) {
@@ -18,4 +18,4 @@
             select.removeClass(className);
         }
     }
-})();
+});

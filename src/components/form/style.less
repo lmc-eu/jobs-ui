@@ -43,8 +43,8 @@ Markup:
             <option value="2">únor</option>
             <option value="3">březen</option>
         </select>
-        <label class="form__label" for="locality">Města</label>
-        <select class="form__select form__select__filterable" id="locality">
+        <label class="form__label form__label--faded" for="locality">Města</label>
+        <select class="form__select form-filter" id="locality">
             <option>choose</option>
             <option value="1">Prague</option>
             <option value="2">Bratislava</option>
@@ -78,6 +78,13 @@ Styleguide 3.1
 */
 
 .form {
+    &__label {
+        &--faded {
+            font-size: 13px;
+            color: @gray;
+        }
+    }
+
     &__legend {
         display: block;
         width: 100%;
@@ -85,20 +92,6 @@ Styleguide 3.1
         font-weight: 700;
         color: #000000;
         word-wrap: break-word;
-    }
-
-    &__select {
-        &__filterable {
-            &--selected {
-                background-color: @dark-blue;
-                color: #ffffff;
-
-                option {
-                    background-color: #ffffff;
-                    color: #333333;
-                }
-            }
-        }
     }
 
     &__fieldset {
