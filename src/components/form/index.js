@@ -10,12 +10,12 @@
 
     function chooseSelect(el) {
         var className = selectClassName + '--selected';
-        var selectedIndex = $(el).prop('selectedIndex');
+        var select = $(el);
 
-        if (selectedIndex > 0) {
-            $(el).addClass(className);
-        } else if ($(el).hasClass(className)) {
-            $(el).removeClass(className);
+        if (select.prop('selectedIndex') > 0) {
+            select.addClass(className);
+        } else if (select.hasClass(className)) {
+            select.removeClass(className);
         }
     }
 })();
