@@ -11,6 +11,7 @@
 - Add *illustration-cover* component
 - Add *search-list* component
 - Add *cover-box* component
+- Add *select-filter* component
 
 ## v3.0.3
 - Add new icon:
