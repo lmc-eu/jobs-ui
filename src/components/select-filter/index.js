@@ -1,7 +1,7 @@
 $(function () {
     'use strict';
 
-    var selectClassName = 'form-filter';
+    var selectClassName = 'select-filter';
     $('.' + selectClassName).each(function () {
         chooseSelect(this);
     }).on('change', function () {

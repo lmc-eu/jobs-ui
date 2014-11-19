@@ -2,7 +2,7 @@ require('./src/modules/layout');
 require('./src/partials/navigation');
 require('./src/components/listing');
 require('./src/components/inputs');
-require('./src/components/form-filter');
+require('./src/components/select-filter');
 require('./src/svg-src-fallback');
 
 require('emerald');
