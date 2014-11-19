@@ -3,6 +3,9 @@ Select filter
 
 Special form of select with *active* modifier.
 
+Style of the select element will be changed automaticaly
+in case that non first option is selected.
+
 Markup:
 <form class="form pit">
 <div class="grid grid--center--palm"><!--
@@ -31,6 +34,8 @@ Styleguide 3.5
 
 .select-filter {
     font-size: 13px;
+    border-color: @dark-blue;
+    color: @dark-blue;
 
     &--active {
         background-color: @dark-blue;
@@ -38,7 +43,7 @@ Styleguide 3.5
 
         option {
             background-color: #ffffff;
-            color: #333333;
+            color: @dark-blue;
         }
     }
 }
