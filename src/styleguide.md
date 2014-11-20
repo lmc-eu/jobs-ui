@@ -13,6 +13,16 @@
 - Add *cover-box* component
 - Add *select-filter* component
 
+## v3.1.2
+- Compact footer lists
+- Visual separation of social links container
+
+## v3.1.1
+- Adjusted index cards color
+
+## v3.1.0
+- Add *tabs* component
+
 ## v3.0.3
 - Add new icon:
     - *stop* (smaller)
