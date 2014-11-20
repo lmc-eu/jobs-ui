@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.1.2
+- Compact footer lists
+- Visual separation of social links container
+
 ## v3.1.1
 - Adjusted index cards color
 
