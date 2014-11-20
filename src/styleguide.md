@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v3.1.1
+- Adjusted index cards color
+
 ## v3.1.0
 - Add *tabs* component
 
