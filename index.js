@@ -7,3 +7,7 @@ require('./src/svg-src-fallback');
 require('emerald');
 require('picturefill');
 require('remodal');
+
+window.JobsUI = {
+    Tabs: require('./src/components/tabs')
+};
