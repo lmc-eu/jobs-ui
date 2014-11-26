@@ -6,6 +6,8 @@ To ensure consistent vertical spacing use these classes.
 Markup:
 <div class="standalone">Look, there is a space below me!</div>
 <hr>
+<div class="half-standalone">I have a smaller space below!</div>
+<hr>
 <div class="double-standalone">I have a bigger space below!</div>
 <hr>
 
@@ -19,6 +21,10 @@ body {
 
 .standalone {
     margin-bottom: @standalone-bottom-margin;
+}
+
+.half-standalone {
+    margin-bottom: (@standalone-bottom-margin / 2);
 }
 
 .double-standalone {

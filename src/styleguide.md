@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## v4.0.0
+- Add *half-standalone* class
 - Add *cover* component
 - Add *picture element* polyfill (includes *matchMedia* support)
 - Remove *src-n attributes* polyfill
