@@ -138,6 +138,10 @@ Markup:
         <br> share-alt
     </div><!--
     --><div class="grid__item e-3--palm">
+        <span class="icon icon--spinner" aria-hidden="true"></span>
+        <br> spinner
+    </div><!--
+    --><div class="grid__item e-3--palm">
         <span class="icon icon--star" aria-hidden="true"></span>
         <br> star
     </div><!--
@@ -252,7 +256,7 @@ Styleguide 2.7.3
   }
 
   &--rotating {
-    .animation(animation-rotate 2s linear infinite);
+    .animation(animation-rotate 1s linear infinite);
   }
 }
 
@@ -269,6 +273,9 @@ Styleguide 2.7.3
 }
 .icon--file-alt:before {
     content: "\f0f6";
+}
+.icon--spinner:before {
+    content: "\f110";
 }
 .icon--search:before {
     content: "\e608";

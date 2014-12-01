@@ -13,6 +13,9 @@
 - Add *search-list* component
 - Add *cover-box* component
 - Add *select-filter* component
+- Changed speed of *icon--rotating*
+- Add new icon:
+    - *spinner*
 
 ## v3.1.2
 - Compact footer lists

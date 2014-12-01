@@ -2,16 +2,24 @@ $(function () {
     'use strict';
 
     var selectClassName = 'select-filter';
-    $('.' + selectClassName).each(function () {
+    $('.' + selectClassName + ' select').each(function () {
+        $(this).data('index', $(this).prop('selectedIndex'));
         chooseSelect(this);
     }).on('change', function () {
         chooseSelect(this);
     });
 
     function chooseSelect(el) {
-        var className = selectClassName + '--active';
         var select = $(el);
+        var parent = select.parent();
+        var index = select.prop('selectedIndex');
+        var selected = index > 0;
 
-        select.toggleClass(className, select.prop('selectedIndex') > 0);
+        if (selected) {
+            parent.toggleClass(selectClassName + '--active', selected);
+            if (index !== select.data('index')) {
+                parent.addClass(selectClassName + '--in-progress');
+            }
+        }
     }
 });
