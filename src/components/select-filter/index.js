@@ -13,13 +13,10 @@ $(function () {
         var select = $(el);
         var parent = select.parent();
         var index = select.prop('selectedIndex');
-        var selected = index > 0;
 
-        if (selected) {
-            parent.toggleClass(selectClassName + '--active', selected);
-            if (index !== select.data('index')) {
-                parent.addClass(selectClassName + '--in-progress');
-            }
+        parent.toggleClass(selectClassName + '--active', index > 0);
+        if (index !== select.data('index')) {
+            parent.addClass(selectClassName + '--in-progress');
         }
     }
 });

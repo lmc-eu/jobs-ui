@@ -63,8 +63,8 @@ Styleguide 3.5
         position: absolute;
         top: 10px;
         left: 8px;
-        color: #ffffff;
         font-size: 13px;
+        color: @dark-blue;
     }
     &--in-progress {
         select {
@@ -72,6 +72,11 @@ Styleguide 3.5
         }
         .icon {
             display: block;
+        }
+    }
+    &--in-progress&--active {
+        .icon {
+            color: #ffffff;
         }
     }
 }
