@@ -47,17 +47,6 @@ Styleguide 3.5
         border-color: @dark-blue;
         color: @dark-blue;
     }
-    &--active {
-        select {
-            background-color: @dark-blue;
-            color: #ffffff;
-
-            option {
-                background-color: #ffffff;
-                color: @dark-blue;
-            }
-        }
-    }
     .icon {
         display: none;
         position: absolute;
@@ -74,9 +63,18 @@ Styleguide 3.5
             display: block;
         }
     }
-    &--in-progress&--active {
+    &--active {
         .icon {
             color: #ffffff;
+        }
+        select {
+            background-color: @dark-blue;
+            color: #ffffff;
+
+            option {
+                background-color: #ffffff;
+                color: @dark-blue;
+            }
         }
     }
 }
