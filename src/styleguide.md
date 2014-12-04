@@ -3,17 +3,18 @@
 # <a name="changelog"></a>Changelog
 
 ## v4.0.0
+- Remove *src-n attributes* polyfill
+- Change speed of *icon--rotating*
+- Change *glass* opacity
+- Add *picture element* polyfill (includes *matchMedia* support)
 - Add *half-standalone* class
 - Add *cover* component
-- Add *picture element* polyfill (includes *matchMedia* support)
-- Remove *src-n attributes* polyfill
 - Add new modifier for *hero*:
     - *hero--cover* for content in cover
 - Add *illustration-cover* component
 - Add *search-list* component
 - Add *cover-box* component
 - Add *select-filter* component
-- Changed speed of *icon--rotating*
 - Add new icon:
     - *spinner*
 
