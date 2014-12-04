@@ -18,6 +18,12 @@
 - Add new icon:
     - *spinner*
 
+## v3.1.4
+- Fixed *tabs* component in FF ESR browser
+
+## v3.1.3
+- Fixed *tabs* component in IE 7,8 browser
+
 ## v3.1.2
 - Compact footer lists
 - Visual separation of social links container
