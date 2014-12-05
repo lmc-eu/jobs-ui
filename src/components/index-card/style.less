@@ -1,14 +1,16 @@
 /*
 Index card
 
-Great for visually attractive single line lists items.
+Great for visually attractive lists items.
 
 Markup:
 <div class="index-card {$modifiers}">
     <a href="#">Poměrně z stopa páté</a> (3)
 </div>
 
+Modifiers:
 .index-card--naked - No border, no stress (usually for the last item)
+.index-card--oneline - Single line display (no wrap and ellipsis text-overflow)
 
 Styleguide 4.11
 */
@@ -17,15 +19,14 @@ Styleguide 4.11
     padding: 7px 0 5px 0;
     border-bottom: 1px solid @light-silver;
     color: @light-gray;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 
     &--naked {
         border: none;
     }
 
-    &--wrap {
-        white-space: normal;
+    &--oneline {
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 }
