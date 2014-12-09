@@ -6,6 +6,7 @@
 - Remove *src-n attributes* polyfill
 - Change speed of *icon--rotating*
 - Change *glass* opacity
+- Fonts are inlined in the CSS (up to EOT for IE8)
 - Add *picture element* polyfill (includes *matchMedia* support)
 - Add *half-standalone* class
 - Add *cover* component

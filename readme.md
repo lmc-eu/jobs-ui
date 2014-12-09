@@ -13,7 +13,7 @@ Install with:
 `bower install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/ui.git`.
 
 In the following `$bower_components$` denotes the directory in which bower
-installs its components (`./bower_components` relative to the `bower.json` file
+installs its components (`./app/bower_components` relative to the `bower.json` file
 by default).
 
 ### Setting up
@@ -29,7 +29,6 @@ If `less#v1.7.0` is already used in the project, just do these two steps:
 
 If not, it is recommended to consider implementing it or upgrading to the
 desired version as unexpected behaviour may occur otherwise.
-Optionally a precompiled build can be used; cf. *Quick use* section.
 
 *Note*: It is recommended to minify the output *CSS*.
 
@@ -45,8 +44,6 @@ This package uses the *CommonJS* module format.
 Recommended use consists of a combination of [browserify](http://browserify.org/)
 and its transform [debowerify](https://github.com/eugeneware/debowerify).
 Then just require the 'jobs-ui' module.
-
-Optionally the precompiled build can be used; cf. *Quick use* section.
 
 Note that *jQuery* is a dependency and must be accessible via `$`.
 However it is **not** included neither when required as a module nor in the
@@ -65,21 +62,6 @@ Other files are contained in subdirectories of the `dist/` directory.
 These are to be copied to the same level as the resulting CSS file.
 This behaviour may be overwritten setting the `rootpath` option in *less*.
 
-### Quick use
-
-For testing purposes or for easy use in temporary projects it is possible to
-directly incorporate a precompiled build of stylesheets and JavaScript.
-
-It is **discouraged** to use such JavaScript and **strongly discouraged** to use
-such stylesheets in long-term production projects.
-
-    <!--[if lte IE 8]>     <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style-legacy.min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="$bower_components$/jobs-ui/dist/style.min.css">        <!--<![endif]-->
-    <body>
-    …
-    <script src="$bower_components$/jobs-ui/dist/index.min.js"></script>
-    </body>
-
 ## Contributing
 
 ### KSS
@@ -93,15 +75,13 @@ the documentation from the distribution folder to insure consistency.
 ### How to manage icons
 1. Go to [IcoMoon](http://icomoon.io/app/)
 2. In menu choose Manage projects
-3. Import project (json file)
+3. Import project, use *src/modules/icons/_generated/selection.json*
 4. Load project
 5. Add/remove/update icons
-6. Download font
-7. Update font files
-8. Update style.less
- - KSS documentation
- - Copy-paste from the bottom of IcoMoon App generated style.css (.icon--*)
-9. Save project in Icomoon and replace jobsicon.json
+6. Download the package
+7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*
+8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*
+9. Update KSS documentation
 10. Regenerate project by Grunt
 
 ### Available Grunt tasks

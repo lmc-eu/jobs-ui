@@ -8,7 +8,7 @@ module.exports = {
         expand: true,
         cwd: '.tmp/',
         src: ['*.css', '!*.min.css'],
-        dest: 'dist/',
+        dest: 'dist',
         ext: '.min.css'
     }
 };

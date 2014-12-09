@@ -202,50 +202,20 @@ Markup:
 
 Styleguide 2.7.3
 */
+
 // To be used when the following issue is resolved:
 // https://github.com/madebysource/lesshat/issues/108
 //.keyframes(~'animation-rotate, 0%{ transform: rotate(0); } 100%{ transform: rotate(360deg); }');
-
 @-webkit-keyframes animation-rotate{ 0%{ -webkit-transform: rotate(0); } 100%{ -webkit-transform: rotate(360deg); }}
 @-moz-keyframes animation-rotate{ 0%{ -moz-transform: rotate(0); } 100%{ -moz-transform: rotate(360deg); }}
 @-o-keyframes animation-rotate{ 0%{ -o-transform: rotate(0); } 100%{ -o-transform: rotate(360deg); }}
 @keyframes animation-rotate{ 0%{-webkit-transform: rotate(0);-moz-transform: rotate(0);-ms-transform: rotate(0);transform: rotate(0); } 100%{-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg); }}
-
-// Importing the fonts
-@font-face {
-  font-family: 'jobsicon';
-  src: url('fonts/jobsicon.eot');
-  src: url('fonts/jobsicon.eot?#iefix') format('embedded-opentype'),
-  url('fonts/jobsicon.woff') format('woff'),
-  url('fonts/jobsicon.ttf') format('truetype'),
-  url('fonts/jobsicon.svg#jobsicon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-// Antialiasing in Chrome in Windows
-// http://icomoon.io/#post/318
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'jobsicon';
-    src: url('fonts/jobsicon.svg#jobsicon') format('svg');
-  }
-}
 
 // Preparing for icons inspired by IcoMoon App and Bootstrap
 .icon {
   display: inline-block;
   position: relative;
   top: 1px;
-  font-family: 'jobsicon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   &--heading {
     color: @jobs-orange;
@@ -260,128 +230,4 @@ Styleguide 2.7.3
   }
 }
 
-// Individual icons
-// Copy-paste from the bottom of IcoMoon App generated style.css
-.icon--arrow-circle-o-down:before {
-    content: "\f01a";
-}
-.icon--plus:before {
-    content: "\f067";
-}
-.icon--chart:before {
-    content: "\f080";
-}
-.icon--file-alt:before {
-    content: "\f0f6";
-}
-.icon--spinner:before {
-    content: "\f110";
-}
-.icon--search:before {
-    content: "\e608";
-}
-.icon--star:before {
-    content: "\e609";
-}
-.icon--star-empty:before {
-    content: "\e60a";
-}
-.icon--remove:before {
-    content: "\e61a";
-}
-.icon--clock:before {
-    content: "\e602";
-}
-.icon--tag:before {
-    content: "\e60b";
-}
-.icon--print:before {
-    content: "\e60c";
-}
-.icon--list:before {
-    content: "\e61c";
-}
-.icon--map-marker:before {
-    content: "\e60d";
-}
-.icon--share:before {
-    content: "\e60e";
-}
-.icon--info-sign:before {
-    content: "\e61f";
-}
-.icon--share-alt:before {
-    content: "\e61d";
-}
-.icon--like:before {
-    content: "\e619";
-}
-.icon--signin:before {
-    content: "\e623";
-}
-.icon--bell:before {
-    content: "\e60f";
-}
-.icon--reorder:before {
-    content: "\e610";
-}
-.icon--comment-alt:before {
-    content: "\e611";
-}
-.icon--building:before {
-    content: "\e612";
-}
-.icon--double-angle-right:before {
-    content: "\e613";
-}
-.icon--angle-left:before {
-    content: "\e614";
-}
-.icon--angle-right:before {
-    content: "\e615";
-}
-.icon--laptop:before {
-    content: "\e61b";
-}
-.icon--folder-open-alt:before {
-    content: "\e616";
-}
-.icon--calendar-empty:before {
-    content: "\e61e";
-}
-.icon--coins:before {
-    content: "\e601";
-}
-.icon--library:before {
-    content: "\e600";
-}
-.icon--bite-square:before {
-    content: "\e603";
-}
-.icon--youtube:before {
-    content: "\e604";
-}
-.icon--twitter:before {
-    content: "\e605";
-}
-.icon--googleplus:before {
-    content: "\e606";
-}
-.icon--facebook:before {
-    content: "\e607";
-}
-.icon--user:before {
-    content: "\e617";
-}
-.icon--house:before {
-    content: "\e618";
-}
-.icon--stop:before {
-    content: "\e622";
-}
-.icon--arrow-down:before {
-    content: "\e620";
-}
-.icon--arrow-right:before {
-    content: "\e621";
-}
+@import (inline) "_generated/style.css";

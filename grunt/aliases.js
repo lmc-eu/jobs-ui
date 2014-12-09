@@ -4,17 +4,17 @@ module.exports = {
     'default': [
         'clean',
         'bower',
+        'copy:dist',
         'dist',
         'docs'
     ],
 
     'dist': [
-        'scripts',
         'styles',
-        'copy:dist'
+        'scripts'
     ],
 
-    'scripts':[
+    'scripts': [
         'jshint',
         'browserify',
         'uglify'
