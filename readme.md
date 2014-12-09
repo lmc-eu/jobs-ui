@@ -75,13 +75,13 @@ the documentation from the distribution folder to insure consistency.
 ### How to manage icons
 1. Go to [IcoMoon](http://icomoon.io/app/)
 2. In menu choose Manage projects
-3. Import project (json file)
+3. Import project, use *src/modules/icons/_generated/selection.json*
 4. Load project
 5. Add/remove/update icons
-6. Download font
-7. Copy *style.css* and *fonts/jobsicon.eot* files to the *src/modules/icons/font* directory
-8. Update KSS documentation
-9. Save project in Icomoon and replace jobsicon.json
+6. Download the package
+7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*
+8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*
+9. Update KSS documentation
 10. Regenerate project by Grunt
 
 ### Available Grunt tasks
