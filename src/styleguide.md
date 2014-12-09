@@ -4,6 +4,8 @@
 
 ## v4.0.0
 - Remove *src-n attributes* polyfill
+- Change *index-card* to be multiline by default
+    - Add *index-card--oneline* for old behaviour
 - Change speed of *icon--rotating*
 - Change *glass* opacity
 - Fonts are inlined in the CSS (up to EOT for IE8)
