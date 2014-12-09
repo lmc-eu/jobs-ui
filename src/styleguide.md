@@ -1,11 +1,6 @@
 *Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
-## v3.1.4
-- Fixed *tabs* component in FF ESR browser
-
-## v3.1.3
-- Fixed *tabs* component in IE 7,8 browser
 
 ## v4.0.0
 - Remove *src-n attributes* polyfill
@@ -22,6 +17,12 @@
 - Add *select-filter* component
 - Add new icon:
     - *spinner*
+
+## v3.1.4
+- Fixed *tabs* component in FF ESR browser
+
+## v3.1.3
+- Fixed *tabs* component in IE 7,8 browser
 
 ## v3.1.2
 - Compact footer lists
