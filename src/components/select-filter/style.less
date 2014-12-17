@@ -121,10 +121,21 @@ Styleguide 3.5
     &--arrow {
         select {
             appearance: none;
+            -o-appearance: none;
+            -ms-appearance: none;
             -moz-appearance: none;
             -webkit-appearance: none;
             line-height: 18px;
             padding-right: 20px;
+            &::-ms-expand {
+                display: none;
+                /* IE 8 */
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                /* IE 5-7 */
+                filter: alpha(opacity=0);
+                /* Good browsers :) */
+                opacity:0;
+            }
         }
         &:after {
             content: "";
