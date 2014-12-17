@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.0.1
+- Add *select-filter--arrow* for change browser's default view
+- Add *select-filter__item* to style otherelement than select
+
 ## v4.0.0
 - Remove *src-n attributes* polyfill
 - Change *index-card* to be multiline by default

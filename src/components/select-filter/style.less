@@ -1,7 +1,7 @@
 /*
 Select filter
 
-Special form of select with *active* modifier.
+Special form of select with *active* modifier. You can use *arrow* modifier to change browser's default view.
 
 Style of the select element will be changed automaticaly
 in case that non first option is selected.
@@ -9,7 +9,7 @@ in case that non first option is selected.
 Markup:
 <form class="form pit">
 <div class="grid grid--center--palm"><!--
-    --><div class="grid__item e-3--palm e-5">
+    --><div class="grid__item e-3--palm e-7">
         <div class="select-filter">
             <select class="form__select" id="animals">
                 <option>choose</option>
@@ -21,7 +21,7 @@ Markup:
             <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
-    --><div class="grid__item e-3--palm e-5">
+    --><div class="grid__item e-3--palm e-7">
         <div class="select-filter select-filter--active">
             <select class="form__select" id="animals2">
                 <option>choose</option>
@@ -33,6 +33,50 @@ Markup:
             <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
+--></div><!--
+--><div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-3--palm e-7">
+        <div class="select-filter select-filter--arrow">
+            <select class="form__select" id="animals3">
+                <option>choose</option>
+                <option value="1">Cat</option>
+                <option value="2">Dog</option>
+                <option value="3">Cow</option>
+                <option value="4">Crocodile</option>
+            </select>
+            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+        </div>
+    </div><!--
+    --><div class="grid__item e-3--palm e-7">
+        <div class="select-filter select-filter--arrow">
+            <select class="form__select" id="animals4">
+                <option>choose</option>
+                <option value="1">Cat</option>
+                <option value="2" selected>Dog</option>
+                <option value="3">Cow</option>
+                <option value="4">Crocodile</option>
+            </select>
+            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+        </div>
+    </div><!--
+--></div><!--
+--><div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-6--palm e-7">
+        <div class="select-filter select-filter--active">
+            <span class="select-filter__item">
+                stomatologie
+                <span class="icon icon--remove" aria-hidden="true"></span>
+            </span>
+        </div>
+    </div><!--
+    --><div class="grid__item e-6--palm e-7">
+        <div class="select-filter select-filter--active">
+            <span class="select-filter__item">
+                nature údaje pohyb houbovitou
+                <span class="icon icon--remove" aria-hidden="true"></span>
+            </span>
+        </div>
+    </div><!--
 --></div>
 </form>
 
@@ -42,6 +86,7 @@ Styleguide 3.5
 .select-filter {
     position: relative;
 
+    &__item,
     select {
         font-size: 13px;
         border-color: @dark-blue;
@@ -55,6 +100,41 @@ Styleguide 3.5
         font-size: 13px;
         color: @dark-blue;
     }
+    &__item {
+        display: inline-block;
+        position: relative;
+        padding: 3px 28px 3px 13px;
+        margin-bottom: 10px;
+        @media only screen and (min-width: @screen-lap) {
+            min-width: 139px;
+        }
+        @media only screen and (max-width: @screen-lap-max) {
+            width: calc(~"100% - 41px");
+        }
+        .icon.icon--remove {
+            display: block;
+            right: 10px;
+            left: auto;
+            cursor: pointer;
+        }
+    }
+    &--arrow {
+        select {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            line-height: 18px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 7px;
+            top: 13px;
+            width: 16px;
+            height: 10px;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAY0lEQVQoz83LwQqCYBCF0fNKLkIhCAqloPd/D9FSd7aZhYimvysP3M0MH2QoDi6DNwaMiRuiBS/0CXGPp5kK3Y64Q2nFA98/8Qd3G25oF+I2frtc0UziJm5JCtSx3EGX2In9AIdUPqKBK6enAAAAAElFTkSuQmCC");
+        }
+    }
     &--in-progress {
         select {
             padding-left: 20px;
@@ -64,13 +144,18 @@ Styleguide 3.5
         }
     }
     &--active {
+        &:after {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAdElEQVR42s2RywqAIBRE55dcRIEQFEWB//8f0XulzQUXLizUVQdGL9c5K+GcU0xTGAUehrldPuIYCBxm5sqQpTshhIuRORNk6QyIwYeeOd5Ma+3Oq8MXLLQsbhFZdi1SYFFTWANZZo0c/DctPjVKoFhJ8GseEDdFmoLdISMAAAAASUVORK5CYII=");
+        }
         .icon {
             color: #ffffff;
         }
+        .select-filter__item,
         select {
             background-color: @dark-blue;
             color: #ffffff;
-
+        }
+        select {
             option {
                 background-color: #ffffff;
                 color: @dark-blue;
