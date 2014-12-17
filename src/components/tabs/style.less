@@ -64,7 +64,6 @@ Styleguide 4.13
     &__item {
         position: relative;
         display: inline-block;
-        /*width: 25%;*/
         height: 34px;
         text-align: center;
         border-left: 1px solid @dark-blue;
@@ -75,7 +74,7 @@ Styleguide 4.13
         }
 
         @media only screen and (max-width: @screen-lap) {
-            min-width: 33.3333%;
+            width: 33.3333% !important;
 
             &:nth-of-type(n+4) {
                 display: none;

@@ -34,8 +34,9 @@ Tabs.prototype.process = function (el) {
 
 Tabs.prototype.setWidthOfTabs = function () {
     var item = $('.tabs__item');
+    var parentSize = parseInt($('.tabs').width());  //  could be 100
     var count = parseInt(item.size()) || 0;
-    item.css('width', parseInt(100/count) + '%');
+    item.css('width', parseFloat(parentSize/count)); // could be on %
 };
 
 module.exports = Tabs;
