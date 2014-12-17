@@ -8,6 +8,7 @@
 function Tabs(tabsCollection, activeClass) {
     var self = this;
 
+    self.setWidthOfTabs();
     self.tabs = $('[data-tab-toggle][href^=#' + tabsCollection + ':]');
     self.panels = $('[id^="' + tabsCollection + ':"]');
     self.activeClass = activeClass || 'tabs__link--active';
@@ -29,6 +30,12 @@ Tabs.prototype.process = function (el) {
         .hide()
         .filter('[id="' + target + '"]')
         .show();
+};
+
+Tabs.prototype.setWidthOfTabs = function () {
+    var item = $('.tabs__item');
+    var count = parseInt(item.size()) || 0;
+    item.css('width', parseInt(100/count) + '%');
 };
 
 module.exports = Tabs;
