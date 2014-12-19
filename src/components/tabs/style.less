@@ -3,7 +3,10 @@ Tabs
 
 The component for switching content areas.
 
-n tabs on desktop or tablet, 3 tabs on smartphones.
+4 or 5 tabs on desktop and tablet, 3 tabs on smartphones.
+Optionally add modificator *--fifth* for each tab element to show 5 tabs on desktop.
+There are maximum 3 tabs visible on smartphone.
+
 
 To activate tab navigation without writing any JavaScript add **data-tab-toggle** attribute on an link element.
 The **href** must have **collection** and **target** element to show in format: *#collection:target*
@@ -15,13 +18,25 @@ Using divs instead of list is possible.
 Markup:
 <!-- Tabs -->
 <div class="grid">
+    <!-- Tabs fourth -->
     <div class="grid__item">
         <ul class="tabs">
             <li class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></li>
             <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></li>
             <li class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></li>
             <li class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></li>
-            <li class="tabs__item"><a class="tabs__link" href="#tabs1:fifth" data-tab-toggle>Tab5</a></li>
+        </ul>
+    </div>
+     <div class="grid__item">
+     </div>
+     <!-- Tabs fifth -->
+     <div class="grid__item e-0--palm e-full">
+        <ul class="tabs">
+            <li class="tabs__item tabs__item--fifth"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></li>
+            <li class="tabs__item tabs__item--fifth"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></li>
+            <li class="tabs__item tabs__item--fifth"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></li>
+            <li class="tabs__item tabs__item--fifth"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></li>
+            <li class="tabs__item tabs__item--fifth"><a class="tabs__link" href="#tabs1:fifth" data-tab-toggle>Tab5</a></li>
         </ul>
     </div>
 </div>
@@ -65,6 +80,7 @@ Styleguide 4.13
         position: relative;
         display: inline-block;
         height: 34px;
+        width: 25%;
         text-align: center;
         border-left: 1px solid @dark-blue;
         .box-sizing(border-box);
@@ -73,8 +89,12 @@ Styleguide 4.13
             border-left: none;
         }
 
+        &--fifth {
+            width: 20%;
+        }
+
         @media only screen and (max-width: @screen-lap) {
-            width: 33.3333% !important;
+            width: 33.3333%;
 
             &:nth-of-type(n+4) {
                 display: none;
