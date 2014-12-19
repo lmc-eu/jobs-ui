@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.0.1
+- Add new modifier for *label*:
+    - *label--orange* for orange background color
+
 ## v4.0.0
 - Remove *src-n attributes* polyfill
 - Change *index-card* to be multiline by default
