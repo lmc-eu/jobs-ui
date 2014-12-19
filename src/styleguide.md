@@ -5,6 +5,10 @@
 ## v4.1.0
 - Update *tabs* component to be more common and fixed triangle
 
+## v4.0.1
+- Add new modifier for *label*:
+    - *label--warning* for orange background color
+
 ## v4.0.0
 - Remove *src-n attributes* polyfill
 - Change *index-card* to be multiline by default
