@@ -4,7 +4,7 @@
 
 ## v4.0.1
 - Add new modifier for *label*:
-    - *label--orange* for orange background color
+    - *label--warning* for orange background color
 
 ## v4.0.0
 - Remove *src-n attributes* polyfill
