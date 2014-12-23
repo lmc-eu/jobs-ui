@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.1.0
+- Add *select-filter--arrow* for change browser's default view
+- Add *select-filter__item* to style otherelement than select
+
 ## v4.0.1
 - Add new modifier for *label*:
     - *label--warning* for orange background color
