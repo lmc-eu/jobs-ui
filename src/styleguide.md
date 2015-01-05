@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.2.0
+- Add new icon:
+    - *calculator*
+
 ## v4.1.0
 - Add *select-filter--arrow* for change browser's default view
 - Add *select-filter__item* to style otherelement than select
