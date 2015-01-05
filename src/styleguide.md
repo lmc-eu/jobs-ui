@@ -94,7 +94,7 @@
 - Small edit of *icon description*
 
 ## v2.10.0
-- Changed *small-search* width to block
+- Change *small-search* width to block
 
 ## v2.9.0
 - Add new icon:
@@ -110,16 +110,16 @@
     - *arrow-right*
 
 ## v2.6.3
-- fixed *label component* in firefox browser, changed to *inline-block*
+- Fix *label component* in firefox browser, change to *inline-block*
 
 ## v2.6.2
-- added *nowrap* on *label component*
+- Add *nowrap* on *label component*
 
 ## v2.6.1
-- fixed *top and bottom padding* on *label component*
+- Fix *top and bottom padding* on *label component*
 
 ## v2.6.0
-- add *label component*
+- Add *label component*
 
 ## v2.5.0
 - Add new class *headline-position* in H1
@@ -134,7 +134,7 @@
 
 ## v2.3.0
 
-- Removed pseudoclass *:invalid* on inputs
+- Remove pseudoclass *:invalid* on inputs
 - Fix *word wrapping* in paragraphs and links
 - Add basic styles for *select*
 - Add *nowrap* class for text modifier
