@@ -3,7 +3,9 @@ Tabs
 
 The component for switching content areas.
 
-4 tabs on desktop or tablet, 3 tabs on smartphones.
+To use, simply put as many **tabs__item** as you wish in your **tabs** and the **tabs__item** will automatically be evenly spaced.
+There are maximum 3 tabs visible on smartphone, others are hidden.
+
 
 To activate tab navigation without writing any JavaScript add **data-tab-toggle** attribute on an link element.
 The **href** must have **collection** and **target** element to show in format: *#collection:target*
@@ -13,7 +15,6 @@ For the functionality you need to call the *Tabs* as below.
 Using divs instead of list is possible.
 
 Markup:
-<!-- Tabs -->
 <div class="grid">
     <div class="grid__item">
         <ul class="tabs">
@@ -23,8 +24,17 @@ Markup:
             <li class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></li>
         </ul>
     </div>
+    <div class="grid__item"></div>
+    <div class="grid__item e-0--palm e-full">
+        <div class="tabs">
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></div>
+            <div class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fifth" data-tab-toggle>Tab5</a></div>
+        </div>
+    </div>
 </div>
-<!-- Panels -->
 <div class="grid">
     <div id="tabs1:first" class="grid__item" style="display:none;">
         <p>Vyhynul podíval květiny.</p>
@@ -38,6 +48,9 @@ Markup:
     <div id="tabs1:fourth" class="grid__item" style="display:none;">
         <p>Filosofa v nazvaného s mcintoshe větších.</p>
     </div>
+    <div id="tabs1:fifth" class="grid__item" style="display:none;">
+        <p>Kanadských nově autoři británie mé starověkého uherské americké mexiko proužkem v zrušili.</p>
+    </div>
 </div>
 <!-- Javascript -->
 <script>
@@ -50,6 +63,9 @@ Styleguide 4.13
 */
 
 .tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -59,8 +75,7 @@ Styleguide 4.13
 
     &__item {
         position: relative;
-        display: inline-block;
-        width: 25%;
+        display: table-cell;
         height: 34px;
         text-align: center;
         border-left: 1px solid @dark-blue;
@@ -71,9 +86,8 @@ Styleguide 4.13
         }
 
         @media only screen and (max-width: @screen-lap) {
-            min-width: 33.3333%;
 
-            &:last-child {
+            &:nth-of-type(n+4) {
                 display: none;
             }
         }
@@ -85,24 +99,25 @@ Styleguide 4.13
         line-height: 30px;
         color: @dark-blue;
         font-size: 15px;
-        border-bottom: none;
 
         &:hover,
         &--active {
             color: #fff;
             background-color: @dark-blue;
+            border-bottom: none;
         }
 
         &--active::after {
+            content: "";
             position: absolute;
-            left: 48%;
+            left: 50%;
             bottom: -5px;
+            margin-left: -5px;
             width: 0px;
             height: 0px;
             border-style: solid;
             border-width: 5px 6px 0;
             border-color: @dark-blue transparent transparent transparent;
-            content: "";
         }
     }
 }

@@ -5,6 +5,7 @@
 ## v4.2.0
 - Add new icon:
     - *calculator*
+- Make tabs independent of their count; fix active tab appearance
 
 ## v4.1.0
 - Add *select-filter--arrow* for change browser's default view

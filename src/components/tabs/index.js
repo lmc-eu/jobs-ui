@@ -22,8 +22,10 @@ Tabs.prototype.process = function (el) {
     var $el = $(el);
     var target = $el.attr('href').substring(1);
 
-    this.tabs.removeClass(this.activeClass);
-    $el.addClass(this.activeClass);
+    this.tabs
+        .removeClass(this.activeClass)
+        .filter('[href="#' + target + '"]')
+        .addClass(this.activeClass);
 
     this.panels
         .hide()
