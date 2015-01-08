@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.3.0
+- Add new icon:
+    - *folder*
+
 ## v4.2.0
 - Add new icon:
     - *calculator*
