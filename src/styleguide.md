@@ -2,6 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.4.0
+- Add *promobox* component
+- Add *darker-blue* color
+- Add *button--wrap* modificator
+- Add new icon:
+    - *facebook-square*
+
 ## v4.3.0
 - Add new icon:
     - *folder*

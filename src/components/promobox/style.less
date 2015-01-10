@@ -1,0 +1,58 @@
+/*
+Promobox
+
+Box for promo
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-6--palm e-8">
+        <div class="promobox">
+            <h1>
+                Jazykem paliva
+            </h1>
+            <p>
+                Pokaždé zoologie hlubšího
+            </p>
+            <p>
+                <button class="button">Odeslat</button>
+            </p>
+        </div>
+    </div><!--
+    --><div class="grid__item e-6--palm e-8">
+        <div class="promobox promobox--inverse">
+            <h1>
+                Jazykem paliva
+            </h1>
+            <p>
+                Pokaždé zoologie hlubšího
+            </p>
+            <p>
+                <button class="button">Odeslat</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.17
+*/
+
+.promobox {
+    position: relative;
+    background-color: @light-silver;
+    padding: 20px;
+    margin-bottom: 36px;
+
+    &--inverse {
+        background-color: @darker-blue;
+        color: #ffffff;
+
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+    }
+
+    &--reduced {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
