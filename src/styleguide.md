@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.3.1
+- Fix *tabs* for tablet
+
 ## v4.3.0
 - Add new icon:
     - *folder*
