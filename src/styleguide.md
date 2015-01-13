@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.4.0
+- Add new icon:
+    - *book-open*
+
 ## v4.3.1
 - Fix *tabs* for tablet
 
