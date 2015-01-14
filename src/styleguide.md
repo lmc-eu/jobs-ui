@@ -2,6 +2,14 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.5.0
+- Add *promobox* component
+- Add *darker-blue* color
+- Add *button--wrap* modificator
+- Add new icon:
+    - *facebook-square*
+- Returned *folder* icon after bad merge in 4.4.0
+
 ## v4.4.0
 - Add new icon:
     - *book-open*
