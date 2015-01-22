@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add *overlay* component
+
 ## v4.5.0
 - Add *promobox* component
 - Add *darker-blue* color

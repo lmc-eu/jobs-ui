@@ -1,0 +1,45 @@
+/*
+Overlay
+
+Full-screen dark tint in the background. Should be only one on the page.
+
+Markup:
+<div class="overlay"></div>
+<a href="#" data-show-overlay>Show overlay</a> (click on it to hide)
+<script>
+    var overlay = $(".overlay")
+    function toggleOverlay(e) {
+        e.preventDefault();
+        overlay.toggleClass("overlay--open");
+    }
+    $('[data-show-overlay]').click(toggleOverlay);
+    overlay.click(toggleOverlay);
+</script>
+
+Styleguide 4.18
+*/
+
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: block;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    background: #333; // IE8 and IE9 fix
+    background: fade(#333, 90%);
+    .transition(visibility 0s linear 0.2s, opacity 0.2s linear);
+
+    &--open {
+        visibility: visible;
+        opacity: 1;
+        .transition-delay(0);
+    }
+}
+
