@@ -27,6 +27,17 @@ Markup:
     </div>
 </div>
 
+<div class="grid">
+    <div class="grid__item e-16">
+        <div class="cover-box cover-box--borderless">
+            <a href="#">
+                <img class="cover-box__image"
+                     src="public/images/cover-box.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+
 Styleguide 4.16
 */
 
@@ -36,6 +47,10 @@ Styleguide 4.16
     margin-top: @margin-size;
     margin-bottom: (@margin-size / 2);
     border: 1px solid @silver;
+
+    &--borderless {
+        border: none;
+    }
 
     &__image {
         width: 100%;

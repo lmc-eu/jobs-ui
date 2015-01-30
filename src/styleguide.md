@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.5.1
+- Add new borderless modifier for *cover-box*
+
 ## v4.5.0
 - Add *promobox* component
 - Add *darker-blue* color
