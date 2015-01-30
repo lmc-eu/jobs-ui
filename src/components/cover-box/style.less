@@ -8,7 +8,7 @@ Can be used primary in search-list.
 Markup:
 <div class="grid">
     <div class="grid__item e-16">
-        <div class="cover-box">
+        <div class="cover-box cover-box--with-content">
             <a href="#">
                 <img class="cover-box__image"
                      src="public/images/cover-box.jpg">
@@ -29,7 +29,7 @@ Markup:
 
 <div class="grid">
     <div class="grid__item e-16">
-        <div class="cover-box cover-box--borderless">
+        <div class="cover-box">
             <a href="#">
                 <img class="cover-box__image"
                      src="public/images/cover-box.jpg">
@@ -46,10 +46,9 @@ Styleguide 4.16
 
     margin-top: @margin-size;
     margin-bottom: (@margin-size / 2);
-    border: 1px solid @silver;
 
-    &--borderless {
-        border: none;
+    &--with-content {
+        border: 1px solid @silver;
     }
 
     &__image {
