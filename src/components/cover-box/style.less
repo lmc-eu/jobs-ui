@@ -6,25 +6,25 @@ Displays elita cover.
 Can be used primary in search-list.
 
 Markup:
-<div class="grid">
-    <div class="grid__item e-16">
-        <div class="cover-box">
-            <a href="#">
-                <img class="cover-box__image"
-                     src="public/images/cover-box.jpg">
-            </a>
-            <div class="cover-box__content">
-                <div class="cover-box__content__links">
-                    <a class="cover-box__content__links__link cover-box__content__links__link--left"
-                       href="#">Do borci</a>
-                    <a class="cover-box__content__links__link cover-box__content__links__link--right"
-                       href="#">Zoologie hlubšího</a>
-                    <a class="cover-box__content__links__link"
-                       href="#">Veřejný cíp</a>
-                </div>
-            </div>
+<div class="cover-box cover-box--with-content">
+    <a href="#">
+        <img class="cover-box__image" src="public/images/cover-box.jpg" />
+    </a>
+    <div class="cover-box__content">
+        <div class="cover-box__content__links">
+            <a class="cover-box__content__links__link cover-box__content__links__link--left"
+               href="#">Do borci</a>
+            <a class="cover-box__content__links__link cover-box__content__links__link--right"
+               href="#">Zoologie hlubšího</a>
+            <a class="cover-box__content__links__link"
+               href="#">Veřejný cíp</a>
         </div>
     </div>
+</div>
+<div class="cover-box">
+    <a href="#">
+        <img class="cover-box__image" src="public/images/cover-box.jpg" />
+    </a>
 </div>
 
 Styleguide 4.16
@@ -35,7 +35,10 @@ Styleguide 4.16
 
     margin-top: @margin-size;
     margin-bottom: (@margin-size / 2);
-    border: 1px solid @silver;
+
+    &--with-content {
+        border: 1px solid @silver;
+    }
 
     &__image {
         width: 100%;
