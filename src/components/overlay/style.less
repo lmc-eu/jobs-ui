@@ -1,16 +1,20 @@
 /*
-Overlay
+Overlay and scroll lock
 
 Full-screen dark tint in the background. Should be only one on the page.
+
+Add `.scroll-lock` to `body` to disable scrolling under the overlay.
 
 Markup:
 <div class="overlay"></div>
 <a href="#" data-show-overlay>Show overlay</a> (click on it to hide)
 <script>
-    var overlay = $(".overlay")
+    var overlay = $(".overlay"),
+        body = $("body");
     function toggleOverlay(e) {
         e.preventDefault();
         overlay.toggleClass("overlay--open");
+        body.toggleClass("scroll-lock");
     }
     $('[data-show-overlay]').click(toggleOverlay);
     overlay.click(toggleOverlay);
@@ -41,5 +45,9 @@ Styleguide 4.18
         opacity: 1;
         .transition-delay(0);
     }
+}
+
+.scroll-lock {
+    overflow: hidden;
 }
 
