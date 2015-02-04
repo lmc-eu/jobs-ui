@@ -194,6 +194,15 @@
         $('pre>code').addClass('prettyprint');
         prettyPrint();
 
+        $(window).bind('scroll', function() {
+            if ($(window).scrollTop() > 100) {
+                $('.kss__sidebar').addClass('kss__sidebar--alone');
+            }
+            else {
+                $('.kss__sidebar').removeClass('kss__sidebar--alone');
+            }
+        });
+
     });
 </script>
 </body>

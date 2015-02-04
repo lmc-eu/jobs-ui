@@ -134,12 +134,16 @@ body {
 
     .kss {
         &__sidebar {
-            position: fixed;
             width: 220px;
             max-height: calc(~"100vh - 300px");
             padding: 20px;
             background: #ecf0f1;
             overflow-y: auto;
+
+            &--alone {
+                position: fixed;
+                top: 40px;
+            }
         }
     }
 }

@@ -1,0 +1,189 @@
+/*
+Picker
+
+An advanced option panel.
+
+Please note tha picker is palm only. To enable use on lap and above use
+`.picker--lap` modifier.
+
+To make a picker displayed on the second level use `.picker--secondary`.
+
+Markup:
+<div class="picker picker--lap" id="demo-picker">
+    <div class="picker__head">
+        Vyhýbá starověkých
+        <a class="picker__close" href="#">
+            <span class="icon icon--remove" aria-hidden="true"></span>
+            <span class="visuallyhidden">Zavřít</span>
+        </a>
+    </div>
+    <div class="grid grid--center--palm" style="margin: 0;">
+        <div class="grid__item e-6--palm e-8">
+            <h2>Mozkovou úrovni</h2>
+            <p>
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta.
+            </p>
+            <a href="#" class="button" data-show-subpicker>Show subpicker</a>
+        </div>
+    </div>
+</div>
+<div class="picker picker--lap picker--secondary" id="demo-subpicker">
+    <a class="picker__close" href="#">
+        <span class="icon icon--remove" aria-hidden="true"></span>
+        <span class="visuallyhidden">Zavřít</span>
+    </a>
+    <div class="grid grid--center--palm" style="margin: 0;">
+        <div class="grid__item e-5--palm e-6">
+            <h2>Samci přes, polovině </h2>
+            <p>
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+            </p>
+        </div>
+    </div>
+</div>
+<a href="#" data-show-picker>Show picker</a>
+<script>
+    var picker = $('#demo-picker'),
+        subpicker = $('#demo-subpicker'),
+        overlay = $('#overlay'),
+        body = $('body');
+    function openPicker(e) {
+        e.preventDefault();
+        picker.addClass('picker--open');
+        overlay.addClass('overlay--open');
+        subpicker.addClass('picker--pre-open');
+        body.addClass('scroll-lock');
+    };
+    function closePicker(e) {
+        e.preventDefault();
+        picker.removeClass('picker--open');
+        overlay.removeClass('overlay--open');
+        subpicker.removeClass('picker--pre-open');
+        body.removeClass('scroll-lock');
+    };
+    function openSubpicker(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        subpicker.addClass('picker--open');
+    };
+    function closeSubpicker(e) {
+        e.preventDefault();
+        subpicker.removeClass('picker--open');
+    };
+    function closeBothPickers(e) {
+        e.preventDefault();
+        closeSubpicker(e);
+        closePicker(e);
+    };
+    $('[data-show-picker]').click(openPicker);
+    $('[data-show-subpicker]').click(openSubpicker);
+    picker.find('.picker__close').click(closeBothPickers);
+    subpicker.find('.picker__close').click(closeSubpicker);
+    overlay.click(closeBothPickers);
+</script>
+
+Styleguide 4.19
+*/
+
+@picker-head-height: 80px;
+
+
+.picker-block(@width) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: @width;
+    height: 100%;
+    background-color: #ffffff;
+    overflow: auto;
+    z-index: 10010;
+    .translate3d(-100%, 0, 0);
+    .transition-duration(200ms);
+}
+.picker-modifiers() {
+    &--secondary {
+        padding: 36px 0;
+        background-color: @light-silver;
+    }
+    &--open {
+        .translate3d(0, 0, 0);
+    }
+}
+.picker-elements() {
+    &__head {
+        height: @picker-head-height;
+        margin-bottom: (@standalone-bottom-margin / 2);
+        padding: 0 @picker-head-height 0 20px;
+        line-height: @picker-head-height;
+        white-space: nowrap;
+        text-align: center;
+        text-overflow: ellipsis;
+        background-color: @jobs-blue-basic;
+        overflow: hidden;
+        color: #ffffff;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: @picker-head-height;
+        color: @light-gray;
+        line-height: @picker-head-height;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+}
+
+@media only screen and (max-width: @screen-lap-max) {
+    .picker {
+        .picker-block(84%);
+        &--secondary {
+            width: 72%;
+            z-index: 10020;
+        }
+        .picker-modifiers();
+        .picker-elements();
+    }
+}
+
+@media only screen and (min-width: @screen-lap) {
+    .picker--lap {
+        .picker-block(340px);
+
+        &.picker {
+            .picker-modifiers();
+
+            &--secondary {
+                width: 300px;
+                z-index: 10005;
+            }
+
+            &--secondary.picker--pre-open {
+                .translate3d(40px, 0, 0);
+            }
+
+            &--secondary.picker--open {
+                .translate3d(340px, 0, 0);
+            }
+        }
+
+        .picker {
+            .picker-elements();
+        }
+    }
+}
