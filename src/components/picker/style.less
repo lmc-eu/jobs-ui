@@ -3,13 +3,21 @@ Picker
 
 An advanced option panel.
 
-Please note tha picker is palm only. To enable use on lap and above use
+The picker is palm only by default. To enable use on lap and above use
 `.picker--lap` modifier.
 
+Opening a picker means adding `.picker--open` class and changing its
+`aria-hidden` attribute to false.
+
 To make a picker displayed on the second level use `.picker--secondary`.
+The `.picker--pre-open` class should be added to a secondary picker when its
+primary picker is opened; this makes the open animation smoother.
+
+*Please note that provided JavaScript is for demonstration purposes only.*
 
 Markup:
-<div class="picker picker--lap" id="demo-picker">
+<div class="picker picker--lap" id="demo-picker"
+     role="dialog" aria-hidden="true">
     <div class="picker__head">
         Vyhýbá starověkých
         <a class="picker__close" href="#">
@@ -28,11 +36,13 @@ Markup:
         </div>
     </div>
 </div>
-<div class="picker picker--lap picker--secondary" id="demo-subpicker">
+<div class="picker picker--lap picker--secondary" id="demo-subpicker"
+     role="dialog" aria-hidden="true">
     <a class="picker__close" href="#">
         <span class="icon icon--remove" aria-hidden="true"></span>
         <span class="visuallyhidden">Zavřít</span>
     </a>
+    <div class="picker__body">
     <div class="grid grid--center--palm" style="margin: 0;">
         <div class="grid__item e-5--palm e-6">
             <h2>Samci přes, polovině </h2>
@@ -50,6 +60,7 @@ Markup:
             </p>
         </div>
     </div>
+    </div>
 </div>
 <a href="#" data-show-picker>Show picker</a>
 <script>
@@ -59,14 +70,14 @@ Markup:
         body = $('body');
     function openPicker(e) {
         e.preventDefault();
-        picker.addClass('picker--open');
+        picker.addClass('picker--open').attr('aria-hidden', 'false');
         overlay.addClass('overlay--open');
         subpicker.addClass('picker--pre-open');
         body.addClass('scroll-lock');
     };
     function closePicker(e) {
         e.preventDefault();
-        picker.removeClass('picker--open');
+        picker.removeClass('picker--open').attr('aria-hidden', 'true');
         overlay.removeClass('overlay--open');
         subpicker.removeClass('picker--pre-open');
         body.removeClass('scroll-lock');
@@ -74,11 +85,13 @@ Markup:
     function openSubpicker(e) {
         e.preventDefault();
         e.stopPropagation();
-        subpicker.addClass('picker--open');
+        subpicker.addClass('picker--open').attr('aria-hidden', 'false');
+        picker.addClass('scroll-lock');
     };
     function closeSubpicker(e) {
         e.preventDefault();
-        subpicker.removeClass('picker--open');
+        subpicker.removeClass('picker--open').attr('aria-hidden', 'true');
+        picker.removeClass('scroll-lock');
     };
     function closeBothPickers(e) {
         e.preventDefault();
@@ -94,60 +107,7 @@ Markup:
 
 Styleguide 4.19
 */
-
-@picker-head-height: 80px;
-
-
-.picker-block(@width) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: @width;
-    height: 100%;
-    background-color: #ffffff;
-    overflow: auto;
-    z-index: 10010;
-    .translate3d(-100%, 0, 0);
-    .transition-duration(200ms);
-}
-.picker-modifiers() {
-    &--secondary {
-        padding: 36px 0;
-        background-color: @light-silver;
-    }
-    &--open {
-        .translate3d(0, 0, 0);
-    }
-}
-.picker-elements() {
-    &__head {
-        height: @picker-head-height;
-        margin-bottom: (@standalone-bottom-margin / 2);
-        padding: 0 @picker-head-height 0 20px;
-        line-height: @picker-head-height;
-        white-space: nowrap;
-        text-align: center;
-        text-overflow: ellipsis;
-        background-color: @jobs-blue-basic;
-        overflow: hidden;
-        color: #ffffff;
-    }
-
-    &__close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: @picker-head-height;
-        color: @light-gray;
-        line-height: @picker-head-height;
-        text-align: center;
-        text-decoration: none;
-
-        &:hover {
-            border: none;
-        }
-    }
-}
+@import "helper";
 
 @media only screen and (max-width: @screen-lap-max) {
     .picker {
@@ -171,14 +131,14 @@ Styleguide 4.19
             &--secondary {
                 width: 300px;
                 z-index: 10005;
-            }
 
-            &--secondary.picker--pre-open {
-                .translate3d(40px, 0, 0);
-            }
+                &.picker--pre-open {
+                    .translate3d(40px, 0, 0);
+                }
 
-            &--secondary.picker--open {
-                .translate3d(340px, 0, 0);
+                &.picker--open {
+                    .translate3d(340px, 0, 0);
+                }
             }
         }
 
