@@ -64,7 +64,7 @@
         <div class="wrapper">
             <div class="grid"><!--
                 --><div class="grid__item ">
-                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" />
+                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" height="200"/>
                 </div><!--
             --></div>
         </div>
@@ -76,7 +76,7 @@
     <div class="grid grid--rev--desk"><!--
                     --><div class="grid__item  e-7--desk  e-push-2--desk">
 
-        <div class="kss__sidebar">
+        <div class="kss__sidebar" id="kss-sidebar">
             <ul class="list-unstyled list-spaced">
                 {{#if overview}}
                 <li>
@@ -194,12 +194,14 @@
         $('pre>code').addClass('prettyprint');
         prettyPrint();
 
-        $(window).bind('scroll', function() {
-            if ($(window).scrollTop() > 100) {
-                $('.kss__sidebar').addClass('kss__sidebar--alone');
-            }
-            else {
-                $('.kss__sidebar').removeClass('kss__sidebar--alone');
+        var sidebar = $('#kss-sidebar'),
+            sidebarOffset = sidebar.offset().top;
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > (sidebarOffset - 40)) {
+                sidebar.addClass('kss__sidebar--alone');
+            } else {
+                sidebar.removeClass('kss__sidebar--alone');
             }
         });
 
