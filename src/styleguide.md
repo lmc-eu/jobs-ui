@@ -2,10 +2,14 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.7.0
 - Add *overlay* component
 - Add *picker* component
 - Add *combobox* component
+
+## v4.6.0
+- Remove border from *cover-box*
+- Add new modifier *cover-box--with-content*
 
 ## v4.5.0
 - Add *promobox* component
