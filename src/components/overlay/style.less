@@ -3,7 +3,8 @@ Overlay and scroll lock
 
 Full-screen dark tint in the background. Should be only one on the page.
 
-Add `.scroll-lock` to `body` to disable scrolling under the overlay.
+Add `.scroll-lock` or `.scroll-lock--only-palm` to `body` to disable
+scrolling under the overlay.
 
 Markup:
 <div class="overlay" id="overlay"></div>
@@ -38,5 +39,11 @@ Styleguide 4.18
 
 .scroll-lock {
     overflow: hidden;
+
+    @media only screen and (max-width: @screen-lap-max) {
+        &--only-palm {
+            overflow: hidden;
+        }
+    }
 }
 
