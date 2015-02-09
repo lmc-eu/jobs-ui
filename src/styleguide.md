@@ -5,6 +5,7 @@
 ## DEV
 - Add *overlay* component
 - Add *picker* component
+- Add *combobox* component
 
 ## v4.5.0
 - Add *promobox* component
