@@ -4,7 +4,7 @@ Picker
 An advanced option panel.
 
 The picker is palm only by default. To enable use on lap and above use
-`.picker--lap` modifier.
+`.picker--lap` modifier. It may be combined with a combobox.
 
 Opening a picker means adding `.picker--open` class and changing its
 `aria-hidden` attribute to false.
@@ -61,20 +61,20 @@ Markup:
     var picker = $('#demo-picker'),
         subpicker = $('#demo-subpicker'),
         overlay = $('#overlay'),
-        body = $('body');
+        page = $('html, body');
     function openPicker(e) {
         e.preventDefault();
         picker.addClass('picker--open').attr('aria-hidden', 'false');
         overlay.addClass('overlay--open');
         subpicker.addClass('picker--pre-open');
-        body.addClass('scroll-lock');
+        page.addClass('scroll-lock');
     };
     function closePicker(e) {
         e.preventDefault();
         picker.removeClass('picker--open').attr('aria-hidden', 'true');
         overlay.removeClass('overlay--open');
         subpicker.removeClass('picker--pre-open');
-        body.removeClass('scroll-lock');
+        page.removeClass('scroll-lock');
     };
     function openSubpicker(e) {
         e.preventDefault();
@@ -101,6 +101,7 @@ Markup:
 
 Styleguide 4.19
 */
+
 @import "helper";
 
 @media only screen and (max-width: @screen-lap-max) {
@@ -127,11 +128,11 @@ Styleguide 4.19
                 z-index: 10005;
 
                 &.picker--pre-open {
-                    .translate3d(40px, 0, 0);
+                    .translateX-with-3d(40px);
                 }
 
                 &.picker--open {
-                    .translate3d(340px, 0, 0);
+                    .translateX-with-3d(340px);
                 }
             }
         }

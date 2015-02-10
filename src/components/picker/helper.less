@@ -1,4 +1,4 @@
-.picker-block(@width) {
+.picker-block (@width) {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     overflow: auto;
     z-index: 10010;
     .box-sizing(border-box);
-    .translate3d(-100%, 0, 0);
+    .translateX-with-3d(-100%);
     .transition-duration(200ms);
 }
 .picker-modifiers() {
@@ -18,7 +18,7 @@
         background-color: @light-silver;
     }
     &--open {
-        .translate3d(0, 0, 0);
+    .translateX-with-3d(0);
     }
 }
 .picker-elements() {

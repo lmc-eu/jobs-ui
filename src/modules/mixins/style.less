@@ -1,0 +1,13 @@
+//
+// TranslateX with 3D
+//
+// Translates the element by the given amount along the X axis. Taking
+// advantage of fast 3D transformations.
+//
+// Includes s no-3D fallback for IE9.
+// --------------------------------------------------------------------------
+.translateX-with-3d(@x) {
+    -ms-transform: translateX(@x);
+    -webkit-transform: translate3d(@x, 0, 0);
+    transform: translate3d(@x, 0, 0);
+}
