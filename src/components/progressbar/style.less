@@ -1,0 +1,48 @@
+/*
+Progress bar
+
+Styles for progress bar
+
+Markup:
+<div class="grid">
+    <div class="grid__item">
+        <div class="progressbar">
+            <div class="progressbar__progress" style="width: 21%"></div>
+            <div class="progressbar__text">
+                21&nbsp;%
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.18
+*/
+
+.progressbar {
+    @progressBarHeight: 30px;
+    @progressBarPadding: 3px;
+
+    position: relative;
+    width: 100%;
+    height: @progressBarHeight;
+    border: 1px solid @dark-green;
+    text-align: center;
+
+    &__progress {
+        position: absolute;
+        z-index: 1;
+        background-color: @green;
+        height: @progressBarHeight;
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 2;
+        display: inline-block;
+        left: 0;
+        margin: 0 auto;
+        padding: @progressBarPadding 0;
+        width: 100%;
+        height: (@progressBarHeight - (2 * @progressBarPadding));
+    }
+}

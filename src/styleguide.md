@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.7.0
+- Add new component *progressbar*
+
 ## v4.6.0
 - Remove border from *cover-box*
 - Add new modifier *cover-box--with-content*
