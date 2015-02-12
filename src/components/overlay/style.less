@@ -37,12 +37,18 @@ Styleguide 4.18
     }
 }
 
-.scroll-lock {
+.scroll-lock-helper() {
     overflow: hidden;
+    position: fixed;
+}
+
+.scroll-lock {
+
+    .scroll-lock-helper();
 
     @media only screen and (max-width: @screen-lap-max) {
         &--only-palm {
-            overflow: hidden;
+            .scroll-lock-helper();
         }
     }
 }
