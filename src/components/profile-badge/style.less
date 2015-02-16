@@ -1,0 +1,55 @@
+/*
+Profile badge
+
+Displays a box for profile badge
+
+Markup:
+<div class="profile-badge">
+    <div class="profile-badge__logo">
+        <a href="#"><img src="#"></a>
+    </div>
+    <div class="profile-badge__preview">
+        <a href="#"><img src="#"></a>
+    </div>
+    <div class="profile-badge__content">
+        <p>
+            <strong>27</strong> volných míst
+        </p>
+        <a href="#">accenture.jobs.cz</a>
+    </div>
+</div>
+*/
+
+.profile-badge {
+    margin-bottom: @standalone-bottom-margin;
+    padding-bottom: @standalone-bottom-margin;
+    border: 1px solid @light-gray;
+    text-align: left;
+
+    @media only screen and (min-width: @screen-lap) {
+        margin-bottom: 0;
+    }
+
+    &__logo {
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    &__preview {
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: @screen-lap) {
+            height: 110px;
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            height: 130px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+    }
+}
