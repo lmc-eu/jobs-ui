@@ -11,6 +11,10 @@ Markup:
 <div class="grid grid--center--palm"><!--
     --><div class="grid__item e-3--palm e-7">
         <div class="select-filter">
+            <label class="form__label form__label--faded" for="animals">
+                Pet
+                <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+            </label>
             <select class="form__select" id="animals">
                 <option>choose</option>
                 <option value="1">Cat</option>
@@ -18,11 +22,14 @@ Markup:
                 <option value="3">Cow</option>
                 <option value="4">Crocodile</option>
             </select>
-            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
     --><div class="grid__item e-3--palm e-7">
         <div class="select-filter select-filter--active">
+            <label class="form__label form__label--faded" for="animals">
+                Pet
+                <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+            </label>
             <select class="form__select" id="animals2">
                 <option>choose</option>
                 <option value="1">Cat</option>
@@ -30,13 +37,16 @@ Markup:
                 <option value="3">Cow</option>
                 <option value="4">Crocodile</option>
             </select>
-            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
 --></div><!--
 --><div class="grid grid--center--palm"><!--
     --><div class="grid__item e-3--palm e-7">
         <div class="select-filter select-filter--arrow">
+            <label class="form__label form__label--faded" for="animals">
+                Pet
+                <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+            </label>
             <select class="form__select" id="animals3">
                 <option>choose</option>
                 <option value="1">Cat</option>
@@ -44,11 +54,14 @@ Markup:
                 <option value="3">Cow</option>
                 <option value="4">Crocodile</option>
             </select>
-            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
     --><div class="grid__item e-3--palm e-7">
         <div class="select-filter select-filter--arrow">
+            <label class="form__label form__label--faded" for="animals">
+                Pet
+                <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+            </label>
             <select class="form__select" id="animals4">
                 <option>choose</option>
                 <option value="1">Cat</option>
@@ -56,7 +69,6 @@ Markup:
                 <option value="3">Cow</option>
                 <option value="4">Crocodile</option>
             </select>
-            <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
         </div>
     </div><!--
 --></div><!--
@@ -99,11 +111,11 @@ Styleguide 3.5
     }
     .icon {
         display: none;
-        position: absolute;
-        top: 10px;
-        left: 8px;
         font-size: 13px;
         color: @dark-blue;
+        &--spinner {
+            margin-left: 4px;
+        }
     }
     &__item {
         display: inline-block;
@@ -121,6 +133,9 @@ Styleguide 3.5
             right: 10px;
             left: auto;
             cursor: pointer;
+            position: absolute;
+            top: 10px;
+            color: #ffffff;
         }
     }
     &--arrow {
@@ -146,26 +161,20 @@ Styleguide 3.5
             content: "";
             position: absolute;
             right: 5px;
-            top: 13px;
+            bottom: 9px;
             width: 9px;
             height: 7px;
             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjE0QkY1MDc3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjE0QkY1MDg3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MTRCRjUwNTdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MTRCRjUwNjdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvOnL5wAAABVSURBVHjaYmJgYFgPxP/xYJA8gxQQf8ChACQuxQQkngFxGQN2UAaVBwNGIN6PZsp+qDgKUAXi71AF36F8MGBCUnQbiBug7EYoHytgAeK5UBoOAAIMACJrHTW8m5BIAAAAAElFTkSuQmCC");
         }
     }
     &--in-progress {
-        select {
-            padding-left: 20px;
-        }
         .icon {
-            display: block;
+            display: inline-block;
         }
     }
     &--active {
         &:after {
             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjE0QkY1MDM3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjE0QkY1MDQ3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MTRCRjUwMTdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MTRCRjUwMjdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhyTyZkAAABfSURBVHjaYvr////6//jBegYgIQXEH3AoAIlLMTEwMDwD4jIG7KAMLA9UCcKMQLwfzZT9UHEGmCIQVgXi71AF36F8sBwTktG3gbgBym6E8iEAySQQZgHiuVAaLg4QYABTLqOuazdfMgAAAABJRU5ErkJggg==");
-        }
-        .icon {
-            color: #ffffff;
         }
         .select-filter__item,
         select {

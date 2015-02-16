@@ -5,6 +5,9 @@
 ## v4.7.0
 - Add new component *progressbar*
 
+## v4.6.1
+- Changed loading effect of *select-filter* (moved from select element to label)
+
 ## v4.6.0
 - Remove border from *cover-box*
 - Add new modifier *cover-box--with-content*
