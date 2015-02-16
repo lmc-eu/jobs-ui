@@ -9,7 +9,10 @@ Markup:
 </div>
 
 .index-card--naked - No border, no stress (usually for the last item)
+.index-card--naked-palm - No border for palm devices
+.index-card--naked-desk - No border for desk devices
 .index-card--oneline - Single line with eventual ellipsis
+.index-card--dark - Darker border then standard index-card
 
 Styleguide 4.11
 */
@@ -24,8 +27,24 @@ Styleguide 4.11
         border: none;
     }
 
+    @media only screen and (max-width: @screen-lap) {
+        &--naked-palm {
+            border: none;
+        }
+    }
+
+    @media only screen and (min-width: @screen-desk) {
+        &--naked-desk {
+            border: none;
+        }
+    }
+
     &--oneline {
         white-space: nowrap;
         text-overflow: ellipsis;
+    }
+
+    &--dark {
+        border-color: @light-gray;
     }
 }
