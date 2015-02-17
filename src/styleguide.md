@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## v4.7.0
+## DEV
 - Add new component *progressbar*
 
 ## v4.6.1
