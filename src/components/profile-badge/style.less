@@ -4,20 +4,42 @@ Profile badge
 Displays a box for profile badge
 
 Markup:
-<div class="profile-badge">
-    <div class="profile-badge__logo">
-        <a href="#"><img src="#"></a>
-    </div>
-    <div class="profile-badge__preview">
-        <a href="#"><img src="#"></a>
-    </div>
-    <div class="profile-badge__content">
-        <p>
-            <strong>27</strong> volných míst
-        </p>
-        <a href="#">accenture.jobs.cz</a>
+<div class="grid">
+    <div class="grid__item e-7">
+        <div class="profile-badge">
+            <div class="profile-badge__logo">
+                <a href="#"><img src="public/images/viktor_logo.png" width="120" height="90"></a>
+            </div>
+            <div class="profile-badge__preview">
+                <a href="#"><img src="public/images/elita_default.png" width="258" height="130"></a>
+            </div>
+            <div class="profile-badge__content">
+                <dl class="icon-description">
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 1
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 2
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 3
+                    </dd>
+                </dl>
+            </div>
+        </div>
     </div>
 </div>
+
+Styleguide 4.18
 */
 
 .profile-badge {
