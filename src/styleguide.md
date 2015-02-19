@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.7.0
 - Add new component *progressbar*
 - Changed margin in *promobox* component
 - Add new icons:
