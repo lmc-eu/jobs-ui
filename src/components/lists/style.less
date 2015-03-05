@@ -90,6 +90,16 @@ Markup:
     <li>Four</li>
 </ul>
 
+Koment
+
+Markup:
+<ul class="list-inline list-inline__breadcrumb">
+    <li class="list-inline__breadcrumb--item">One</li>
+    <li class="list-inline__breadcrumb--item">Two</li>
+    <li class="list-inline__breadcrumb--item">Three</li>
+    <li class="list-inline__breadcrumb--item">Four</li>
+</ul>
+
 Styleguide 2.2.3
 */
 .list-inline {
@@ -97,5 +107,16 @@ Styleguide 2.2.3
     li {
         display: inline-block;
         padding-right: 10px;
+    }
+
+    &__breadcrumb {
+        color: @blue;
+
+        @media only screen and (max-width: @screen-lap-max) {
+
+            &--item {
+                display: block;
+            }
+        }
     }
 }
