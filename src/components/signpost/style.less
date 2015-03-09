@@ -1,0 +1,38 @@
+/*
+Signpost
+
+Great for visually attractive mobile-friendly signpost as submenu.
+
+Markup:
+<div class="signpost">
+    <div class="signpost__item">
+        <span class="icon icon--list signpost--icon"></span>
+        <a href="#">One</a>
+    </div>
+    <div class="signpost__item">
+        <span class="icon icon--list signpost--icon"></span>
+        <a href="#">Two</a>
+    </div>
+    <div class="signpost__item">
+        <span class="icon icon--list signpost--icon"></span>
+        <a href="#">Three</a>
+    </div>
+</ul>
+
+Styleguide 4.20
+*/
+
+.signpost {
+
+    &__item {
+
+        @media only screen and (min-width: @screen-lap) {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+
+    &--icon {
+        color: @dark-blue;
+    }
+}

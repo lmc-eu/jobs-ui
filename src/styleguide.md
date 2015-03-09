@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add *signpost* component
+
 ## v4.7.0
 - Add new component *progressbar*
 - Changed margin in *promobox* component
