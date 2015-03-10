@@ -1,0 +1,164 @@
+/*
+Folding Panel
+
+Folding panel with hidden content, which is showed after clicking on the panel title.
+
+The grid used in folding panel is for demo purpose and is fully customizable.
+
+The second panel is adjusted to fit the sidebar.
+
+Markup:
+<div class="folding-panel-list">
+    <div class="grid folding-panel">
+        <div class="folding-panel__hr">
+            <hr>
+        </div>
+        <div class="grid__item e-16 e-9--palm">
+            <div class="grid">
+                <div class="folding-panel__title">
+                    <div class="grid__item e-8 e-9--palm">
+                        <span class="icon icon--arrow-right" aria-hidden="true"></span>
+                        <strong>
+                            <a href="javascript:void(0);">
+                                A výkyvy proslulou začali
+                            </a>
+                        </strong>
+                    </div><!--
+                    --><div class="grid__item e-5 e-9--palm">
+                        Vy zakladatele
+                    </div><!--
+                    --><div class="grid__item e-3 e-9--palm">
+                        Atlantik
+                    </div>
+                </div>
+                <div class="folding-panel__additional-info">
+                    <div class="grid__item e-16">
+                        <p>
+                            K horké námořních stád
+                        </p>
+                        <p>
+                            Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
+                            s dynamit pořádá špatná stačit.
+                        </p>
+                        <div class="half-standalone">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Jejíž z rodin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="half-standalone">
+                            <a class="button" href="#">
+                                Výzev vysocí
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid folding-panel folding-panel--tight">
+        <div class="grid__item e-7">
+            <div class="grid">
+                <div class="folding-panel__title ">
+                    <div class="grid__item e-7">
+                        <span class="icon icon--arrow-right" aria-hidden="true"></span>
+                        <strong>
+                            <a href="javascript:void(0);">
+                                A výkyvy proslulou začali pomoci kvalitního
+                            </a>
+                        </strong>
+                    </div>
+                </div>
+                <div class="folding-panel__additional-info">
+                    <div class="grid__item e-7">
+                        <p>
+                            K horké námořních stád
+                        </p>
+                        <p>
+                            Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
+                            s dynamit pořádá špatná stačit.
+                        </p>
+                        <div class="half-standalone">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Jejíž z rodin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="half-standalone">
+                            <a class="button" href="#">
+                                Výzev vysocí
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.10
+*/
+
+.folding-panel {
+    &__title {
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    .icon {
+        &--palm-hidden {
+            @media only screen and (max-width: @screen-lap) {
+                display: inline;
+            }
+            @media only screen and (min-width: @screen-lap) {
+                display: none;
+            }
+        }
+
+        &--arrow-right,
+        &--arrow-down {
+            color: @blue;
+        }
+    }
+
+    &__additional-info {
+        display: none;
+    }
+
+    &__hr {
+        padding: 0 10px;
+
+        hr {
+            margin: 0px;
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        padding-left: 20px;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+        }
+    }
+
+    &--tight {
+        .folding-panel__title {
+            padding: 2px 0;
+        }
+
+        @media only screen and (min-width: @screen-lap) {
+            .icon {
+                top: 8px;
+            }
+        }
+    }
+}
