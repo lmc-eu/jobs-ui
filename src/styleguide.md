@@ -4,6 +4,7 @@
 
 ## dev
 - Add *signpost* component
+- Add *info* icon
 
 ## v4.7.0
 - Add new component *progressbar*
