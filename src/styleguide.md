@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add *folding-panel* component
+
 ## v4.8.0
 - Add *dark-yellow* color
 
