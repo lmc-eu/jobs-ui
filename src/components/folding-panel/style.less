@@ -15,7 +15,7 @@ Markup:
         </div>
         <div class="grid__item e-16 e-9--palm">
             <div class="grid">
-                <div class="folding-panel__title">
+                <div class="folding-panel__head">
                     <div class="grid__item e-8 e-9--palm">
                         <span class="icon icon--arrow-right" aria-hidden="true"></span>
                         <strong>
@@ -28,10 +28,10 @@ Markup:
                         Vy zakladatele
                     </div><!--
                     --><div class="grid__item e-3 e-9--palm">
-                        Atlantik
+                        Atlantik vysocí
                     </div>
                 </div>
-                <div class="folding-panel__additional-info">
+                <div class="folding-panel__body">
                     <div class="grid__item e-16">
                         <p>
                             K horké námořních stád
@@ -62,7 +62,7 @@ Markup:
     <div class="grid folding-panel folding-panel--tight">
         <div class="grid__item e-7">
             <div class="grid">
-                <div class="folding-panel__title ">
+                <div class="folding-panel__head ">
                     <div class="grid__item e-7">
                         <span class="icon icon--arrow-right" aria-hidden="true"></span>
                         <strong>
@@ -72,7 +72,7 @@ Markup:
                         </strong>
                     </div>
                 </div>
-                <div class="folding-panel__additional-info">
+                <div class="folding-panel__body">
                     <div class="grid__item e-7">
                         <p>
                             K horké námořních stád
@@ -106,29 +106,31 @@ Styleguide 1.10
 */
 
 .folding-panel {
-    &__title {
+    &__head {
         cursor: pointer;
         padding: 10px 0;
-    }
 
-    .icon {
-        &--palm-hidden {
-            @media only screen and (max-width: @screen-lap) {
-                display: inline;
-            }
-            @media only screen and (min-width: @screen-lap) {
-                display: none;
+        @media only screen and (min-width: @screen-desk) {
+            div:first-child {
+                padding-left: 30px;
             }
         }
 
+    }
+
+    .icon {
         &--arrow-right,
         &--arrow-down {
             color: @blue;
         }
     }
 
-    &__additional-info {
+    &__body {
         display: none;
+
+        @media only screen and (min-width: @screen-desk) {
+            padding-left: 20px;
+        }
     }
 
     &__hr {
@@ -140,7 +142,6 @@ Styleguide 1.10
     }
 
     @media only screen and (min-width: @screen-lap) {
-        padding-left: 20px;
         position: relative;
 
         .icon {
@@ -151,7 +152,7 @@ Styleguide 1.10
     }
 
     &--tight {
-        .folding-panel__title {
+        .folding-panel__head {
             padding: 2px 0;
         }
 
