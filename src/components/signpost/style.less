@@ -17,22 +17,32 @@ Markup:
         <span class="icon icon--file-alt signpost__icon"></span>
         <a href="#">Contact</a>
     </div>
-</ul>
+</div>
 
 Styleguide 4.20
 */
 
 .signpost {
+    padding: 15px 0;
+    border-bottom: 1px dotted @silver;
 
     &__item {
+        line-height: 36px;
+        list-style-type: none;
 
         @media only screen and (min-width: @screen-lap) {
             display: inline-block;
-            padding-right: 10px;
+            padding-right: 20px;
         }
     }
 
     &__icon {
+        width: 20px;
         color: @dark-blue;
+
+        @media only screen and (min-width: @screen-lap) {
+            width: auto;
+            max-width: 20px;
+        }
     }
 }
