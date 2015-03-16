@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add *dark-yellow* color
+
 ## v4.7.0
 - Add new component *progressbar*
 - Changed margin in *promobox* component
