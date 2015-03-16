@@ -1,21 +1,15 @@
+'use strict';
+
 $(function () {
-    'use strict';
+    $('[data-folding-panel-list]').on('click', '.folding-panel__arrow, .folding-panel__head', function (event) {
+        event.preventDefault();
 
-    var iconRightClass = 'icon--arrow-right';
-    var iconDownClass = 'icon--arrow-down';
+        var foldingPanel = $(this).closest('.folding-panel');
+        var icon = foldingPanel.find('.icon');
 
-    var setClasses = function (element) {
-        var span = element.find('.folding-panel__head .icon, .folding-panel__arrow .icon');
-        if (span.hasClass(iconDownClass)) {
-            span.removeClass(iconDownClass).addClass(iconRightClass);
-        } else {
-            span.removeClass(iconRightClass).addClass(iconDownClass);
-        }
-    };
+        icon.toggleClass('icon--arrow-right')
+            .toggleClass('icon--arrow-down');
 
-    $('.folding-panel-list').on('click', '.folding-panel__arrow, .folding-panel__head', function () {
-        var element = $(this).closest('.folding-panel');
-        setClasses(element);
-        element.find('.folding-panel__body').slideToggle('fast');
+        foldingPanel.find('.folding-panel__body').slideToggle('fast');
     });
 });

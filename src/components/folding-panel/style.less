@@ -8,93 +8,98 @@ The grid used in folding panel is for demo purpose and is fully customizable.
 The second panel is adjusted to fit the sidebar.
 
 Markup:
-<div class="folding-panel-list">
-    <div class="grid folding-panel">
-        <div class="folding-panel__hr">
-            <hr>
-        </div>
-        <div class="grid__item e-16 e-9--palm">
-            <div class="grid">
+<div data-folding-panel-list>
+    <div class="folding-panel">
+        <div class="grid">
+            <div class="grid__item e-9--palm e-16">
                 <div class="folding-panel__head">
-                    <div class="grid__item e-8 e-9--palm">
-                        <span class="icon icon--arrow-right" aria-hidden="true"></span>
-                        <strong>
-                            <a href="javascript:void(0);">
-                                A výkyvy proslulou začali
-                            </a>
-                        </strong>
-                    </div><!--
-                    --><div class="grid__item e-5 e-9--palm">
-                        Vy zakladatele
-                    </div><!--
-                    --><div class="grid__item e-3 e-9--palm">
-                        Atlantik vysocí
+                    <div class="grid">
+                        <div class="grid__item e-9--palm e-8">
+                            <div class="folding-panel__head__main">
+                                <span class="icon icon--arrow-right" aria-hidden="true"></span>
+                                <a href="#">
+                                    A výkyvy proslulou začali
+                                </a>
+                            </div>
+                        </div><!--
+                        --><div class="grid__item e-9--palm e-5">
+                            Vy zakladatele
+                        </div><!--
+                        --><div class="grid__item e-9--palm e-3">
+                            Atlantik vysocí
+                        </div>
                     </div>
                 </div>
                 <div class="folding-panel__body">
-                    <div class="grid__item e-16">
-                        <p>
-                            K horké námořních stád
-                        </p>
-                        <p>
-                            Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
-                            s dynamit pořádá špatná stačit.
-                        </p>
-                        <div class="half-standalone">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#">
-                                        Jejíž z rodin
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="grid">
+                        <div class="grid__item e-16">
+                            <p>
+                                K horké námořních stád
+                            </p>
+                            <p>
+                                Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
+                                s dynamit pořádá špatná stačit.
+                            </p>
+                            <div class="half-standalone">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
+                                            Jejíž z rodin
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="half-standalone">
+                                <a class="button" href="#">
+                                    Výzev vysocí
+                                </a>
+                            </div>
                         </div>
-                        <p class="half-standalone">
-                            <a class="button" href="#">
-                                Výzev vysocí
-                            </a>
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="grid folding-panel folding-panel--tight">
-        <div class="grid__item e-7">
-            <div class="grid">
-                <div class="folding-panel__head ">
-                    <div class="grid__item e-7">
-                        <span class="icon icon--arrow-right" aria-hidden="true"></span>
-                        <strong>
-                            <a href="javascript:void(0);">
-                                A výkyvy proslulou začali pomoci kvalitního
-                            </a>
-                        </strong>
+    <div class="folding-panel folding-panel--tight">
+        <div class="grid">
+            <div class="grid__item e-7">
+                <div class="folding-panel__head">
+                    <div class="grid">
+                        <div class="grid__item e-7">
+                            <div class="folding-panel__head__main">
+                                <span class="icon icon--arrow-right" aria-hidden="true"></span>
+                                <a href="#">
+                                    A výkyvy proslulou začali pomoci kvalitního
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="folding-panel__body">
-                    <div class="grid__item e-7">
-                        <p>
-                            K horké námořních stád
-                        </p>
-                        <p>
-                            Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
-                            s dynamit pořádá špatná stačit.
-                        </p>
-                        <div class="half-standalone">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#">
-                                        Jejíž z rodin
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="grid">
+                        <div class="grid__item e-7">
+                            <p>
+                                K horké námořních stád
+                            </p>
+                            <p>
+                                Její vše nejblíže výška zkrátka vysokého pomoci kvalitního příznivější,
+                                s dynamit pořádá špatná stačit.
+                            </p>
+                            <div class="half-standalone">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
+                                            Jejíž z rodin
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="half-standalone">
+                                <a class="button" href="#">
+                                    Výzev vysocí
+                                </a>
+                            </div>
                         </div>
-                        <p class="half-standalone">
-                            <a class="button" href="#">
-                                Výzev vysocí
-                            </a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -106,60 +111,48 @@ Styleguide 1.10
 */
 
 .folding-panel {
+    border-top: 1px solid @light-silver;
+
     &__head {
         cursor: pointer;
         padding: 10px 0;
 
-        @media only screen and (min-width: @screen-desk) {
-            div:first-child {
-                padding-left: 30px;
+        &__main {
+            position: relative;
+            font-weight: bold;
+
+            @media only screen and (min-width: @screen-lap) {
+                padding-left: 20px;
             }
         }
 
     }
 
     .icon {
-        &--arrow-right,
-        &--arrow-down {
-            color: @blue;
+        color: @blue;
+
+        @media only screen and (min-width: @screen-lap) {
+            position: absolute;
+            top: 5px;
+            left: 0;
         }
     }
 
     &__body {
         display: none;
 
-        @media only screen and (min-width: @screen-desk) {
+        @media only screen and (min-width: @screen-lap) {
             padding-left: 20px;
         }
     }
 
-    &__hr {
-        padding: 0 10px;
-
-        hr {
-            margin: 0px;
-        }
-    }
-
-    @media only screen and (min-width: @screen-lap) {
-        position: relative;
-
-        .icon {
-            position: absolute;
-            top: 15px;
-            left: 10px;
-        }
-    }
-
     &--tight {
+        border: none;
+
         .folding-panel__head {
             padding: 2px 0;
         }
-
-        @media only screen and (min-width: @screen-lap) {
-            .icon {
-                top: 8px;
-            }
-        }
     }
+
+
 }
