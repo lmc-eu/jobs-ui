@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## v4.8.0
 - Add *dark-yellow* color
 
 ## v4.7.0
