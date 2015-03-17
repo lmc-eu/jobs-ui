@@ -22,9 +22,7 @@ Markup:
                     <a href="#">Praha</a>
                 </p>
                 <p class="search-list__description">
-                    <span>
-                        Obory:
-                    </span>
+                    Obory:
                     Souvislosti modré&nbsp;
                     <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
                     Obchod
@@ -49,9 +47,7 @@ Markup:
                     <a href="#">Ostrava</a>
                 </p>
                 <p class="search-list__description">
-                    <span>
-                        Obory:
-                    </span>
+                    Obory:
                     Kde upadat odjakživa&nbsp;
                     <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
                     Morton
@@ -124,14 +120,14 @@ Styleguide 4.15
     }
 
     &__logo {
-        width: 80px;
+        width: 72px;
         display: block;
         float: right;
         margin-left: 20px;
         margin-bottom: 5px;
 
-        @media only screen and (max-width: @screen-lap-max) {
-            width: 72px;
+        @media only screen and (min-width: @screen-lap) {
+            width: 80px;
         }
         &:hover {
             border: none;
