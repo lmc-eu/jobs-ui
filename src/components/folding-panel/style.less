@@ -10,6 +10,7 @@ The second panel is adjusted to fit the sidebar.
 Markup:
 <div data-folding-panel-list>
     <div class="folding-panel">
+        <hr class="folding-panel__separator">
         <div class="grid">
             <div class="grid__item e-9--palm e-16">
                 <div class="folding-panel__head">
@@ -113,10 +114,6 @@ Styleguide 1.10
 .folding-panel {
     border-bottom: 1px solid @light-silver;
 
-    &:first-child {
-        border-top: 1px solid @light-silver;
-    }
-
     &__head {
         cursor: pointer;
         padding: 10px 0;
@@ -152,14 +149,13 @@ Styleguide 1.10
     &--tight {
         border: none;
 
-        &:first-child {
-            border: none;
-        }
-
         .folding-panel__head {
             padding: 2px 0;
         }
     }
 
-
+    &__separator {
+        border-color: @light-silver;
+        margin: 0;
+    }
 }
