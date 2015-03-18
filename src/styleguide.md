@@ -9,6 +9,7 @@
 - Add *folding-panel* component
 - Add borders to *search-list* component
 - Change padding and margin in *search-list* component
+- Changed height of mobile version of the *header* component
 
 ## v4.8.0
 - Add *dark-yellow* color
