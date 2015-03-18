@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.9.0
+- Add *signpost* component
+- Add new icons:
+    - *info*
+
 ## v4.8.0
 - Add *dark-yellow* color
 
