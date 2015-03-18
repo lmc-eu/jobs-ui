@@ -6,6 +6,7 @@
 - Add *signpost* component
 - Add new icons:
     - *info*
+- Add *folding-panel* component
 
 ## v4.8.0
 - Add *dark-yellow* color
