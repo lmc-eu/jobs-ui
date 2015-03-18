@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Show breadcrumbs on mobile devices
+
 ## v4.8.0
 - Add *dark-yellow* color
 
