@@ -2,6 +2,14 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add *light-dark-gray* color
+- Add *dark-gray* color
+- Change *red* color's code
+- Change *green* color's code
+- Add new *light-green* color
+- Changed color of visited link on *search-list* component
+
 ## v4.8.0
 - Add *dark-yellow* color
 
