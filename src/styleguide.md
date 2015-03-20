@@ -15,12 +15,12 @@
     - *search-list__title__link--replied*
     - *search-list__title__link--visited*
 - Add new modifiers to *label* component:
+    - *label--medium*
     - *label--transparent* 
     - *label--new* 
     - *label--updated* 
     - *label--replied* 
     - *label--visited*
-    - *label--heading*
 - Add padding-right for all span elements from .icon-description
 
 ## v4.9.0
