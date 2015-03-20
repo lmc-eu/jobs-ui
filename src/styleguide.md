@@ -7,13 +7,13 @@
 - Change colors:
     - *red*
     - *green*
-- Add new modifiers to *search-list* component:
-    - *search-list__title__link--replied*
-    - *search-list__title__link--visited*
 - Add new colors:
     - *light-dark-gray*
     - *dark-gray*
     - *light-green*
+- Add new modifiers to *search-list* component:
+    - *search-list__title__link--replied*
+    - *search-list__title__link--visited*
 - Add new modifiers to *label* component:
     - *label--transparent* 
     - *label--new* 
@@ -21,6 +21,7 @@
     - *label--replied* 
     - *label--visited*
     - *label--heading*
+- Add padding-right for all span elements from .icon-description
 
 ## v4.9.0
 - Add *signpost* component
