@@ -10,6 +10,12 @@ Markup:
 
 .label--important - Used for example as sale label
 .label--warning - Used for example as tip label
+.label--transparent - Used for example as status label for position
+.label--new - Used for example as status label of new created position
+.label--updated - Used for example as status label of updated position
+.label--replied - Used for example as status label of replied position
+.label--visited - Used for example as status label of visited position
+.label--heading - Used for example as label placed in heading
 
 Styleguide 4.9
 */
@@ -28,5 +34,36 @@ Styleguide 4.9
 
     &--warning {
         background-color: @jobs-orange;
+    }
+
+    &--updated {
+        color: @green;
+        border-color: @light-green;
+    }
+
+    &--new {
+        color: @red;
+        border-color: @light-red;
+    }
+
+    &--visited {
+        color: @dark-gray;
+        border-color: @light-dark-gray;
+    }
+
+    &--replied {
+        color: @lila;
+        border-color: @lila;
+    }
+
+    &--transparent {
+        color: @light-gray;
+        background-color: transparent;
+        border: 1px solid @light-gray;
+    }
+
+    &--heading {
+        line-height: 26px;
+        font-size: 13px;
     }
 }

@@ -3,12 +3,24 @@
 # <a name="changelog"></a>Changelog
 
 ## dev
-- Add *light-dark-gray* color
-- Add *dark-gray* color
-- Change *red* color's code
-- Change *green* color's code
-- Add new *light-green* color
-- Changed color of visited link on *search-list* component
+- Change color of visited link in *search-list* component
+- Change colors:
+    - *red*
+    - *green*
+- Add new modifiers to *search-list* component:
+    - *search-list__title__link--replied*
+    - *search-list__title__link--visited*
+- Add new colors:
+    - *light-dark-gray*
+    - *dark-gray*
+    - *light-green*
+- Add new modifiers to *label* component:
+    - *label--transparent* 
+    - *label--new* 
+    - *label--updated* 
+    - *label--replied* 
+    - *label--visited*
+    - *label--heading*
 
 ## v4.9.0
 - Add *signpost* component
