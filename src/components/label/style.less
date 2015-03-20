@@ -28,6 +28,17 @@ Styleguide 4.9
     color: #ffffff;
     white-space: nowrap;
 
+    &--heading {
+        line-height: 26px;
+        font-size: 13px;
+    }
+
+    &--transparent {
+        color: @light-gray;
+        background-color: transparent;
+        border: 1px solid @light-gray;
+    }
+
     &--important {
         background-color: @red;
     }
@@ -54,16 +65,5 @@ Styleguide 4.9
     &--replied {
         color: @lila;
         border-color: @lila;
-    }
-
-    &--transparent {
-        color: @light-gray;
-        background-color: transparent;
-        border: 1px solid @light-gray;
-    }
-
-    &--heading {
-        line-height: 26px;
-        font-size: 13px;
     }
 }
