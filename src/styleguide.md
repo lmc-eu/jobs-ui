@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## v4.10.0
 - Change color of visited link in *search-list* component
 - Change colors:
     - *red*
