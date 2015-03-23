@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add margin-left to *label* component
+
 ## v4.10.0
 - Change color of visited link in *search-list* component
 - Change colors:
