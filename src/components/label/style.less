@@ -16,6 +16,7 @@ Markup:
 .label--replied - Used for example as status label of replied position
 .label--visited - Used for example as status label of visited position
 .label--medium - Used for example as label placed in heading where label should be smaller than heading's font
+.label--indented - Used for example as label placed next to the other element where must be a space between them
 
 Styleguide 4.9
 */
@@ -23,11 +24,14 @@ Styleguide 4.9
 .label {
     display: inline-block;
     padding: 0px 10px;
-    margin-left: 10px;
     background-color: @light-gray;
     border-radius: 3px;
     color: #ffffff;
     white-space: nowrap;
+
+    &--indented {
+        margin-left: 10px;
+    }
 
     &--medium {
         line-height: 26px;

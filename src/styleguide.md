@@ -3,7 +3,8 @@
 # <a name="changelog"></a>Changelog
 
 ## dev
-- Add margin-left to *label* component
+- Add new modifier to *label* component:
+    - *label--indented*
 
 ## v4.10.0
 - Change color of visited link in *search-list* component
