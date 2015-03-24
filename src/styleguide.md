@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## v4.11.0
 - Add new modifier to *label* component:
     - *label--indented*
 
