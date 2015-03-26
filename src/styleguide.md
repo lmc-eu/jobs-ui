@@ -3,7 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## dev
-- Add new icons:
+- Add new icon:
     - *signin*
 
 ## v4.11.0
@@ -33,7 +33,7 @@
 
 ## v4.9.0
 - Add *signpost* component
-- Add new icons:
+- Add new icon:
     - *info*
 - Add *folding-panel* component
 - Add borders to *search-list* component
