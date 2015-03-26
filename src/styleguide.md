@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add new component *table*
+
 ## v4.11.0
 - Add new modifier to *label* component:
     - *label--indented*
