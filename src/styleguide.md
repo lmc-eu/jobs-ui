@@ -4,7 +4,7 @@
 
 ## dev
 - Add new icons:
-    - *singin*
+    - *signin*
 
 ## v4.11.0
 - Add new modifier to *label* component:
