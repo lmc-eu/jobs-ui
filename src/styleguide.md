@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Change color of visited link in *search-list* component
+- Change color:
+    - *dark-gray*
+
 ## v4.11.0
 - Add new modifier to *label* component:
     - *label--indented*
