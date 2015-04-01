@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## v4.12.0
+- Add new component *table*
 - Show breadcrumbs on mobile devices
 
 ## v4.11.0
