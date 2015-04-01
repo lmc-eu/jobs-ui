@@ -64,6 +64,14 @@ This behaviour may be overwritten setting the `rootpath` option in *less*.
 
 ## Contributing
 
+### How to release new version
+1. At *master* merge feature branch without auto commit: `git merge <feature-branch> --no-commit`.
+2. Add new version in `styleguide.md` and change it in `package.json`.
+3. Commit all changes: `git commit --all`.
+4. Add new tag: `git tag v<version-number> (e.g. v1.2.3)`.
+5. Push changes to origin master branch: `git push origin master`.
+6. Push new tag to the server: `git push --tags`.
+
 ### KSS
 For documentation of components [KSS](https://github.com/hughsk/kss-node) is
 used. Every component must have an appropriate description and a sample in the
@@ -73,16 +81,16 @@ Note that the `styleguide.less` file is left blank as the styles are copied to
 the documentation from the distribution folder to insure consistency.
 
 ### How to manage icons
-1. Go to [IcoMoon](http://icomoon.io/app/)
+1. Go to [IcoMoon](http://icomoon.io/app/).
 2. In menu choose Manage projects
-3. Import project, use *src/modules/icons/_generated/selection.json*
-4. Load project
-5. Add/remove/update icons
-6. Download the package
-7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*
-8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*
-9. Update KSS documentation
-10. Regenerate project by Grunt
+3. Import project, use *src/modules/icons/_generated/selection.json*.
+4. Load project.
+5. Add/remove/update icons.
+6. Download the package.
+7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*.
+8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*.
+9. Update KSS documentation.
+10. Regenerate project by Grunt.
 
 ### Available Grunt tasks
 

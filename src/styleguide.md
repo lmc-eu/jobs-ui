@@ -2,10 +2,68 @@
 
 # <a name="changelog"></a>Changelog
 
-## v4.7.0
+## DEV
 - Add *overlay* component
 - Add *picker* component
 - Add *combobox* component
+
+## v4.12.0
+- Add new component *table*
+- Show breadcrumbs on mobile devices
+- Add new icon:
+    - *signin*
+
+## v4.11.0
+- Add new modifier to *label* component:
+    - *label--indented*
+
+## v4.10.0
+- Change color of visited link in *search-list* component
+- Change colors:
+    - *red*
+    - *green*
+- Add new colors:
+    - *light-dark-gray*
+    - *dark-gray*
+    - *light-green*
+- Add new modifiers to *search-list* component:
+    - *search-list\_\_title\_\_link--replied*
+    - *search-list\_\_title\_\_link--visited*
+- Add new modifiers to *label* component:
+    - *label--medium*
+    - *label--transparent* 
+    - *label--new* 
+    - *label--updated* 
+    - *label--replied* 
+    - *label--visited*
+- Add padding-right for all span elements from .icon-description
+
+## v4.9.0
+- Add *signpost* component
+- Add new icon:
+    - *info*
+- Add *folding-panel* component
+- Add borders to *search-list* component
+- Change padding and margin in *search-list* component
+- Changed height of mobile version of the *header* component
+
+## v4.8.0
+- Add *dark-yellow* color
+
+## v4.7.0
+- Add new component *progressbar*
+- Changed margin in *promobox* component
+- Add new icons:
+    - *lang-en*
+    - *lang-de*
+- Add *profile-badge* component
+- Add new modifiers to *index-card*:
+    - *index-card--dark*
+    - *index-card--naked-palm*
+    - *index-card--naked-desc*
+
+## v4.6.1
+- Changed loading effect of *select-filter* (moved from select element to label)
 
 ## v4.6.0
 - Remove border from *cover-box*
@@ -37,7 +95,7 @@
 
 ## v4.1.0
 - Add *select-filter--arrow* for change browser's default view
-- Add *select-filter__item* to style otherelement than select
+- Add *select-filter\_\_item* to style otherelement than select
 
 ## v4.0.1
 - Add new modifier for *label*:
