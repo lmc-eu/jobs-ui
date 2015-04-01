@@ -17,16 +17,19 @@ Markup:
 Styleguide 4.6
 */
 
-@media only screen and (min-width: @screen-lap) {
-    .breadcrumbs {
-        overflow: hidden;
-        color: @gray;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+.breadcrumbs {
+    overflow: hidden;
+    color: @gray;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-        &__icon {
-            padding: 0 8px;
+    &__icon {
+        padding-left: 0px;
+        padding-right: 9px;
+        
+        @media only screen and (min-width: @screen-lap) {
+            padding-left: 9px;
         }
-
     }
+
 }

@@ -7,6 +7,12 @@
 - Change color:
     - *dark-gray*
 
+## v4.12.0
+- Add new component *table*
+- Show breadcrumbs on mobile devices
+- Add new icon:
+    - *signin*
+
 ## v4.11.0
 - Add new modifier to *label* component:
     - *label--indented*
@@ -34,7 +40,7 @@
 
 ## v4.9.0
 - Add *signpost* component
-- Add new icons:
+- Add new icon:
     - *info*
 - Add *folding-panel* component
 - Add borders to *search-list* component
