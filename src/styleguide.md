@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.12.0
+- Show breadcrumbs on mobile devices
+
 ## v4.11.0
 - Add new modifier to *label* component:
     - *label--indented*
