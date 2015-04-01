@@ -6,7 +6,8 @@
 
     &__text-input,
     &__select,
-    &__textarea {
+    &__textarea,
+    &__simulated {
         .box-sizing(border-box);
         display: block;
         width: 100%;
@@ -30,6 +31,12 @@
     &__text-input {
         line-height: 34px;
         height: 34px;
+    }
+
+    &__simulated {
+        line-height: 34px;
+        height: 34px;
+        overflow: hidden;
     }
 
     &__select {

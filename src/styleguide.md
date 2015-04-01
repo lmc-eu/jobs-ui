@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new *form__simulated* input in form
+
 ## v4.12.0
 - Add new component *table*
 - Show breadcrumbs on mobile devices
@@ -26,10 +29,10 @@
     - *search-list__title__link--visited*
 - Add new modifiers to *label* component:
     - *label--medium*
-    - *label--transparent* 
-    - *label--new* 
-    - *label--updated* 
-    - *label--replied* 
+    - *label--transparent*
+    - *label--new*
+    - *label--updated*
+    - *label--replied*
     - *label--visited*
 - Add padding-right for all span elements from .icon-description
 

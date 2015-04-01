@@ -11,6 +11,8 @@ Fieldsets are required inside forms.
 
 **Grouped** fieldsets connect containing `.text-input`s to a visually unite component.
 
+**Simulated** inputs are great for previews without editing option.
+
 Markup:
 <form class="form pit">
 <div class="grid grid--center--palm"><!--
@@ -52,6 +54,8 @@ Markup:
             <option value="4">Warszawa</option>
             <option value="5">Wien</option>
         </select>
+         <label class="form__label" for="age">Věk</label>
+        <input class="form__simulated" id="age" placeholder="Kolektivního nervózně zdajízní">
     </fieldset>
     <fieldset class="form__fieldset">
         <legend class="form__legend">Bajka majestát</legend>
