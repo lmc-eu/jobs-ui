@@ -1,0 +1,144 @@
+/*
+Picker
+
+An advanced option panel.
+
+The picker is palm only by default. To enable use on lap and above use
+`.picker--lap` modifier. It may be combined with a combobox.
+
+Opening a picker means adding `.picker--open` class and changing its
+`aria-hidden` attribute to false.
+
+To make a picker displayed on the second level use `.picker--secondary`.
+The `.picker--pre-open` class should be added to a secondary picker when its
+primary picker is opened; this makes the open animation smoother.
+
+*Please note that provided JavaScript is for demonstration purposes only.*
+
+Markup:
+<div class="picker picker--lap" id="demo-picker"
+     role="dialog" aria-hidden="true">
+    <div class="picker__head">
+        Vyhýbá starověkých
+        <a class="picker__close" href="#">
+            <span class="icon icon--remove" aria-hidden="true"></span>
+            <span class="visuallyhidden">Zavřít</span>
+        </a>
+    </div>
+    <div class="picker__body">
+        <h2>Mozkovou úrovni</h2>
+        <p>
+            Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+            potřeli částicím. Látky slabých původních nosu je křídy cesta.
+        </p>
+        <a href="#" class="button" data-show-subpicker>Show subpicker</a>
+    </div>
+</div>
+<div class="picker picker--lap picker--secondary" id="demo-subpicker"
+     role="dialog" aria-hidden="true">
+    <a class="picker__close" href="#">
+        <span class="icon icon--remove" aria-hidden="true"></span>
+        <span class="visuallyhidden">Zavřít</span>
+    </a>
+    <div class="picker__body">
+        <h2>Samci přes, polovině </h2>
+        <p>
+            U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+            vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+            tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+            ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+            zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+            U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+            vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+            tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+            ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+            zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+        </p>
+    </div>
+</div>
+<a href="#" data-show-picker>Show picker</a>
+<script>
+    var picker = $('#demo-picker'),
+        subpicker = $('#demo-subpicker'),
+        overlay = $('#overlay'),
+        page = $('html, body');
+    function openPicker(e) {
+        e.preventDefault();
+        picker.addClass('picker--open').attr('aria-hidden', 'false');
+        overlay.addClass('overlay--open');
+        subpicker.addClass('picker--pre-open');
+        page.addClass('scroll-lock');
+    };
+    function closePicker(e) {
+        e.preventDefault();
+        picker.removeClass('picker--open').attr('aria-hidden', 'true');
+        overlay.removeClass('overlay--open');
+        subpicker.removeClass('picker--pre-open');
+        page.removeClass('scroll-lock');
+    };
+    function openSubpicker(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        subpicker.addClass('picker--open').attr('aria-hidden', 'false');
+        picker.addClass('scroll-lock');
+    };
+    function closeSubpicker(e) {
+        e.preventDefault();
+        subpicker.removeClass('picker--open').attr('aria-hidden', 'true');
+        picker.removeClass('scroll-lock');
+    };
+    function closeBothPickers(e) {
+        e.preventDefault();
+        closeSubpicker(e);
+        closePicker(e);
+    };
+    $('[data-show-picker]').click(openPicker);
+    $('[data-show-subpicker]').click(openSubpicker);
+    picker.find('.picker__close').click(closeBothPickers);
+    subpicker.find('.picker__close').click(closeSubpicker);
+    overlay.click(closeBothPickers);
+</script>
+
+Styleguide 4.23
+*/
+
+@import "helper";
+
+@media only screen and (max-width: @screen-lap-max) {
+    .picker {
+        .picker-block(84%);
+        &--secondary {
+            width: 72%;
+            z-index: 10020;
+        }
+        .picker-modifiers();
+        .picker-elements();
+    }
+}
+
+@media only screen and (min-width: @screen-lap) {
+    .picker--lap {
+        .picker-block(340px);
+
+        &.picker {
+            .picker-modifiers();
+
+            &--secondary {
+                width: 300px;
+                z-index: 10005;
+
+                &.picker--pre-open {
+                    .translateX-with-3d(40px);
+                }
+
+                &.picker--open {
+                    .translateX-with-3d(340px);
+                }
+            }
+        }
+
+        .picker {
+            .picker-elements();
+        }
+    }
+}

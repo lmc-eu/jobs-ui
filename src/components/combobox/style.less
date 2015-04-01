@@ -1,0 +1,74 @@
+/*
+Combobox
+
+Floating box e.g. for autocomplete.
+
+The combobox is left unstylled on palm. It may be combined with a picker.
+
+Opening a combobox body means adding `.combobox__body--open` class and changing its
+`aria-hidden` attribute to false.
+
+*Please note that provided JavaScript is for demonstration purposes only.*
+
+Markup:
+<div class="grid">
+    <div class="grid__item e-10">
+        <div class="combobox" id="combobox">
+            <label class="form__label" for="demo-input">Prarodičů</label>
+            <input class="form__text-input" id="demo-input"
+                type="text" placeholder="Kamkoliv po republice">
+            <div class="combobox__body" id="combobody"
+                role="dialog" aria-hidden="true">
+                <h2>Teplana radost</h2>
+                <p>
+                    Hmotu čech minimálně, 280 za zrušili by která různá. Ty
+                    slabého chybí tělo ne vzdělávání udržení – dařilo,
+                    rovnosti z původním. Oblasti větví nájem zahladila vidí
+                    hradby, malém základní věda pracích – řeči čechoslováci.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var combobody = $('#combobody');
+    $('#demo-input').click(function (e) {
+        e.preventDefault();
+        combobody.addClass('combobox__body--open')
+            .attr('aria-hidden', 'false');
+    });
+    $('html').click(function (e) {
+        if (!$(e.target).closest('#combobox').length) {
+            combobody.removeClass('combobox__body--open')
+                .attr('aria-hidden', 'true');
+        }
+    });
+</script>
+
+Styleguide 4.24
+*/
+
+@media only screen and (min-width: @screen-lap) {
+    .combobox {
+        position: relative;
+
+        &__body {
+            display: none;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            max-height: 400px;
+            margin-top: 2px;
+            padding: 5px @gutter-width-lap 0;
+            overflow: auto;
+            background-color: #ffffff;
+            border: 1px solid @silver;
+            z-index: 10;
+            .box-sizing(border-box);
+
+            &--open {
+                display: block;
+            }
+        }
+    }
+}

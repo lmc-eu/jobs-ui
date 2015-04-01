@@ -1,0 +1,58 @@
+.picker-block (@width) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: @width;
+    height: 100%;
+    padding-bottom: 36px;
+    background-color: #ffffff;
+    overflow: auto;
+    z-index: 10010;
+    .box-sizing(border-box);
+    .translateX-with-3d(-100%);
+    .transition-duration(200ms);
+}
+.picker-modifiers() {
+    &--secondary {
+        padding-top: 36px;
+        background-color: @light-silver;
+    }
+    &--open {
+    .translateX-with-3d(0);
+    }
+}
+.picker-elements() {
+    &__head {
+        height: 80px;
+        margin-bottom: (@standalone-bottom-margin / 2);
+        padding: 0 40px;
+        line-height: 80px;
+        white-space: nowrap;
+        text-align: center;
+        text-overflow: ellipsis;
+        background-color: @jobs-blue-basic;
+        overflow: hidden;
+        color: #ffffff;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        color: @light-gray;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            color: @light-blue;
+            border: none;
+        }
+    }
+
+    &__body {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
