@@ -2,10 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## DEV
 - Change color of visited link in *search-list* component
 - Change color:
     - *dark-gray*
+- Add *overlay* component
+- Add *picker* component
+- Add *combobox* component
 
 ## v4.12.0
 - Add new component *table*
@@ -27,8 +30,8 @@
     - *dark-gray*
     - *light-green*
 - Add new modifiers to *search-list* component:
-    - *search-list__title__link--replied*
-    - *search-list__title__link--visited*
+    - *search-list\_\_title\_\_link--replied*
+    - *search-list\_\_title\_\_link--visited*
 - Add new modifiers to *label* component:
     - *label--medium*
     - *label--transparent* 
@@ -95,7 +98,7 @@
 
 ## v4.1.0
 - Add *select-filter--arrow* for change browser's default view
-- Add *select-filter__item* to style otherelement than select
+- Add *select-filter\_\_item* to style otherelement than select
 
 ## v4.0.1
 - Add new modifier for *label*:

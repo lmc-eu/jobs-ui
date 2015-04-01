@@ -64,7 +64,7 @@
         <div class="wrapper">
             <div class="grid"><!--
                 --><div class="grid__item ">
-                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" />
+                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" height="200"/>
                 </div><!--
             --></div>
         </div>
@@ -76,7 +76,7 @@
     <div class="grid grid--rev--desk"><!--
                     --><div class="grid__item  e-7--desk  e-push-2--desk">
 
-        <div class="kss__sidebar">
+        <div class="kss__sidebar" id="kss-sidebar">
             <ul class="list-unstyled list-spaced">
                 {{#if overview}}
                 <li>
@@ -101,6 +101,7 @@
                 <li>
                     <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
                     <a href="#section-{{ reference }}">{{ header }}</a>
+                    <small>{{ reference }}</small>
                 </li>
                 {{else}}
                 {{/whenDepth}}
@@ -193,6 +194,17 @@
         // Ensure code blocks are highlighted properly...
         $('pre>code').addClass('prettyprint');
         prettyPrint();
+
+        var sidebar = $('#kss-sidebar'),
+            sidebarOffset = sidebar.offset().top;
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > (sidebarOffset - 40)) {
+                sidebar.addClass('kss__sidebar--alone');
+            } else {
+                sidebar.removeClass('kss__sidebar--alone');
+            }
+        });
 
     });
 </script>
