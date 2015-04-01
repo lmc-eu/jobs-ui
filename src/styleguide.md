@@ -3,6 +3,9 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+- Change color of visited link in *search-list* component
+- Change color:
+    - *dark-gray*
 - Add *overlay* component
 - Add *picker* component
 - Add *combobox* component
