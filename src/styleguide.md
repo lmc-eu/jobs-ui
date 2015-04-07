@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- PNG images size reduced (using PNGOut utility)
+
 ## v4.14.0
 - Add new *form__simulated* input in form
 
