@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-##dev
+## v4.15.0
 - Add new modifier to *header* component:
     - *header__logo-link*
 
