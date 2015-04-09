@@ -2,8 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
+<<<<<<< HEAD
 ## dev
-- PNG images size reduced (using PNGOut utility)
+- Reduce PNG image size
+
+## v4.15.0
+- Add new modifier to *header* component:
+    - *header__logo-link*
 
 ## v4.14.0
 - Add new *form__simulated* input in form
