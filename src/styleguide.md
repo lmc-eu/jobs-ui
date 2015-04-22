@@ -2,9 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
-<<<<<<< HEAD
 ## dev
 - Reduce PNG image size
+- Add new component *search-list-heading*
 
 ## v4.15.0
 - Add new modifier to *header* component:
