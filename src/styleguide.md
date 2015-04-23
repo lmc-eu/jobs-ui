@@ -5,6 +5,8 @@
 <<<<<<< HEAD
 ## dev
 - Reduce PNG image size
+- Add new icon:
+    - *check-circle*
 
 ## v4.15.0
 - Add new modifier to *header* component:
