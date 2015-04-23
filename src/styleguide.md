@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 ## dev
 - Reduce PNG image size
+- BC: edit backgroud for *profile-badge* component, add *profile-badge--naked* component
 
 ## v4.15.0
 - Add new modifier to *header* component:

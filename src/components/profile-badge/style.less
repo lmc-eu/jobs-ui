@@ -37,6 +37,38 @@ Markup:
             </div>
         </div>
     </div>
+    <div class="grid__item e-7">
+        <div class="profile-badge--naked">
+            <div class="profile-badge__logo">
+                <a href="#"><img src="public/images/120x90.jpg" width="120" height="90"></a>
+            </div>
+            <div class="profile-badge--naked__preview">
+                <a href="#"><img src="public/images/elita_default.png" width="258" height="130"></a>
+            </div>
+            <div class="profile-badge__content">
+                <dl class="icon-description">
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 1
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 2
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 3
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </div>
 
 Styleguide 4.18
@@ -47,11 +79,7 @@ Styleguide 4.18
     padding-bottom: 20px;
     border: 1px solid @light-gray;
     text-align: left;
-    background: @white;
-
-  &--naked {
-    border: none;
-  }
+    background: white;
 
     @media only screen and (min-width: @screen-lap) {
         margin-bottom: 0;
@@ -82,5 +110,20 @@ Styleguide 4.18
 
     &__content {
         padding: 0 20px;
+    }
+
+    &--naked {
+        border: none;
+        margin-bottom: @standalone-bottom-margin;
+
+        &__preview {
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+        }
     }
 }
