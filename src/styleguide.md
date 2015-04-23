@@ -4,7 +4,7 @@
 
 ## dev
 - Reduce PNG image size
-- Add new component *search-list-heading*
+- Add new component *search-list-headline*
 
 ## v4.15.0
 - Add new modifier to *header* component:
