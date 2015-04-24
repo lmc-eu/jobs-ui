@@ -2,10 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
-<<<<<<< HEAD
 ## dev
 - Reduce PNG image size
-- BC: edit backgroud for *profile-badge* component, add *profile-badge--naked* component
+- Change color of background in *profile-badge* component
+- Add new modifier to *profile-badge* component:
+    - *profile-badge--naked*
 
 ## v4.15.0
 - Add new modifier to *header* component:

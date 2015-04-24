@@ -38,12 +38,12 @@ Markup:
         </div>
     </div>
     <div class="grid__item e-7">
-        <div class="profile-badge--naked">
-            <div class="profile-badge__logo">
-                <a href="#"><img src="public/images/120x90.jpg" width="120" height="90"></a>
-            </div>
+        <div class="profile-badge profile-badge--naked">
             <div class="profile-badge--naked__preview">
-                <a href="#"><img src="public/images/elita_default.png" width="258" height="130"></a>
+                <a href="#">
+                    <img class="profile-badge--naked__logo"
+                         src="public/images/elita_default.png" >
+                </a>
             </div>
             <div class="profile-badge__content">
                 <dl class="icon-description">
@@ -71,7 +71,7 @@ Markup:
     </div>
 </div>
 
-Styleguide 4.18
+Styleguide 4.19
 */
 
 .profile-badge {
@@ -79,7 +79,7 @@ Styleguide 4.18
     padding-bottom: 20px;
     border: 1px solid @light-gray;
     text-align: left;
-    background: white;
+    background-color: #fff;
 
     @media only screen and (min-width: @screen-lap) {
         margin-bottom: 0;
@@ -113,17 +113,17 @@ Styleguide 4.18
     }
 
     &--naked {
-        border: none;
         margin-bottom: @standalone-bottom-margin;
+        border: none;
 
         &__preview {
             width: 100%;
             margin-bottom: 20px;
+        }
 
-            img {
-              width: 100%;
-              height: auto;
-            }
+        &__logo {
+            width: 258px;
+            height: 130px;
         }
     }
 }
