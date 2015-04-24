@@ -4,7 +4,11 @@
 
 ## dev
 - Reduce PNG image size
-- Add new component *search-list-headline*
+- Add new class and modifiers for headlines
+    - *headline*
+    - *headline--primary*
+    - *headline--secondary*
+- Add new modifier *text--inline* for inline text
 
 ## v4.15.0
 - Add new modifier to *header* component:
