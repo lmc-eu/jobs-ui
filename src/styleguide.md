@@ -2,8 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
-- Fix calling close method if escape key pressed
+## v4.16.0
+- Fix calling close event on Remodal component if escape key pressed
+- Change color:
+    - *green*
 - Reduce PNG image size
 - Change color of background in *profile-badge* component
 - Add new modifier to *profile-badge* component:
