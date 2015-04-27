@@ -39,9 +39,9 @@ Markup:
     </div>
     <div class="grid__item e-7">
         <div class="profile-badge profile-badge--naked">
-            <div class="profile-badge--naked__preview">
+            <div class="profile-badge__preview-fix">
                 <a href="#">
-                    <img class="profile-badge--naked__logo"
+                    <img class="profile-badge__logo-fix"
                          src="public/images/elita_default.png" >
                 </a>
             </div>
@@ -90,6 +90,11 @@ Styleguide 4.19
         text-align: center;
     }
 
+    &__logo-fix {
+        width: 258px;
+        height: 130px;
+    }
+
     &__preview {
         width: 100%;
         margin-bottom: 20px;
@@ -108,6 +113,11 @@ Styleguide 4.19
         }
     }
 
+    &__preview-fix {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     &__content {
         padding: 0 20px;
     }
@@ -115,15 +125,5 @@ Styleguide 4.19
     &--naked {
         margin-bottom: @standalone-bottom-margin;
         border: none;
-
-        &__preview {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        &__logo {
-            width: 258px;
-            height: 130px;
-        }
     }
 }
