@@ -3,8 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## dev
-- Change color:
-    - *green*
+- Fix calling close method if escape key pressed
 - Reduce PNG image size
 - Change color of background in *profile-badge* component
 - Add new modifier to *profile-badge* component:
