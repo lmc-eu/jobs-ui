@@ -21,6 +21,6 @@
         "lesshat": "~3.0.0",
         "normalize-css": "~3.0.0",
         "picturefill": "lmc-eu/picturefill#~2.2.0",
-        "remodal": "~0.2.0"
+        "remodal": "lmc-eu/Remodal#fix-escape"
     }
 }

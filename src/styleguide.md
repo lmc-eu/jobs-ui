@@ -2,8 +2,8 @@
 
 # <a name="changelog"></a>Changelog
 
-<<<<<<< HEAD
 ## dev
+- Fix calling close method if escape key pressed
 - Reduce PNG image size
 
 ## v4.15.0
