@@ -4,8 +4,9 @@
 
 ## dev
 - Reduce PNG image size
-- Change color:
-    - *green*
+- Change color of background in *profile-badge* component
+- Add new modifier to *profile-badge* component:
+    - *profile-badge--naked*
 
 ## v4.15.0
 - Add new modifier to *header* component:

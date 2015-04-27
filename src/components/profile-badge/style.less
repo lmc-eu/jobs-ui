@@ -37,14 +37,47 @@ Markup:
             </div>
         </div>
     </div>
+    <div class="grid__item e-7">
+        <div class="profile-badge profile-badge--naked">
+            <div class="profile-badge__preview profile-badge__preview--fixed">
+                <a href="#">
+                    <img class="profile-badge__logo profile-badge__logo--fixed"
+                         src="public/images/elita_default.png" >
+                </a>
+            </div>
+            <div class="profile-badge__content">
+                <dl class="icon-description">
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 1
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 2
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 3
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </div>
 
-Styleguide 4.18
+Styleguide 4.19
 */
 
 .profile-badge {
     margin-bottom: @standalone-bottom-margin;
     padding-bottom: 20px;
+    background-color: #fff;
     border: 1px solid @light-gray;
     text-align: left;
 
@@ -55,6 +88,11 @@ Styleguide 4.18
     &__logo {
         margin: 20px 0;
         text-align: center;
+
+        &--fixed {
+            width: 258px;
+            height: 130px;
+        }
     }
 
     &__preview {
@@ -73,9 +111,19 @@ Styleguide 4.18
             width: 100%;
             height: auto;
         }
+
+        &--fixed {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__content {
         padding: 0 20px;
+    }
+
+    &--naked {
+        margin-bottom: @standalone-bottom-margin;
+        border: none;
     }
 }
