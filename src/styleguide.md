@@ -3,6 +3,8 @@
 # <a name="changelog"></a>Changelog
 
 ## dev
+- Change color:
+    - *green*
 - Reduce PNG image size
 - Change color of background in *profile-badge* component
 - Add new modifier to *profile-badge* component:
