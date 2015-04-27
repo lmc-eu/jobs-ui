@@ -6,9 +6,8 @@
 - Change color:
     - *green*
 - Reduce PNG image size
-- Change color of background in *profile-badge* component
-- Add new modifier to *profile-badge* component:
-    - *profile-badge--naked*
+- Add new *headline* component
+- Add new modifier *text--inline* for inline text
 
 ## v4.15.0
 - Add new modifier to *header* component:

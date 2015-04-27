@@ -5,9 +5,9 @@ Markup:
 <h1>Heading 1 <a href="#">link</a></h1>
 <h2>Heading 2 <a href="#">link</a></h2>
 <h3>Heading 3 <a href="#">link</a></h3>
-<h4>Heading 4 <a href="#">link</a></h4>
-<h5>Heading 5 <a href="#">link</a></h5>
-<h6>Heading 6 <a href="#">link</a></h6>
+<h4 class="headline">Heading 4 <a href="#">link</a></h4>
+<h5 class="headline headline--primary">Heading 5 <a href="#">link</a></h5>
+<h6 class="headline headline--secondary">Heading 6 <a href="#">link</a></h6>
 <p>Filosofa v nazvaného s mcintoshe větších. Vlastním polonica základní
 duchovní od lanovku pochopily, skoro zlata střechami zářivě šanci fotografie
 starověké rozhlédnu polapen si mor. I do. Nuly té kmenových moc kvalitnější
@@ -20,6 +20,7 @@ vždyť spolufinancuje závisí jiní novinářů tvořené aula dlouhá mé jac
 <hr />
 <div class="text--center">Nachystejte uzenáče, na snídani jsem zpátky</div>
 <div class="text--right">Vulkánu myslitelnými z nedostupná výrazný</div>
+<div class="text--inline">Oproti stádu specialistkou oxidu příslušnosti bílá proužkem</div>
 
 Styleguide 2.1
 */
@@ -51,7 +52,7 @@ a {
     color: @blue;
     text-decoration: none;
     word-wrap: break-word;
-    
+
     &:hover {
         color: @dark-blue;
         border-bottom: 1px dotted @dark-blue;
@@ -63,12 +64,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
+h6,
+.headline {
+    margin: 0 0 12px 0;
     padding: 0;
-    font-weight: 700;
     color: #000000;
     word-wrap: break-word;
+    font-weight: 700;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
 
     a {
         color: #000;
@@ -76,7 +80,8 @@ h6 {
     }
 }
 
-h1 {
+h1,
+.headline--primary {
     margin-bottom: 24px;
     font-weight: 300;
     font-size: 30px;
@@ -87,20 +92,12 @@ h1 {
     }
 }
 
-h2 {
+h2,
+.headline--secondary {
     margin-bottom: 12px;
     font-weight: 300;
     font-size: @h2-font-size;
     line-height: @h2-line-height;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 12px;
-    font-size: @base-font-size;
-    line-height: @base-line-height;
 }
 
 p {
@@ -139,6 +136,9 @@ del {
     }
     &--nowrap {
         white-space: nowrap;
+    }
+    &--inline {
+        display: inline;
     }
 }
 
