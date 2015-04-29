@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v2.13.1
+- Use remodal with escape bugfix
+
 ## v2.13.0
 - Replace icon:
     - *stop* (smaller)

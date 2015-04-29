@@ -22,6 +22,6 @@
         "normalize-css": "~3.0.0",
         "src-n-polyfill": "~0.5.1",
         "src-n-parse": "~0.3.3",
-        "remodal": "~0.1.5"
+        "remodal": "lmc-eu/Remodal#fix-escape"
     }
 }
