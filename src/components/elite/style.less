@@ -1,0 +1,79 @@
+/*
+Elite
+
+The component with default styles.
+There are maximum 3 logos visible on smartphone, 4 on tablet and 5 on desktop. Others are hidden (smartphone, tablet).
+
+Using divs instead of list is possible.
+
+Markup:
+<div class="grid">
+    <div class="grid__item">
+        <ul class="elite">
+            <li class="elite__item">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif"></a>
+                <p class="elite__preview">8 nabídek</p>
+            </li>
+            <li class="elite__item">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif"></a>
+                <p class="elite__preview">9 nabídek</p>
+            </li>
+            <li class="elite__item">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif"></a>
+                <p class="elite__preview">10 nabídek</p>
+            </li>
+            <li class="elite__item">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif"></a>
+                <p class="elite__preview">1 nabídka</p>
+            </li>
+             <li class="elite__item">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif"></a>
+                <p class="elite__preview">3 nabídky</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 4.25
+*/
+
+.elite {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        display: table-cell;
+        text-align: center;
+
+        @media only screen and (max-width: @screen-lap-max) {
+            &:nth-of-type(n+4) {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: @screen-desk-max) {
+            &:nth-of-type(n+5) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+        width: 80px;
+
+        @media only screen and (min-width: @screen-lap) {
+            width: 120px;
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            width: 120px;
+        }
+    }
+
+    &__preview {
+        color: @dark-gray;
+    }
+}

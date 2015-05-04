@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add new component *elite*
+
 ## v4.16.0
 - Fix calling close event on Remodal component if escape key pressed
 - Change color:
