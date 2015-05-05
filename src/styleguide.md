@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## v4.17.0
 - Add new component *elite*
 - Add a box shadow to *combobox__body*
 
