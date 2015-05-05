@@ -1,48 +1,46 @@
 /*
-Elite
+Elite row
 
-The component with default styles.
-There are maximum 3 logos visible on smartphone, 4 on tablet and 5 on desktop. Others are hidden (smartphone, tablet).
+The component is used to display *Elite* employers in a row with a description.
 
-Using divs instead of list is possible.
+* Use modificator *hidden-palm* for *elite-row__item* class to hide on smartphone.
+* Use modificator *visible* for *elite-row__item* class to show on lap and desk.
+* Use modificator *visible-desk* for *elite-row__item* class to show only on desk.
+
+Using divs instead of a list is possible.
 
 Markup:
-<div class="grid">
-    <div class="grid__item">
-        <ul class="elite">
-            <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif" alt="Škoda"></a>
-                <p class="elite__preview">8 nabídek</p>
-            </li>
-            <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif" alt="T-Mobile"></a>
-                <p class="elite__preview">9 nabídek</p>
-            </li>
-            <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif" alt="Zentiva"></a>
-                <p class="elite__preview">10 nabídek</p>
-            </li>
-            <li class="elite__item elite__item--hidden-palm elite__item--visible">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif" alt="Kb"></a>
-                <p class="elite__preview">1 nabídka</p>
-            </li>
-             <li class="elite__item elite__item--hidden-palm elite__item--visible-desk">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif" alt="Česká Spořitelna"></a>
-                <p class="elite__preview">3 nabídky</p>
-            </li>
-        </ul>
-    </div>
-</div>
+<ul class="elite-row list-unstyled">
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif" alt="Škoda"></a>
+        <p>8 nabídek</p>
+    </li>
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif" alt="T-Mobile"></a>
+        <p>9 nabídek</p>
+    </li>
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif" alt="Zentiva"></a>
+        <p>10 nabídek</p>
+    </li>
+    <li class="elite-row__item elite-row__item--hidden-palm elite-row__item--visible">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif" alt="Kb"></a>
+        <p>1 nabídka</p>
+    </li>
+     <li class="elite-row__item elite-row__item--hidden-palm elite-row__item--visible-desk">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif" alt="Česká Spořitelna"></a>
+        <p>3 nabídky</p>
+    </li>
+</ul>
 
 Styleguide 4.25
 */
 
-.elite {
+.elite-row {
     display: table;
     table-layout: fixed;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    color: @dark-gray;
 
     &__item {
         display: table-cell;
@@ -71,9 +69,5 @@ Styleguide 4.25
         @media only screen and (min-width: @screen-lap) {
             width: 120px;
         }
-    }
-
-    &__preview {
-        color: @dark-gray;
     }
 }
