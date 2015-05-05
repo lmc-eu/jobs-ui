@@ -11,23 +11,23 @@ Markup:
     <div class="grid__item">
         <ul class="elite">
             <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif"></a>
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif" alt="Škoda"></a>
                 <p class="elite__preview">8 nabídek</p>
             </li>
             <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif"></a>
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif" alt="T-Mobile"></a>
                 <p class="elite__preview">9 nabídek</p>
             </li>
             <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif"></a>
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif" alt="Zentiva"></a>
                 <p class="elite__preview">10 nabídek</p>
             </li>
-            <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif"></a>
+            <li class="elite__item elite__item--hidden-palm elite__item--visible">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif" alt="Kb"></a>
                 <p class="elite__preview">1 nabídka</p>
             </li>
-             <li class="elite__item">
-                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif"></a>
+             <li class="elite__item elite__item--hidden-palm elite__item--visible-desk">
+                <a href="#"><img class="elite__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif" alt="Česká Spořitelna"></a>
                 <p class="elite__preview">3 nabídky</p>
             </li>
         </ul>
@@ -48,15 +48,19 @@ Styleguide 4.25
         display: table-cell;
         text-align: center;
 
-        @media only screen and (max-width: @screen-lap-max) {
-            &:nth-of-type(n+4) {
-                display: none;
+       &--hidden-palm {
+           display: none;
+       }
+
+        @media only screen and (min-width: @screen-lap) {
+            &--visible {
+                display: table-cell;
             }
         }
 
-        @media only screen and (max-width: @screen-desk-max) {
-            &:nth-of-type(n+5) {
-                display: none;
+        @media only screen and (min-width: @screen-desk) {
+            &--visible-desk {
+                display: table-cell;
             }
         }
     }
@@ -65,10 +69,6 @@ Styleguide 4.25
         width: 80px;
 
         @media only screen and (min-width: @screen-lap) {
-            width: 120px;
-        }
-
-        @media only screen and (min-width: @screen-desk) {
             width: 120px;
         }
     }
