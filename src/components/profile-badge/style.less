@@ -90,8 +90,7 @@ Styleguide 4.19
         text-align: center;
 
         &--fixed {
-            width: 258px;
-            height: 130px;
+            width: 100%
         }
     }
 
@@ -120,6 +119,11 @@ Styleguide 4.19
 
     &__content {
         padding: 0 20px;
+
+        p {
+            max-height: (@base-line-height * 3);
+            overflow-y: hidden;
+        }
     }
 
     &--naked {
