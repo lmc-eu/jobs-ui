@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.17.1
+- Fix *profile-badge*
+
 ## v4.17.0
 - Add new component *elite*
 - Add a box shadow to *combobox__body*
