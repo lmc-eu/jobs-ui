@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## dev
+- Add new modifier to *typography* component:
+    - *text--warning*
+
 ## v4.17.1
 - Fix *profile-badge*
 
