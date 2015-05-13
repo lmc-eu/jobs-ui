@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## dev
+## v4.18.0
 - Add new modifier to *typography* component:
     - *text--warning*
 
