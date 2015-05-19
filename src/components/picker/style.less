@@ -13,50 +13,54 @@ To make a picker displayed on the second level use `.picker--secondary`.
 The `.picker--pre-open` class should be added to a secondary picker when its
 primary picker is opened; this makes the open animation smoother.
 
+On desk unstyled.
+
 *Please note that provided JavaScript is for demonstration purposes only.*
 
 Markup:
-<div class="picker picker--lap" id="demo-picker"
-     role="dialog" aria-hidden="true">
-    <div class="picker__head">
-        Vyhýbá starověkých
+<div class="hidden--desk">
+    <div class="picker picker--lap" id="demo-picker"
+         role="dialog" aria-hidden="true">
+        <div class="picker__head">
+            Vyhýbá starověkých
+            <a class="picker__close" href="#">
+                <span class="icon icon--remove" aria-hidden="true"></span>
+                <span class="visuallyhidden">Zavřít</span>
+            </a>
+        </div>
+        <div class="picker__body">
+            <h2>Mozkovou úrovni</h2>
+            <p>
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta.
+            </p>
+            <a href="#" class="button" data-show-subpicker>Show subpicker</a>
+        </div>
+    </div>
+    <div class="picker picker--lap picker--secondary" id="demo-subpicker"
+         role="dialog" aria-hidden="true">
         <a class="picker__close" href="#">
             <span class="icon icon--remove" aria-hidden="true"></span>
             <span class="visuallyhidden">Zavřít</span>
         </a>
+        <div class="picker__body">
+            <h2>Samci přes, polovině </h2>
+            <p>
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+            </p>
+        </div>
     </div>
-    <div class="picker__body">
-        <h2>Mozkovou úrovni</h2>
-        <p>
-            Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
-            potřeli částicím. Látky slabých původních nosu je křídy cesta.
-        </p>
-        <a href="#" class="button" data-show-subpicker>Show subpicker</a>
-    </div>
+    <a href="#" data-show-picker>Show picker</a>
 </div>
-<div class="picker picker--lap picker--secondary" id="demo-subpicker"
-     role="dialog" aria-hidden="true">
-    <a class="picker__close" href="#">
-        <span class="icon icon--remove" aria-hidden="true"></span>
-        <span class="visuallyhidden">Zavřít</span>
-    </a>
-    <div class="picker__body">
-        <h2>Samci přes, polovině </h2>
-        <p>
-            U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
-            vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
-            tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
-            ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
-            zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
-            U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
-            vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
-            tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
-            ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
-            zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
-        </p>
-    </div>
-</div>
-<a href="#" data-show-picker>Show picker</a>
 <script>
     var picker = $('#demo-picker'),
         subpicker = $('#demo-subpicker'),
@@ -116,7 +120,7 @@ Styleguide 4.23
     }
 }
 
-@media only screen and (min-width: @screen-lap) {
+@media only screen and (min-width: @screen-lap) and (max-width: @screen-desk-max) {
     .picker--lap {
         .picker-block(340px);
 

@@ -3,8 +3,10 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+- Add new component *drop-down*
 - Add new icon:
     - *check*
+- Edit visibility of *picker* component
 
 ## v4.18.0
 - Add new modifier to *typography* component:
