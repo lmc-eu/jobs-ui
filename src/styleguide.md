@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new icon:
+    - *check*
+
 ## v4.18.0
 - Add new modifier to *typography* component:
     - *text--warning*
