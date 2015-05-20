@@ -2,6 +2,12 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new component *sticker*
+- Remove border radius and change of font and text properties in *label* component
+- Change color *dark-green*
+- Add new color *black*
+
 ## v4.18.0
 - Add new modifier to *typography* component:
     - *text--warning*
