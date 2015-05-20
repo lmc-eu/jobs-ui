@@ -2,11 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.19.0
 - Add new component *sticker*
 - Remove border radius and change of font and text properties in *label* component
 - Change color *dark-green*
 - Add new color *black*
+- Change border and background styles of *small-search* component
+- Change padding of *cover* modifier in *hero* component
 
 ## v4.18.0
 - Add new modifier to *typography* component:
