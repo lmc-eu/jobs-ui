@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Change padding on *hero--cover* modifier
+
 ## v4.19.0
 - Add new component *sticker*
 - Remove border radius and change of font and text properties in *label* component
