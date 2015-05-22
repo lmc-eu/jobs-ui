@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.19.1
 - Change padding on *hero--cover* modifier
 
 ## v4.19.0
