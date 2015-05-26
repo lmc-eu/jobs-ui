@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add *combobox__item* to *combobox* component
+
 ## v4.20.1
 - Change border color of *dropdown* component
 
