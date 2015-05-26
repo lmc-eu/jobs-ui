@@ -5,7 +5,7 @@
     width: @width;
     height: 100%;
     padding-bottom: 36px;
-    background-color: #ffffff;
+    background-color: @light-silver;
     overflow: auto;
     z-index: 10010;
     .box-sizing(border-box);
@@ -23,14 +23,14 @@
 }
 .picker-elements() {
     &__head {
-        height: 80px;
+        height: 50px;
         margin-bottom: (@standalone-bottom-margin / 2);
         padding: 0 40px;
-        line-height: 80px;
+        line-height: 50px;
         white-space: nowrap;
         text-align: center;
         text-overflow: ellipsis;
-        background-color: @jobs-blue-basic;
+        background-color: @light-blue;
         overflow: hidden;
         color: #ffffff;
     }
@@ -55,4 +55,9 @@
         width: 85%;
         margin: 0 auto;
     }
+}
+
+.icon--remove {
+    color: #fff;
+    font-size: 22px;
 }

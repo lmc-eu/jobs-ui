@@ -6,7 +6,8 @@
 - Add new component *drop-down*
 - Add new icon:
     - *check*
-- Edit visibility of *picker* component
+- Edit background-color of *picker* component
+- Edit visibility of *picker* component on devices
 
 ## v4.18.0
 - Add new modifier to *typography* component:
