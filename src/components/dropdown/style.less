@@ -1,0 +1,149 @@
+/*
+Dropdown
+
+Styling of the option list.
+Interaction may to be implemented via Javascript..
+
+Style of the select element will be changed automaticaly in case that non first option is selected.
+
+Markup:
+<!--Closed-->
+<div id="drop1" class="dropdown">
+    <div class="dropdown__head">
+        Moje
+        <span class="icon icon--arrow-down"></span>
+    </div>
+     <div class="dropdown__list">
+        <div class="dropdown__item">Počátku</div>
+        <div class="dropdown__item">Moje</div>
+        <div class="dropdown__item">Biology</div>
+        <div class="dropdown__item">Zkrátka</div>
+    </div>
+</div>
+<!--Opened-->
+<div id="drop2" class="dropdown">
+    <div class="dropdown__head dropdown__head--selected">
+        Počátku
+        <span class="icon icon--arrow-down"></span>
+    </div>
+     <div class="dropdown__list dropdown__list--opened">
+        <div class="dropdown__item dropdown__item--selected"><span class="icon icon--check"></span>Počátku</div>
+        <div class="dropdown__item">Moje</div>
+        <div class="dropdown__item">Biology</div>
+        <div class="dropdown__item">Zkrátka</div>
+    </div>
+</div>
+<!--Only for preview-->
+<div class="visible--desk" style="margin-top: 180px;"></div>
+
+Styleguide 4.27
+*/
+
+
+@dropdown-height-desk: 55px;
+@dropdown-height-palm-lap: 40px;
+
+.dropdown {
+    position: relative;
+
+    @media only screen and (min-width: @screen-desk) {
+        display: inline-block;
+    }
+
+    .icon {
+        color: @dark-gray;
+
+        &--arrow-down {
+            float: right;
+            height: @dropdown-height-palm-lap;
+            line-height: @dropdown-height-palm-lap;
+
+            @media only screen and (min-width: @screen-desk) {
+                height: @dropdown-height-desk;
+                line-height: @dropdown-height-desk;
+            }
+        }
+
+        &--check {
+            padding-right: 10px;
+            font-size: 16px;
+        }
+    }
+
+    &__head {
+        height: @dropdown-height-palm-lap;
+        line-height: @dropdown-height-palm-lap;
+        padding-left: 10px;
+        padding-right: 10px;
+        .box-sizing(border-box);
+        background-color: @light-silver;
+        color: @dark-gray;
+
+        &--selected {
+            cursor: default;
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            height: @dropdown-height-desk;
+            line-height: @dropdown-height-desk;
+        }
+    }
+
+    &__list {
+        display: none;
+        cursor: pointer;
+        .box-sizing(border-box);
+        background-color: @light-silver;
+
+        @media only screen and (min-width: @screen-desk) {
+            position: absolute;
+            top: 50px;
+            left: 5px;
+            border: 1px solid @dark-gray;
+            background-color: #ffffff;
+            z-index: 10;
+            .box-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
+        }
+
+        &--opened {
+            display: block;
+
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+
+    &__item {
+        line-height: @dropdown-height-palm-lap;
+        min-height: @dropdown-height-palm-lap;
+        padding-top: 5px;
+        padding-left: 50px;
+        cursor: pointer;
+        white-space: nowrap;
+        word-wrap: break-word;
+
+        @media only screen and (min-width: @screen-desk) {
+            padding-left: 40px;
+            padding-right: 50px;
+        }
+
+        &--selected {
+            padding-left: 24px;
+
+            @media only screen and (min-width: @screen-desk) {
+                padding-left: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: @light-yellow;
+        }
+    }
+}

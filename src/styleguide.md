@@ -2,6 +2,13 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.20.0
+- Add new component *drop-down*
+- Add new icon:
+    - *check*
+- Edit background-color of *picker* component
+- Edit visibility of *picker* component on devices
+
 ## v4.19.1
 - Change padding on *hero--cover* modifier
 
