@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.20.1
+- Change border color of *dropdown* component
+
 ## v4.20.0
 - Add new component *drop-down*
 - Add new icon:
