@@ -27,12 +27,12 @@
         margin-bottom: (@standalone-bottom-margin / 2);
         padding: 0 40px;
         line-height: 50px;
+        background-color: @light-blue;
+        color: #fff;
         white-space: nowrap;
         text-align: center;
         text-overflow: ellipsis;
-        background-color: @light-blue;
         overflow: hidden;
-        color: #ffffff;
     }
 
     &__close {
@@ -40,8 +40,9 @@
         top: 0;
         right: 0;
         width: 40px;
-        color: @light-gray;
-        line-height: 40px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 22px;
         text-align: center;
         text-decoration: none;
 
@@ -54,10 +55,9 @@
     &__body {
         width: 85%;
         margin: 0 auto;
-    }
-}
 
-.icon--remove {
-    color: #fff;
-    font-size: 22px;
+        .button {
+            margin-top: 10px;
+        }
+    }
 }

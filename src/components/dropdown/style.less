@@ -55,10 +55,12 @@ Styleguide 3.6
 
         &--arrow-down {
             float: right;
+            padding-left: 5px;
             height: @dropdown-height-palm-lap;
             line-height: @dropdown-height-palm-lap;
 
             @media only screen and (min-width: @screen-desk) {
+                float: none;
                 height: @dropdown-height-desk;
                 line-height: @dropdown-height-desk;
             }
@@ -81,7 +83,7 @@ Styleguide 3.6
 
         &--selected {
             cursor: default;
-            color: #000;
+            color: @jobs-blue-basic;
             font-weight: bold;
         }
 
@@ -105,8 +107,10 @@ Styleguide 3.6
             position: absolute;
             top: 50px;
             left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             border: 1px solid  @light-dark-gray;
-            background-color: #ffffff;
+            background-color: #fff;
             z-index: 10;
             .box-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
         }
@@ -123,7 +127,6 @@ Styleguide 3.6
     &__item {
         line-height: @dropdown-height-palm-lap;
         min-height: @dropdown-height-palm-lap;
-        padding-top: 5px;
         padding-left: 50px;
         cursor: pointer;
         white-space: nowrap;
@@ -131,7 +134,7 @@ Styleguide 3.6
 
         @media only screen and (min-width: @screen-desk) {
             padding-left: 40px;
-            padding-right: 50px;
+            padding-right: 60px;
         }
 
         &--selected {

@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Change padding of *icon* on *dropdown* component
+- Add margin of *close icon* and *button* on *picker* component
+- Fix *dropdown* component on IE
+
 ## v4.20.1
 - Change border color of *dropdown* component
 
