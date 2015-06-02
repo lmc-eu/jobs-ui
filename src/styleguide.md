@@ -4,6 +4,7 @@
 
 ## DEV
 - Add *combobox__item* to *combobox* component
+- Add *enlarged* modificator on *form__text-input* in form
 
 ## v4.21.1
 - Change padding of *icon* on *dropdown* component

@@ -30,13 +30,18 @@
 
     // Fix for FF - https://bugzilla.mozilla.org/show_bug.cgi?id=349259
     &__text-input {
-        line-height: 34px;
         height: 34px;
+        line-height: 34px;
+
+        &--enlarged {
+            height: 42px;
+            line-height: 42px;
+        }
     }
 
     &__simulated {
-        line-height: 34px;
         height: 34px;
+        line-height: 34px;
         overflow: hidden;
         cursor: pointer;
     }
