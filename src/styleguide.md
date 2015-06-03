@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.22.0
 - Add *combobox__item* to *combobox* component
 - Add *enlarged* modificator on *form__text-input* in form
 - Change height property on *form__simulated* in form
