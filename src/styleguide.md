@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add *tagselect* component
+- Add new color *steel*
+
 ## v4.22.0
 - Add *combobox__item* to *combobox* component
 - Add *enlarged* modificator on *form__text-input* in form
@@ -32,7 +36,6 @@
 - Add new component *sticker*
 - Remove border radius and change of font and text properties in *label* component
 - Change color *dark-green*
-- Add new color *black*
 - Change border and background styles of *small-search* component
 - Change padding of *cover* modifier in *hero* component
 
