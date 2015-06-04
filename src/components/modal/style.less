@@ -74,7 +74,7 @@ body {
         border-right: none;
 
         &:hover {
-            color: #333;
+            color: @steel;
             border-bottom: 1px solid @light-gray;
         }
     }
@@ -95,8 +95,8 @@ body {
         -webkit-overflow-scrolling: touch;
         text-align: center;
         opacity: 0;
-        background: #333; // IE8 and IE9 fix
-        background: fade(#333, 90%);
+        background: @steel; // IE8 and IE9 fix
+        background: fade(@steel, 90%);
         .transition(opacity 0.2s linear);
 
         &:after {
