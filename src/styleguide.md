@@ -2,9 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.23.0
 - Add *tagselect* component
-- Add new color *steel*
+- Add new color *steel* and replaced #333 color everywhere
 
 ## v4.22.0
 - Add *combobox__item* to *combobox* component
