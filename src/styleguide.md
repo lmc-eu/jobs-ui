@@ -7,6 +7,9 @@
     - *book*
     - *globe*
     - *heart*
+- Add new modificators on *tag__icon*
+    - *tag__icon--large*
+    - *tag__icon--ultra-large*
 
 ## v4.23.0
 - Add *tagselect* component
