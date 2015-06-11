@@ -1,7 +1,7 @@
 *Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
-# Unreleased
+## v4.24.0
 - Add new icons:
     - *briefcase*
     - *book*
