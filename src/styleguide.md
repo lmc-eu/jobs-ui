@@ -1,6 +1,10 @@
 *Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
+
+## v4.24.1
+- Add new class *no-underline* for links
+
 ## v4.24.0
 - Add new icons:
     - *briefcase*
@@ -10,9 +14,6 @@
 - Add new modificators on *tag__icon*
     - *tag__icon--large*
     - *tag__icon--ultra-large*
-
-## Unreleased
-- Add new class *no-underline* for links
 
 ## v4.23.0
 - Add *tagselect* component
