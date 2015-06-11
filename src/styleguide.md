@@ -11,6 +11,9 @@
     - *tag__icon--large*
     - *tag__icon--ultra-large*
 
+## Unreleased
+- Add new class *no-underline* for links
+
 ## v4.23.0
 - Add *tagselect* component
 - Add new color *steel* and replaced #333 color everywhere
