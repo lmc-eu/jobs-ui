@@ -16,6 +16,8 @@
 - Change *dropdown* appearance
 - Fix *headline--primary* and *headline--secondary* on tablet and desktop
 - Add *form__label--spaced* modifier
+- Change style of *dropdown* component
+- Add new position property for *form__simulated*
 
 ## v4.24.1
 - Add new class *no-underline* for links

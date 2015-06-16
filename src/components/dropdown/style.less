@@ -2,7 +2,7 @@
 Dropdown
 
 Styling of the option list.
-Interaction may to be implemented via Javascript.
+Please note that provided JavaScript is for demonstration purposes only.
 
 Style of the select element will be changed automaticaly in case that non first option is selected.
 
@@ -29,7 +29,7 @@ Markup:
         <span class="icon icon--arrow-down"></span>
     </div>
      <div class="dropdown__list dropdown__list--opened">
-        <div class="dropdown__item dropdown__item--selected"><span class="icon icon--check"></span>Počátku</div>
+        <div class="dropdown__item dropdown__item--selected">Počátku<div class="dropdown__icon"><span class="icon icon--check"></span></div></div>
         <div class="dropdown__item">Moje</div>
         <div class="dropdown__item">Biology</div>
         <div class="dropdown__item">Zkrátka</div>
@@ -67,7 +67,6 @@ Styleguide 3.6
         }
 
         &--check {
-            padding-right: 10px;
             font-size: 16px;
         }
     }
@@ -78,6 +77,7 @@ Styleguide 3.6
         padding-left: 10px;
         padding-right: 10px;
         .box-sizing(border-box);
+        color: @dark-gray;
 
         &--selected {
             cursor: default;
@@ -99,7 +99,6 @@ Styleguide 3.6
         display: none;
         cursor: pointer;
         .box-sizing(border-box);
-        background-color: @light-silver;
 
         @media only screen and (min-width: @screen-desk) {
             position: absolute;
@@ -125,26 +124,22 @@ Styleguide 3.6
     &__item {
         line-height: @dropdown-height-palm-lap;
         min-height: @dropdown-height-palm-lap;
-        padding-left: 50px;
-        word-wrap: break-word;
-        white-space: nowrap;
+        padding-left: 20px;
+        padding-right: 10px;
+        text-overflow: ellipsis;
         cursor: pointer;
 
         @media only screen and (min-width: @screen-desk) {
-            padding-left: 40px;
-            padding-right: 60px;
-        }
-
-        &--selected {
-            padding-left: 24px;
-
-            @media only screen and (min-width: @screen-desk) {
-                padding-left: 14px;
-            }
+            width: 180px;
+            padding-right: 15px;
         }
 
         &:hover {
             background-color: @light-yellow;
         }
+    }
+
+    &__icon {
+        float: right;
     }
 }
