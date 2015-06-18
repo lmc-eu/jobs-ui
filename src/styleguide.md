@@ -2,6 +2,21 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Deprecate the following colors:
+    - *dark-gray*
+    - *light-dark-gray*
+- Change the following colors:
+    - *silver*
+    - *light-silver*
+- Change *search-list__title__link* visited color
+- Change *label--visited* colors
+- Change (remove) *elite-row* background
+- Change *combobox* appearance
+- Change *dropdown* appearance
+- Fix *headline--primary* and *headline--secondary* on tablet and desktop
+- Add *form__label--spaced* modifier
+
 ## v4.24.1
 - Add new class *no-underline* for links
 
@@ -11,7 +26,7 @@
     - *book*
     - *globe*
     - *heart*
-- Add new modificators on *tag__icon*
+- Add new modifiers on *tag__icon*
     - *tag__icon--large*
     - *tag__icon--ultra-large*
 
@@ -21,7 +36,7 @@
 
 ## v4.22.0
 - Add *combobox__item* to *combobox* component
-- Add *enlarged* modificator on *form__text-input* in form
+- Add *enlarged* modifier on *form__text-input* in form
 - Change height property on *form__simulated* in form
 
 ## v4.21.1

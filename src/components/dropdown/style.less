@@ -2,9 +2,11 @@
 Dropdown
 
 Styling of the option list.
-Interaction may to be implemented via Javascript..
+Interaction may to be implemented via Javascript.
 
 Style of the select element will be changed automaticaly in case that non first option is selected.
+
+Note: It is expected that shown icons will be used.
 
 Markup:
 <!--Closed-->
@@ -51,8 +53,6 @@ Styleguide 3.6
     }
 
     .icon {
-        color: @dark-gray;
-
         &--arrow-down {
             float: right;
             padding-left: 5px;
@@ -78,8 +78,6 @@ Styleguide 3.6
         padding-left: 10px;
         padding-right: 10px;
         .box-sizing(border-box);
-        background-color: @light-silver;
-        color: @dark-gray;
 
         &--selected {
             cursor: default;
@@ -109,7 +107,7 @@ Styleguide 3.6
             left: 5px;
             padding-top: 5px;
             padding-bottom: 5px;
-            border: 1px solid  @light-dark-gray;
+            border: 1px solid @light-gray;
             background-color: #fff;
             z-index: 10;
             .box-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
