@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.25.0
 - Deprecate the following colors:
     - *dark-gray*
     - *light-dark-gray*
