@@ -2,6 +2,12 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.26.0
+- Add new icon:
+    - *lightbulb-o*
+- Add new modifier on *promobox*
+    - *advertising*
+
 ## v4.25.0
 - Deprecate the following colors:
     - *dark-gray*
