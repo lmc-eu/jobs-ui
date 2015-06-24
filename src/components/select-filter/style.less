@@ -100,8 +100,10 @@ Styleguide 3.5
 
     &__item,
     select {
-        font-size: 13px;
+        font-size: 14px;
+        padding: 2px 5px 2px 8px;
         border-color: @dark-blue;
+        border-radius: 0;
         color: @dark-blue;
 
         &:focus::-ms-value {
@@ -111,7 +113,7 @@ Styleguide 3.5
     }
     .icon {
         display: none;
-        font-size: 13px;
+        font-size: 15px;
         color: @dark-blue;
         &--spinner {
             margin-left: 4px;
@@ -140,31 +142,10 @@ Styleguide 3.5
     }
     &--arrow {
         select {
-            appearance: none;
-            -o-appearance: none;
-            -ms-appearance: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
+            height: 30px;
             line-height: 18px;
             padding-right: 20px;
-            &::-ms-expand {
-                display: none;
-                /* IE 8 */
-                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-                /* IE 5-7 */
-                filter: alpha(opacity=0);
-                /* Good browsers :) */
-                opacity:0;
-            }
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            right: 5px;
-            bottom: 9px;
-            width: 9px;
-            height: 7px;
-            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjE0QkY1MDc3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjE0QkY1MDg3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MTRCRjUwNTdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MTRCRjUwNjdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvOnL5wAAABVSURBVHjaYmJgYFgPxP/xYJA8gxQQf8ChACQuxQQkngFxGQN2UAaVBwNGIN6PZsp+qDgKUAXi71AF36F8MGBCUnQbiBug7EYoHytgAeK5UBoOAAIMACJrHTW8m5BIAAAAAElFTkSuQmCC");
+            border: 1px solid @dark-blue;
         }
     }
     &--in-progress {
@@ -173,9 +154,6 @@ Styleguide 3.5
         }
     }
     &--active {
-        &:after {
-            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjE0QkY1MDM3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjE0QkY1MDQ3RTBEMTFFNEFBQjg5MzhGRDQxNzkzOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MTRCRjUwMTdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MTRCRjUwMjdFMEQxMUU0QUFCODkzOEZENDE3OTM5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhyTyZkAAABfSURBVHjaYvr////6//jBegYgIQXEH3AoAIlLMTEwMDwD4jIG7KAMLA9UCcKMQLwfzZT9UHEGmCIQVgXi71AF36F8sBwTktG3gbgBym6E8iEAySQQZgHiuVAaLg4QYABTLqOuazdfMgAAAABJRU5ErkJggg==");
-        }
         .select-filter__item,
         select {
             background-color: @dark-blue;
@@ -187,7 +165,8 @@ Styleguide 3.5
             }
         }
         select {
-            option {
+            option,
+            optgroup {
                 background-color: #ffffff;
                 color: @dark-blue;
             }

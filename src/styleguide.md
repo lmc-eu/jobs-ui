@@ -1,6 +1,8 @@
 *Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
+#dev
+- Change *arrow* modificator on *form__select*
 
 ## v4.26.0
 - Add new icon:
