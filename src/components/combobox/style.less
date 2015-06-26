@@ -3,7 +3,7 @@ Combobox
 
 Floating box e.g. for autocomplete.
 
-The combobox is left unstylled on palm. It may be combined with a picker.
+It may be combined with a picker.
 
 Opening a combobox body means adding `.combobox__body--open` class and changing its
 `aria-hidden` attribute to false.
@@ -19,10 +19,12 @@ Markup:
                 type="text" placeholder="Kamkoliv po republice">
             <div class="combobox__body" id="combobody"
                 role="dialog" aria-hidden="true">
-                <a class="combobox__item" href="#">Hmotu čech minimálně</a>
-                <a class="combobox__item combobox__item--highlight" href="#">Zrušili by která různá</a>
-                <a class="combobox__item" href="#">Slabého chybí tělo ne vzdělávání</a>
-                <a class="combobox__item" href="#">Rovnosti z původním</a>
+                <ul class="list-unstyled">
+                    <li class="combobox__item"><a class="combobox__link" href="#">Hmotu čech minimálně</a></li>
+                    <li class="combobox__item combobox__item--highlight"><a class=" combobox__link" href="#">Zrušili by která různá  tělo ne vzdělávání</a></li>
+                    <li class="combobox__item"><a class="combobox__link" href="#">Slabého chybí tělo ne vzdělávání</a></li>
+                    <li class="combobox__item">Rovnosti z původním</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -45,8 +47,8 @@ Markup:
 Styleguide 5.15
 */
 
-@media only screen and (min-width: @screen-lap) {
-    .combobox {
+.combobox {
+    @media only screen and (min-width: @screen-lap) {
         position: relative;
 
         &__body {
@@ -63,28 +65,40 @@ Styleguide 5.15
             border-top: none;
             z-index: 10;
             .box-sizing(border-box);
-            .box-shadow(0 6px 6px rgba(0,0,0,0.2));
+            .box-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
 
             &--open {
                 display: block;
             }
         }
+    }
 
-        &__item {
-            display: block;
-            min-height: 40px;
-            padding-right: 20px;
-            padding-left: 20px;
-            line-height: 40px;
-            cursor: pointer;
+    &__item {
+        display: block;
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 40px;
 
-            &:hover {
-                border: none;
-            }
+        &:hover {
+            border: none;
+        }
 
-            &--highlight {
-                background-color: @light-yellow;
-            }
+        &--highlight {
+            background-color: @light-yellow;
+        }
+    }
+
+    &__link {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: @steel;
+
+        &:hover {
+            color: @steel;
+            border-bottom: none;
         }
     }
 }
