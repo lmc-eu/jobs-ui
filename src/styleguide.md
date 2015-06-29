@@ -1,7 +1,11 @@
 *Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
+
 ## DEV
+- Change the following colors:
+    - *silver*
+    - *light-silver*
 - Change style of visibility for *palm* and *lap* on *combobox* component
 - Add styled link on *combobox* component
 
