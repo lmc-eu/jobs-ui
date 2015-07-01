@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Change *tagselect__input* overflow
+
 ## v4.28.0
 - Change the following colors:
     - *silver*
