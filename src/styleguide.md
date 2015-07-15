@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.30.0
 - Style *combobox* on palm
 
 ## v4.29.0
