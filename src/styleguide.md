@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Style *combobox* on palm
+
 ## v4.29.0
 - Change *tagselect__input* overflow
 
