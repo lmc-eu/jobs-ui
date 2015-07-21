@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new modifier to *typography* component:
+    - *text--highlight*
+
 ## v4.30.0
 - Style *combobox* on palm
 
