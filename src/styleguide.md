@@ -5,6 +5,7 @@
 ## DEV
 - Add new modifier to *typography* component:
     - *text--highlight*
+    - *text--inverse*
 
 ## v4.30.0
 - Style *combobox* on palm
