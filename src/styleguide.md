@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.31.0
 - Add new modifier to *typography* component:
     - *text--highlight*
     - *text--inverse*
