@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new colour:
+    - *yellow*
+
 ## v4.31.0
 - Add new modifier to *typography* component:
     - *text--highlight*
@@ -14,7 +18,7 @@
 - Change *tagselect__input* overflow
 
 ## v4.28.0
-- Change the following colors:
+- Change the following colours:
     - *silver*
     - *light-silver*
 - Change style of visibility for *palm* and *lap* on *combobox* component
@@ -30,14 +34,14 @@
     - *advertising*
 
 ## v4.25.0
-- Deprecate the following colors:
+- Deprecate the following colours:
     - *dark-gray*
     - *light-dark-gray*
-- Change the following colors:
+- Change the following colours:
     - *silver*
     - *light-silver*
-- Change *search-list__title__link* visited color
-- Change *label--visited* colors
+- Change *search-list__title__link* visited colour
+- Change *label--visited* colours
 - Change (remove) *elite-row* background
 - Change *combobox* appearance
 - Change *dropdown* appearance
@@ -61,7 +65,7 @@
 
 ## v4.23.0
 - Add *tagselect* component
-- Add new color *steel* and replaced #333 color everywhere
+- Add new colour *steel* and replaced #333 colour everywhere
 
 ## v4.22.0
 - Add *combobox__item* to *combobox* component
@@ -77,7 +81,7 @@
 - Dissolve *Components* into *Components* and *Compositions*
 
 ## v4.20.1
-- Change border color of *dropdown* component
+- Change border colour of *dropdown* component
 
 ## v4.20.0
 - Add new component *drop-down*
@@ -92,7 +96,7 @@
 ## v4.19.0
 - Add new component *sticker*
 - Remove border radius and change of font and text properties in *label* component
-- Change color *dark-green*
+- Change colour *dark-green*
 - Change border and background styles of *small-search* component
 - Change padding of *cover* modifier in *hero* component
 
@@ -109,10 +113,10 @@
 
 ## v4.16.0
 - Fix calling close event on Remodal component if escape key pressed
-- Change color:
+- Change colour:
     - *green*
 - Reduce PNG image size
-- Change color of background in *profile-badge* component
+- Change colour of background in *profile-badge* component
 - Add new modifier to *profile-badge* component:
     - *profile-badge--naked*
 - Add new *headline* component
@@ -128,8 +132,8 @@
 - Add new *form__simulated* input in form
 
 ## v4.13.0
-- Change color of visited link in *search-list* component
-- Change color:
+- Change colour of visited link in *search-list* component
+- Change colour:
     - *dark-gray*
 - Add *overlay* component
 - Add *picker* component
@@ -146,11 +150,11 @@
     - *label--indented*
 
 ## v4.10.0
-- Change color of visited link in *search-list* component
-- Change colors:
+- Change colour of visited link in *search-list* component
+- Change colours:
     - *red*
     - *green*
-- Add new colors:
+- Add new colours:
     - *light-dark-gray*
     - *dark-gray*
     - *light-green*
@@ -176,7 +180,7 @@
 - Changed height of mobile version of the *header* component
 
 ## v4.8.0
-- Add *dark-yellow* color
+- Add *dark-yellow* colour
 
 ## v4.7.0
 - Add new component *progressbar*
@@ -199,7 +203,7 @@
 
 ## v4.5.0
 - Add *promobox* component
-- Add *darker-blue* color
+- Add *darker-blue* colour
 - Add *button--wrap* modificator
 - Add new icon:
     - *facebook-square*
@@ -227,7 +231,7 @@
 
 ## v4.0.1
 - Add new modifier for *label*:
-    - *label--warning* for orange background color
+    - *label--warning* for orange background colour
 
 ## v4.0.0
 - Remove *src-n attributes* polyfill
@@ -259,7 +263,7 @@
 - Visual separation of social links container
 
 ## v3.1.1
-- Adjusted index cards color
+- Adjusted index cards colour
 
 ## v3.1.0
 - Add *tabs* component
