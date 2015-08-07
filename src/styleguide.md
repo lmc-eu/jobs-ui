@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.32.0
 - Add new colour:
     - *yellow*
 - Add new modifiers to *typography* component:
