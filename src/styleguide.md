@@ -5,6 +5,10 @@
 ## DEV
 - Add new colour:
     - *yellow*
+- Add new modifiers to *typography* component:
+    - *text--small*
+    - *text--extra-small*
+    - *text--contrast*
 
 ## v4.31.0
 - Add new modifier to *typography* component:
