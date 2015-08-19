@@ -2,6 +2,9 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Change margin and width properties of *dropdown* component
+
 ## v4.32.0
 - Add new colour:
     - *yellow*

@@ -41,7 +41,6 @@ Markup:
 Styleguide 3.6
 */
 
-
 @dropdown-height-desk: 55px;
 @dropdown-height-palm-lap: 40px;
 
@@ -50,6 +49,11 @@ Styleguide 3.6
 
     @media only screen and (min-width: @screen-desk) {
         display: inline-block;
+        margin-right: 6px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     .icon {
@@ -90,6 +94,7 @@ Styleguide 3.6
         }
 
         @media only screen and (min-width: @screen-desk) {
+            padding-left: 0;
             height: @dropdown-height-desk;
             line-height: @dropdown-height-desk;
         }
@@ -103,7 +108,7 @@ Styleguide 3.6
         @media only screen and (min-width: @screen-desk) {
             position: absolute;
             top: 50px;
-            left: 5px;
+            left: 0px;
             padding-top: 5px;
             padding-bottom: 5px;
             border: 1px solid @light-gray;
@@ -130,7 +135,7 @@ Styleguide 3.6
         cursor: pointer;
 
         @media only screen and (min-width: @screen-desk) {
-            width: 180px;
+            width: 190px;
             padding-right: 15px;
         }
 
