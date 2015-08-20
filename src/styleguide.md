@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.33.0
 - Change margin and width properties of *dropdown* component
 
 ## v4.32.0
