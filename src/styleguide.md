@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.34.0
 - Add new modifier on *form__label* component:
     - *form__label--muted*
 
