@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.34.0
+- Add new modifier on *form__label* component:
+    - *form__label--muted*
+
 ## v4.33.0
 - Change margin and width properties of *dropdown* component
 
