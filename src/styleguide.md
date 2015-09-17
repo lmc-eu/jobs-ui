@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.35.0
 - Remove outline on *form__text-input* component because of Safari input outline
 
 ## v4.34.0
