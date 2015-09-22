@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new modifier to *label* component:
+    - *label--success*
+
 ## v4.35.0
 - Remove outline on *form__text-input* component because of Safari input outline
 
