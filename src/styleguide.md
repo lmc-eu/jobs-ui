@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.36.0
 - Add new modifier to *label* component:
     - *label--success*
 
