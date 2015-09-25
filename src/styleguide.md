@@ -3,8 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
-- Remove text-transform, line-height, font-size from *label* component, so it inherits from body:
-    - *label*
+- Remove text-transform, line-height, font-size from *label* component, so it inherits from body
 
 ## v4.36.0
 - Add new modifier to *label* component:
