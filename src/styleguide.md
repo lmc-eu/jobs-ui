@@ -2,6 +2,12 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+
+- Add new component *recommended-ads*
+- Add new colour:
+    - *smurf-blue*
+
 ## v.37.0
 - Remove text-transform, line-height, font-size from *label* component, so it inherits from body
 

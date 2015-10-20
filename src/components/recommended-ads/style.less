@@ -1,0 +1,86 @@
+/*
+Recommended-Ads
+
+Component for recommended ads
+
+*Please note that provided grid width is for demonstration purposes only.*
+
+Markup:
+<div class="grid"><!--
+    --><div class="grid__item recommended-ads"><!--
+        --><div class="grid"><!--
+            --><div class="grid__item e-1--palm e-1 e-1--desk grid--center">
+                <span class="recommended-ads__icon icon icon--lightbulb-o" aria-hidden="true"></span>
+            </div><!--
+            --><div class="grid__item e-7--palm e-15 e-15--desk">
+                <ul class="recommended-ads__list" data-recommended-ads-list>
+                    <li class="recommended-ads__list__item">
+                        <a class="recommended-ads__list__item__link" href="#">Regionální obchodní konzultant</a>
+                        ,
+                        <span class="recommended-ads__list__item__company-name">ABC Českého Hospodářství a.s.</span>
+                        ,
+                        <span class="recommended-ads__list__item__company-address"> Praha </span>
+                    </li>
+                     <li class="recommended-ads__list__item">
+                        <a class="recommended-ads__list__item__link" href="#">Obchodní zástupce pro regionální oddělení</a>
+                        ,
+                        <span class="recommended-ads__list__item__company-name">Škoda auto a.s.</span>
+                        ,
+                        <span class="recommended-ads__list__item__company-address"> Mladá Boleslav </span>
+                    </li>
+                </ul>
+                <p data-positions-loader class="hidden">
+                    <span class="icon icon--spinner icon--rotating muted" aria-hidden="true"></span>
+                </p>
+                <a href="#" class="recommended-ads__show-more__link" data-recomended-ads-show-more>
+                    Zobrazit více doporučených nabídek
+                    <span class="recommended-ads__show-more__link__icon icon icon--angle-right"></span>
+                </a>
+            </div>
+        </div><!--
+    --></div><!--
+--></div>
+
+Styleguide 5.17
+*/
+
+.recommended-ads {
+
+    &__list {
+        padding-left: 0;
+        list-style-type: none;
+
+        &--opened {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            margin-bottom: 10px;
+
+            @media only screen and (min-width: @screen-desk) {
+                margin-bottom: 5px;
+            }
+
+            &__link {
+                font-size: 15px;
+            }
+
+            &__company-address {
+                color: @gray;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 40px;
+        color: @jobs-blue-basic;
+    }
+
+    &__show-more__link {
+        white-space: nowrap;
+
+        &__icon {
+            padding-left: 3px;
+        }
+    }
+}
