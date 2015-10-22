@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v.38.0
 
 - Add new component *recommended-ads*
 - Add new colour:
