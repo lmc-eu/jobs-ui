@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+- Remove left padding of first main navigation item
 - Add *huge-standalone*
 - Add new modifier to *typography* component:
     - *text--success*
