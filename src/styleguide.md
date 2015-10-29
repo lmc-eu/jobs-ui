@@ -3,13 +3,14 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+
+## v4.39.0
 - Remove left padding of first main navigation item
 - Add *huge-standalone*
 - Add new modifier to *typography* component:
     - *text--success*
 
 ## v4.38.0
-
 - Add new component *recommended-ads*
 - Add new colour:
     - *smurf-blue*
