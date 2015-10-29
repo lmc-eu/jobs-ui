@@ -4,6 +4,8 @@
 
 ## DEV
 - Add *huge-standalone*
+- Add new modifier to *typography* component:
+    - *text--success*
 
 ## v4.38.0
 
