@@ -2,13 +2,16 @@
 
 # <a name="changelog"></a>Changelog
 
-## v.38.0
+## DEV
+- Add *huge-standalone*
+
+## v4.38.0
 
 - Add new component *recommended-ads*
 - Add new colour:
     - *smurf-blue*
 
-## v.37.0
+## v4.37.0
 - Remove text-transform, line-height, font-size from *label* component, so it inherits from body
 
 ## v4.36.0
