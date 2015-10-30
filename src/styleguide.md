@@ -4,6 +4,11 @@
 
 ## DEV
 
+## DEV
+- Add new component *horizontal-separator*
+- Add new modifier:
+    - *link--inverse*
+
 ## v4.40.0
 - Add *mini-standalone*
 
