@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+- Add *mini-standalone*
 
 ## v4.39.0
 - Remove left padding of first main navigation item
