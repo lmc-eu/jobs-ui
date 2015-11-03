@@ -3,6 +3,8 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+
+## v4.40.0
 - Add *mini-standalone*
 
 ## v4.39.0
