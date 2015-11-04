@@ -4,6 +4,9 @@
 
 ## DEV
 
+## DEV
+- Add border-bottom on hover for *link--inverse*
+
 ## v4.41.0
 - Add new component *horizontal-separator*
 - Add new modifier:
