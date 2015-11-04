@@ -4,7 +4,7 @@
 
 ## DEV
 
-## DEV
+## v4.41.0
 - Add new component *horizontal-separator*
 - Add new modifier:
     - *link--inverse*
