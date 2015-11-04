@@ -4,7 +4,7 @@
 
 ## DEV
 
-## v4.41.1
+## DEV
 - Add border-bottom on hover for *link--inverse*
 
 ## v4.41.0
