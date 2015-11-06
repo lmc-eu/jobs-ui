@@ -21,6 +21,7 @@ z plyne srpnu, <span class="text--warning">náklady hlídá zastavil</span>, str
 <span class="text--extra-small">Přetvořit kotle prostupnost divné prakticky s soustavně máme časem</span>
 <span class="text--small">Má bojem proti od s dlouhou</span>
 <span class="text--success">Tohle je barva úspěchu</span>
+<span class="text--uppercase">spolufinancuje závisí jiní novinářů Tohle je barva úspěchu</span>
 <hr />
 <div class="text--center">Nachystejte uzenáče, na snídani jsem zpátky</div>
 <div class="text--right">Vulkánu myslitelnými z nedostupná výrazný</div>
@@ -44,7 +45,6 @@ body {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: @base-font-size;
     line-height: @base-line-height;
-    font-weight: 300;
 }
 
 img {
@@ -106,9 +106,8 @@ h6,
 h1,
 .headline--primary {
     margin-bottom: 24px;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: @h1-font-size;
+    line-height: @h1-line-height;
 
     .headline-position {
         border-bottom: 1px dotted @dark-blue;
@@ -118,16 +117,46 @@ h1,
 h2,
 .headline--secondary {
     margin-bottom: 12px;
-    font-weight: 300;
     font-size: @h2-font-size;
     line-height: @h2-line-height;
+}
+
+h3,
+.headline--tertiary {
+    font-size: @h3-font-size;
+    line-height: @h3-line-height;
+}
+
+h4,
+.headline--quaternary {
+    font-size: @h4-font-size;
+}
+
+h1,
+.headline--primary,
+h2,
+.headline--secondary,
+h3,
+.headline--tertiary {
+    font-family: @font-face-headers, 'Arial', sans-serif;
 }
 
 p {
     margin: 0 0 12px 0;
     padding: 0;
-    font-weight: 300;
     word-wrap: break-word;
+}
+
+h1,
+.headline--primary,
+h2,
+.headline--secondary,
+h3,
+.headline--tertiary,
+h4,
+.headline--quaternary,
+p {
+    font-weight: @base-font-weight;
 }
 
 hr {
@@ -141,15 +170,9 @@ del {
 }
 
 @media only screen and (min-width: @screen-desk) {
-    body,
-    h1,
-    h2,
-    .headline--primary,
-    .headline--secondary,
-    p {
-        font-weight: 400;
+    body {
+        font-weight: @base-font-weight;
     }
-
 }
 
 .text {
@@ -196,6 +219,10 @@ del {
 
     &--success {
         color: @dark-green;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
     }
 }
 

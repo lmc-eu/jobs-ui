@@ -4,6 +4,15 @@
 
 ## DEV
 
+## DEV
+- Add new modifiers:
+    - *text--uppercase*
+    - *headline--tertiary*
+    - *headline--quaternary*
+- Add new font-family *Gloriola* to H1, H2, H3, headline--primary, headline--secondary, headline--tertiary, headline--quaternary.
+- Add new font-size to H1, H2, H3, H4, label, headline--primary, headline--secondary, headline--tertiary, headline--quaternary.
+- Add new font-weight for h1, headline--primary, h2, headline--secondary, h3, headline--tertiary, h4, headline--quaternary, p
+
 ## v4.41.1
 - Add border-bottom on hover for *link--inverse*
 
