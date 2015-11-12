@@ -1,4 +1,4 @@
-*Viktor* is the codename of the new design of [jobs.cz](http://jobs.cz).
+*Viktor* is the codename of the new design of [Jobs.cz](http://jobs.cz).
 
 # <a name="changelog"></a>Changelog
 
