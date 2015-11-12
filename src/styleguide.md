@@ -4,7 +4,7 @@
 
 ## DEV
 
-## DEV
+## v4.42.0
 - Add new modifiers:
     - *text--uppercase*
     - *headline--tertiary*
