@@ -10,7 +10,7 @@ and initialized [*Bower*](http://bower.io/) in the project are considered a
 prerequisite.
 
 Install with:
-`bower install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/ui.git`.
+`bower install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
 
 In the following `$bower_components$` denotes the directory in which bower
 installs its components (`./app/bower_components` relative to the `bower.json` file

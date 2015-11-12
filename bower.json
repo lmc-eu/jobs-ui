@@ -1,6 +1,6 @@
 {
     "name": "jobs-ui",
-    "description": "UI library for jobs.cz",
+    "description": "UI library for Jobs.cz",
     "main": [
         "style.less",
         "index.js"
