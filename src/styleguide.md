@@ -4,6 +4,13 @@
 
 ## DEV
 
+## DEV
+- Change:
+    - line-height on *button*
+    - height and line-height on *tagselect__input* and *form__text-input*
+- Deprecate the following modifier:
+    - *form__text-input--enlarged*
+
 ## v4.42.0
 - Add new modifiers:
     - *text--uppercase*
