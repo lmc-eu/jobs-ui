@@ -4,7 +4,7 @@
 
 ## DEV
 
-## DEV
+## v4.43.0
 - Change:
     - line-height on *button*
     - height and line-height on *tagselect__input* and *form__text-input*
