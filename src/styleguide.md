@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
+- Add favicon images
 
 ## v4.43.0
 - Change:
