@@ -22,6 +22,14 @@ module.exports = {
                 src: ['modules/icons/fonts/*', 'modules/fonts/gloriola/*'],
                 flatten: true,
                 dest: 'dist/fonts/'
+            },
+            {
+                // Favicons
+                expand: true,
+                cwd: 'src/',
+                src: ['modules/favicon/*'],
+                flatten: true,
+                dest: 'dist/favicon/'
             }
         ]
     },
