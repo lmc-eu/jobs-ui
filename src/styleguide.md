@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## v4.45.0
+- Remove :hover color from *picker close button*
+- Add new modifier:
+    - *navigation__link--spread*
+
 ## v4.44.0
 - Add favicon images
 

@@ -37,7 +37,17 @@
         color: @silver;
 
         &:hover {
-            color: #ffffff;
+            border-bottom: 0;
+            color: #fff;
+        }
+
+        &--spread {
+            display: inline-block;
+            width: 100%;
+
+            &:hover {
+                border-bottom: 0;
+            }
         }
     }
 
@@ -45,7 +55,7 @@
         margin-top: (@standalone-bottom-margin / 2);
         overflow-y: hidden;
         background-color: @silver;
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #fff;
         border-bottom: 1px solid @light-gray;
         .transition(max-height .5s ease-in-out);
 
