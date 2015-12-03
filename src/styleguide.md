@@ -2,6 +2,10 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Fix copying favicons to `dist/` directory during build
+- Rename Gloriola font files in `dist/` folder to lowercase
+
 ## v4.46.0
 - Add new colour:
     - *aero-blue*
