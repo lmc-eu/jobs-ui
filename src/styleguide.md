@@ -2,6 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
+
 ## v4.45.0
 - Remove :hover color from *picker close button*
 - Add new modifier:
