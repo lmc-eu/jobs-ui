@@ -50,6 +50,12 @@ Styleguide 3.2
         border: 1px solid @dark-orange;
         background-color: @dark-orange;
     }
+
+    &:focus {
+        outline: 0;
+        border: 1px solid @aero-blue;
+        .box-shadow (0 0 3px 2px fade(@aero-blue, 80%));
+    }
     
     &--secondary {
         background-color: #fff;

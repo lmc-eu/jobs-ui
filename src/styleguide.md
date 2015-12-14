@@ -2,6 +2,11 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add new colour:
+    - *aero-blue*
+- Add focus border on:
+    - *button*
 
 ## v4.45.0
 - Remove :hover color from *picker close button*
