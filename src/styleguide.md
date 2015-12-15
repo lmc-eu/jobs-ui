@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.46.0
 - Add new colour:
     - *aero-blue*
 - Add focus border on:
