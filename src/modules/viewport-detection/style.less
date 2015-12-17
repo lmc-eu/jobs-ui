@@ -1,0 +1,13 @@
+body:after {
+
+    display: none;
+    content: '';
+
+    @media screen and (min-width: @screen-lap) and (max-width: @screen-desk) {
+        content: '@{screen-lap}';
+    }
+
+    @media screen and (min-width: @screen-desk) {
+        content: '@{screen-desk}';
+    }
+}

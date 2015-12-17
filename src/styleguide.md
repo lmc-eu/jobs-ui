@@ -5,6 +5,8 @@
 ## DEV
 - Fix copying favicons to `dist/` directory during build
 - Rename Gloriola font files in `dist/` folder to lowercase
+- Add new module: 
+    - *viewport detection*
 
 ## v4.46.0
 - Add new colour:
