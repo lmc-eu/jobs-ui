@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.47.0
 - Fix copying favicons to `dist/` directory during build
 - Rename Gloriola font files in `dist/` folder to lowercase
 - Add new module: 
