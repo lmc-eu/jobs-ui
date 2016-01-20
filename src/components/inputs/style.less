@@ -39,6 +39,14 @@
             height: 40px;
             line-height: 40px;
         }
+
+        &--frameless {
+            border-color: transparent;
+
+            &:focus {
+                border: 1px solid @light-gray;
+            }
+        }
     }
 
     &__simulated {

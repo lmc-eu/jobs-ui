@@ -2,6 +2,12 @@
 
 # <a name="changelog"></a>Changelog
 
+## DEV
+- Add modifier *frameless* for 
+    - *tagselect*
+    - *combobox*
+    - *form____text-input*
+
 ## v4.47.0
 - Fix copying favicons to `dist/` directory during build
 - Rename Gloriola font files in `dist/` folder to lowercase
