@@ -3,10 +3,12 @@
 # <a name="changelog"></a>Changelog
 
 ## DEV
-- Add modifier *frameless* for 
+- Add modifier *frameless* for: 
     - *tagselect*
     - *combobox*
-    - *form____text-input*
+    - *form__text-input*
+- Add border to:
+    - *pit--inverse*
 
 ## v4.47.0
 - Fix copying favicons to `dist/` directory during build
