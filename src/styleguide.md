@@ -2,7 +2,7 @@
 
 # <a name="changelog"></a>Changelog
 
-## DEV
+## v4.48.0
 - Add modifier *frameless* for: 
     - *tagselect*
     - *combobox*
