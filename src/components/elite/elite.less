@@ -1,0 +1,50 @@
+/*
+Elite row
+
+The component is used to display *Elite* employers in a row with a description.
+
+* Use modificator *hidden-palm* for *elite-row__item* class to hide on smartphone.
+* Use modificator *visible* for *elite-row__item* class to show on lap and desk.
+* Use modificator *visible-desk* for *elite-row__item* class to show only on desk.
+
+Using divs instead of a list is possible.
+
+Markup: elite.hbs
+
+Styleguide 5.16
+*/
+
+.elite-row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    &__item {
+        display: table-cell;
+        text-align: center;
+
+       &--hidden-palm {
+           display: none;
+       }
+
+        @media only screen and (min-width: @screen-lap) {
+            &--visible {
+                display: table-cell;
+            }
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            &--visible-desk {
+                display: table-cell;
+            }
+        }
+    }
+
+    &__logo {
+        width: 80px;
+
+        @media only screen and (min-width: @screen-lap) {
+            width: 120px;
+        }
+    }
+}

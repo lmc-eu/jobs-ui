@@ -1,0 +1,252 @@
+/*
+Headings and paragraphs
+
+Markup: typography.hbs
+
+Styleguide 2.1
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: @steel;
+}
+
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+}
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    color: @blue;
+    text-decoration: none;
+    word-wrap: break-word;
+
+    &:hover {
+        color: @dark-blue;
+        border-bottom: 1px dotted @dark-blue;
+    }
+}
+
+.link--inverse {
+    color: #fff;
+    border-bottom: 1px dotted @jobs-orange;
+
+    &:hover {
+        color: @jobs-orange;
+        border-bottom: 1px dotted @jobs-orange;
+    }
+}
+
+.no-underline {
+    &:hover {
+        border-bottom: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.headline {
+    margin: 0 0 12px 0;
+    padding: 0;
+    color: #000000;
+    word-wrap: break-word;
+    font-weight: 700;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+h1,
+.headline--primary {
+    margin-bottom: 24px;
+    font-size: @h1-font-size;
+    line-height: @h1-line-height;
+
+    .headline-position {
+        border-bottom: 1px dotted @dark-blue;
+    }
+}
+
+h2,
+.headline--secondary {
+    margin-bottom: 12px;
+    font-size: @h2-font-size;
+    line-height: @h2-line-height;
+}
+
+h3,
+.headline--tertiary {
+    font-size: @h3-font-size;
+    line-height: @h3-line-height;
+}
+
+h4,
+.headline--quaternary {
+    font-size: @h4-font-size;
+}
+
+h1,
+.headline--primary,
+h2,
+.headline--secondary,
+h3,
+.headline--tertiary {
+    font-family: @font-face-headings, 'Arial', sans-serif;
+}
+
+p {
+    margin: 0 0 12px 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+h1,
+.headline--primary,
+h2,
+.headline--secondary,
+h3,
+.headline--tertiary,
+h4,
+.headline--quaternary,
+p {
+    font-weight: @base-font-weight;
+}
+
+hr {
+    margin: 0 0 @standalone-bottom-margin 0;
+    border: 0;
+    border-top: 1px solid @light-silver;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: @screen-desk) {
+    body {
+        font-weight: @base-font-weight;
+    }
+}
+
+.text {
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+
+    &--nowrap {
+        white-space: nowrap;
+    }
+
+    &--inline {
+        display: inline;
+    }
+
+    &--warning {
+        color: @red;
+    }
+
+    &--highlight {
+        color: @jobs-orange;
+    }
+
+    &--inverse {
+        color: #fff;
+    }
+
+    &--small {
+        font-size: 14px;
+    }
+
+    &--extra-small {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    &--constast {
+        color: @black;
+    }
+
+    &--success {
+        color: @dark-green;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+}
+
+// Styling of the horizontal rule
+.dotted-fading {
+    .box-sizing(border-box);
+    height: 1px;
+    .background-image(linear-gradient(to right, #ffffff 0%,#cccccc 20%,#cccccc 80%,#ffffff 100%));
+    border-style: dotted;
+    border-color: #fff;
+    border-top: none;
+    .ie8 & {
+        border-top: 1px dotted #cccccc;
+    }
+}
+
+.list-spaced {
+    line-height: 43px;
+}
+
+.flat-rule {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Image replace from HTML5Boilerplate
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.shadow--no-top {
+    border: 1px solid #eee;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+}
+
+.muted {
+    color: @gray;
+}
+
+@media only screen and (min-width: @screen-desk) {
+    .list-spaced {
+        line-height: 36px;
+    }
+}

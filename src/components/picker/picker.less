@@ -1,0 +1,64 @@
+/*
+Picker
+
+An advanced option panel.
+
+The picker is palm only by default. To enable use on lap and above use
+`.picker--lap` modifier. It may be combined with a combobox.
+
+Opening a picker means adding `.picker--open` class and changing its
+`aria-hidden` attribute to false.
+
+To make a picker displayed on the second level use `.picker--secondary`.
+The `.picker--pre-open` class should be added to a secondary picker when its
+primary picker is opened; this makes the open animation smoother.
+
+On desk unstyled.
+
+*Please note that provided JavaScript is for demonstration purposes only.*
+
+Markup: picker.hbs
+
+Styleguide 5.14
+*/
+
+@import "helper";
+
+@media only screen and (max-width: @screen-lap-max) {
+    .picker {
+        .picker-block(84%);
+        &--secondary {
+            width: 72%;
+            z-index: 10020;
+        }
+        .picker-modifiers();
+        .picker-elements();
+    }
+}
+
+@media only screen and (min-width: @screen-lap) and (max-width: @screen-desk-max) {
+    .picker--lap {
+        .picker-block(340px);
+
+        &.picker {
+            .picker-modifiers();
+
+            &--secondary {
+                width: 300px;
+                z-index: 10005;
+
+                &.picker--pre-open {
+                    .translateX-with-3d(40px);
+                }
+
+                &.picker--open {
+                    .translateX-with-3d(340px);
+                }
+            }
+        }
+
+        .picker {
+            .picker-elements();
+        }
+    }
+}

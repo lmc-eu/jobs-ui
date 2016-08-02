@@ -1,0 +1,34 @@
+/*
+Signpost
+
+Great for visually attractive mobile-friendly signpost as submenu.
+
+Markup: signpost.hbs
+
+Styleguide 4.9
+*/
+
+.signpost {
+    padding: 15px 0;
+    border-bottom: 1px dotted @silver;
+
+    &__item {
+        line-height: 36px;
+        list-style-type: none;
+
+        @media only screen and (min-width: @screen-lap) {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
+
+    &__icon {
+        width: 1em;
+        color: @dark-blue;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        padding: 10px 0;
+    }
+}

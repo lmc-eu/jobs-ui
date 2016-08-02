@@ -1,0 +1,111 @@
+/*
+Featured
+
+Display of a featured article with a big image on the background
+and a ribbon on the top left conner.
+
+To display featured with a ribbon, use the **.featured--ribboned** modifier (hidden in **IE8**)
+
+To be used with two promos which are on the right.
+
+Markup: featured.hbs
+
+Styleguide 5.3
+*/
+
+.featured {
+    display: block;
+    position: relative;
+    margin-bottom: @standalone-bottom-margin;
+    text-decoration: none;
+    background-color: @light-silver;
+    border: 1px solid @light-silver;
+
+    &__image {
+        width: 100%;
+        height: auto;
+        .box-sizing(border-box);
+    }
+
+    &__icon {
+        text-align: center;
+        font-size: 60px;
+        line-height: 144px;
+        padding-bottom: 49px;
+        color: @dark-blue;
+    }
+
+    &__caption {
+        padding: 12px 20px;
+        height: (2 * @base-line-height);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        overflow: hidden;
+        background-color: fade(#ffffff, 90%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDFFFFFF,endColorstr=#DDFFFFFF)";
+
+        &--single {
+            height: @base-line-height;
+        }
+
+        &--simple {
+            position: static;
+            line-height: 170px;
+            height: 170px;
+        }
+    }
+
+    &--ribboned:after {
+        content: "";
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        width: 108px;
+        height: 107px;
+        background-image: url("images/featured-ribbon.png");
+
+        .ie8 & {
+            content: none;
+        }
+    }
+
+    &:hover {
+        border: 1px solid @light-silver;
+
+        .featured {
+            &__heading {
+                border-bottom: 1px dotted @dark-blue;
+            }
+        }
+    }
+
+    @media only screen and (min-width: @screen-desk) {
+        &__caption {
+
+            &--simple {
+                height: 169px;
+            }
+        }
+    }
+
+    @media print {
+        &__image {
+            width: auto;
+        }
+
+        &__caption {
+            position: static;
+            height: auto;
+            padding: 0;
+        }
+
+        &:after {
+            position: static;
+            background: none;
+            width: auto;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/*
+Profile badge
+
+Displays a box for profile badge
+
+Markup: profile-badge.hbs
+
+Styleguide 5.12
+*/
+
+.profile-badge {
+    margin-bottom: @standalone-bottom-margin;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid @light-gray;
+    text-align: left;
+
+    @media only screen and (min-width: @screen-lap) {
+        margin-bottom: 0;
+    }
+
+    &__logo {
+        margin: 20px 0;
+        text-align: center;
+
+        &--fixed {
+            width: 100%
+        }
+    }
+
+    &__preview {
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: @screen-lap) {
+            height: 110px;
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            height: 130px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &--fixed {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        padding: 0 20px;
+
+        p {
+            max-height: (@base-line-height * 3);
+            overflow-y: hidden;
+        }
+    }
+
+    &--naked {
+        margin-bottom: @standalone-bottom-margin;
+        border: none;
+    }
+}

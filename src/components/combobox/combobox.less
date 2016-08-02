@@ -1,0 +1,74 @@
+/*
+Combobox
+
+Floating box e.g. for autocomplete.
+
+It may be combined with a picker.
+
+Opening a combobox body means adding `.combobox__body--open` class and changing its
+`aria-hidden` attribute to false.
+
+*Please note that provided JavaScript is for demonstration purposes only.*
+
+Markup: combobox.hbs
+
+Styleguide 5.15
+*/
+
+.combobox {
+    position: relative;
+
+    &__body {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        max-height: 400px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: auto;
+        border: 1px solid @light-gray;
+        background-color: #ffffff;
+        border-top: none;
+        z-index: 10;
+        .box-sizing(border-box);
+        .box-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
+
+        &--open {
+            display: block;
+        }
+
+        &--frameless {
+            border-top: 1px solid @light-gray;
+        }
+    }
+
+    &__item {
+        display: block;
+        min-height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 40px;
+
+        &:hover {
+            border: none;
+        }
+
+        &--highlight {
+            background-color: @light-yellow;
+        }
+    }
+
+    &__link {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: @steel;
+
+        &:hover {
+            color: @steel;
+            border-bottom: none;
+        }
+    }
+}

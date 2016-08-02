@@ -1,0 +1,62 @@
+/*
+Folding Panel
+
+Folding panel with hidden content, which is showed after clicking on the panel title.
+
+The grid used in folding panel is for demo purpose and is fully customizable.
+
+The second panel is adjusted to fit the sidebar.
+
+Markup: folding-panel.hbs
+
+Styleguide 1.10
+*/
+
+.folding-panel {
+    border-bottom: 1px solid @light-silver;
+
+    &--tight {
+        border: none;
+
+        .folding-panel__head {
+            padding: 2px 0;
+        }
+    }
+
+    &__head {
+        cursor: pointer;
+        padding: 10px 0;
+
+        &__main {
+            position: relative;
+            font-weight: bold;
+
+            @media only screen and (min-width: @screen-lap) {
+                padding-left: 20px;
+            }
+        }
+
+    }
+    &__icon {
+        color: @blue;
+
+        @media only screen and (min-width: @screen-lap) {
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    }
+
+    &__body {
+        display: none;
+
+        @media only screen and (min-width: @screen-lap) {
+            padding-left: 20px;
+        }
+    }
+
+    &__separator {
+        border-color: @light-silver;
+        margin: 0;
+    }
+}

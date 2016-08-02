@@ -92,25 +92,20 @@ the documentation from the distribution folder to insure consistency.
 9. Update KSS documentation.
 10. Regenerate project by Grunt.
 
-### Available Grunt tasks
+### Available NPM tasks
 
-#### Complete: `grunt`
+#### Complete: `npm run compile`
 
 Prepares the workspace by deleting temporary, distribution, and documentation
 directories. Downloads needed *bower* components. Builds styles and scripts
 for production use, copies assets into the distribution folder. Generates
 full featured documentation.
 
-#### Distribution: `grunt dist`
+#### Distribution: `npm run build`
 
 Creates just the production distribution folder.
 
-#### Develop: `grunt serve`
-
-Conveniently opens documentation in a browser window and reloads it when a
-change has happened.
-
-#### Individually: `grunt scripts`, `grunt styles`, and `grunt docs`
+#### Individually: `npm run build:scripts`, `npm run build:styles`, and `npm run docs`
 
 Runs compilation of that one element, including the minimization.
 
@@ -130,7 +125,6 @@ ui/
 │   ├── index.min.js
 │   ├── style.min.css
 │   └── style-legacy.min.css
-├── grunt/
 ├── lib/
 │   ├── bower-components/
 │   └── styleguide_template/
@@ -155,7 +149,6 @@ ui/
 │   └── styleguide.md
 ├── about.me.json
 ├── bower.json
-├── Gruntfile.js
 ├── index.js
 ├── package.json
 ├── readme.md

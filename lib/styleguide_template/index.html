@@ -3,21 +3,19 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Jobs UI v{{argv.version}}</title>
+    <title>Jobs UI v{{options.custom}}</title>
     <meta name="description" content="">
     <meta name="generator" content="kss-node" />
 
     <meta name="viewport" content="width=device-width">
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-    <!--[if lte IE 8]>     <link rel="stylesheet" href="dist/style-legacy.min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="dist/style.min.css">        <!--<![endif]-->
+    <link rel="stylesheet" href="dist/style.min.css">
     <link rel="stylesheet" href="public/kss.css">
+    <link rel="shortcut icon" type="image/x-icon" href="dist/favicon/favicon.ico"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
-<body data-current-section="{{rootNumber}}">
+<body data-current-section="{{rootName}}">
 <div class="header  kss__header" role="navigation">
     <div class="wrapper">
         <div class="grid  grid--middle--palm"><!--
@@ -42,7 +40,7 @@
 
             --><div class="grid__item  e-0--palm  e-0  e-5--desk">
                 <div aria-hidden="true" class="text--right">
-                    <a class="button button--tertiary" href="index.html#changelog">Jobs UI v{{argv.version}}</a>
+                    <a class="button button--tertiary" href="index.html#changelog">Jobs UI v{{options.custom}}</a>
                 </div>
             </div><!--
 
@@ -53,7 +51,7 @@
             </div><!--
         --></div>
     </div>
-    {{#if overview}}
+    {{#if homepage}}
     <div class="cover" style="min-height: 200px;">
         <div class="cover__inner">
             <picture>
@@ -78,10 +76,10 @@
 
         <div class="kss__sidebar" id="kss-sidebar">
             <ul class="list-unstyled list-spaced">
-                {{#if overview}}
+                {{#if homepage}}
                 <li>
                     <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
-                    <a href="#top"><strong>Jobs UI v{{argv.version}}</strong></a>
+                    <a href="#top"><strong>Jobs UI v{{options.custom}}</strong></a>
                 </li>
                 <li>
                     <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
@@ -89,22 +87,22 @@
                 </li>
                 {{else}}
 
-                {{#eachSection rootNumber}}
-                {{#whenDepth 1}}
+                {{#eachSection rootName}}
+                {{#ifDepth 1}}
                 <li>
                     <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
                     <a href="#top"><strong>{{ header }}</strong></a>
                 </li>
                 {{else}}
-                {{/whenDepth}}
-                {{#whenDepth 2}}
+                {{/ifDepth}}
+                {{#ifDepth 2}}
                 <li>
                     <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
                     <a href="#section-{{ reference }}">{{ header }}</a>
                     <small>{{ reference }}</small>
                 </li>
                 {{else}}
-                {{/whenDepth}}
+                {{/ifDepth}}
                 {{/eachSection}}
                 {{/if}}
             </ul>
@@ -112,9 +110,9 @@
     </div><!--
         --><div role="main" class="grid__item  e-16">
             <article id="kss__content">
-                {{#if overview}}
+                {{#if homepage}}
 
-                {{html overview}}
+                {{{homepage}}}
                 {{else}}
 
                 {{!
@@ -123,48 +121,48 @@
                 layout instead.
 
                 The "root" element comes first in this loop, and can be detected using
-                the "#whenDepth 1" block as seen below.
+                the "#ifDepth 1" block as seen below.
                 }}
-                {{#eachSection rootNumber}}
-                {{#whenDepth 1}}
+                {{#eachSection rootName}}
+                {{#ifDepth 1}}
                 <h1>{{ header }} <small>{{ reference }}.0</small></h1>
-                {{/whenDepth}}
-                {{#whenDepth 2}}
+                {{/ifDepth}}
+                {{#ifDepth 2}}
                 <section>
                     <h2 id="section-{{ reference }}">{{ header }} <small>{{ reference }}</small></h2>
-                {{/whenDepth}}
+                    {{/ifDepth}}
 
-                {{#whenDepth 3}}
-                <section>
-                    <h3>{{ header }} <small>{{ reference }}</small></h3>
-                {{/whenDepth}}
+                    {{#ifDepth 3}}
+                    <section>
+                        <h3>{{ header }} <small>{{ reference }}</small></h3>
+                        {{/ifDepth}}
 
-                    {{#if description}}
-                        {{html description}}
+                        {{#if description}}
+                        {{{description}}}
+                        {{/if}}
+
+                        {{#if markup}}
+                        <p>Default styling</p>
+                        <div class="kss__example">
+                            {{{markup}}}
+                        </div>
+                        {{#eachModifier}}
+                        <strong>{{name}}</strong>
+                        {{{description}}}
+                        <div class="kss__example">
+                            {{{markup}}}
+                        </div>
+                        {{/eachModifier}}
+                        <div class="kss__markup  hidden--palm">
+                            <pre class="prettyprint  lang-html">{{markup}}</pre>
+                        </div>
+                        {{else}}
+                        {{/if}}
+                        {{#ifDepth 1}} {{else}}
+                    </section>
+                    {{/ifDepth}}
+                    {{/eachSection}}
                     {{/if}}
-
-                    {{#ifAny markup modifiers}}
-                    <p>Default styling</p>
-                    <div class="kss__example">
-                        {{modifierMarkup}}
-                    </div>
-                    {{#eachModifier}}
-                    <strong>{{name}}</strong>
-                    {{html description}}
-                    <div class="kss__example">
-                        {{modifierMarkup}}
-                    </div>
-                    {{/eachModifier}}
-                    <div class="kss__markup  hidden--palm">
-                        <pre class="prettyprint  lang-html">{{markup}}</pre>
-                    </div>
-                    {{else}}
-                    {{/ifAny}}
-                    {{#whenDepth 1}} {{else}}
-                </section>
-                {{/whenDepth}}
-                {{/eachSection}}
-                {{/if}}
             </article>
         </div><!--
     --></div>
@@ -174,7 +172,7 @@
     <div class="wrapper">
         <div class="grid grid--middle--palm  grid--top"><!--
             --><div class="grid__item  e-5--palm  e-9  e-16--desk">
-                2014 &copy; LMC s.r.o. All rights reserved.<br />
+                2016 &copy; LMC s.r.o. All rights reserved.<br />
                 <a href="#top">&uarr; Go to top</a>
             </div><!--
             --><div class="grid__item  e-3--palm  e-6  e-6--desk  e-push-1  e-push-3--desk">

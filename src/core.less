@@ -10,82 +10,83 @@
 //     (2) Responsive grid system
 //     (3) Set of universal mixins
 // --------------------------------------------------------------------------
-@import (inline) "@{grunt-directory}normalize-css/normalize.css";   // (1)
-@import "@{grunt-directory}emerald/less/emerald";                   // (2)
-@import "@{grunt-directory}lesshat/build/lesshat";                  // (3)
+@import (inline) "@{bower_dir}normalize-css/normalize.css";   // (1)
+@import (inline) "@{bower_dir}normalize-css/normalize.css";   // (1)
+@import "@{bower_dir}emerald/less/emerald";                   // (2)
+@import "@{bower_dir}lesshat/build/lesshat";                  // (3)
 
 //
 // Modules - common utilities
 // --------------------------------------------------------------------------
-@import "modules/variables/style";
-@import "modules/mixins/style";
-@import "modules/layout/style";
-@import "modules/float/style";
-@import "modules/icons/style";
+@import "modules/variables/variables";
+@import "modules/mixins/mixins";
+@import "modules/layout/layout";
+@import "modules/float/float";
+@import "modules/icons/icons";
 @import "modules/widget/style";
-@import "modules/accessibility/style";
-@import "modules/fonts/style";
-@import "modules/viewport-detection/style";
+@import "modules/accessibility/accessibility";
+@import "modules/fonts/fonts";
+@import "modules/viewport-detection/viewport-detection";
 
 //
 // Components - general and may be used at will
 // --------------------------------------------------------------------------
-@import "components/typography/style";
-@import "components/lists/style";
-@import "components/small-search/style";
-@import "components/form/style";
-@import "components/inputs/style";
-@import "components/button/style";
-@import "components/button-group/style";
-@import "components/breadcrumbs/style";
-@import "components/listing/style";
-@import "components/promo/style";
-@import "components/featured/style";
-@import "components/tags/style";
-@import "components/pager/style";
-@import "components/icon-description/style";
-@import "components/pit/style";
-@import "components/modal/style";
-@import "components/hero/style";
-@import "components/label/style";
-@import "components/glass/style";
-@import "components/index-card/style";
-@import "components/images/style";
-@import "components/tabs/style";
-@import "components/select-filter/style";
-@import "components/cover/style";
-@import "components/illustration-cover/style";
-@import "components/search-list/style";
-@import "components/cover-box/style";
-@import "components/promobox/style";
-@import "components/progressbar/style";
-@import "components/profile-badge/style";
-@import "components/signpost/style";
-@import "components/folding-panel/style";
-@import "components/table/style";
-@import "components/picker/style";
-@import "components/overlay/style";
-@import "components/combobox/style";
-@import "components/elite/style";
-@import "components/sticker/style";
-@import "components/dropdown/style";
-@import "components/tagselect/style";
-@import "components/recommended-ads/style";
-@import "components/horizontal-separator/style";
+@import "components/typography/typography";
+@import "components/lists/lists";
+@import "components/small-search/small-search";
+@import "components/form/form";
+@import "components/inputs/inputs";
+@import "components/button/button";
+@import "components/button-group/button-group";
+@import "components/breadcrumbs/breadcrumbs";
+@import "components/listing/listing";
+@import "components/promo/promo";
+@import "components/featured/featured";
+@import "components/tags/tags";
+@import "components/pager/pager";
+@import "components/icon-description/icon-description";
+@import "components/pit/pit";
+@import "components/modal/modal";
+@import "components/hero/hero";
+@import "components/label/label";
+@import "components/glass/glass";
+@import "components/index-card/index-card";
+@import "components/images/images";
+@import "components/tabs/tabs";
+@import "components/select-filter/select-filter";
+@import "components/cover/cover";
+@import "components/illustration-cover/illustration-cover";
+@import "components/search-list/search-list";
+@import "components/cover-box/cover-box";
+@import "components/promobox/promobox";
+@import "components/progressbar/progressbar";
+@import "components/profile-badge/profile-badge";
+@import "components/signpost/signpost";
+@import "components/folding-panel/folding-panel";
+@import "components/table/table";
+@import "components/picker/picker";
+@import "components/overlay/overlay";
+@import "components/combobox/combobox";
+@import "components/elite/elite";
+@import "components/sticker/sticker";
+@import "components/dropdown/dropdown";
+@import "components/tagselect/tagselect";
+@import "components/recommended-ads/recommended-ads";
+@import "components/horizontal-separator/horizontal-separator";
 
 //
 // Partials - high level parts that may be used at most once on a page
 // --------------------------------------------------------------------------
-@import "partials/header/style";
-@import "partials/navigation/style";
-@import "partials/content/style";
-@import "partials/article/style";
-@import "partials/footer/style";
-@import "partials/copyright/style";
+@import "partials/header/header";
+@import "partials/navigation/navigation";
+@import "partials/content/content";
+@import "partials/article/article";
+@import "partials/footer/footer";
+@import "partials/copyright/copyright";
 
 //
 // Print styles - need to be included last for override
 // --------------------------------------------------------------------------
-@import "modules/print/style";
+@import "modules/print/print";
 
-@import "@{grunt-directory}emerald/less/responsive-visibility";
+@import "@{bower_dir}emerald/less/responsive-visibility";

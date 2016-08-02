@@ -1,0 +1,71 @@
+/*
+Icons
+
+Styleguide 2.7
+*/
+
+/*
+Individual icons
+
+Markup: icons.hbs
+
+Styleguide 2.7.1
+*/
+
+/*
+Icons within headings
+
+An icon as an illustration in heading is orange and has same space after it.
+
+Markup:
+<h2>
+    <span class="icon icon--bite-square icon--heading" aria-hidden="true"></span>
+    I'm an illustrated heading
+</h2>
+<h2>
+    <span class="icon icon--tag icon--heading" aria-hidden="true"></span>
+    Pff, so am I
+</h2>
+
+Styleguide 2.7.2
+*/
+
+/*
+Animated icons
+
+Smooth rotation of an icon
+
+Markup:
+<span class="icon icon--star icon--rotating" aria-hidden="true"></span>
+
+Styleguide 2.7.3
+*/
+
+// To be used when the following issue is resolved:
+// https://github.com/madebysource/lesshat/issues/108
+//.keyframes(~'animation-rotate, 0%{ transform: rotate(0); } 100%{ transform: rotate(360deg); }');
+@-webkit-keyframes animation-rotate{ 0%{ -webkit-transform: rotate(0); } 100%{ -webkit-transform: rotate(360deg); }}
+@-moz-keyframes animation-rotate{ 0%{ -moz-transform: rotate(0); } 100%{ -moz-transform: rotate(360deg); }}
+@-o-keyframes animation-rotate{ 0%{ -o-transform: rotate(0); } 100%{ -o-transform: rotate(360deg); }}
+@keyframes animation-rotate{ 0%{-webkit-transform: rotate(0);-moz-transform: rotate(0);-ms-transform: rotate(0);transform: rotate(0); } 100%{-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg); }}
+
+// Preparing for icons inspired by IcoMoon App and Bootstrap
+.icon {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+
+  &--heading {
+    color: @jobs-orange;
+
+    &:after {
+      content: "\a0";
+    }
+  }
+
+  &--rotating {
+    .animation(animation-rotate 1s linear infinite);
+  }
+}
+
+@import (inline) "_generated/style.css";

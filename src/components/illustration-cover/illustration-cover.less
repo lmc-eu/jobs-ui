@@ -1,0 +1,27 @@
+/*
+Illustational cover
+
+Illustational cover element, attribute style with background-image has to be set on .illustration-cover
+
+Shouldn't be used with content.
+
+Markup: illustration-cover.hbs
+
+Styleguide 4.7
+*/
+.illustration-cover {
+    background-color: @light-silver;
+    overflow: hidden;
+    height: 100px;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: @screen-lap) {
+        height: 160px;
+    }
+
+    @media only screen and (min-width: @screen-desk) {
+        height: 220px;
+    }
+}

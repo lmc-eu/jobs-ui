@@ -1,0 +1,56 @@
+/*
+Cover box
+
+Displays elita cover.
+
+Can be used primary in search-list.
+
+Markup: cover-box.hbs
+
+Styleguide 5.10
+*/
+
+.cover-box {
+    @margin-size: 20px;
+
+    margin-top: @margin-size;
+    margin-bottom: (@margin-size / 2);
+
+    &--with-content {
+        border: 1px solid @silver;
+    }
+
+    &__image {
+        width: 100%;
+    }
+    &__content {
+        padding: (@margin-size - 5px) @margin-size;
+
+        &__links {
+            text-align: center;
+
+            &__link {
+                &--left {
+                    float: left;
+                }
+                &--right {
+                    float: right;
+                }
+            }
+        }
+        &__article {
+            margin-top: @margin-size;
+        }
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        &__image {
+            height: 181px;
+        }
+    }
+    @media only screen and (max-width: @screen-lap-max) {
+        &__content {
+            display: none;
+        }
+    }
+}

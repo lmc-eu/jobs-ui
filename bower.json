@@ -11,9 +11,7 @@
     "ignore": [
         "**/.*",
         "node_modules",
-        "lib",
-        "grunt",
-        "Gruntfile.js"
+        "lib"
     ],
     "dependencies": {
         "emerald": "rotation-dirty-fix",

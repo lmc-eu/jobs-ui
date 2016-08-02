@@ -1,0 +1,63 @@
+/*
+Tagselect
+
+The component is used to select or enter values into input form.
+
+Markup: tagselect.hbs
+
+Styleguide 3.7
+*/
+
+.tagselect {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border: 1px solid @light-gray;
+    cursor: text;
+
+    &--frameless {
+        border-color: transparent;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 4px;
+        margin-right: 10px;
+        margin-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        line-height: 27px;
+        color: @steel;
+        border: 1px solid transparent;
+        background-color: @light-yellow;
+
+        &--selected {
+            border-color: @dark-orange;
+        }
+    }
+
+    &__close {
+        margin-left: 10px;
+        font-size: 13px;
+        color: @dark-orange;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    &__input {
+        display: inline-block;
+        vertical-align: middle;
+        width: 160px;
+        height: 38px;
+        padding: 0;
+        margin-bottom: 0;
+        line-height: 38px;
+        border: 1px solid transparent;
+        outline: 0;
+    }
+}

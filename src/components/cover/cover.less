@@ -1,0 +1,68 @@
+/*
+Cover
+
+Graphical background of any element; to be used with `<img>`, `<picture>` or `<video>`.
+
+Cover can be used e.g. inside a *hero* component.
+
+To emulate *background-position: cover* add `.cover__media--horizontal`.
+
+The media may be shorter that the content; in such case add `.cover__media--vertical`.
+
+Modifier `.cover__media--center` will center the image horizontally without any resize. Use only on full-page sized images!
+
+Use `--palm`, `--desk` or none modifier for respective resolutions.
+
+Markup: cover.hbs
+
+Styleguide 5.8
+*/
+
+.cover {
+    position: relative;
+    overflow: auto;
+    z-index: 100;
+    background-color: @light-silver;
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -100;
+    }
+
+    &__media {
+        .media-modifications(~"--palm");
+
+        @media only screen and (min-width: @screen-lap) {
+            .media-modifications(~"");
+        }
+
+        @media only screen and (min-width: @screen-desk) {
+            .media-modifications(~"--desk");
+        }
+    }
+}
+
+.media-modifications(@modifier) {
+    &--horizontal@{modifier} {
+        width: 100%;
+        height: auto;
+    }
+
+    &--vertical@{modifier} {
+        width: auto;
+        height: 100%;
+    }
+
+    &--center@{modifier} {
+        width: auto;
+        height: auto;
+        //.translateX(calc(~"50vw - 50%"));
+        .transform(translateX(50vw) translateX(-50%));
+    }
+
+}

@@ -1,0 +1,54 @@
+/*
+Recommended-Ads
+
+Component for recommended ads
+
+*Please note that provided counts of any grid columns are for demonstration purposes only.*
+
+Using divs instead of a list is possible.
+
+Markup: recommended-ads.hbs
+
+Styleguide 5.17
+*/
+
+.recommended-ads {
+
+    &__list {
+        padding-left: 0;
+        list-style-type: none;
+
+        &--opened {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            margin-bottom: 10px;
+
+            @media only screen and (min-width: @screen-desk) {
+                margin-bottom: 5px;
+            }
+
+            &__link {
+                font-size: 15px;
+            }
+
+            &__company-address {
+                color: @gray;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 40px;
+        color: @jobs-blue-basic;
+    }
+
+    &__show-more__link {
+        white-space: nowrap;
+
+        &__icon {
+            padding-left: 3px;
+        }
+    }
+}

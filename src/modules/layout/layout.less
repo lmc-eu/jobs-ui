@@ -1,0 +1,68 @@
+/*
+Spacing classes
+
+To ensure consistent vertical spacing use these classes.
+
+Markup: spacing-classes.hbs
+
+Styleguide 1.5
+*/
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+.standalone {
+    margin-bottom: @standalone-bottom-margin;
+}
+
+.half-standalone {
+    margin-bottom: (@standalone-bottom-margin / 2);
+}
+
+.mini-standalone {
+    margin-bottom: (@mini-standalone-bottom-margin);
+}
+
+.double-standalone {
+    margin-bottom: @double-standalone-bottom-margin;
+}
+
+.huge-standalone {
+    margin-bottom: @huge-standalone-bottom-margin;
+}
+
+/*
+Sidebar
+
+The additional information are displayed below on mobile and tablet and on the right on desktop.
+Most is achieved by the grid but the top padding is added on desktop.
+Hidden while printing.
+
+Markup: sidebar.hbs
+
+Styleguide 1.6
+*/
+.sidebar {
+    @media only screen and (min-width: @screen-desk) {
+        padding-top: 12px;
+    }
+}
+
+/*
+Banners
+
+
+Markup: banners.hbs
+
+Styleguide 1.7
+*/
+
+.banner {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}

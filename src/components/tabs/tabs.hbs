@@ -1,0 +1,44 @@
+<div class="grid">
+    <div class="grid__item">
+        <ul class="tabs">
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></li>
+            <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></li>
+        </ul>
+    </div>
+    <div class="grid__item"></div>
+    <div class="grid__item e-0--palm e-full">
+        <div class="tabs">
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></div>
+            <div class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fifth" data-tab-toggle>Tab5</a></div>
+        </div>
+    </div>
+</div>
+<div class="grid">
+    <div id="tabs1:first" class="grid__item" style="display:none;">
+        <p>Vyhynul podíval květiny.</p>
+    </div>
+    <div id="tabs1:second" class="grid__item">
+        <p>Souvislosti modré ujít ně současnou.</p>
+    </div>
+    <div id="tabs1:third" class="grid__item" style="display:none;">
+        <p>Pokaždé zoologie hlubšího.</p>
+    </div>
+    <div id="tabs1:fourth" class="grid__item" style="display:none;">
+        <p>Filosofa v nazvaného s mcintoshe větších.</p>
+    </div>
+    <div id="tabs1:fifth" class="grid__item" style="display:none;">
+        <p>Kanadských nově autoři británie mé starověkého uherské americké mexiko proužkem v zrušili.</p>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script>
+    $(function () {
+        new JobsUI.Tabs('tabs1', 'tabs__link--active');
+    });
+</script>

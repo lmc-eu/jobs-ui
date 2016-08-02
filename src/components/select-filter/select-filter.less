@@ -1,0 +1,91 @@
+/*
+Select filter
+
+Special form of select with *active* modifier. You can use *arrow* modifier to change browser's default view.
+
+Style of the select element will be changed automaticaly
+in case that non first option is selected.
+
+Markup: select-filter.hbs
+
+Styleguide 3.5
+*/
+
+.select-filter {
+    position: relative;
+
+    &__item,
+    select {
+        font-size: 14px;
+        padding: 2px 5px 2px 8px;
+        border-color: @dark-blue;
+        border-radius: 0;
+        color: @dark-blue;
+
+        &:focus::-ms-value {
+            background-color: transparent;
+            color: @dark-blue;
+        }
+    }
+    .icon {
+        display: none;
+        font-size: 15px;
+        color: @dark-blue;
+        &--spinner {
+            margin-left: 4px;
+        }
+    }
+    &__item {
+        display: inline-block;
+        position: relative;
+        padding: 3px 28px 3px 13px;
+        margin-bottom: 10px;
+        @media only screen and (min-width: @screen-lap) {
+            min-width: 139px;
+        }
+        @media only screen and (max-width: @screen-lap-max) {
+            width: calc(~"100% - 41px");
+        }
+        .icon.icon--remove {
+            display: block;
+            right: 10px;
+            left: auto;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            color: #ffffff;
+        }
+    }
+    &--arrow {
+        select {
+            height: 30px;
+            line-height: 18px;
+            padding-right: 20px;
+            border: 1px solid @dark-blue;
+        }
+    }
+    &--in-progress {
+        .icon {
+            display: inline-block;
+        }
+    }
+    &--active {
+        .select-filter__item,
+        select {
+            background-color: @dark-blue;
+            color: #ffffff;
+
+            &:focus::-ms-value {
+                background-color: @dark-blue;
+                color: #ffffff;
+            }
+        }
+        select {
+            option,
+            optgroup {
+                background-color: #ffffff;
+                color: @dark-blue;
+            }
+        }
+    }
+}

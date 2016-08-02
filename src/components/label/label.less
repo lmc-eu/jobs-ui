@@ -1,0 +1,78 @@
+/*
+Label
+
+Displays an element as a label.
+
+Add any of the below mentioned modifier classes to change the appearance of a label.
+
+Markup: label.hbs
+
+.label--important - Used for example as sale label
+.label--warning - Used for example as tip label
+.label--transparent - Used for example as status label for position
+.label--new - Used for example as status label of new created position
+.label--updated - Used for example as status label of updated position
+.label--replied - Used for example as status label of replied position
+.label--visited - Used for example as status label of visited position
+.label--medium - Used for example as label placed in heading where label should be smaller than heading's font
+.label--indented - Used for example as label placed next to the other element where must be a space between them
+.label--success - Used for example as salary label
+
+Styleguide 4.3
+*/
+
+.label {
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: @light-gray;
+    color: #ffffff;
+    white-space: nowrap;
+    font-size: 13px;
+
+    &--indented {
+        margin-right: 10px;
+    }
+
+    &--medium {
+        line-height: 20px;
+        font-size: 11px;
+    }
+
+    &--transparent {
+        color: @light-gray;
+        background-color: transparent;
+        border: 1px solid @light-gray;
+    }
+
+    &--important {
+        background-color: @red;
+    }
+
+    &--warning {
+        background-color: @jobs-orange;
+    }
+
+    &--updated {
+        color: @green;
+        border-color: @light-green;
+    }
+
+    &--new {
+        color: @red;
+        border-color: @light-red;
+    }
+
+    &--visited {
+        color: @gray;
+        border-color: @gray;
+    }
+
+    &--replied {
+        color: @lila;
+        border-color: @lila;
+    }
+
+    &--success {
+        background-color: @dark-green;
+    }
+}

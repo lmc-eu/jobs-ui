@@ -1,0 +1,38 @@
+/*
+Progress bar
+
+Styles for progress bar
+
+Markup: progressbar.hbs
+
+Styleguide 4.8
+*/
+
+@progressBarHeight: 30px;
+@progressBarPadding: 3px;
+
+.progressbar {
+    position: relative;
+    width: 100%;
+    height: @progressBarHeight;
+    border: 1px solid @dark-green;
+    text-align: center;
+
+    &__progress {
+        position: absolute;
+        z-index: 1;
+        height: @progressBarHeight;
+        background-color: @light-green;
+    }
+
+    &__text {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        display: inline-block;
+        width: 100%;
+        height: (@progressBarHeight - (2 * @progressBarPadding));
+        margin: 0 auto;
+        padding: @progressBarPadding 0;
+    }
+}

@@ -4,5 +4,5 @@ node_modules/
 
 # Generated
 docs/
-.tmp/
+tmp/
 .idea/

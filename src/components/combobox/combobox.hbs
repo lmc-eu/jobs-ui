@@ -1,0 +1,33 @@
+<div class="grid">
+    <div class="grid__item e-10">
+        <div class="combobox" id="combobox">
+            <label class="form__label" for="demo-input">Prarodičů</label>
+            <input class="form__text-input" id="demo-input"
+                   type="text" placeholder="Kamkoliv po republice">
+            <div class="combobox__body" id="combobody"
+                 role="dialog" aria-hidden="true">
+                <ul class="list-unstyled">
+                    <li class="combobox__item"><a class="combobox__link" href="#">Hmotu čech minimálně</a></li>
+                    <li class="combobox__item combobox__item--highlight"><a class=" combobox__link" href="#">Zrušili by která různá  tělo ne vzdělávání</a></li>
+                    <li class="combobox__item"><a class="combobox__link" href="#">Slabého chybí tělo ne vzdělávání</a></li>
+                    <li class="combobox__item">Rovnosti z původním</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var combobody = $('#combobody');
+    $('#demo-input').click(function (e) {
+        e.preventDefault();
+        combobody.addClass('combobox__body--open')
+                .attr('aria-hidden', 'false');
+    });
+    $('html').click(function (e) {
+        if (!$(e.target).closest('#combobox').length) {
+            combobody.removeClass('combobox__body--open')
+                    .attr('aria-hidden', 'true');
+        }
+    });
+</script>

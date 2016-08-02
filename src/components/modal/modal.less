@@ -1,0 +1,129 @@
+/*
+Modal
+
+Displays a link with an optional figure and description.
+
+Uses [remodal](http://vodkabears.github.io/remodal).
+Set width on tablet using grid item width classes.
+
+For accessibility please always set the `role` and `aria-labelledby` atrributes
+
+Markup: modal.hbs
+
+Styleguide 5.6
+*/
+
+html,
+body {
+    &.remodal_lock {
+        overflow: hidden;
+    }
+}
+
+.remodal {
+    display: inline-block;
+    visibility: hidden;
+    position: relative;
+    min-height: 100%;
+    padding-top: @standalone-bottom-margin;
+    padding-bottom: @standalone-bottom-margin;
+    vertical-align: middle;
+    background: @light-silver;
+    background-clip: padding-box;
+    .box-sizing(border-box);
+    .transition(transform 0.2s linear);
+
+    &__close {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 34px;
+
+        color: @light-gray;
+        text-decoration: none;
+        line-height: 34px;
+        text-align: center;
+        border: 1px solid @light-gray;
+        border-top: none;
+        border-right: none;
+
+        &:hover {
+            color: @steel;
+            border-bottom: 1px solid @light-gray;
+        }
+    }
+
+    &-bg {
+        .transition(filter 0.2s linear);
+    }
+
+    &-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10000;
+        display: none;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        text-align: center;
+        opacity: 0;
+        background: @steel; // IE8 and IE9 fix
+        background: fade(@steel, 90%);
+        .transition(opacity 0.2s linear);
+
+        &:after {
+            display: inline-block;
+            height: 100%;
+            margin-left: -0.05em;
+            vertical-align: middle;
+
+            content: '';
+        }
+    }
+
+    &_active {
+        .remodal-overlay {
+            opacity: 1;
+        }
+
+        .remodal-bg {
+            .blur(3px);
+        }
+    }
+
+    // Fix screen size on palm
+    > .grid {
+        margin: 0;
+    }
+
+    @media only screen and (max-width: @screen-lap-max) {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: @screen-lap) {
+        min-height: 0;
+        margin: 60px 0;
+        .scale(0.95);
+
+        &__close {
+            position: absolute;
+        }
+
+        &-overlay {
+            /* Fix iPad, iPhone glitches */
+            > * {
+                -webkit-transform: translateZ(0px);
+            }
+        }
+
+        &_active {
+            .remodal {
+                .scale(1);
+            }
+        }
+    }
+}
+
+

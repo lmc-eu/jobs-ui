@@ -1,29 +1,88 @@
 {
-    "name": "jobs-ui",
-    "version": "4.48.0",
-    "description": "UI library for jobs.cz",
-    "main": "index.js",
-    "author": "LMC s.r.o. (https://github.com/lmc-eu)",
-    "directories": {
-        "doc": "docs"
-    },
-    "devDependencies": {
-        "debowerify": "~1.2.0",
-        "grunt": "~0.4.4",
-        "grunt-bower-task": "~0.4.0",
-        "grunt-browserify": "~3.5.0",
-        "grunt-contrib-clean": "~0.6.0",
-        "grunt-contrib-connect": "~0.9.0",
-        "grunt-contrib-copy": "~0.8.0",
-        "grunt-contrib-cssmin": "~0.12.0",
-        "grunt-contrib-jshint": "~0.11.0",
-        "grunt-contrib-less": "~1.0.0",
-        "grunt-contrib-uglify": "~0.8.0",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-legacssy": "~0.4.0",
-        "grunt-styleguide": "~0.2.17",
-        "jshint-stylish": "~1.0.0",
-        "load-grunt-config": "~0.16.0",
-        "time-grunt": "~1.1.0"
-    }
+  "name": "jobs-ui",
+  "version": "5.0.0",
+  "description": "UI library for jobs.cz",
+  "main": "index.js",
+  "author": "LMC s.r.o. (https://github.com/lmc-eu)",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "compile": "npm run clean && npm run create && npm run bower && npm run build && npm run docs",
+    "clean": "npm run clean:docs && npm run clean:dist && npm run clean:tmp && npm run create:dist",
+    "create": "npm run create:tmp && npm run create:dist && npm run create:docs:dist",
+    "bower": "bower install",
+    "build": "npm run build:styles && npm run build:scripts",
+    "docs": "npm run docs:kss && npm run copy && npm run docs:styles:less",
+    "clean:docs": "rm -rf docs/*",
+    "clean:dist": "rm -rf dist/*",
+    "clean:tmp": "rm -rf tmp/*",
+    "create:tmp": "mkdir -p tmp",
+    "create:dist": "npm run create:dist:images && npm run create:dist:fonts && npm run create:dist:favicons",
+    "create:dist:images": "mkdir -p dist/images",
+    "create:dist:fonts": "mkdir -p dist/fonts",
+    "create:dist:favicons": "mkdir -p dist/favicon",
+    "create:docs:dist": "mkdir -p docs/dist",
+    "build:styles": "lessc style.less > dist/style.min.css --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
+    "build:scripts": "npm run build:scripts:jshint && npm run build:scripts:browserify && npm run build:scripts:uglify",
+    "build:scripts:jshint": "jshint src/**/* --extra-ext .js",
+    "build:scripts:browserify": "browserify index.js > tmp/index.js",
+    "build:scripts:uglify": "uglifyjs tmp/index.js > dist/index.min.js -c",
+    "docs:kss": "kss-node --custom \"5.0.0\" --source src/ --template lib/styleguide_template --destination docs --verbose",
+    "docs:styles:less": "lessc --verbose docs/public/kss.less docs/public/kss.css --clean-css && lessc --verbose docs/public/markdown.less docs/public/markdown.css --clean-css",
+    "copy": "npm run copy:dist && npm run copy:docs",
+    "copy:dist": "npm run create:dist && npm run copy:dist:images && npm run copy:dist:fonts && npm run copy:dist:favicons",
+    "copy:dist:images": "npm run copy:dist:images:header && npm run copy:dist:images:footer && npm run copy:dist:images:featured",
+    "copy:dist:images:header": "cp src/partials/header/images/* dist/images/",
+    "copy:dist:images:footer": "cp src/partials/footer/images/* dist/images/",
+    "copy:dist:images:featured": "cp src/components/featured/images/* dist/images/",
+    "copy:dist:fonts": "cp src/modules/fonts/gloriola/* src/modules/icons/fonts/* dist/fonts/",
+    "copy:dist:favicons": "cp src/modules/favicon/* dist/favicon/",
+    "copy:docs": "npm run copy:docs:dist && npm run copy:docs:libs",
+    "copy:docs:dist": "cp -r dist/* docs/dist/",
+    "copy:docs:libs": "cp lib/styleguide_template/_htaccess docs/.htaccess"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "debowerify": "^1.4.1",
+    "jshint": "^2.9.2",
+    "kss": "^2.4.0",
+    "less": "^2.7.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "uglify-js": "^2.6.2"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "babelify",
+      "debowerify"
+    ]
+  },
+  "browserify-shim": {
+    "jQuery": "global:jQuery"
+  },
+  "jshintConfig": {
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "trailing": true,
+    "smarttabs": true,
+    "jquery": true
+  }
 }

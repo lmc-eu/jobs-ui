@@ -1,0 +1,49 @@
+/*
+Sticker
+
+Displays an element as a sticker with a little pipe in front of text.
+
+Add any of the below mentioned modifier classes to change the appearance of a sticker.
+
+Markup: sticker.hbs
+
+.sticker--recommended - Used for example as recommended sticker
+.sticker--emphasized - Used for example as retraining sticker
+
+Styleguide 4.11
+*/
+
+.sticker {
+    display: inline-block;
+    padding-right: 10px;
+    color: @black;
+    white-space: nowrap;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 22px;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 0.7em;
+        background-color: @black;
+        margin-right: 3px;
+    }
+
+    &--recommended {
+        color: @dark-green;
+
+        &:before {
+            background-color: @dark-green;
+        }
+    }
+
+    &--emphasized {
+        color: @gold;
+
+        &:before {
+            background-color: @gold;
+        }
+    }
+}

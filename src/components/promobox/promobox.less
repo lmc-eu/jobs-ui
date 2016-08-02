@@ -1,0 +1,33 @@
+/*
+Promobox
+
+Box for promo
+
+Markup: promobox.hbs
+
+Styleguide 5.11
+*/
+
+.promobox {
+    position: relative;
+    padding: 20px;
+    background-color: @light-silver;
+
+    &--inverse {
+        background-color: @darker-blue;
+        color: #ffffff;
+
+        .promobox__title {
+            color: #ffffff;
+        }
+    }
+
+    &--advertising {
+        background-color: @light-yellow;
+    }
+
+    &--reduced {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
