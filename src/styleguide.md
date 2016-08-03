@@ -3,9 +3,16 @@
 # <a name="changelog"></a>Changelog
 
 ## Unreleased
-- Build process changed from `Grunt to NPM`
-- `Handlebars` used for markdown
-- Renamed style files
+
+## v5.0.0
+- Change build process from `Grunt to NPM`
+- Use `Handlebars` for markdown
+- Rename style files
+- Remove deprecated colors:
+    - *light-dark-gray *
+    - *dark-gray*
+- Remove deprecated input modifier:
+    - *form__text-input--enlarged*
 
 ## v4.48.0
 - Add modifier *frameless* for: 
