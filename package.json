@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "babelify": "^7.3.0",
+    "bower-shrinkwrap-resolver": "^0.4.1",
     "browserify": "^13.0.1",
     "browserify-shim": "^3.8.12",
     "debowerify": "^1.4.1",
@@ -84,5 +85,8 @@
     "trailing": true,
     "smarttabs": true,
     "jquery": true
+  },
+  "dependencies": {
+    "bower": "^1.7.9"
   }
 }

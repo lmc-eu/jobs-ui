@@ -1,0 +1,23 @@
+{
+  "git://github.com/BeSite/jQuery.dotdotdot.git": {
+    "1.8.3": "779ab93d259c3a67c45b2f80124aa8391ef49165"
+  },
+  "git://github.com/lmc-eu/Remodal.git": {
+    "fix-escape": "7fbb5b44aa3542837bd0119b426cf28af9ba6862"
+  },
+  "git://github.com/lmc-eu/picturefill.git": {
+    "2.2.0": "948efba2196cf78ebbb78446db901c8142126229"
+  },
+  "https://github.com/csshat/lesshat.git": {
+    "3.0.2": "ee58f199f7a8d787198046036345732ac84f4398"
+  },
+  "https://github.com/jquery/jquery-dist.git": {
+    "3.1.0": "6f02bc382c0529d3b4f68f6b2ad21876642dbbfe"
+  },
+  "https://github.com/lmc-eu/emerald.git": {
+    "rotation-dirty-fix": "d2bb28539506d9da3e526706796a53f7e82015dc"
+  },
+  "https://github.com/necolas/normalize.css.git": {
+    "3.0.3": "7d0ebab2ffdf2c2046e2b812456f3681f92b5f32"
+  }
+}

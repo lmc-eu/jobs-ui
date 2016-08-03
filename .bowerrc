@@ -1,5 +1,8 @@
 {
   "directory": "lib/bower_components",
-  "json": "bower.json"
+  "json": "bower.json",
+  "resolvers": [
+    "bower-shrinkwrap-resolver"
+  ]
 }
 
