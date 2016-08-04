@@ -17,6 +17,12 @@
 - Rename `script` files
 - Add new color:
     - *gray-blue*
+- Change color of placeholder (IE 11 fix) for:
+    - *form__text-input*
+    - *tagselect__input*
+- Remove cross from filled inputs (IE 11 fix) for:
+    - *form__text-input*
+    - *tagselect__input*
 
 ## v4.48.0
 - Add modifier *frameless* for: 

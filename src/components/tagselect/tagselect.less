@@ -59,5 +59,15 @@ Styleguide 3.7
         line-height: 38px;
         border: 1px solid transparent;
         outline: 0;
+
+        // IE 11 placeholder color fix
+        &:-ms-input-placeholder {
+            color: @light-gray;
+        }
+
+        // IE 11 remove cross from filled input
+        &::-ms-clear {
+            display: none;
+        }
     }
 }
