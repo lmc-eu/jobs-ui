@@ -15,14 +15,15 @@
     - *form__text-input--enlarged*
 - Rename `style` files
 - Rename `script` files
-- Add new color:
-    - *gray-blue*
-- Change color of placeholder (IE 11 fix) for:
-    - *form__text-input*
-    - *tagselect__input*
 - Remove cross from filled inputs (IE 11 fix) for:
     - *form__text-input*
     - *tagselect__input*
+- Change color of placeholder (IE 11 fix) for:
+    - *form__text-input*
+    - *tagselect__input*
+- Rename category `Forms` to `Form elements`
+- Add new color:
+    - *gray-blue*
 
 ## v4.48.0
 - Add modifier *frameless* for: 
