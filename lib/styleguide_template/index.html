@@ -29,9 +29,9 @@
                 <div class="navigation" id="navigation" role="menubar">
                     <ul class="list-unstyled">
                         {{#eachRoot}}
-                        <li role="presentation" class="navigation__item navigation__item--main">
-                            <a href="section-{{reference}}.html" class="navigation__link" role="menuitem">{{header}}</a>
-                        </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-{{reference}}.html" class="navigation__link" role="menuitem">{{header}}</a>
+                            </li>
                         {{/eachRoot}}
                     </ul>
                 </div>
@@ -52,21 +52,21 @@
         --></div>
     </div>
     {{#if homepage}}
-    <div class="cover" style="min-height: 200px;">
-        <div class="cover__inner">
-            <picture>
-                <source media="(max-width: 768px)" srcset="public/images/clif.jpg">
-                <img src="public/images/clif-hd.jpg" alt="" class="cover__media cover__media--center--palm"/>
-            </picture>
+        <div class="cover" style="min-height: 200px;">
+            <div class="cover__inner">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="public/images/clif.jpg">
+                    <img src="public/images/clif-hd.jpg" alt="" class="cover__media cover__media--center--palm"/>
+                </picture>
+            </div>
+            <div class="wrapper">
+                <div class="grid"><!--
+                    --><div class="grid__item ">
+                        <img class="kss__cover__logo" src="public/images/viktor_logo.png" height="200"/>
+                    </div><!--
+                --></div>
+            </div>
         </div>
-        <div class="wrapper">
-            <div class="grid"><!--
-                --><div class="grid__item ">
-                    <img class="kss__cover__logo" src="public/images/viktor_logo.png" height="200"/>
-                </div><!--
-            --></div>
-        </div>
-    </div>
     {{/if}}
 </div>
 
@@ -77,33 +77,31 @@
         <div class="kss__sidebar" id="kss-sidebar">
             <ul class="list-unstyled list-spaced">
                 {{#if homepage}}
-                <li>
-                    <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
-                    <a href="#top"><strong>Jobs UI v{{options.custom}}</strong></a>
-                </li>
-                <li>
-                    <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
-                    <a href="#changelog">Changelog</a>
-                </li>
+                    <li>
+                        <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
+                        <a href="#top"><strong>Jobs UI v{{options.custom}}</strong></a>
+                    </li>
+                    <li>
+                        <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                        <a href="#changelog">Changelog</a>
+                    </li>
                 {{else}}
 
-                {{#eachSection rootName}}
-                {{#ifDepth 1}}
-                <li>
-                    <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
-                    <a href="#top"><strong>{{ header }}</strong></a>
-                </li>
-                {{else}}
-                {{/ifDepth}}
-                {{#ifDepth 2}}
-                <li>
-                    <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
-                    <a href="#section-{{ reference }}">{{ header }}</a>
-                    <small>{{ reference }}</small>
-                </li>
-                {{else}}
-                {{/ifDepth}}
-                {{/eachSection}}
+                    {{#eachSection rootName}}
+                        {{#ifDepth 1}}
+                            <li>
+                                <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
+                                <a href="#top"><strong>{{ header }}</strong></a>
+                            </li>
+                        {{/ifDepth}}
+                        {{#ifDepth 2}}
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-{{ reference }}">{{ header }}</a>
+                                <small>{{ reference }}</small>
+                            </li>
+                        {{/ifDepth}}
+                    {{/eachSection}}
                 {{/if}}
             </ul>
         </div>
@@ -115,54 +113,54 @@
                 {{{homepage}}}
                 {{else}}
 
-                {{!
-                Find each section, in order.
-                If there's no markup or modifiers supplied, use a Markdown-only
-                layout instead.
+                    {{!
+                    Find each section, in order.
+                    If there's no markup or modifiers supplied, use a Markdown-only
+                    layout instead.
 
-                The "root" element comes first in this loop, and can be detected using
-                the "#ifDepth 1" block as seen below.
-                }}
-                {{#eachSection rootName}}
-                {{#ifDepth 1}}
-                <h1>{{ header }} <small>{{ reference }}.0</small></h1>
-                {{/ifDepth}}
-                {{#ifDepth 2}}
-                <section>
-                    <h2 id="section-{{ reference }}">{{ header }} <small>{{ reference }}</small></h2>
-                    {{/ifDepth}}
+                    The "root" element comes first in this loop, and can be detected using
+                    the "#ifDepth 1" block as seen below.
+                    }}
+                    {{#eachSection rootName}}
+                        {{#ifDepth 1}}
+                            <h1>{{ header }} <small>{{ reference }}.0</small></h1>
+                        {{/ifDepth}}
+                        {{#ifDepth 2}}
+                            <section>
+                                <h2 id="section-{{ reference }}">{{ header }} <small>{{ reference }}</small></h2>
+                        {{/ifDepth}}
 
-                    {{#ifDepth 3}}
-                    <section>
-                        <h3>{{ header }} <small>{{ reference }}</small></h3>
+                        {{#ifDepth 3}}
+                            <section>
+                                <h3>{{ header }} <small>{{ reference }}</small></h3>
+                            </section>
                         {{/ifDepth}}
 
                         {{#if description}}
-                        {{{description}}}
+                            {{{description}}}
                         {{/if}}
 
                         {{#if markup}}
-                        <p>Default styling</p>
-                        <div class="kss__example">
-                            {{{markup}}}
-                        </div>
-                        {{#eachModifier}}
-                        <strong>{{name}}</strong>
-                        {{{description}}}
-                        <div class="kss__example">
-                            {{{markup}}}
-                        </div>
-                        {{/eachModifier}}
-                        <div class="kss__markup  hidden--palm">
-                            <pre class="prettyprint  lang-html">{{markup}}</pre>
-                        </div>
-                        {{else}}
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                {{{markup}}}
+                            </div>
+                            {{#eachModifier}}
+                                <strong>{{name}}</strong>
+                                {{{description}}}
+                                <div class="kss__example">
+                                    {{{markup}}}
+                                </div>
+                            {{/eachModifier}}
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">{{markup}}</pre>
+                            </div>
                         {{/if}}
-                        {{#ifDepth 1}} {{else}}
-                    </section>
-                    {{/ifDepth}}
+                        {{#ifDepth 2}}
+                            </section>
+                        {{/ifDepth}}
                     {{/eachSection}}
-                    {{/if}}
+                {{/if}}
             </article>
         </div><!--
     --></div>
