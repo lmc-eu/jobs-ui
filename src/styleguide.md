@@ -6,13 +6,17 @@
 
 ## v5.0.0
 - Change build process from `Grunt to NPM`
-- Use `Handlebars` for markdown
+- Use `Handlebars` for markup as a template engine
 - Rename style files
 - Remove deprecated colors:
-    - *light-dark-gray *
+    - *light-dark-gray*
     - *dark-gray*
 - Remove deprecated input modifier:
     - *form__text-input--enlarged*
+- Rename `style` files
+- Rename `script` files
+- Add new color:
+    - *gray-blue*
 
 ## v4.48.0
 - Add modifier *frameless* for: 
