@@ -21,8 +21,10 @@ by default).
 #### LESS
 If `less#v1.7.0` is already used in the project, just do these two steps:
 
-1.  Include `$bower_components$` in the `paths` option of *less*. E.g.
-    `grunt-contrib-less` task supports this option directly.
+1.  Include `$bower_dir` in the `paths` option of *less* by modifying this variable.
+    E.g. *--modify-var=\"bower_dir='lib/bower_components/'\"* in `lessc` task directly 
+    or in `grunt-contrib-less` task with *modifyVars* directly.
+    
 2.  Import `jobs-ui/style` in the project style, preferably somewhere at
     the beginning. This file makes sure everything is linked together in the
     correct order.
@@ -120,6 +122,7 @@ There are four types of files:
 ```
 ui/
 ├── dist/
+│   ├── favicon/
 │   ├── fonts/
 │   ├── images/
 │   ├── index.min.js
@@ -149,7 +152,9 @@ ui/
 │   └── styleguide.md
 ├── about.me.json
 ├── bower.json
+├── bower-shrinkwrap.json
 ├── index.js
+├── npm-shrinkwrap.json
 ├── package.json
 ├── readme.md
 ├── style.less

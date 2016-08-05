@@ -23,7 +23,7 @@
     "create:dist:fonts": "mkdir -p dist/fonts",
     "create:dist:favicons": "mkdir -p dist/favicon",
     "create:docs:dist": "mkdir -p docs/dist",
-    "build:styles": "lessc style.less > dist/style.min.css --global-var=\"bower_dir='lib/bower_components/'\" --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
+    "build:styles": "lessc style.less > dist/style.min.css --modify-var=\"bower_dir='lib/bower_components/'\" --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
     "build:scripts": "npm run build:scripts:jshint && npm run build:scripts:browserify && npm run build:scripts:uglify",
     "build:scripts:jshint": "jshint src/**/* --extra-ext .js",
     "build:scripts:browserify": "browserify index.js > tmp/index.js",
