@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+## v5.1.0
+- Add color HEX code into `Colour palette` preview
+- Add font-size and color values into `Typography` preview 
+
 ## v5.0.0
 - Change build process from `Grunt to NPM`
 - Use `Handlebars` for markup as a template engine
