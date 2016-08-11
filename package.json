@@ -38,9 +38,8 @@
     "copy:dist:images:featured": "cp src/components/featured/images/* dist/images/",
     "copy:dist:fonts": "cp src/modules/fonts/gloriola/* src/modules/icons/fonts/* dist/fonts/",
     "copy:dist:favicons": "cp src/modules/favicon/* dist/favicon/",
-    "copy:docs": "npm run copy:docs:dist && npm run copy:docs:libs",
-    "copy:docs:dist": "cp -r dist/* docs/dist/",
-    "copy:docs:libs": "cp lib/styleguide_template/_htaccess docs/.htaccess"
+    "copy:docs": "npm run copy:docs:dist",
+    "copy:docs:dist": "cp -r dist/* docs/dist/"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
