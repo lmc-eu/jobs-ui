@@ -5,9 +5,8 @@ including **styles**, **scripts**, and **assets** (e.g. images).
 
 ## How to use
 
-Configured [Node.js](http://nodejs.org/) with *NPM*, installed `grunt-cli`,
-and initialized [*Bower*](http://bower.io/) in the project are considered a
-prerequisite.
+Configured [Node.js](http://nodejs.org/) with *NPM* and initialized 
+[*Bower*](http://bower.io/) in the project are considered a prerequisite.
 
 Install with:
 `bower install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
@@ -74,6 +73,16 @@ This behaviour may be overwritten setting the `rootpath` option in *less*.
 5. Push changes to origin master branch: `git push origin master`.
 6. Push new tag to the server: `git push --tags`.
 
+### How to release documentation
+1. At *master* branch remove the *docs* directory from `.gitignore` file for these few steps.
+2. Run *npm run compile*.
+3. Add and commit *docs* directory: `git add /docs && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
+4. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
+5. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
+6. Use subtree push to send it to the *gh-pages* branch on GitHub: `git subtree push --prefix docs github gh-pages`.
+7. Restore change in `.gitignore` file: `git checkout .gitignore`.
+8. Check it on [JobsUI](https://lmc-eu.github.io/jobs-ui/).
+
 ### KSS
 For documentation of components [KSS](https://github.com/hughsk/kss-node) is
 used. Every component must have an appropriate description and a sample in the
@@ -92,7 +101,7 @@ the documentation from the distribution folder to insure consistency.
 7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*.
 8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*.
 9. Update KSS documentation.
-10. Regenerate project by Grunt.
+10. Regenerate project by NPM.
 
 ### Available NPM tasks
 
