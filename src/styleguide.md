@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+## v5.2.0
+- Add new *Emails* category
+- Add *default* email template
+
 ## v5.1.0
 - Add color HEX code into `Colour palette` preview
 - Add font-size and color values into `Typography` preview 
