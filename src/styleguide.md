@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+## v5.2.1
+- Fix email template path
+- Fix release workflow of `documentation`
+
 ## v5.2.0
 - Add new *Emails* category
 - Add *default* email template

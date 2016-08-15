@@ -74,14 +74,17 @@ This behaviour may be overwritten setting the `rootpath` option in *less*.
 6. Push new tag to the server: `git push --tags`.
 
 ### How to release documentation
-1. Checkout the *master* branch.
-2. Run *npm run compile*.
-3. Create a local *gh-pages* branch containing the splitted output *docs* directory: `git subtree split --prefix docs -b gh-pages`.
-4. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
-5. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
-6. Force the push of the *gh-pages* branch to the remote gh-pages branch on GitHub: `git push -f github gh-pages`.
-7. Delete the local *gh-pages* branch because you will need to create it again next time: `git branch -D gh-pages`.
-8. Check it on [JobsUI](https://lmc-eu.github.io/jobs-ui/).
+1. Checkout the *master* branch and pull: `git checkout master && git pull`.
+2. Create a new *version branch*: `git checkout -b v<version-number> (E.g v5.1.1)`.
+3. Run `npm run compile`.
+4. At *master* branch remove the *docs* directory from `.gitignore` file for these few steps.
+5. Add and commit *docs* directory: `git add /docs && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
+6. Create a local *gh-pages* branch containing the splitted output *docs* directory: `git subtree split --prefix docs -b gh-pages`.
+7. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
+8. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
+9. Force the push of the *gh-pages* branch to the remote gh-pages branch on GitHub: `git push -f github gh-pages`.
+10. Delete the local *gh-pages* branch because you will need to create it again next time: `git branch -D gh-pages`.
+11. Check it on [JobsUI](https://lmc-eu.github.io/jobs-ui/).
 
 ### KSS
 For documentation of components [KSS](https://github.com/hughsk/kss-node) is
