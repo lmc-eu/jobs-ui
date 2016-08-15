@@ -7,6 +7,7 @@
 ## v5.2.0
 - Add new *Emails* category
 - Add *default* email template
+- Update *README* file with release workflow of `documentation`
 
 ## v5.1.0
 - Add color HEX code into `Colour palette` preview
