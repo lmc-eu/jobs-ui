@@ -78,7 +78,7 @@ This behaviour may be overwritten setting the `rootpath` option in *less*.
 1. Create a new *version branch*: `git checkout -b v<version-number> (E.g v5.1.1)`.
 1. Run `npm run compile`.
 1. At *master* branch remove the *docs* directory from `.gitignore` file for these few steps.
-1. Add and commit *docs* directory: `git add /docs && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
+1. Add and commit *docs* directory: `git add docs/ && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
 1. Create a local *gh-pages* branch containing the splitted output *docs* directory: `git subtree split --prefix docs -b gh-pages`.
 1. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
 1. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
