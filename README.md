@@ -24,7 +24,7 @@ If `less#v1.7.0` is already used in the project, just do these two steps:
     E.g. *--modify-var=\"bower_dir='lib/bower_components/'\"* in `lessc` task directly 
     or in `grunt-contrib-less` task with *modifyVars* directly.
     
-2.  Import `jobs-ui/style` in the project style, preferably somewhere at
+1.  Import `jobs-ui/style` in the project style, preferably somewhere at
     the beginning. This file makes sure everything is linked together in the
     correct order.
 
@@ -67,24 +67,24 @@ This behaviour may be overwritten setting the `rootpath` option in *less*.
 
 ### How to release new version
 1. At *master* merge feature branch without auto commit: `git merge <feature-branch> --no-commit`.
-2. Add new version in `styleguide.md` and change it in `package.json`.
-3. Commit all changes: `git commit --all`.
-4. Add new tag: `git tag v<version-number> (e.g. v1.2.3)`.
-5. Push changes to origin master branch: `git push origin master`.
-6. Push new tag to the server: `git push --tags`.
+1. Add new version in `styleguide.md` and change it in `package.json`.
+1. Commit all changes: `git commit --all`.
+1. Add new tag: `git tag v<version-number> (e.g. v1.2.3)`.
+1. Push changes to origin master branch: `git push origin master`.
+1. Push new tag to the server: `git push --tags`.
 
 ### How to release documentation
 1. Checkout the *master* branch and pull: `git checkout master && git pull`.
-2. Create a new *version branch*: `git checkout -b v<version-number> (E.g v5.1.1)`.
-3. Run `npm run compile`.
-4. At *master* branch remove the *docs* directory from `.gitignore` file for these few steps.
-5. Add and commit *docs* directory: `git add /docs && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
-6. Create a local *gh-pages* branch containing the splitted output *docs* directory: `git subtree split --prefix docs -b gh-pages`.
-7. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
-8. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
-9. Force the push of the *gh-pages* branch to the remote gh-pages branch on GitHub: `git push -f github gh-pages`.
-10. Delete the local *gh-pages* branch because you will need to create it again next time: `git branch -D gh-pages`.
-11. Check it on [JobsUI](https://lmc-eu.github.io/jobs-ui/).
+1. Create a new *version branch*: `git checkout -b v<version-number> (E.g v5.1.1)`.
+1. Run `npm run compile`.
+1. At *master* branch remove the *docs* directory from `.gitignore` file for these few steps.
+1. Add and commit *docs* directory: `git add /docs && git commit -m "v<version-number> docs release" (e.g. v5.1.1)`.
+1. Create a local *gh-pages* branch containing the splitted output *docs* directory: `git subtree split --prefix docs -b gh-pages`.
+1. Make sure you have your SSH key added in GitHub [See Documentation](https://help.github.com/articles/generating-an-ssh-key/).
+1. Set the *GitHub* remote: `git remote add github git@github.com:lmc-eu/jobs-ui.git`.
+1. Force the push of the *gh-pages* branch to the remote gh-pages branch on GitHub: `git push -f github gh-pages`.
+1. Delete the local *gh-pages* branch because you will need to create it again next time: `git branch -D gh-pages`.
+1. Check it on [JobsUI](https://lmc-eu.github.io/jobs-ui/).
 
 ### KSS
 For documentation of components [KSS](https://github.com/hughsk/kss-node) is
@@ -96,15 +96,15 @@ the documentation from the distribution folder to insure consistency.
 
 ### How to manage icons
 1. Go to [IcoMoon](http://icomoon.io/app/).
-2. In menu choose Manage projects
-3. Import project, use *src/modules/icons/_generated/selection.json*.
-4. Load project.
-5. Add/remove/update icons.
-6. Download the package.
-7. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*.
-8. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*.
-9. Update KSS documentation.
-10. Regenerate project by NPM.
+1. In menu choose Manage projects
+1. Import project, use *src/modules/icons/_generated/selection.json*.
+1. Load project.
+1. Add/remove/update icons.
+1. Download the package.
+1. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*.
+1. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*.
+1. Update KSS documentation.
+1. Regenerate project by NPM.
 
 ### Available NPM tasks
 
