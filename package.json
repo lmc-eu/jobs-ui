@@ -40,8 +40,9 @@
     "copy:dist:fonts": "cp src/modules/fonts/gloriola/* src/modules/icons/fonts/* dist/fonts/",
     "copy:dist:favicons": "cp src/modules/favicon/* dist/favicon/",
     "copy:dist:email-templates": "cp src/modules/email-templates/*.html dist/email-templates/",
-    "copy:docs": "npm run copy:docs:dist",
-    "copy:docs:dist": "cp -r dist/* docs/dist/"
+    "copy:docs": "npm run copy:docs:dist && npm run copy:docs:dist:footer",
+    "copy:docs:dist": "cp -r dist/* docs/dist/",
+    "copy:docs:dist:footer": "cp -r ./lib/bower_components/lmc-footer/dist/lmc-footer.min.css docs/dist/"
   },
   "devDependencies": {
     "babelify": "^7.3.0",

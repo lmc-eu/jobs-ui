@@ -9,6 +9,7 @@
     - *terms-of-use*
 - Deprecate class:
     - *copyright*
+- Change styleguide footer
 
 ## v5.2.1
 - Fix email template path
