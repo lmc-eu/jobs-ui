@@ -4,6 +4,13 @@
 
 ## Unreleased
 
+## v5.3.0
+- Add new `partial` class:
+    - *terms-of-use*
+- Deprecate class:
+    - *copyright*
+- Change styleguide footer
+
 ## v5.2.1
 - Fix email template path
 - Fix release workflow of `documentation`

@@ -17,6 +17,7 @@
         "emerald": "rotation-dirty-fix",
         "jQuery.dotdotdot": "BeSite/jQuery.dotdotdot",
         "lesshat": "~3.0.0",
+        "lmc-footer": "ssh://git@stash.int.lmc.cz:7999/tech/lmc-footer.git#1.0.1",
         "normalize-css": "~3.0.0",
         "picturefill": "lmc-eu/picturefill#~2.2.0",
         "remodal": "lmc-eu/Remodal#fix-escape"
