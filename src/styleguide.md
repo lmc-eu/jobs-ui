@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+## v5.4.0
+- Move variables from *dropdown* component to *variables*
+- Move `Colour palette` styles for HEX code to *kss* style
+
 ## v5.3.0
 - Add new `partial` class:
     - *terms-of-use*
