@@ -1,6 +1,6 @@
 {
   "name": "jobs-ui",
-  "version": "5.4.0",
+  "version": "5.5.0",
   "description": "UI library for jobs.cz",
   "main": "index.js",
   "author": "LMC s.r.o. (https://github.com/lmc-eu)",

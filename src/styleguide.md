@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+## v5.5.0
+-  Add new modifier:
+    - *headline--thin* (*Gloriola light* font) 
+    - *headline--uppercase* 
+
 ## v5.4.0
 - Move variables from *dropdown* component to *variables*
 - Move `Colour palette` styles for HEX code to *kss* style
