@@ -196,7 +196,7 @@
         </a>
     </div>
     <p class="lmc-footer__career"><a href="http://lmc.jobs.cz/">Work with us</a></p>
-    <p class="lmc-footer__copy">&copy; 1996&ndash;2016 LMC s.r.o., a member of <a href="http://www.almacareer.com/">Alma Career</a>, all rights reserved</p>
+    <p class="lmc-footer__copy">&copy; 1996&ndash;<span id="currentYear">2017</span> LMC s.r.o., a member of <a href="http://www.almacareer.com/">Alma Career</a>, all rights reserved</p>
 </footer>
 
 <!-- SCRIPTS -->
@@ -221,6 +221,7 @@
             }
         });
 
+        $('#currentYear').text(new Date().getFullYear());
     });
 </script>
 </body>
