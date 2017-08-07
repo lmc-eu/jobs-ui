@@ -4,8 +4,11 @@
 
 ## Unreleased
 
+## v5.5.1
+- Fix borders on *.form__text-input* class
+
 ## v5.5.0
--  Add new modifier:
+- Add new modifier:
     - *headline--thin* (*Gloriola light* font) 
     - *headline--uppercase* 
 
