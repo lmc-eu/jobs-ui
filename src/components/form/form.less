@@ -53,19 +53,16 @@ Styleguide 3.1
                 margin-top: -1px;
             }
 
-            .form__text-input {
+            .form__text-input:not([type=hidden]) {
                 margin: 0;
-                position: relative;
-                top: -1px;
+                border-top-color: transparent;
 
                 &:focus {
                     z-index: 2;
                 }
+
                 &:first-of-type {
-                    top: 1px;
-                }
-                &:last-of-type {
-                    top: -2px;
+                    border-top-color: @light-gray;
                 }
             }
 
@@ -73,11 +70,7 @@ Styleguide 3.1
             .ie8 & {
                 legend + .form__text-input,
                 .form__text-input:first-child {
-                    top: 1px;
-                }
-
-                .form__text-input:last-child {
-                    top: -2px;
+                    border-bottom-color: @light-gray;
                 }
             }
         }
