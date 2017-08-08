@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+## v5.6.0
+- Update *lmc-footer* dependency
+
 ## v5.5.1
 - Fix borders on *.form__text-input* class
 
