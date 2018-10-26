@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+- Add new icon
+    - *pencil*
+
 ## v5.6.0
 - Update *lmc-footer* dependency
 
