@@ -4,6 +4,7 @@
 
 ## Unreleased
 
+## v5.7.0
 - Add new icon
     - *pencil*
 
