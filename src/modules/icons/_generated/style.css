@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'jobsicon';
-  src:  url('fonts/jobsicon.eot?1gmy2f');
-  src:  url('fonts/jobsicon.eot?1gmy2f#iefix') format('embedded-opentype'),
-    url('fonts/jobsicon.ttf?1gmy2f') format('truetype'),
-    url('fonts/jobsicon.woff?1gmy2f') format('woff'),
-    url('fonts/jobsicon.svg?1gmy2f#jobsicon') format('svg');
+  src:  url('fonts/jobsicon.eot?yfb8wh');
+  src:  url('fonts/jobsicon.eot?yfb8wh#iefix') format('embedded-opentype'),
+    url('fonts/jobsicon.ttf?yfb8wh') format('truetype'),
+    url('fonts/jobsicon.woff?yfb8wh') format('woff'),
+    url('fonts/jobsicon.svg?yfb8wh#jobsicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -110,6 +110,9 @@
 }
 .icon--share-alt:before {
   content: "\e61d";
+}
+.icon--share-alt-left:before {
+  content: "\e901";
 }
 .icon--like:before {
   content: "\e619";
