@@ -4,6 +4,7 @@
 
 ## Unreleased
 
+## v5.8.0
 - Add new icon
     - *share-alt-left*
 
