@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+- Add new icon
+    - *share-alt-left*
+
 ## v5.7.0
 - Add new icon
     - *pencil*
