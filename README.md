@@ -100,7 +100,9 @@ the documentation from the distribution folder to insure consistency.
 1. Import project, use *src/modules/icons/_generated/selection.json*.
 1. Load project.
 1. Add/remove/update icons.
-1. Download the package.
+1. At the bottom bar, click `Generate font` - this will take you to a font screen
+1. Under the `Generate font` a `Download` button will appear. Click it.
+1. Download and unzip the package.
 1. Copy *style.css* and *selection.json* to *src/modules/icons/_generated*.
 1. Copy *fonts/jobsicon.eot* to *src/modules/icons/font*.
 1. Update KSS documentation.
