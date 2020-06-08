@@ -3,6 +3,12 @@
 # <a name="changelog"></a>Changelog
 
 ## Unreleased
+- BC: remove spaces definition
+    - *standalone*
+    - *half-standalone*
+    - *double-standalone*
+    - *mini-standalone*
+    - *huge-standalone*
 
 ## v5.8.0
 - Add new icon
