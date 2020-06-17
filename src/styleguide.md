@@ -3,6 +3,8 @@
 # <a name="changelog"></a>Changelog
 
 ## Unreleased
+
+## v6.0.0
 - BC: remove spaces definition
     - *standalone*
     - *half-standalone*
