@@ -3,6 +3,7 @@
 # <a name="changelog"></a>Changelog
 
 ## Unreleased
+- Add new favicons for Apple devices
 
 ## v6.0.0
 - BC: remove spaces definition
