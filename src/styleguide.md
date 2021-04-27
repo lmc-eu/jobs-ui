@@ -3,6 +3,8 @@
 # <a name="changelog"></a>Changelog
 
 ## Unreleased
+
+## v6.1.0
 - Add new favicons for Apple devices
 
 ## v6.0.0
