@@ -5,24 +5,25 @@ including **styles**, **scripts**, and **assets** (e.g. images).
 
 ## How to use
 
-Configured [Node.js](http://nodejs.org/) with *NPM* and initialized 
-[*Bower*](http://bower.io/) in the project are considered a prerequisite.
+Configured [Node.js](http://nodejs.org/) with *NPM* is considered a 
+prerequisite.
 
-Install with:
-`bower install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
+Install with npm:
+`npm install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
 
-In the following `$bower_components$` denotes the directory in which bower
-installs its components (`./app/bower_components` relative to the `bower.json` file
-by default).
+Install with Yarn:
+`yarn add --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
 
 ### Setting up
 
 #### LESS
-If `less#v1.7.0` is already used in the project, just do these two steps:
 
-1.  Include `$bower_dir` in the `paths` option of *less* by modifying this variable.
-    E.g. *--modify-var=\"bower_dir='lib/bower_components/'\"* in `lessc` task directly 
-    or in `grunt-contrib-less` task with *modifyVars* directly.
+If *less* is already used in the project, just do these two steps:
+
+1.  Include `$dependencies_dir` in the `paths` option of *less* by modifying 
+    this variable. E.g. *--modify-var=\"dependencies_dir='node_modules/'\"* 
+    in `lessc` task directly or in `grunt-contrib-less` task with *modifyVars*
+    directly.
     
 1.  Import `jobs-ui/style` in the project style, preferably somewhere at
     the beginning. This file makes sure everything is linked together in the
@@ -33,17 +34,16 @@ desired version as unexpected behaviour may occur otherwise.
 
 *Note*: It is recommended to minify the output *CSS*.
 
-*Note*: Had there been a inconquerable problem with the `paths` option, it is
-possible to alternatively set `@bower-directory` variable to represent the
-relative path to `$bower_components$` from `jobs-ui/src/` directory
-(typically `../../`).
+*Note*: Had there been an inconquerable problem with the `paths` option, it is
+possible to alternatively set `@dependencies_dir` variable to represent the
+relative path to dependencies from `jobs-ui/src/` directory (typically
+`../../`).
 
 #### JavaScript
 
 This package uses the *CommonJS* module format.
 
-Recommended use consists of a combination of [browserify](http://browserify.org/)
-and its transform [debowerify](https://github.com/eugeneware/debowerify).
+We recommended to use [browserify](http://browserify.org/).
 Then just require the 'jobs-ui' module.
 
 Note that *jQuery* is a dependency and must be accessible via `$`.
@@ -143,8 +143,8 @@ ui/
 │   ├── style.min.css
 │   └── style-legacy.min.css
 ├── lib/
-│   ├── bower-components/
 │   └── styleguide_template/
+├── node_modules/
 ├── src/
 │   ├── components/
 │   │   ├── component-A/
@@ -165,13 +165,12 @@ ui/
 │   ├── styleguide.less
 │   └── styleguide.md
 ├── about.me.json
-├── bower.json
-├── bower-shrinkwrap.json
 ├── index.js
-├── npm-shrinkwrap.json
+├── package-lock.json
 ├── package.json
 ├── readme.md
 ├── style.less
+├── yarn.lock
 └── …
 ```
 

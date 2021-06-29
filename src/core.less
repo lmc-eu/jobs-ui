@@ -10,10 +10,9 @@
 //     (2) Responsive grid system
 //     (3) Set of universal mixins
 // --------------------------------------------------------------------------
-@import (inline) "@{bower_dir}normalize-css/normalize.css";   // (1)
-@import (inline) "@{bower_dir}normalize-css/normalize.css";   // (1)
-@import "@{bower_dir}emerald/less/emerald";                   // (2)
-@import "@{bower_dir}lesshat/build/lesshat";                  // (3)
+@import (inline) "@{dependencies_dir}normalize.css/normalize.css";   // (1)
+@import "@{dependencies_dir}emerald/less/emerald";                   // (2)
+@import "@{dependencies_dir}lesshat/build/lesshat";                  // (3)
 
 //
 // Modules - common utilities
@@ -90,4 +89,4 @@
 // --------------------------------------------------------------------------
 @import "modules/print/print";
 
-@import "@{bower_dir}emerald/less/responsive-visibility";
+@import "@{dependencies_dir}emerald/less/responsive-visibility";
