@@ -35,7 +35,7 @@
     "build:styles": "lessc style.less > dist/style.min.css --modify-var=\"dependencies_dir='node_modules/'\" --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
     "build:scripts": "npm run build:scripts:jshint && npm run build:scripts:browserify && npm run build:scripts:uglify",
     "build:scripts:jshint": "jshint src/**/* --extra-ext .js",
-    "build:scripts:browserify": "browserify index.js > tmp/index.js",
+    "build:scripts:browserify": "browserify -g browserify-shim index.js > tmp/index.js",
     "build:scripts:uglify": "uglifyjs tmp/index.js > dist/index.min.js -c",
     "docs:kss": "kss-node --custom $npm_package_version --source src/ --template lib/styleguide_template --destination docs --verbose",
     "docs:styles:less": "lessc --verbose docs/public/kss.less docs/public/kss.css --clean-css && lessc --verbose docs/public/markdown.less docs/public/markdown.css --clean-css",
@@ -74,12 +74,12 @@
   },
   "browserify": {
     "transform": [
-      "browserify-shim",
       "babelify"
     ]
   },
   "browserify-shim": {
-    "jQuery": "global:jQuery"
+    "jQuery": "global:jQuery",
+    "jquery": "global:jQuery"
   },
   "jshintConfig": {
     "node": true,
