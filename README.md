@@ -9,10 +9,10 @@ Configured [Node.js](http://nodejs.org/) with *NPM* is considered a
 prerequisite.
 
 Install with npm:
-`npm install --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
+`npm install --save jobs-ui=ssh://git@bitbucket.lmc.cz:7999/jobs/jobs-ui.git`.
 
 Install with Yarn:
-`yarn add --save jobs-ui=ssh://git@stash.int.lmc.cz:7999/jobs/jobs-ui.git`.
+`yarn add --save jobs-ui=ssh://git@bitbucket.lmc.cz:7999/jobs/jobs-ui.git`.
 
 ### Setting up
 
@@ -166,9 +166,8 @@ ui/
 │   └── styleguide.md
 ├── about.me.json
 ├── index.js
-├── package-lock.json
 ├── package.json
-├── readme.md
+├── README.md
 ├── style.less
 ├── yarn.lock
 └── …

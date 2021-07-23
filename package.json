@@ -9,12 +9,13 @@
   },
   "author": "LMC s.r.o. (https://github.com/lmc-eu)",
   "license": "UNLICENSED",
+  "private": true,
   "directories": {
     "doc": "docs"
   },
   "engines": {
     "node": ">=14",
-    "npm": ">=6"
+    "yarn": ">=1.22"
   },
   "scripts": {
     "compile": "npm run clean && npm run create && npm run build && npm run docs",
