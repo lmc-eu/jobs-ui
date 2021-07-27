@@ -1,9 +1,0 @@
-{
-  "registry": "https://registry.bower.io",
-  "directory": "lib/bower_components",
-  "json": "bower.json",
-  "resolvers": [
-    "bower-shrinkwrap-resolver"
-  ]
-}
-

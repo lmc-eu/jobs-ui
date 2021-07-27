@@ -1,17 +1,26 @@
 {
   "name": "jobs-ui",
-  "version": "5.7.0",
+  "version": "6.1.0",
   "description": "UI library for jobs.cz",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.lmc.cz/scm/jobs/jobs-ui.git"
+  },
   "author": "LMC s.r.o. (https://github.com/lmc-eu)",
+  "license": "UNLICENSED",
+  "private": true,
   "directories": {
     "doc": "docs"
   },
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.22"
+  },
   "scripts": {
-    "compile": "npm run clean && npm run create && npm run bower && npm run build && npm run docs",
+    "compile": "npm run clean && npm run create && npm run build && npm run docs",
     "clean": "npm run clean:docs && npm run clean:dist && npm run clean:tmp && npm run create:dist",
     "create": "npm run create:tmp && npm run create:dist && npm run create:docs:dist",
-    "bower": "bower install",
     "build": "npm run build:styles && npm run build:scripts",
     "docs": "npm run docs:kss && npm run copy && npm run docs:styles:less",
     "clean:docs": "rm -rf docs/*",
@@ -24,10 +33,10 @@
     "create:dist:favicons": "mkdir -p dist/favicon",
     "create:dist:email-templates": "mkdir -p dist/email-templates",
     "create:docs:dist": "mkdir -p docs/dist",
-    "build:styles": "lessc style.less > dist/style.min.css --modify-var=\"bower_dir='lib/bower_components/'\" --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
+    "build:styles": "lessc style.less > dist/style.min.css --modify-var=\"dependencies_dir='node_modules/'\" --autoprefix=\"last 2 versions, Firefox >= 31, ie >= 9, Android >= 4.1, iOS >= 8\" --clean-css",
     "build:scripts": "npm run build:scripts:jshint && npm run build:scripts:browserify && npm run build:scripts:uglify",
     "build:scripts:jshint": "jshint src/**/* --extra-ext .js",
-    "build:scripts:browserify": "browserify index.js > tmp/index.js",
+    "build:scripts:browserify": "browserify -g browserify-shim index.js > tmp/index.js",
     "build:scripts:uglify": "uglifyjs tmp/index.js > dist/index.min.js -c",
     "docs:kss": "kss-node --custom $npm_package_version --source src/ --template lib/styleguide_template --destination docs --verbose",
     "docs:styles:less": "lessc --verbose docs/public/kss.less docs/public/kss.css --clean-css && lessc --verbose docs/public/markdown.less docs/public/markdown.css --clean-css",
@@ -42,14 +51,12 @@
     "copy:dist:email-templates": "cp src/modules/email-templates/*.html dist/email-templates/",
     "copy:docs": "npm run copy:docs:dist && npm run copy:docs:dist:footer",
     "copy:docs:dist": "cp -r dist/* docs/dist/",
-    "copy:docs:dist:footer": "cp -r ./lib/bower_components/lmc-footer/dist/lmc-footer.min.css docs/dist/"
+    "copy:docs:dist:footer": "cp -r ./node_modules/lmc-footer/dist/lmc-footer.min.css docs/dist/"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
-    "bower-shrinkwrap-resolver": "^0.4.1",
     "browserify": "^13.0.1",
     "browserify-shim": "^3.8.12",
-    "debowerify": "^1.4.1",
     "jshint": "^2.9.2",
     "kss": "^2.4.0",
     "less": "^2.7.1",
@@ -57,15 +64,23 @@
     "less-plugin-clean-css": "^1.5.1",
     "uglify-js": "^2.6.2"
   },
+  "dependencies": {
+    "emerald": "git+ssh://git@github.com:lmc-eu/emerald.git#rotation-dirty-fix",
+    "jQuery.dotdotdot": "git+ssh://git@github.com:FrDH/dotdotdot-js.git#v1.8.3",
+    "lesshat": "^3.0.2",
+    "lmc-footer": "git+ssh://git@bitbucket.lmc.cz:7999/tech/lmc-footer.git#1.0.2",
+    "normalize.css": "^3.0.3",
+    "picturefill": "^2.2.1",
+    "remodal": "^1.1.1"
+  },
   "browserify": {
     "transform": [
-      "browserify-shim",
-      "babelify",
-      "debowerify"
+      "babelify"
     ]
   },
   "browserify-shim": {
-    "jQuery": "global:jQuery"
+    "jQuery": "global:jQuery",
+    "jquery": "global:jQuery"
   },
   "jshintConfig": {
     "node": true,
@@ -87,8 +102,5 @@
     "trailing": true,
     "smarttabs": true,
     "jquery": true
-  },
-  "dependencies": {
-    "bower": "^1.7.9"
   }
 }
