@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+## v7.0.0
+- BC: migrate from Bower to npm/Yarn
+
 ## v6.1.0
 - Add new favicons for Apple devices
 
