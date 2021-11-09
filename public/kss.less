@@ -1,0 +1,159 @@
+body {
+    background: white;
+}
+
+.kss {
+    &__header {
+        margin-bottom: 30px;
+    }
+
+    &__cover {
+        &__logo {
+            max-width: 100%;
+            height: auto;
+            margin: 40px 0;
+        }
+    }
+
+    &__example {
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border: 1px dashed #a6a9ae;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__markup {
+        max-height: 212px;
+        max-height: 212px;
+        margin-bottom: 60px;
+        overflow-y: auto;
+        border: 1px solid #e6e6e6;
+        border-left: none;
+
+        .pln {color: #000 }  /* plain text */
+        .str { color: #080 }  /* string content */
+        .kwd { color: #008 }  /* a keyword */
+        .com { color: #800 }  /* a comment */
+        .typ { color: #606 }  /* a type name */
+        .lit { color: #066 }  /* a literal value */
+        /* punctuation, lisp open bracket, lisp close bracket */
+        .pun, .opn, .clo { color: #660 }
+        .tag { color: #008; padding: 0; }  /* a markup tag name */
+        .atn { color: #606 }  /* a markup attribute name */
+        .atv { color: #080 }  /* a markup attribute value */
+        .dec, .var { color: #606 }  /* a declaration; a variable name */
+        .fun { color: red }  /* a function name */
+
+        pre.prettyprint {
+            margin: 0;
+            padding: 8px 15px;
+            background: #f5f5f5;
+            border: none;
+            border-left: 6px solid #e6e6e6;
+            -webkit-border-image:
+                -webkit-linear-gradient(rgba(0, 0, 0, 0), #ccc) 1 100%;
+            font: 12px/1.3 Consolas, 'Liberation Mono', Courier, monospace
+        }
+    }
+
+    &__colours {
+
+        .grid__item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__sample {
+            height: 30vw;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        &__code {
+            width: 80%;
+            margin-top: 37%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+    }
+
+    &__iconshowcase {
+        margin-bottom: -30px;
+        .icon {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: #444;
+        }
+        .grid__item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    &__footer {
+        margin-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #ccc;
+        background: #19325a;
+
+        a {
+            color: #ccc;
+            font-size: 12px;
+
+            &:hover {
+                color: white;
+                border: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .kss {
+        &__header {
+            margin-bottom: 60px;
+            padding: 0;
+
+            &__link {
+                line-height: 80px;
+            }
+
+            &__logo {
+                margin: 0;
+            }
+        }
+
+        &__colours {
+            &__sample {
+                width: 98px;
+                height: 98px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+
+    .kss {
+        &__sidebar {
+            width: 220px;
+            max-height: calc(~"100vh - 300px");
+            padding: 20px;
+            background: #ecf0f1;
+            overflow-y: auto;
+
+            &--alone {
+                position: fixed;
+                top: 40px;
+            }
+        }
+    }
+}

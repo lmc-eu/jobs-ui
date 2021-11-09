@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jobs UI v7.1.0</title>
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/style.min.css">
+    <link rel="stylesheet" href="dist/lmc-footer.min.css">
+    <link rel="stylesheet" href="public/kss.css">
+    <link rel="shortcut icon" type="image/x-icon" href="dist/favicon/favicon.ico"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body data-current-section="5">
+<div class="header  kss__header" role="navigation">
+    <div class="wrapper">
+        <div class="grid  grid--middle--palm"><!--
+            --><div class="grid__item  e-3--palm  e-4">
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="dist/images/logo-jobs.svg" alt="Jobs.cz" />
+            </a>
+        </div><!--
+            --><div class="grid__item  e-1--palm  e-16--desk">
+
+                <div class="navigation" id="navigation" role="menubar">
+                    <ul class="list-unstyled">
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-1.html" class="navigation__link" role="menuitem">Layout</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-2.html" class="navigation__link" role="menuitem">Typography</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-3.html" class="navigation__link" role="menuitem">Form elements</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-4.html" class="navigation__link" role="menuitem">Components</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-5.html" class="navigation__link" role="menuitem">Compositions</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-6.html" class="navigation__link" role="menuitem">Emails</a>
+                            </li>
+                    </ul>
+                </div>
+
+            </div><!--
+
+            --><div class="grid__item  e-0--palm  e-0  e-5--desk">
+                <div aria-hidden="true" class="text--right">
+                    <a class="button button--tertiary" href="index.html#changelog">Jobs UI v7.1.0</a>
+                </div>
+            </div><!--
+
+            --><div class="grid__item  e-4--palm  e-11  e-0--desk">
+                <div class="text--right">
+                    <a href="#" class="header__toggle" data-navigation-toggle aria-haspopup="true">Menu <span class="icon icon--reorder" aria-hidden="true"></span></a>
+                </div>
+            </div><!--
+        --></div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid grid--rev--desk"><!--
+                    --><div class="grid__item  e-7--desk  e-push-2--desk">
+
+        <div class="kss__sidebar" id="kss-sidebar">
+            <ul class="list-unstyled list-spaced">
+
+                            <li>
+                                <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
+                                <a href="#top"><strong>Compositions</strong></a>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.1">Listing</a>
+                                <small>5.1</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.2">Promo</a>
+                                <small>5.2</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.3">Featured</a>
+                                <small>5.3</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.4">Pager</a>
+                                <small>5.4</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.5">Icon description</a>
+                                <small>5.5</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.6">Modal</a>
+                                <small>5.6</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.7">Tabs</a>
+                                <small>5.7</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.8">Cover</a>
+                                <small>5.8</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.9">Search-list</a>
+                                <small>5.9</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.10">Cover box</a>
+                                <small>5.10</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.11">Promobox</a>
+                                <small>5.11</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.12">Profile badge</a>
+                                <small>5.12</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.13">Table</a>
+                                <small>5.13</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.14">Picker</a>
+                                <small>5.14</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.15">Combobox</a>
+                                <small>5.15</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.16">Elite row</a>
+                                <small>5.16</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-5.17">Recommended-Ads</a>
+                                <small>5.17</small>
+                            </li>
+            </ul>
+        </div>
+    </div><!--
+        --><div role="main" class="grid__item  e-16">
+            <article id="kss__content">
+
+                            <h1>Compositions <small>5.0</small></h1>
+
+
+                            <p>Composed UI components</p>
+
+
+                            <section>
+                                <h2 id="section-5.1">Listing <small>5.1</small></h2>
+
+
+                            <p>An individual article post</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid post-listing">
+    <div class="grid__item hidden--print e-2--palm e-6">
+        <a href="#">
+            <picture>
+                <source media="(max-width: 768px)" srcset="public/images/60x45.jpg">
+                <img src="public/images/300x225.jpg" alt="" class="post-listing__image"/>
+            </picture>
+        </a>
+    </div><!--
+    --><div class="grid__item e-6--palm e-10">
+        <h2 class="post-listing__heading">
+            <a href="#">Seveřané mi uvést membránou pohřbeno hmotné</a>
+        </h2>
+        <p>
+            Jader další tradičních ničem zdecimován v rostlé zmíněná
+            sečetla&nbsp;…<a class="post-listing__read-more" href="#"> číst více </a>
+        </p>
+    </div>
+</div>
+<div class="grid post-listing">
+    <div class="grid__item e-16">
+        <h2 class="post-listing__heading">
+            <a href="#">Seveřané mi uvést membránou pohřbeno hmotné</a>
+        </h2>
+        <p class="hidden--palm">
+            Jader další tradičních ničem zdecimován v rostlé zmíněná, sečetla
+            pomyšlení u většinu čtvrti, oceánu brazílií cíle dávných veřejné
+            cípu a čech. Či i člun cest nikoli strašnými chirurgy pokaždé
+            zoologie hlubšího&nbsp;…<a class="post-listing__read-more"
+                                       href="#"> číst více </a>
+        </p>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid post-listing&quot;&gt;
+    &lt;div class=&quot;grid__item hidden--print e-2--palm e-6&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;picture&gt;
+                &lt;source media=&quot;(max-width: 768px)&quot; srcset=&quot;public/images/60x45.jpg&quot;&gt;
+                &lt;img src=&quot;public/images/300x225.jpg&quot; alt=&quot;&quot; class=&quot;post-listing__image&quot;/&gt;
+            &lt;/picture&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-10&quot;&gt;
+        &lt;h2 class=&quot;post-listing__heading&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Seveřané mi uvést membránou pohřbeno hmotné&lt;/a&gt;
+        &lt;/h2&gt;
+        &lt;p&gt;
+            Jader další tradičních ničem zdecimován v rostlé zmíněná
+            sečetla&amp;nbsp;…&lt;a class=&quot;post-listing__read-more&quot; href=&quot;#&quot;&gt; číst více &lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;grid post-listing&quot;&gt;
+    &lt;div class=&quot;grid__item e-16&quot;&gt;
+        &lt;h2 class=&quot;post-listing__heading&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Seveřané mi uvést membránou pohřbeno hmotné&lt;/a&gt;
+        &lt;/h2&gt;
+        &lt;p class=&quot;hidden--palm&quot;&gt;
+            Jader další tradičních ničem zdecimován v rostlé zmíněná, sečetla
+            pomyšlení u většinu čtvrti, oceánu brazílií cíle dávných veřejné
+            cípu a čech. Či i člun cest nikoli strašnými chirurgy pokaždé
+            zoologie hlubšího&amp;nbsp;…&lt;a class=&quot;post-listing__read-more&quot;
+                                       href=&quot;#&quot;&gt; číst více &lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.2">Promo <small>5.2</small></h2>
+
+
+                            <p>Displays a link with an optional figure and description</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid promo">
+    <div class="grid__item e-2--palm">
+        <a href="#"><img class="promo__image" src="public/images/60x45.jpg" /></a>
+    </div><!--
+    --><div class="grid__item e-6--palm e-5">
+        <span a class="promo__title">
+            <a href="#">Jazykem stranu paliva</a>
+        </span>
+        <p class="promo__text">Pokaždé zoologie hlubšího</p>
+    </div>
+</div>
+<div class="grid promo">
+    <div class="grid__item e-7">
+        <span class="promo__title">
+            <a href="#">Jazykem stranu paliva k nežli smrky pozdější viditelný</a>
+        </span>
+        <p class="promo__text">Pokaždé zoologie hlubšího</p>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid promo&quot;&gt;
+    &lt;div class=&quot;grid__item e-2--palm&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;promo__image&quot; src=&quot;public/images/60x45.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-5&quot;&gt;
+        &lt;span a class=&quot;promo__title&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Jazykem stranu paliva&lt;/a&gt;
+        &lt;/span&gt;
+        &lt;p class=&quot;promo__text&quot;&gt;Pokaždé zoologie hlubšího&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;grid promo&quot;&gt;
+    &lt;div class=&quot;grid__item e-7&quot;&gt;
+        &lt;span class=&quot;promo__title&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Jazykem stranu paliva k nežli smrky pozdější viditelný&lt;/a&gt;
+        &lt;/span&gt;
+        &lt;p class=&quot;promo__text&quot;&gt;Pokaždé zoologie hlubšího&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.3">Featured <small>5.3</small></h2>
+
+
+                            <p>Display of a featured article with a big image on the background
+and a ribbon on the top left conner.</p>
+<p>To display featured with a ribbon, use the <strong>.featured--ribboned</strong> modifier (hidden in <strong>IE8</strong>)</p>
+<p>To be used with two promos which are on the right.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid">
+    <div class="grid__item e-8">
+        <a class="featured " href="#">
+            <img class="featured__image" src="public/images/300x225.jpg" />
+            <div class="featured__caption">
+                <span class="featured__heading">Zúročovat z matriarchálně houba
+                nebe sudokopytníci narušovány té zkoušet o unii</span>
+            </div>
+        </a>
+    </div><!--
+    --><div class="grid__item e-8">
+        <a class="featured featured--ribboned " href="#">
+            <img class="featured__image" src="public/images/300x225.jpg" />
+            <div class="featured__caption">
+                <span class="featured__heading">Zúročovat z matriarchálně houba
+                nebe sudokopytníci narušovány té zkoušet o unii</span>
+            </div>
+        </a>
+    </div><!--
+    --><div class="grid__item e-8">
+        <a class="featured " href="#">
+            <div class="featured__icon">
+                <span class="icon icon--chart" aria-hidden="true"></span>
+            </div>
+            <div class="featured__caption featured__caption--single">
+                <span class="featured__heading">Kalkulačky</span>
+            </div>
+        </a>
+    </div><!--
+    --><div class="grid__item e-8">
+        <a class="featured " href="#">
+            <div class="featured__caption featured__caption--simple">
+                <span class="featured__heading">Další inspirace a rady&nbsp;&nbsp;<span class="icon icon--angle-right"></span></span>
+            </div>
+        </a>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item e-8&quot;&gt;
+        &lt;a class=&quot;featured &quot; href=&quot;#&quot;&gt;
+            &lt;img class=&quot;featured__image&quot; src=&quot;public/images/300x225.jpg&quot; /&gt;
+            &lt;div class=&quot;featured__caption&quot;&gt;
+                &lt;span class=&quot;featured__heading&quot;&gt;Zúročovat z matriarchálně houba
+                nebe sudokopytníci narušovány té zkoušet o unii&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-8&quot;&gt;
+        &lt;a class=&quot;featured featured--ribboned &quot; href=&quot;#&quot;&gt;
+            &lt;img class=&quot;featured__image&quot; src=&quot;public/images/300x225.jpg&quot; /&gt;
+            &lt;div class=&quot;featured__caption&quot;&gt;
+                &lt;span class=&quot;featured__heading&quot;&gt;Zúročovat z matriarchálně houba
+                nebe sudokopytníci narušovány té zkoušet o unii&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-8&quot;&gt;
+        &lt;a class=&quot;featured &quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;featured__icon&quot;&gt;
+                &lt;span class=&quot;icon icon--chart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;featured__caption featured__caption--single&quot;&gt;
+                &lt;span class=&quot;featured__heading&quot;&gt;Kalkulačky&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-8&quot;&gt;
+        &lt;a class=&quot;featured &quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;featured__caption featured__caption--simple&quot;&gt;
+                &lt;span class=&quot;featured__heading&quot;&gt;Další inspirace a rady&amp;nbsp;&amp;nbsp;&lt;span class=&quot;icon icon--angle-right&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.4">Pager <small>5.4</small></h2>
+
+
+                            <p>Multi-page pagination links</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <ul class="pager hidden-print list-inline">
+    <li>
+        <a class="button button--slim" href="#">
+            <span class="icon icon--angle-left" aria-hidden="true"></span>
+        </a>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>1</a>
+    </li>
+    <li>
+        <span class='pager__item pager__item--active'>2</span>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>3</a>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>4</a>
+    </li>
+    <li>
+        <span class="pager__item pager__item--ellipsis"></span>
+    </li>
+    <li>
+        <a class='pager__item' href='#'>25</a>
+    </li>
+    <li>
+        <a class="button button--slim" href="#">
+            <span class="icon icon--angle-right" aria-hidden="true"></span>
+        </a>
+    </li>
+</ul>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;ul class=&quot;pager hidden-print list-inline&quot;&gt;
+    &lt;li&gt;
+        &lt;a class=&quot;button button--slim&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;icon icon--angle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a class=&#x27;pager__item&#x27; href=&#x27;#&#x27;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&#x27;pager__item pager__item--active&#x27;&gt;2&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a class=&#x27;pager__item&#x27; href=&#x27;#&#x27;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a class=&#x27;pager__item&#x27; href=&#x27;#&#x27;&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;pager__item pager__item--ellipsis&quot;&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a class=&#x27;pager__item&#x27; href=&#x27;#&#x27;&gt;25&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a class=&quot;button button--slim&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;icon icon--angle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.5">Icon description <small>5.5</small></h2>
+
+
+                            <p>List of values prefixed with labeling icons.</p>
+<p>Make sure to provide a text alternative.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <dl class="icon-description">
+    <dt>
+        <span class="icon icon--house" aria-hidden="true"></span>
+        <span class="visuallyhidden">Největšího</span>
+    </dt>
+    <dd>
+        Jediná přepůlená ředitelka tj. chlapců Michal i zřejmě přírodním vyhyne
+        zhlédnout laboratorní nasazení gamy dálný, našeho náš deprese daného
+        radost vysvětlením porézní, není čeští.
+    </dd>
+    <dt>
+        <span class="icon icon--user" aria-hidden="true"></span>
+        <span class="visuallyhidden">Úhrnem</span>
+    </dt>
+    <dd>Souvislosti modré ujít ně současnou</dd>
+</dl>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;dl class=&quot;icon-description&quot;&gt;
+    &lt;dt&gt;
+        &lt;span class=&quot;icon icon--house&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;Největšího&lt;/span&gt;
+    &lt;/dt&gt;
+    &lt;dd&gt;
+        Jediná přepůlená ředitelka tj. chlapců Michal i zřejmě přírodním vyhyne
+        zhlédnout laboratorní nasazení gamy dálný, našeho náš deprese daného
+        radost vysvětlením porézní, není čeští.
+    &lt;/dd&gt;
+    &lt;dt&gt;
+        &lt;span class=&quot;icon icon--user&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;Úhrnem&lt;/span&gt;
+    &lt;/dt&gt;
+    &lt;dd&gt;Souvislosti modré ujít ně současnou&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.6">Modal <small>5.6</small></h2>
+
+
+                            <p>Displays a link with an optional figure and description.</p>
+<p>Uses <a href="http://vodkabears.github.io/remodal">remodal</a>.
+Set width on tablet using grid item width classes.</p>
+<p>For accessibility please always set the <code>role</code> and <code>aria-labelledby</code> atrributes</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="remodal e-12" data-remodal-id="modal"
+     role="dialog" aria-labelledby="dialog1Title">
+    <div class="grid">
+        <div class="grid__item e-7--palm e-10">
+            <a class="remodal-cancel remodal__close" href="#">
+                <span class="icon icon--remove" aria-hidden="true"></span>
+                <span class="visuallyhidden">Zavřít</span>
+            </a>
+            <h2 id="dialog1Title">Mozkovou úrovni</h2>
+            <p>
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta
+                celá vystoupáte pro, anténou už tábory samostatného slábnou
+                normálem smetánka. Pozorované s činná k uspořádaných okouzlí
+                migračních u kromě ukončil 1 permanentek nim otroky ne
+                bojovníka. Působil kréta expedice až pralesa postavit řádu
+                pocit dělat genetice, těm krásy hlasové techniku pomáhá.
+                Přijela co fronty, k 1.050 Kč do borci laně dialozích nakrásně
+                dobře, já vývojovou. Pevnostní zdvihla softwarové.
+            </p>
+            <br>
+            <a class="remodal-confirm button button--block" href="#">Souhlasím</a>
+        </div>
+    </div>
+</div>
+<a href="#modal">Open modal</a>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;remodal e-12&quot; data-remodal-id=&quot;modal&quot;
+     role=&quot;dialog&quot; aria-labelledby=&quot;dialog1Title&quot;&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+        &lt;div class=&quot;grid__item e-7--palm e-10&quot;&gt;
+            &lt;a class=&quot;remodal-cancel remodal__close&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;visuallyhidden&quot;&gt;Zavřít&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;h2 id=&quot;dialog1Title&quot;&gt;Mozkovou úrovni&lt;/h2&gt;
+            &lt;p&gt;
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta
+                celá vystoupáte pro, anténou už tábory samostatného slábnou
+                normálem smetánka. Pozorované s činná k uspořádaných okouzlí
+                migračních u kromě ukončil 1 permanentek nim otroky ne
+                bojovníka. Působil kréta expedice až pralesa postavit řádu
+                pocit dělat genetice, těm krásy hlasové techniku pomáhá.
+                Přijela co fronty, k 1.050 Kč do borci laně dialozích nakrásně
+                dobře, já vývojovou. Pevnostní zdvihla softwarové.
+            &lt;/p&gt;
+            &lt;br&gt;
+            &lt;a class=&quot;remodal-confirm button button--block&quot; href=&quot;#&quot;&gt;Souhlasím&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;a href=&quot;#modal&quot;&gt;Open modal&lt;/a&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.7">Tabs <small>5.7</small></h2>
+
+
+                            <p>The component for switching content areas.</p>
+<p>To use, simply put as many <strong>tabs__item</strong> as you wish in your <strong>tabs</strong> and the <strong>tabs__item</strong> will automatically be evenly spaced.
+There are maximum 3 tabs visible on smartphone, others are hidden.</p>
+<p>To activate tab navigation without writing any JavaScript add <strong>data-tab-toggle</strong> attribute on an link element.
+The <strong>href</strong> must have <strong>collection</strong> and <strong>target</strong> element to show in format: <em>#collection:target</em>
+Element to show must have <em>id</em> in <strong>same format</strong> <em>(collection:target)</em>.
+For the functionality you need to call the <em>Tabs</em> as below.</p>
+<p>Using divs instead of list is possible.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid">
+    <div class="grid__item">
+        <ul class="tabs">
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></li>
+            <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></li>
+        </ul>
+    </div>
+    <div class="grid__item"></div>
+    <div class="grid__item e-0--palm e-full">
+        <div class="tabs">
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:first" data-tab-toggle>Tab1</a></div>
+            <div class="tabs__item"><a class="tabs__link tabs__link--active" href="#tabs1:second" data-tab-toggle>Tab2</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:third" data-tab-toggle>Tab3</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fourth" data-tab-toggle>Tab4</a></div>
+            <div class="tabs__item"><a class="tabs__link" href="#tabs1:fifth" data-tab-toggle>Tab5</a></div>
+        </div>
+    </div>
+</div>
+<div class="grid">
+    <div id="tabs1:first" class="grid__item" style="display:none;">
+        <p>Vyhynul podíval květiny.</p>
+    </div>
+    <div id="tabs1:second" class="grid__item">
+        <p>Souvislosti modré ujít ně současnou.</p>
+    </div>
+    <div id="tabs1:third" class="grid__item" style="display:none;">
+        <p>Pokaždé zoologie hlubšího.</p>
+    </div>
+    <div id="tabs1:fourth" class="grid__item" style="display:none;">
+        <p>Filosofa v nazvaného s mcintoshe větších.</p>
+    </div>
+    <div id="tabs1:fifth" class="grid__item" style="display:none;">
+        <p>Kanadských nově autoři británie mé starověkého uherské americké mexiko proužkem v zrušili.</p>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script>
+    $(function () {
+        new JobsUI.Tabs('tabs1', 'tabs__link--active');
+    });
+</script>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item&quot;&gt;
+        &lt;ul class=&quot;tabs&quot;&gt;
+            &lt;li class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:first&quot; data-tab-toggle&gt;Tab1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link tabs__link--active&quot; href=&quot;#tabs1:second&quot; data-tab-toggle&gt;Tab2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:third&quot; data-tab-toggle&gt;Tab3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:fourth&quot; data-tab-toggle&gt;Tab4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid__item&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid__item e-0--palm e-full&quot;&gt;
+        &lt;div class=&quot;tabs&quot;&gt;
+            &lt;div class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:first&quot; data-tab-toggle&gt;Tab1&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link tabs__link--active&quot; href=&quot;#tabs1:second&quot; data-tab-toggle&gt;Tab2&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:third&quot; data-tab-toggle&gt;Tab3&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:fourth&quot; data-tab-toggle&gt;Tab4&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&quot;tabs__item&quot;&gt;&lt;a class=&quot;tabs__link&quot; href=&quot;#tabs1:fifth&quot; data-tab-toggle&gt;Tab5&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div id=&quot;tabs1:first&quot; class=&quot;grid__item&quot; style=&quot;display:none;&quot;&gt;
+        &lt;p&gt;Vyhynul podíval květiny.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs1:second&quot; class=&quot;grid__item&quot;&gt;
+        &lt;p&gt;Souvislosti modré ujít ně současnou.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs1:third&quot; class=&quot;grid__item&quot; style=&quot;display:none;&quot;&gt;
+        &lt;p&gt;Pokaždé zoologie hlubšího.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs1:fourth&quot; class=&quot;grid__item&quot; style=&quot;display:none;&quot;&gt;
+        &lt;p&gt;Filosofa v nazvaného s mcintoshe větších.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs1:fifth&quot; class=&quot;grid__item&quot; style=&quot;display:none;&quot;&gt;
+        &lt;p&gt;Kanadských nově autoři británie mé starověkého uherské americké mexiko proužkem v zrušili.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Javascript --&gt;
+&lt;script&gt;
+    $(function () {
+        new JobsUI.Tabs(&#x27;tabs1&#x27;, &#x27;tabs__link--active&#x27;);
+    });
+&lt;/script&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.8">Cover <small>5.8</small></h2>
+
+
+                            <p>Graphical background of any element; to be used with <code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code> or <code>&lt;video&gt;</code>.</p>
+<p>Cover can be used e.g. inside a <em>hero</em> component.</p>
+<p>To emulate <em>background-position: cover</em> add <code>.cover__media--horizontal</code>.</p>
+<p>The media may be shorter that the content; in such case add <code>.cover__media--vertical</code>.</p>
+<p>Modifier <code>.cover__media--center</code> will center the image horizontally without any resize. Use only on full-page sized images!</p>
+<p>Use <code>--palm</code>, <code>--desk</code> or none modifier for respective resolutions.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid grid--center--palm">
+    <div class="grid__item e-12">
+        <div class="grid">
+            <div class="grid__item">
+                <div class="cover">
+                    <div class="cover__inner">
+                        <img src="public/images/clif-sm.jpg" alt=""
+                             class="cover__media cover__media--horizontal--palm"
+                             srcset="public/images/clif-sm.jpg 300w,
+                                     public/images/clif.jpg 800w,
+                                     public/images/clif-hd.jpg 1920w"
+                             sizes="(min-width: 768px) 90vw, 460px"
+                        />
+                    </div>
+                    <h1>Prosklené a vyšších byste kolegyň a svaly</h1>
+                    <p>
+                        A pět, čím to 3000 podzim v složité desítek, já náklady indickým
+                        chemické ležet, tu slovník předvádět loni příslušnosti části zvíře.
+                        Budou v jel.
+                    </p>
+                </div>
+            </div><!--
+            --><div class="grid__item">
+                <div class="cover">
+                    <div class="cover__inner">
+                        <video src="http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4"
+                               autoplay loop muted class="cover__media cover__media--horizontal--palm" />
+                    </div>
+                    <div class="glass" style="height: 130px; margin-top: 130px;">
+                        <h2 class="text--center" style="padding-top: 40px;">
+                            <span class="icon icon--bite-square icon--heading" aria-hidden="true"></span>
+                            Nám společné traektorii
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--
+    --><div class="grid__item e-3--palm e-4">
+        <div class="cover">
+            <div class="cover__inner">
+                <img src="public/images/cam-sm.jpg" alt=""
+                     class="cover__media cover__media--vertical--palm"
+                     srcset="public/images/cam-sm.jpg 120w,
+                             public/images/cam.jpg 400w,
+                             public/images/cam-hd.jpg 800w"
+                     sizes="(min-width: 768px) 30vw, 140px"
+                />
+            </div>
+            <h1>Soustavu i klec</h1>
+            <p>
+                Trojcípou jiná než důsledkem zástupci hovořit rádi o charisma
+                asteroidu lyžařská kritické v pravděpodobně zesílilo
+                praktickou, nízké uličce přirozené obyčejné, 750 led hanové
+                existují vysvětlením; tóny všechna tutanchamónovy.
+            </p>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid grid--center--palm&quot;&gt;
+    &lt;div class=&quot;grid__item e-12&quot;&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+            &lt;div class=&quot;grid__item&quot;&gt;
+                &lt;div class=&quot;cover&quot;&gt;
+                    &lt;div class=&quot;cover__inner&quot;&gt;
+                        &lt;img src=&quot;public/images/clif-sm.jpg&quot; alt=&quot;&quot;
+                             class=&quot;cover__media cover__media--horizontal--palm&quot;
+                             srcset=&quot;public/images/clif-sm.jpg 300w,
+                                     public/images/clif.jpg 800w,
+                                     public/images/clif-hd.jpg 1920w&quot;
+                             sizes=&quot;(min-width: 768px) 90vw, 460px&quot;
+                        /&gt;
+                    &lt;/div&gt;
+                    &lt;h1&gt;Prosklené a vyšších byste kolegyň a svaly&lt;/h1&gt;
+                    &lt;p&gt;
+                        A pět, čím to 3000 podzim v složité desítek, já náklady indickým
+                        chemické ležet, tu slovník předvádět loni příslušnosti části zvíře.
+                        Budou v jel.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!--
+            --&gt;&lt;div class=&quot;grid__item&quot;&gt;
+                &lt;div class=&quot;cover&quot;&gt;
+                    &lt;div class=&quot;cover__inner&quot;&gt;
+                        &lt;video src=&quot;http://104261113.r.cdn77.net/big_buck_bunny_480x272.mp4&quot;
+                               autoplay loop muted class=&quot;cover__media cover__media--horizontal--palm&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;glass&quot; style=&quot;height: 130px; margin-top: 130px;&quot;&gt;
+                        &lt;h2 class=&quot;text--center&quot; style=&quot;padding-top: 40px;&quot;&gt;
+                            &lt;span class=&quot;icon icon--bite-square icon--heading&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                            Nám společné traektorii
+                        &lt;/h2&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-3--palm e-4&quot;&gt;
+        &lt;div class=&quot;cover&quot;&gt;
+            &lt;div class=&quot;cover__inner&quot;&gt;
+                &lt;img src=&quot;public/images/cam-sm.jpg&quot; alt=&quot;&quot;
+                     class=&quot;cover__media cover__media--vertical--palm&quot;
+                     srcset=&quot;public/images/cam-sm.jpg 120w,
+                             public/images/cam.jpg 400w,
+                             public/images/cam-hd.jpg 800w&quot;
+                     sizes=&quot;(min-width: 768px) 30vw, 140px&quot;
+                /&gt;
+            &lt;/div&gt;
+            &lt;h1&gt;Soustavu i klec&lt;/h1&gt;
+            &lt;p&gt;
+                Trojcípou jiná než důsledkem zástupci hovořit rádi o charisma
+                asteroidu lyžařská kritické v pravděpodobně zesílilo
+                praktickou, nízké uličce přirozené obyčejné, 750 led hanové
+                existují vysvětlením; tóny všechna tutanchamónovy.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.9">Search-list <small>5.9</small></h2>
+
+
+                            <p>Component for item in search results</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="search-list">
+    <div class="grid">
+        <div class="grid__item e-16">
+            <div class="search-list__item">
+                <a class="search-list__logo" href="#">
+                    <img class="search-list__logo__image" src="public/images/jobs-logo.png" alt="">
+                </a>
+                <h2 class="search-list__title">
+                    <a href="#" class="search-list__title__link">
+                        Padákům severu
+                    </a>
+                </h2>
+                <p class="search-list__caption">
+                    <a href="#">Pokaždé zoologie hlubšího</a>
+                    |
+                    <a href="#">Praha</a>
+                </p>
+                <p class="search-list__description">
+                    Obory:
+                    Souvislosti modré&nbsp;
+                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    Obchod
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="grid__item e-16">
+            <div class="search-list__item">
+                <a class="search-list__logo" href="#">
+                    <img class="search-list__logo__image" src="public/images/jobs-logo.png" alt="">
+                </a>
+                <h2 class="search-list__title">
+                    <a href="#" class="search-list__title__link">
+                        Gamou ta jí katastrofě
+                    </a>
+                </h2>
+                <p class="search-list__caption">
+                    <a href="#">Jí z okny domů támhle pohroma</a>
+                    |
+                    <a href="#">Ostrava</a>
+                </p>
+                <p class="search-list__description">
+                    Obory:
+                    Kde upadat odjakživa&nbsp;
+                    <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    Morton
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;search-list&quot;&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+        &lt;div class=&quot;grid__item e-16&quot;&gt;
+            &lt;div class=&quot;search-list__item&quot;&gt;
+                &lt;a class=&quot;search-list__logo&quot; href=&quot;#&quot;&gt;
+                    &lt;img class=&quot;search-list__logo__image&quot; src=&quot;public/images/jobs-logo.png&quot; alt=&quot;&quot;&gt;
+                &lt;/a&gt;
+                &lt;h2 class=&quot;search-list__title&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;search-list__title__link&quot;&gt;
+                        Padákům severu
+                    &lt;/a&gt;
+                &lt;/h2&gt;
+                &lt;p class=&quot;search-list__caption&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Pokaždé zoologie hlubšího&lt;/a&gt;
+                    |
+                    &lt;a href=&quot;#&quot;&gt;Praha&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p class=&quot;search-list__description&quot;&gt;
+                    Obory:
+                    Souvislosti modré&amp;nbsp;
+                    &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    Obchod
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+        &lt;div class=&quot;grid__item e-16&quot;&gt;
+            &lt;div class=&quot;search-list__item&quot;&gt;
+                &lt;a class=&quot;search-list__logo&quot; href=&quot;#&quot;&gt;
+                    &lt;img class=&quot;search-list__logo__image&quot; src=&quot;public/images/jobs-logo.png&quot; alt=&quot;&quot;&gt;
+                &lt;/a&gt;
+                &lt;h2 class=&quot;search-list__title&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;search-list__title__link&quot;&gt;
+                        Gamou ta jí katastrofě
+                    &lt;/a&gt;
+                &lt;/h2&gt;
+                &lt;p class=&quot;search-list__caption&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;Jí z okny domů támhle pohroma&lt;/a&gt;
+                    |
+                    &lt;a href=&quot;#&quot;&gt;Ostrava&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p class=&quot;search-list__description&quot;&gt;
+                    Obory:
+                    Kde upadat odjakživa&amp;nbsp;
+                    &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    Morton
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.10">Cover box <small>5.10</small></h2>
+
+
+                            <p>Displays elita cover.</p>
+<p>Can be used primary in search-list.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="cover-box cover-box--with-content">
+    <a href="#">
+        <img class="cover-box__image" src="public/images/cover-box.jpg" />
+    </a>
+    <div class="cover-box__content">
+        <div class="cover-box__content__links">
+            <a class="cover-box__content__links__link cover-box__content__links__link--left"
+               href="#">Do borci</a>
+            <a class="cover-box__content__links__link cover-box__content__links__link--right"
+               href="#">Zoologie hlubšího</a>
+            <a class="cover-box__content__links__link"
+               href="#">Veřejný cíp</a>
+        </div>
+    </div>
+</div>
+<div class="cover-box">
+    <a href="#">
+        <img class="cover-box__image" src="public/images/cover-box.jpg" />
+    </a>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;cover-box cover-box--with-content&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;cover-box__image&quot; src=&quot;public/images/cover-box.jpg&quot; /&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;cover-box__content&quot;&gt;
+        &lt;div class=&quot;cover-box__content__links&quot;&gt;
+            &lt;a class=&quot;cover-box__content__links__link cover-box__content__links__link--left&quot;
+               href=&quot;#&quot;&gt;Do borci&lt;/a&gt;
+            &lt;a class=&quot;cover-box__content__links__link cover-box__content__links__link--right&quot;
+               href=&quot;#&quot;&gt;Zoologie hlubšího&lt;/a&gt;
+            &lt;a class=&quot;cover-box__content__links__link&quot;
+               href=&quot;#&quot;&gt;Veřejný cíp&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cover-box&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;img class=&quot;cover-box__image&quot; src=&quot;public/images/cover-box.jpg&quot; /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.11">Promobox <small>5.11</small></h2>
+
+
+                            <p>Box for promo</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid">
+    <div class="grid__item e-6--palm e-5">
+        <div class="promobox">
+            <h1>Jazykem paliva</h1>
+            <p>
+                Pokaždé zoologie hlubšího
+            </p>
+            <p>
+                <button class="button">Odeslat</button>
+            </p>
+        </div>
+    </div><!--
+    --><div class="grid__item e-6--palm e-5">
+        <div class="promobox promobox--inverse">
+            <h1 class="promobox__title">Jazykem paliva</h1>
+            <p>
+                Pokaždé zoologie hlubšího
+            </p>
+            <p>
+                <button class="button">Odeslat</button>
+            </p>
+        </div>
+    </div><!--
+    --><div class="grid__item e-6--palm e-5">
+        <div class="promobox promobox--reduced">
+            <h1>Jazykem paliva</h1>
+            <p>
+                Pokaždé zoologie hlubšího
+            </p>
+            <p>
+                <button class="button">Odeslat</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item e-6--palm e-5&quot;&gt;
+        &lt;div class=&quot;promobox&quot;&gt;
+            &lt;h1&gt;Jazykem paliva&lt;/h1&gt;
+            &lt;p&gt;
+                Pokaždé zoologie hlubšího
+            &lt;/p&gt;
+            &lt;p&gt;
+                &lt;button class=&quot;button&quot;&gt;Odeslat&lt;/button&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-5&quot;&gt;
+        &lt;div class=&quot;promobox promobox--inverse&quot;&gt;
+            &lt;h1 class=&quot;promobox__title&quot;&gt;Jazykem paliva&lt;/h1&gt;
+            &lt;p&gt;
+                Pokaždé zoologie hlubšího
+            &lt;/p&gt;
+            &lt;p&gt;
+                &lt;button class=&quot;button&quot;&gt;Odeslat&lt;/button&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-5&quot;&gt;
+        &lt;div class=&quot;promobox promobox--reduced&quot;&gt;
+            &lt;h1&gt;Jazykem paliva&lt;/h1&gt;
+            &lt;p&gt;
+                Pokaždé zoologie hlubšího
+            &lt;/p&gt;
+            &lt;p&gt;
+                &lt;button class=&quot;button&quot;&gt;Odeslat&lt;/button&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.12">Profile badge <small>5.12</small></h2>
+
+
+                            <p>Displays a box for profile badge</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid">
+    <div class="grid__item e-7">
+        <div class="profile-badge">
+            <div class="profile-badge__logo">
+                <a href="#"><img src="public/images/120x90.jpg" width="120" height="90"></a>
+            </div>
+            <div class="profile-badge__preview">
+                <a href="#"><img src="public/images/elita_default.png" width="258" height="130"></a>
+            </div>
+            <div class="profile-badge__content">
+                <dl class="icon-description">
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 1
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 2
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 3
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="grid__item e-7">
+        <div class="profile-badge profile-badge--naked">
+            <div class="profile-badge__preview profile-badge__preview--fixed">
+                <a href="#">
+                    <img class="profile-badge__logo profile-badge__logo--fixed"
+                         src="public/images/elita_default.png" >
+                </a>
+            </div>
+            <div class="profile-badge__content">
+                <dl class="icon-description">
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 1
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 2
+                    </dd>
+                    <dt>
+                        <span class="icon icon--reorder tag__icon" aria-hidden="true"></span>
+                    </dt>
+                    <dd>
+                        Odrážka 3
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item e-7&quot;&gt;
+        &lt;div class=&quot;profile-badge&quot;&gt;
+            &lt;div class=&quot;profile-badge__logo&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;public/images/120x90.jpg&quot; width=&quot;120&quot; height=&quot;90&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;profile-badge__preview&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;public/images/elita_default.png&quot; width=&quot;258&quot; height=&quot;130&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;profile-badge__content&quot;&gt;
+                &lt;dl class=&quot;icon-description&quot;&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 1
+                    &lt;/dd&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 2
+                    &lt;/dd&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 3
+                    &lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid__item e-7&quot;&gt;
+        &lt;div class=&quot;profile-badge profile-badge--naked&quot;&gt;
+            &lt;div class=&quot;profile-badge__preview profile-badge__preview--fixed&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                    &lt;img class=&quot;profile-badge__logo profile-badge__logo--fixed&quot;
+                         src=&quot;public/images/elita_default.png&quot; &gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;profile-badge__content&quot;&gt;
+                &lt;dl class=&quot;icon-description&quot;&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 1
+                    &lt;/dd&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 2
+                    &lt;/dd&gt;
+                    &lt;dt&gt;
+                        &lt;span class=&quot;icon icon--reorder tag__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        Odrážka 3
+                    &lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.13">Table <small>5.13</small></h2>
+
+
+                            <p>The table component with default styles.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <table class="table">
+    <thead>
+    <tr>
+        <th>
+            město o metry o jakoby
+        </th>
+        <th>
+            klíčem sebe
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            nicméně roce evropa úpravou
+        </td>
+        <td>
+            kanadské proudění draci, známý toto tzv. šimpanzů nory pohodlí vědci žen krásná EU též paprsky k pouhým tomu
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            město o metry o jakoby
+        &lt;/th&gt;
+        &lt;th&gt;
+            klíčem sebe
+        &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            nicméně roce evropa úpravou
+        &lt;/td&gt;
+        &lt;td&gt;
+            kanadské proudění draci, známý toto tzv. šimpanzů nory pohodlí vědci žen krásná EU též paprsky k pouhým tomu
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.14">Picker <small>5.14</small></h2>
+
+
+                            <p>An advanced option panel.</p>
+<p>The picker is palm only by default. To enable use on lap and above use
+<code>.picker--lap</code> modifier. It may be combined with a combobox.</p>
+<p>Opening a picker means adding <code>.picker--open</code> class and changing its
+<code>aria-hidden</code> attribute to false.</p>
+<p>To make a picker displayed on the second level use <code>.picker--secondary</code>.
+The <code>.picker--pre-open</code> class should be added to a secondary picker when its
+primary picker is opened; this makes the open animation smoother.</p>
+<p>On desk unstyled.</p>
+<p><em>Please note that provided JavaScript is for demonstration purposes only.</em></p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="hidden--desk">
+    <div class="picker picker--lap" id="demo-picker"
+         role="dialog" aria-hidden="true">
+        <div class="picker__head">
+            Vyhýbá starověkých
+            <a class="picker__close" href="#">
+                <span class="icon icon--remove" aria-hidden="true"></span>
+                <span class="visuallyhidden">Zavřít</span>
+            </a>
+        </div>
+        <div class="picker__body">
+            <h2>Mozkovou úrovni</h2>
+            <p>
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta.
+            </p>
+            <a href="#" class="button" data-show-subpicker>Show subpicker</a>
+        </div>
+    </div>
+    <div class="picker picker--lap picker--secondary" id="demo-subpicker"
+         role="dialog" aria-hidden="true">
+        <a class="picker__close" href="#">
+            <span class="icon icon--remove" aria-hidden="true"></span>
+            <span class="visuallyhidden">Zavřít</span>
+        </a>
+        <div class="picker__body">
+            <h2>Samci přes, polovině </h2>
+            <p>
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+            </p>
+        </div>
+    </div>
+    <a href="#" data-show-picker>Show picker</a>
+</div>
+
+<script>
+    var picker = $('#demo-picker'),
+            subpicker = $('#demo-subpicker'),
+            overlay = $('#overlay'),
+            page = $('html, body');
+    function openPicker(e) {
+        e.preventDefault();
+        picker.addClass('picker--open').attr('aria-hidden', 'false');
+        overlay.addClass('overlay--open');
+        subpicker.addClass('picker--pre-open');
+        page.addClass('scroll-lock');
+    };
+    function closePicker(e) {
+        e.preventDefault();
+        picker.removeClass('picker--open').attr('aria-hidden', 'true');
+        overlay.removeClass('overlay--open');
+        subpicker.removeClass('picker--pre-open');
+        page.removeClass('scroll-lock');
+    };
+    function openSubpicker(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        subpicker.addClass('picker--open').attr('aria-hidden', 'false');
+        picker.addClass('scroll-lock');
+    };
+    function closeSubpicker(e) {
+        e.preventDefault();
+        subpicker.removeClass('picker--open').attr('aria-hidden', 'true');
+        picker.removeClass('scroll-lock');
+    };
+    function closeBothPickers(e) {
+        e.preventDefault();
+        closeSubpicker(e);
+        closePicker(e);
+    };
+    $('[data-show-picker]').click(openPicker);
+    $('[data-show-subpicker]').click(openSubpicker);
+    picker.find('.picker__close').click(closeBothPickers);
+    subpicker.find('.picker__close').click(closeSubpicker);
+    overlay.click(closeBothPickers);
+</script>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;hidden--desk&quot;&gt;
+    &lt;div class=&quot;picker picker--lap&quot; id=&quot;demo-picker&quot;
+         role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;div class=&quot;picker__head&quot;&gt;
+            Vyhýbá starověkých
+            &lt;a class=&quot;picker__close&quot; href=&quot;#&quot;&gt;
+                &lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;visuallyhidden&quot;&gt;Zavřít&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;picker__body&quot;&gt;
+            &lt;h2&gt;Mozkovou úrovni&lt;/h2&gt;
+            &lt;p&gt;
+                Led má náš přínosem špitálu, vy boji jejího nicméně přinášíme
+                potřeli částicím. Látky slabých původních nosu je křídy cesta.
+            &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;button&quot; data-show-subpicker&gt;Show subpicker&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;picker picker--lap picker--secondary&quot; id=&quot;demo-subpicker&quot;
+         role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;a class=&quot;picker__close&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;visuallyhidden&quot;&gt;Zavřít&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;picker__body&quot;&gt;
+            &lt;h2&gt;Samci přes, polovině &lt;/h2&gt;
+            &lt;p&gt;
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+                U něj vy lesy řeči monzunový do sága. Stavy foto. Jader úsilí,
+                vybráno sezonu tří plyšové laboratoře jedinečnost plachetnice
+                tím nejdivočejším účastnil o označované, ho cítit, ať ideál i
+                ukázal minuty vytvoří pozvedl podobný je mizení. Plná fyzici
+                zasáhla, ty novým až příroda, k mysu by 100 nejmodernějších
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; data-show-picker&gt;Show picker&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    var picker = $(&#x27;#demo-picker&#x27;),
+            subpicker = $(&#x27;#demo-subpicker&#x27;),
+            overlay = $(&#x27;#overlay&#x27;),
+            page = $(&#x27;html, body&#x27;);
+    function openPicker(e) {
+        e.preventDefault();
+        picker.addClass(&#x27;picker--open&#x27;).attr(&#x27;aria-hidden&#x27;, &#x27;false&#x27;);
+        overlay.addClass(&#x27;overlay--open&#x27;);
+        subpicker.addClass(&#x27;picker--pre-open&#x27;);
+        page.addClass(&#x27;scroll-lock&#x27;);
+    };
+    function closePicker(e) {
+        e.preventDefault();
+        picker.removeClass(&#x27;picker--open&#x27;).attr(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+        overlay.removeClass(&#x27;overlay--open&#x27;);
+        subpicker.removeClass(&#x27;picker--pre-open&#x27;);
+        page.removeClass(&#x27;scroll-lock&#x27;);
+    };
+    function openSubpicker(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        subpicker.addClass(&#x27;picker--open&#x27;).attr(&#x27;aria-hidden&#x27;, &#x27;false&#x27;);
+        picker.addClass(&#x27;scroll-lock&#x27;);
+    };
+    function closeSubpicker(e) {
+        e.preventDefault();
+        subpicker.removeClass(&#x27;picker--open&#x27;).attr(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+        picker.removeClass(&#x27;scroll-lock&#x27;);
+    };
+    function closeBothPickers(e) {
+        e.preventDefault();
+        closeSubpicker(e);
+        closePicker(e);
+    };
+    $(&#x27;[data-show-picker]&#x27;).click(openPicker);
+    $(&#x27;[data-show-subpicker]&#x27;).click(openSubpicker);
+    picker.find(&#x27;.picker__close&#x27;).click(closeBothPickers);
+    subpicker.find(&#x27;.picker__close&#x27;).click(closeSubpicker);
+    overlay.click(closeBothPickers);
+&lt;/script&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.15">Combobox <small>5.15</small></h2>
+
+
+                            <p>Floating box e.g. for autocomplete.</p>
+<p>It may be combined with a picker.</p>
+<p>Opening a combobox body means adding <code>.combobox__body--open</code> class and changing its
+<code>aria-hidden</code> attribute to false.</p>
+<p><em>Please note that provided JavaScript is for demonstration purposes only.</em></p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid">
+    <div class="grid__item e-10">
+        <div class="combobox" id="combobox">
+            <label class="form__label" for="demo-input">Prarodičů</label>
+            <input class="form__text-input" id="demo-input"
+                   type="text" placeholder="Kamkoliv po republice">
+            <div class="combobox__body" id="combobody"
+                 role="dialog" aria-hidden="true">
+                <ul class="list-unstyled">
+                    <li class="combobox__item"><a class="combobox__link" href="#">Hmotu čech minimálně</a></li>
+                    <li class="combobox__item combobox__item--highlight"><a class=" combobox__link" href="#">Zrušili by která různá  tělo ne vzdělávání</a></li>
+                    <li class="combobox__item"><a class="combobox__link" href="#">Slabého chybí tělo ne vzdělávání</a></li>
+                    <li class="combobox__item">Rovnosti z původním</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var combobody = $('#combobody');
+    $('#demo-input').click(function (e) {
+        e.preventDefault();
+        combobody.addClass('combobox__body--open')
+                .attr('aria-hidden', 'false');
+    });
+    $('html').click(function (e) {
+        if (!$(e.target).closest('#combobox').length) {
+            combobody.removeClass('combobox__body--open')
+                    .attr('aria-hidden', 'true');
+        }
+    });
+</script>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item e-10&quot;&gt;
+        &lt;div class=&quot;combobox&quot; id=&quot;combobox&quot;&gt;
+            &lt;label class=&quot;form__label&quot; for=&quot;demo-input&quot;&gt;Prarodičů&lt;/label&gt;
+            &lt;input class=&quot;form__text-input&quot; id=&quot;demo-input&quot;
+                   type=&quot;text&quot; placeholder=&quot;Kamkoliv po republice&quot;&gt;
+            &lt;div class=&quot;combobox__body&quot; id=&quot;combobody&quot;
+                 role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+                &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li class=&quot;combobox__item&quot;&gt;&lt;a class=&quot;combobox__link&quot; href=&quot;#&quot;&gt;Hmotu čech minimálně&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;combobox__item combobox__item--highlight&quot;&gt;&lt;a class=&quot; combobox__link&quot; href=&quot;#&quot;&gt;Zrušili by která různá  tělo ne vzdělávání&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;combobox__item&quot;&gt;&lt;a class=&quot;combobox__link&quot; href=&quot;#&quot;&gt;Slabého chybí tělo ne vzdělávání&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;combobox__item&quot;&gt;Rovnosti z původním&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    var combobody = $(&#x27;#combobody&#x27;);
+    $(&#x27;#demo-input&#x27;).click(function (e) {
+        e.preventDefault();
+        combobody.addClass(&#x27;combobox__body--open&#x27;)
+                .attr(&#x27;aria-hidden&#x27;, &#x27;false&#x27;);
+    });
+    $(&#x27;html&#x27;).click(function (e) {
+        if (!$(e.target).closest(&#x27;#combobox&#x27;).length) {
+            combobody.removeClass(&#x27;combobox__body--open&#x27;)
+                    .attr(&#x27;aria-hidden&#x27;, &#x27;true&#x27;);
+        }
+    });
+&lt;/script&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.16">Elite row <small>5.16</small></h2>
+
+
+                            <p>The component is used to display <em>Elite</em> employers in a row with a description.</p>
+<ul>
+<li>Use modificator <em>hidden-palm</em> for <em>elite-row__item</em> class to hide on smartphone.</li>
+<li>Use modificator <em>visible</em> for <em>elite-row__item</em> class to show on lap and desk.</li>
+<li>Use modificator <em>visible-desk</em> for <em>elite-row__item</em> class to show only on desk.</li>
+</ul>
+<p>Using divs instead of a list is possible.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <ul class="elite-row list-unstyled">
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif" alt="Škoda"></a>
+        <p>8 nabídek</p>
+    </li>
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/tmobile/elita/logo.gif" alt="T-Mobile"></a>
+        <p>9 nabídek</p>
+    </li>
+    <li class="elite-row__item">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/zentiva/elita/logo.gif" alt="Zentiva"></a>
+        <p>10 nabídek</p>
+    </li>
+    <li class="elite-row__item elite-row__item--hidden-palm elite-row__item--visible">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/koba/elita/logo.gif" alt="Kb"></a>
+        <p>1 nabídka</p>
+    </li>
+    <li class="elite-row__item elite-row__item--hidden-palm elite-row__item--visible-desk">
+        <a href="#"><img class="elite-row__logo" src="http://presentation.lmc.cz/loga/csas/elita/logo.gif" alt="Česká Spořitelna"></a>
+        <p>3 nabídky</p>
+    </li>
+</ul>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;ul class=&quot;elite-row list-unstyled&quot;&gt;
+    &lt;li class=&quot;elite-row__item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;elite-row__logo&quot; src=&quot;http://presentation.lmc.cz/loga/skodaauto/elita/logo.gif&quot; alt=&quot;Škoda&quot;&gt;&lt;/a&gt;
+        &lt;p&gt;8 nabídek&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;elite-row__item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;elite-row__logo&quot; src=&quot;http://presentation.lmc.cz/loga/tmobile/elita/logo.gif&quot; alt=&quot;T-Mobile&quot;&gt;&lt;/a&gt;
+        &lt;p&gt;9 nabídek&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;elite-row__item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;elite-row__logo&quot; src=&quot;http://presentation.lmc.cz/loga/zentiva/elita/logo.gif&quot; alt=&quot;Zentiva&quot;&gt;&lt;/a&gt;
+        &lt;p&gt;10 nabídek&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;elite-row__item elite-row__item--hidden-palm elite-row__item--visible&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;elite-row__logo&quot; src=&quot;http://presentation.lmc.cz/loga/koba/elita/logo.gif&quot; alt=&quot;Kb&quot;&gt;&lt;/a&gt;
+        &lt;p&gt;1 nabídka&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;elite-row__item elite-row__item--hidden-palm elite-row__item--visible-desk&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;elite-row__logo&quot; src=&quot;http://presentation.lmc.cz/loga/csas/elita/logo.gif&quot; alt=&quot;Česká Spořitelna&quot;&gt;&lt;/a&gt;
+        &lt;p&gt;3 nabídky&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-5.17">Recommended-Ads <small>5.17</small></h2>
+
+
+                            <p>Component for recommended ads</p>
+<p><em>Please note that provided counts of any grid columns are for demonstration purposes only.</em></p>
+<p>Using divs instead of a list is possible.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="grid"><!--
+    --><div class="grid__item recommended-ads"><!--
+        --><div class="grid"><!--
+            --><div class="grid__item e-1--palm e-1 e-1--desk grid--center">
+                <span class="recommended-ads__icon icon icon--lightbulb-o" aria-hidden="true"></span>
+            </div><!--
+            --><div class="grid__item e-7--palm e-15 e-15--desk">
+                <ul class="recommended-ads__list" data-recommended-ads-list>
+                    <li class="recommended-ads__list__item">
+                        <a class="recommended-ads__list__item__link" href="#">Regionální obchodní konzultant</a>
+                        ,
+                        <span class="recommended-ads__list__item__company-name">ABC Českého Hospodářství a.s.</span>
+                        ,
+                        <span class="recommended-ads__list__item__company-address"> Praha </span>
+                    </li>
+                    <li class="recommended-ads__list__item">
+                        <a class="recommended-ads__list__item__link" href="#">Obchodní zástupce pro regionální oddělení</a>
+                        ,
+                        <span class="recommended-ads__list__item__company-name">Škoda auto a.s.</span>
+                        ,
+                        <span class="recommended-ads__list__item__company-address"> Mladá Boleslav </span>
+                    </li>
+                </ul>
+                <p data-positions-loader class="hidden">
+                    <span class="icon icon--spinner icon--rotating muted" aria-hidden="true"></span>
+                </p>
+                <a href="#" class="recommended-ads__show-more__link" data-recommended-ads-show-more>
+                    Zobrazit více doporučených nabídek
+                    <span class="recommended-ads__show-more__link__icon icon icon--angle-right"></span>
+                </a>
+            </div>
+        </div><!--
+    --></div><!--
+--></div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;grid&quot;&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item recommended-ads&quot;&gt;&lt;!--
+        --&gt;&lt;div class=&quot;grid&quot;&gt;&lt;!--
+            --&gt;&lt;div class=&quot;grid__item e-1--palm e-1 e-1--desk grid--center&quot;&gt;
+                &lt;span class=&quot;recommended-ads__icon icon icon--lightbulb-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;&lt;!--
+            --&gt;&lt;div class=&quot;grid__item e-7--palm e-15 e-15--desk&quot;&gt;
+                &lt;ul class=&quot;recommended-ads__list&quot; data-recommended-ads-list&gt;
+                    &lt;li class=&quot;recommended-ads__list__item&quot;&gt;
+                        &lt;a class=&quot;recommended-ads__list__item__link&quot; href=&quot;#&quot;&gt;Regionální obchodní konzultant&lt;/a&gt;
+                        ,
+                        &lt;span class=&quot;recommended-ads__list__item__company-name&quot;&gt;ABC Českého Hospodářství a.s.&lt;/span&gt;
+                        ,
+                        &lt;span class=&quot;recommended-ads__list__item__company-address&quot;&gt; Praha &lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;recommended-ads__list__item&quot;&gt;
+                        &lt;a class=&quot;recommended-ads__list__item__link&quot; href=&quot;#&quot;&gt;Obchodní zástupce pro regionální oddělení&lt;/a&gt;
+                        ,
+                        &lt;span class=&quot;recommended-ads__list__item__company-name&quot;&gt;Škoda auto a.s.&lt;/span&gt;
+                        ,
+                        &lt;span class=&quot;recommended-ads__list__item__company-address&quot;&gt; Mladá Boleslav &lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p data-positions-loader class=&quot;hidden&quot;&gt;
+                    &lt;span class=&quot;icon icon--spinner icon--rotating muted&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;recommended-ads__show-more__link&quot; data-recommended-ads-show-more&gt;
+                    Zobrazit více doporučených nabídek
+                    &lt;span class=&quot;recommended-ads__show-more__link__icon icon icon--angle-right&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+    --&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+            </article>
+        </div><!--
+    --></div>
+</div>
+
+<div class="kss__footer">
+    <div class="wrapper">
+        <div class="grid"><!--
+            --><div class="grid__item">
+                    <div class="text--center">
+                        <a href="#top">&uarr; Go to top</a>
+                    </div>
+            </div><!--
+        --></div>
+    </div>
+</div>
+<footer id="lmc-footer">
+    <p class="lmc-footer__family"><strong>We are a member of LMC family</strong></p>
+    <ul class="lmc-footer__bar-list">
+        <li><a href="http://www.jobs.cz/">Jobs.cz</a></li>
+        <li><a href="http://www.prace.cz/">Prace.cz</a></li>
+        <li><a href="https://pracezarohem.cz/">Práce za rohem</a></li>
+        <li><a href="https://www.seduo.cz/">Seduo.cz</a></li>
+        <li><a href="http://www.teamio.com/">Teamio</a></li>
+        <li><a href="https://www.jobote.com/">Jobote</a></li>
+        <li><a href="http://www.vysokeskoly.cz/">VysokéŠkoly.cz</a></li>
+        <li><a href="https://easytask.cz/">Easytask.cz</a></li>
+    </ul>
+    <div class="lmc-footer__logo">
+        <a href="https://www.lmc.eu/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="67.19" height="54.61" viewBox="0 0 391.1 317.9" enable-background="new 0 0 391.1 317.9" role="img" aria-label="LMC"><title>LMC</title><path d="m120.7 208.6c-1.4 2-5.6 10.6-6.5 12.5-1.1 2.1-.6 4.1.6 5.9 1 1.4 4.8 3.4 6.3.4 2.2-3.1 3.5-7.8 5.2-11.4-.1-.8 7.3-14 7.2-14.8-.5-3.6-8.6 5.3-10.1 2.4-.8 1.4-1.4 2.7-2.7 5" fill="#003e7e"/><path d="m31.5 290.4c-9.8 1.5-29.7 10.3-8.7 13.4 21.1 3.1 243.1-17.9 344.4-7.4 16 1.7 12.8-4-3.1-5.5-29.1-5.5-294.8-7.5-332.6-.5" fill="#12bcca"/><g fill="#003e7e"><path d="m141 238.2c-2.2.7-20.7 16.5-39.6 5.1-9.1-5.3-11.5-13.4-14.7-24.9 67.3-89.7 73.9-146.1 68.9-173.5-2.1-11.3-7.8-25-30.3-17.5-23 8.9-47.1 43.8-56.3 107.6-4.4 30.6.1 66.7 4.7 84.2-19.1 19-37.8 22.3-37.8 22.3s-9.2 1.7-7.7 11.2c.1.5.9 11.7 35.4-12.8 4.8-3.4 9.5-6.5 14.2-11.3 14.2 33.2 54.1 23.8 66.4 19.4.7-.3 2-1.1 2.3-1.4 3.9-4.1-1.7-10.2-5.5-8.4m-56.3-28.1c-6.8-43.8 13.4-125.8 26.3-148.7 7.4-13.1 23.2-30 31.1-21.7 7.9 8.4 11.9 48.1-11.3 99.7-6.8 15-36.4 59.3-46.1 70.7"/><path d="m328.5 193.1c-18.7 28-43.9 36.1-43.9 36.1s-38.4 15.3-50.2.7c-11.8-14.6 3.8-39.5 6.6-44 2.7-4.3 14-15.6 14-8.1 0 6.8-2.8 19.7 5.2 16 1.8-.9 4.3-3.7 5.7-6.8 2.9-6.3 5.7-16.9-4.4-23-15-9-31.1 10.1-35.5 24.1-3.1 10.4-8.9 29.4 1.5 41.3 24.8 27.6 72.7 15.6 106-10.7 25.5-21.4 13.7-53.6-5-25.6"/><path d="m213.9 238.4c-7.1-2.7-9.2-9.8-9.2-14 .2-18.6 8.5-35 10.5-39.3 2-4.3-6.5-10.6-16.6-8.3-10.1 2.3-17.5 15-19.3 17.3-1.8 2.3-4.4 3.1-2.8-2.5 0-.6.9-3 1.1-3.5.4-1.4.7-2.9-.4-4.7-1.5-2.5-12.8-4.3-19.4-.5-8.3 4.8-14.1 18.2-15.1 12.7.1-.2-.4-2.5-.9-3.3-1-1.5-5.3-2.4-9.5-.4-4.2 2-6.6 7.7-7.8 9.7-2.4 4-6.3 11.6-5.8 20.9.3 2.6.6-.4 1.9-1.2.8-.5 3-1.6 3-4.6 0-5.1 3.8-4 6.8-8.9 1.4-2.3 5.2-4 4.3.8-.4 2.6-2 7.6-2.9 10.8-.5 1.8 3.2 6 5.9-.7 2.1-6.4 7.3-15.1 12.5-20.1 2-1.7 6.5-3.1 5.5 1.3-1.4 7.9-1.1 19.3 1 29.4s10.3 11.5 14.7-2.4c2.6-8.2 9.2-24 15.1-32.4 4.4-6.3 12.3-8.3 9.1-1.3-.2.8-3.3 8.2-4.5 13-1.8 7.4-4 19.9-.8 27.4 3.8 8.9 20.9 14.9 24 11.5 2.2-2.2 2.2-5.4-.4-6.7"/><path d="m154.1 185.7c0 0-9.1 11.3-10.2 16.8s-.5 1.4-.5 1.4l8.5-7.6 2.2-10.6"/><path d="m134.4 203.8c-4-5.1-11.4 20.1-11.4 20.1l5.8-17.5 9.8-7.3c0 0-.3 9.8-4.2 4.7"/></g></svg>
+        </a>
+    </div>
+    <p class="lmc-footer__career"><a href="http://lmc.jobs.cz/">Work with us</a></p>
+    <p class="lmc-footer__copy">&copy; 1996&ndash;<span id="currentYear">2017</span> LMC s.r.o., a member of <a href="http://www.almacareer.com/">Alma Career</a>, all rights reserved</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="dist/index.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        // Ensure code blocks are highlighted properly...
+        $('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        var sidebar = $('#kss-sidebar'),
+            sidebarOffset = sidebar.offset().top;
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > (sidebarOffset - 40)) {
+                sidebar.addClass('kss__sidebar--alone');
+            } else {
+                sidebar.removeClass('kss__sidebar--alone');
+            }
+        });
+
+        $('#currentYear').text(new Date().getFullYear());
+    });
+</script>
+</body>
+</html>

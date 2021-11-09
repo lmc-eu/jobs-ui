@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jobs UI v7.1.0</title>
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/style.min.css">
+    <link rel="stylesheet" href="dist/lmc-footer.min.css">
+    <link rel="stylesheet" href="public/kss.css">
+    <link rel="shortcut icon" type="image/x-icon" href="dist/favicon/favicon.ico"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body data-current-section="3">
+<div class="header  kss__header" role="navigation">
+    <div class="wrapper">
+        <div class="grid  grid--middle--palm"><!--
+            --><div class="grid__item  e-3--palm  e-4">
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="dist/images/logo-jobs.svg" alt="Jobs.cz" />
+            </a>
+        </div><!--
+            --><div class="grid__item  e-1--palm  e-16--desk">
+
+                <div class="navigation" id="navigation" role="menubar">
+                    <ul class="list-unstyled">
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-1.html" class="navigation__link" role="menuitem">Layout</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-2.html" class="navigation__link" role="menuitem">Typography</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-3.html" class="navigation__link" role="menuitem">Form elements</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-4.html" class="navigation__link" role="menuitem">Components</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-5.html" class="navigation__link" role="menuitem">Compositions</a>
+                            </li>
+                            <li role="presentation" class="navigation__item navigation__item--main">
+                                <a href="section-6.html" class="navigation__link" role="menuitem">Emails</a>
+                            </li>
+                    </ul>
+                </div>
+
+            </div><!--
+
+            --><div class="grid__item  e-0--palm  e-0  e-5--desk">
+                <div aria-hidden="true" class="text--right">
+                    <a class="button button--tertiary" href="index.html#changelog">Jobs UI v7.1.0</a>
+                </div>
+            </div><!--
+
+            --><div class="grid__item  e-4--palm  e-11  e-0--desk">
+                <div class="text--right">
+                    <a href="#" class="header__toggle" data-navigation-toggle aria-haspopup="true">Menu <span class="icon icon--reorder" aria-hidden="true"></span></a>
+                </div>
+            </div><!--
+        --></div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="grid grid--rev--desk"><!--
+                    --><div class="grid__item  e-7--desk  e-push-2--desk">
+
+        <div class="kss__sidebar" id="kss-sidebar">
+            <ul class="list-unstyled list-spaced">
+
+                            <li>
+                                <span class="icon  icon--double-angle-right  tag__icon" aria-hidden="true"></span>
+                                <a href="#top"><strong>Form elements</strong></a>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.1">Form basic components</a>
+                                <small>3.1</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.2">Button</a>
+                                <small>3.2</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.3">Button group</a>
+                                <small>3.3</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.4">Small search</a>
+                                <small>3.4</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.5">Select filter</a>
+                                <small>3.5</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.6">Dropdown</a>
+                                <small>3.6</small>
+                            </li>
+                            <li>
+                                <span class="icon  icon--reorder  tag__icon" aria-hidden="true"></span>
+                                <a href="#section-3.7">Tagselect</a>
+                                <small>3.7</small>
+                            </li>
+            </ul>
+        </div>
+    </div><!--
+        --><div role="main" class="grid__item  e-16">
+            <article id="kss__content">
+
+                            <h1>Form elements <small>3.0</small></h1>
+
+
+                            <p>Inputs and labels, buttons and fieldsets</p>
+
+
+                            <section>
+                                <h2 id="section-3.1">Form basic components <small>3.1</small></h2>
+
+
+                            <p>The example features most elements and modification together.</p>
+<p>Inputs allow the placeholder attribute, necessary fallback provided.</p>
+<p>Fieldsets are required inside forms.</p>
+<p><strong>Banded</strong> fieldsets have a contrast background.</p>
+<p><strong>Grouped</strong> fieldsets connect containing <code>.text-input</code>s to a visually unite component.</p>
+<p><strong>Simulated</strong> inputs are great for previews without editing option.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <form class="form pit">
+    <div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-6--palm e-10">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Hlavě pole vědecké</legend>
+                <textarea placeholder="Dosáhl sen údaje podobu v mobilní severně"
+                          class="form__textarea" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--banded">
+                <legend class="form__legend">Návštěvníky dost gladiátora</legend>
+                <input class="form__file-input" type="file">
+                <input class="form__file-input" type="file">
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kolektivního nervózně zdajízní</legend>
+                <label class="form__label" for="name">Jméno</label>
+                <input class="form__text-input" id="name" required
+                       type="text" placeholder="Otakar Houba">
+                <div class="form__validation-error">Vyplňte prosím Jméno</div>
+                <label class="form__label" for="email">Email</label>
+                <input class="form__text-input" id="email"
+                       type="email" placeholder="otakar@houba.cz">
+                <label class="form__label" for="phone">Telefon</label>
+                <input class="form__text-input" id="phone" pattern="[0-9]+"
+                       type="tel" placeholder="+420 200 570 862">
+                <label class="form__label form__label--spaced" for="terms">Termíny</label>
+                <select class="form__select" id="terms">
+                    <option value="1">leden</option>
+                    <option value="2">únor</option>
+                    <option value="3">březen</option>
+                </select>
+                <label class="form__label form__label--faded" for="locality">Města</label>
+                <select class="form__select select-filter" id="locality">
+                    <option>choose</option>
+                    <option value="1">Prague</option>
+                    <option value="2">Bratislava</option>
+                    <option value="3">Berlin</option>
+                    <option value="4">Warszawa</option>
+                    <option value="5">Wien</option>
+                </select>
+                <label class="form__label form__label--muted" for="name">Profese</label>
+                <input class="form__text-input" id="name" required
+                       type="text" placeholder="Hrnčíř">
+                <label class="form__label" for="age">Věk</label>
+                <span class="form__simulated">Kolektivního nervózně zdajízní</span>
+                <label class="form__label" for="place">Místo narození</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Bajka majestát</legend>
+                <label class="form__label form__radio">
+                    <input type="radio" name="demo_radio">
+                    <span class="form__radio__text">Slábnou argumenty současné největších všem nastěhovali loni upozornila sice technologie pracovníci, dnů.</span>
+                </label>
+                <label class="form__label form__radio">
+                    <input type="radio" name="demo_radio">
+                    <span class="form__radio__text">Stran rozšiřující tmavou nazvaný systém.</span>
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--grouped">
+                <legend class="form__legend">Pohled slavnost</legend>
+                <input class="form__text-input" id="user"
+                       type="text" placeholder="Uživatelské jméno">
+                <input class="form__text-input form__text-input--invalid" id="password"
+                       type="password" placeholder="Heslo">
+                <div class="form__validation-error">Vyplňte prosím Heslo</div>
+                <input class="form__text-input" id="code"
+                       type="text" placeholder="Kód">
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <label for="option" class="form__checkbox">
+                    <input id="option" type="checkbox" value="">
+                    Vyčíslená zrovna ke uvelebil <a href="#">dobyvačné u duší</a>.
+                </label>
+                <button class="button button--block" type="submit">Odeslat</button>
+            </fieldset>
+        </div><!--
+--></div>
+</form>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;form class=&quot;form pit&quot;&gt;
+    &lt;div class=&quot;grid grid--center--palm&quot;&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-10&quot;&gt;
+            &lt;fieldset class=&quot;form__fieldset&quot;&gt;
+                &lt;legend class=&quot;form__legend&quot;&gt;Hlavě pole vědecké&lt;/legend&gt;
+                &lt;textarea placeholder=&quot;Dosáhl sen údaje podobu v mobilní severně&quot;
+                          class=&quot;form__textarea&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset class=&quot;form__fieldset form__fieldset--banded&quot;&gt;
+                &lt;legend class=&quot;form__legend&quot;&gt;Návštěvníky dost gladiátora&lt;/legend&gt;
+                &lt;input class=&quot;form__file-input&quot; type=&quot;file&quot;&gt;
+                &lt;input class=&quot;form__file-input&quot; type=&quot;file&quot;&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset class=&quot;form__fieldset&quot;&gt;
+                &lt;legend class=&quot;form__legend&quot;&gt;Kolektivního nervózně zdajízní&lt;/legend&gt;
+                &lt;label class=&quot;form__label&quot; for=&quot;name&quot;&gt;Jméno&lt;/label&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;name&quot; required
+                       type=&quot;text&quot; placeholder=&quot;Otakar Houba&quot;&gt;
+                &lt;div class=&quot;form__validation-error&quot;&gt;Vyplňte prosím Jméno&lt;/div&gt;
+                &lt;label class=&quot;form__label&quot; for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;email&quot;
+                       type=&quot;email&quot; placeholder=&quot;otakar@houba.cz&quot;&gt;
+                &lt;label class=&quot;form__label&quot; for=&quot;phone&quot;&gt;Telefon&lt;/label&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;phone&quot; pattern=&quot;[0-9]+&quot;
+                       type=&quot;tel&quot; placeholder=&quot;+420 200 570 862&quot;&gt;
+                &lt;label class=&quot;form__label form__label--spaced&quot; for=&quot;terms&quot;&gt;Termíny&lt;/label&gt;
+                &lt;select class=&quot;form__select&quot; id=&quot;terms&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;leden&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;únor&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;březen&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;label class=&quot;form__label form__label--faded&quot; for=&quot;locality&quot;&gt;Města&lt;/label&gt;
+                &lt;select class=&quot;form__select select-filter&quot; id=&quot;locality&quot;&gt;
+                    &lt;option&gt;choose&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;Prague&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Bratislava&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Berlin&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Warszawa&lt;/option&gt;
+                    &lt;option value=&quot;5&quot;&gt;Wien&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;label class=&quot;form__label form__label--muted&quot; for=&quot;name&quot;&gt;Profese&lt;/label&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;name&quot; required
+                       type=&quot;text&quot; placeholder=&quot;Hrnčíř&quot;&gt;
+                &lt;label class=&quot;form__label&quot; for=&quot;age&quot;&gt;Věk&lt;/label&gt;
+                &lt;span class=&quot;form__simulated&quot;&gt;Kolektivního nervózně zdajízní&lt;/span&gt;
+                &lt;label class=&quot;form__label&quot; for=&quot;place&quot;&gt;Místo narození&lt;/label&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset class=&quot;form__fieldset&quot;&gt;
+                &lt;legend class=&quot;form__legend&quot;&gt;Bajka majestát&lt;/legend&gt;
+                &lt;label class=&quot;form__label form__radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;demo_radio&quot;&gt;
+                    &lt;span class=&quot;form__radio__text&quot;&gt;Slábnou argumenty současné největších všem nastěhovali loni upozornila sice technologie pracovníci, dnů.&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;label class=&quot;form__label form__radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;demo_radio&quot;&gt;
+                    &lt;span class=&quot;form__radio__text&quot;&gt;Stran rozšiřující tmavou nazvaný systém.&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset class=&quot;form__fieldset form__fieldset--grouped&quot;&gt;
+                &lt;legend class=&quot;form__legend&quot;&gt;Pohled slavnost&lt;/legend&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;user&quot;
+                       type=&quot;text&quot; placeholder=&quot;Uživatelské jméno&quot;&gt;
+                &lt;input class=&quot;form__text-input form__text-input--invalid&quot; id=&quot;password&quot;
+                       type=&quot;password&quot; placeholder=&quot;Heslo&quot;&gt;
+                &lt;div class=&quot;form__validation-error&quot;&gt;Vyplňte prosím Heslo&lt;/div&gt;
+                &lt;input class=&quot;form__text-input&quot; id=&quot;code&quot;
+                       type=&quot;text&quot; placeholder=&quot;Kód&quot;&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset class=&quot;form__fieldset&quot;&gt;
+                &lt;label for=&quot;option&quot; class=&quot;form__checkbox&quot;&gt;
+                    &lt;input id=&quot;option&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
+                    Vyčíslená zrovna ke uvelebil &lt;a href=&quot;#&quot;&gt;dobyvačné u duší&lt;/a&gt;.
+                &lt;/label&gt;
+                &lt;button class=&quot;button button--block&quot; type=&quot;submit&quot;&gt;Odeslat&lt;/button&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.2">Button <small>3.2</small></h2>
+
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <a class="button [modifier class]" href="#">Link</a>
+<button class="button [modifier class]" type="submit">Button</button>
+
+                            </div>
+                                <strong>.button--secondary</strong>
+                                Secondary button for less important actions
+                                <div class="kss__example">
+                                    <a class="button button--secondary" href="#">Link</a>
+<button class="button button--secondary" type="submit">Button</button>
+
+                                </div>
+                                <strong>.button--tertiary</strong>
+                                Tertiary button for even less eye-catching actions
+                                <div class="kss__example">
+                                    <a class="button button--tertiary" href="#">Link</a>
+<button class="button button--tertiary" type="submit">Button</button>
+
+                                </div>
+                                <strong>.button--inverse-tertiary</strong>
+                                Tertiary button for even less eye-catching actions on light background
+                                <div class="kss__example">
+                                    <a class="button button--inverse-tertiary" href="#">Link</a>
+<button class="button button--inverse-tertiary" type="submit">Button</button>
+
+                                </div>
+                                <strong>.button--slim</strong>
+                                Slimmer button with smaller horizontal padding
+                                <div class="kss__example">
+                                    <a class="button button--slim" href="#">Link</a>
+<button class="button button--slim" type="submit">Button</button>
+
+                                </div>
+                                <strong>.button--block</strong>
+                                Full width button
+                                <div class="kss__example">
+                                    <a class="button button--block" href="#">Link</a>
+<button class="button button--block" type="submit">Button</button>
+
+                                </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;a class=&quot;button [modifier class]&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;button [modifier class]&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.3">Button group <small>3.3</small></h2>
+
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="button-group button-group--spaced">
+    <a class="button" href="#">Link</a>
+    <a class="button" href="#">Link</a>
+    <a class="button" href="#">Link</a>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;button-group button-group--spaced&quot;&gt;
+    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.4">Small search <small>3.4</small></h2>
+
+
+                            <p>This is compact variant of search form</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <form method="get" class="small-search">
+    <input type="text" placeholder="Hledat" class="small-search__input"><!--
+    --><button type="submit" class="button button--slim">
+        <span class="icon icon--search" aria-hidden="true"></span>
+    </button>
+</form>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;form method=&quot;get&quot; class=&quot;small-search&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Hledat&quot; class=&quot;small-search__input&quot;&gt;&lt;!--
+    --&gt;&lt;button type=&quot;submit&quot; class=&quot;button button--slim&quot;&gt;
+        &lt;span class=&quot;icon icon--search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.5">Select filter <small>3.5</small></h2>
+
+
+                            <p>Special form of select with <em>active</em> modifier. You can use <em>arrow</em> modifier to change browser&#39;s default view.</p>
+<p>Style of the select element will be changed automaticaly
+in case that non first option is selected.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <form class="form pit">
+    <div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-3--palm e-7">
+            <div class="select-filter">
+                <label class="form__label form__label--faded" for="animals">
+                    Pet
+                    <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+                </label>
+                <select class="form__select" id="animals">
+                    <option>choose</option>
+                    <option value="1">Cat</option>
+                    <option value="2">Dog</option>
+                    <option value="3">Cow</option>
+                    <option value="4">Crocodile</option>
+                </select>
+            </div>
+        </div><!--
+    --><div class="grid__item e-3--palm e-7">
+            <div class="select-filter select-filter--active">
+                <label class="form__label form__label--faded" for="animals">
+                    Pet
+                    <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+                </label>
+                <select class="form__select" id="animals2">
+                    <option>choose</option>
+                    <option value="1">Cat</option>
+                    <option value="2" selected>Dog</option>
+                    <option value="3">Cow</option>
+                    <option value="4">Crocodile</option>
+                </select>
+            </div>
+        </div><!--
+--></div><!--
+--><div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-3--palm e-7">
+            <div class="select-filter select-filter--arrow">
+                <label class="form__label form__label--faded" for="animals">
+                    Pet
+                    <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+                </label>
+                <select class="form__select" id="animals3">
+                    <option>choose</option>
+                    <option value="1">Cat</option>
+                    <option value="2">Dog</option>
+                    <option value="3">Cow</option>
+                    <option value="4">Crocodile</option>
+                </select>
+            </div>
+        </div><!--
+    --><div class="grid__item e-3--palm e-7">
+            <div class="select-filter select-filter--arrow">
+                <label class="form__label form__label--faded" for="animals">
+                    Pet
+                    <span class="icon icon--spinner icon--rotating" aria-hidden="true"></span>
+                </label>
+                <select class="form__select" id="animals4">
+                    <option>choose</option>
+                    <option value="1">Cat</option>
+                    <option value="2" selected>Dog</option>
+                    <option value="3">Cow</option>
+                    <option value="4">Crocodile</option>
+                </select>
+            </div>
+        </div><!--
+--></div><!--
+--><div class="grid grid--center--palm"><!--
+    --><div class="grid__item e-6--palm e-7">
+            <div class="select-filter select-filter--active">
+            <span class="select-filter__item">
+                stomatologie
+                <span class="icon icon--remove" aria-hidden="true"></span>
+            </span>
+            </div>
+        </div><!--
+    --><div class="grid__item e-6--palm e-7">
+            <div class="select-filter select-filter--active">
+            <span class="select-filter__item">
+                nature údaje pohyb houbovitou
+                <span class="icon icon--remove" aria-hidden="true"></span>
+            </span>
+            </div>
+        </div><!--
+--></div>
+</form>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;form class=&quot;form pit&quot;&gt;
+    &lt;div class=&quot;grid grid--center--palm&quot;&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-3--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter&quot;&gt;
+                &lt;label class=&quot;form__label form__label--faded&quot; for=&quot;animals&quot;&gt;
+                    Pet
+                    &lt;span class=&quot;icon icon--spinner icon--rotating&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;select class=&quot;form__select&quot; id=&quot;animals&quot;&gt;
+                    &lt;option&gt;choose&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;Cat&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Dog&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Cow&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Crocodile&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-3--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter select-filter--active&quot;&gt;
+                &lt;label class=&quot;form__label form__label--faded&quot; for=&quot;animals&quot;&gt;
+                    Pet
+                    &lt;span class=&quot;icon icon--spinner icon--rotating&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;select class=&quot;form__select&quot; id=&quot;animals2&quot;&gt;
+                    &lt;option&gt;choose&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;Cat&lt;/option&gt;
+                    &lt;option value=&quot;2&quot; selected&gt;Dog&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Cow&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Crocodile&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;grid grid--center--palm&quot;&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-3--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter select-filter--arrow&quot;&gt;
+                &lt;label class=&quot;form__label form__label--faded&quot; for=&quot;animals&quot;&gt;
+                    Pet
+                    &lt;span class=&quot;icon icon--spinner icon--rotating&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;select class=&quot;form__select&quot; id=&quot;animals3&quot;&gt;
+                    &lt;option&gt;choose&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;Cat&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Dog&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Cow&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Crocodile&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-3--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter select-filter--arrow&quot;&gt;
+                &lt;label class=&quot;form__label form__label--faded&quot; for=&quot;animals&quot;&gt;
+                    Pet
+                    &lt;span class=&quot;icon icon--spinner icon--rotating&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;select class=&quot;form__select&quot; id=&quot;animals4&quot;&gt;
+                    &lt;option&gt;choose&lt;/option&gt;
+                    &lt;option value=&quot;1&quot;&gt;Cat&lt;/option&gt;
+                    &lt;option value=&quot;2&quot; selected&gt;Dog&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Cow&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Crocodile&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;grid grid--center--palm&quot;&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter select-filter--active&quot;&gt;
+            &lt;span class=&quot;select-filter__item&quot;&gt;
+                stomatologie
+                &lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+    --&gt;&lt;div class=&quot;grid__item e-6--palm e-7&quot;&gt;
+            &lt;div class=&quot;select-filter select-filter--active&quot;&gt;
+            &lt;span class=&quot;select-filter__item&quot;&gt;
+                nature údaje pohyb houbovitou
+                &lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.6">Dropdown <small>3.6</small></h2>
+
+
+                            <p>Styling of the option list.
+Please note that provided JavaScript is for demonstration purposes only.</p>
+<p>Style of the select element will be changed automaticaly in case that non first option is selected.</p>
+<p>Note: It is expected that shown icons will be used.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <!--Closed-->
+<div id="drop1" class="dropdown">
+    <div class="dropdown__head">
+        Moje
+        <span class="icon icon--arrow-down"></span>
+    </div>
+    <div class="dropdown__list">
+        <div class="dropdown__item">Počátku</div>
+        <div class="dropdown__item">Moje</div>
+        <div class="dropdown__item">Biology</div>
+        <div class="dropdown__item">Zkrátka</div>
+    </div>
+</div>
+<!--Opened-->
+<div id="drop2" class="dropdown">
+    <div class="dropdown__head dropdown__head--selected">
+        Počátku
+        <span class="icon icon--arrow-down"></span>
+    </div>
+    <div class="dropdown__list dropdown__list--opened">
+        <div class="dropdown__item dropdown__item--selected">Počátku<div class="dropdown__icon"><span class="icon icon--check"></span></div></div>
+        <div class="dropdown__item">Moje</div>
+        <div class="dropdown__item">Biology</div>
+        <div class="dropdown__item">Zkrátka</div>
+    </div>
+</div>
+<!--Only for preview-->
+<div class="visible--desk" style="margin-top: 180px;"></div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;!--Closed--&gt;
+&lt;div id=&quot;drop1&quot; class=&quot;dropdown&quot;&gt;
+    &lt;div class=&quot;dropdown__head&quot;&gt;
+        Moje
+        &lt;span class=&quot;icon icon--arrow-down&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dropdown__list&quot;&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Počátku&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Moje&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Biology&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Zkrátka&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Opened--&gt;
+&lt;div id=&quot;drop2&quot; class=&quot;dropdown&quot;&gt;
+    &lt;div class=&quot;dropdown__head dropdown__head--selected&quot;&gt;
+        Počátku
+        &lt;span class=&quot;icon icon--arrow-down&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dropdown__list dropdown__list--opened&quot;&gt;
+        &lt;div class=&quot;dropdown__item dropdown__item--selected&quot;&gt;Počátku&lt;div class=&quot;dropdown__icon&quot;&gt;&lt;span class=&quot;icon icon--check&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Moje&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Biology&lt;/div&gt;
+        &lt;div class=&quot;dropdown__item&quot;&gt;Zkrátka&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Only for preview--&gt;
+&lt;div class=&quot;visible--desk&quot; style=&quot;margin-top: 180px;&quot;&gt;&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+                            <section>
+                                <h2 id="section-3.7">Tagselect <small>3.7</small></h2>
+
+
+                            <p>The component is used to select or enter values into input form.</p>
+
+
+                            <p>Default styling</p>
+                            <div class="kss__example">
+                                <div class="tagselect">
+    <div class="tagselect__item">Multikulturním ptáků <a class="tagselect__close" href="#"><span class="icon icon--remove" aria-hidden="true"></span></a></div>
+    <div class="tagselect__item">Pole automatický... <a class="tagselect__close" href="#"><span class="icon icon--remove" aria-hidden="true"></span></a></div>
+    <div class="tagselect__item">Občany ... <a class="tagselect__close" href="#"><span class="icon icon--remove" aria-hidden="true"></span></a></div>
+    <div class="tagselect__item">Si korun slabého <a class="tagselect__close" href="#"><span class="icon icon--remove" aria-hidden="true"></span></a></div>
+    <div class="tagselect__item tagselect__item--selected">Pohár ulice <a class="tagselect__close" href="#"><span class="icon icon--remove" aria-hidden="true"></span></a></div>
+    <input class="tagselect__input" placeholder="Vodách realitu" autocomplete="off" autocorrect="off"/>
+</div>
+
+                            </div>
+                            <div class="kss__markup  hidden--palm">
+                                <pre class="prettyprint  lang-html">&lt;div class=&quot;tagselect&quot;&gt;
+    &lt;div class=&quot;tagselect__item&quot;&gt;Multikulturním ptáků &lt;a class=&quot;tagselect__close&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;tagselect__item&quot;&gt;Pole automatický... &lt;a class=&quot;tagselect__close&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;tagselect__item&quot;&gt;Občany ... &lt;a class=&quot;tagselect__close&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;tagselect__item&quot;&gt;Si korun slabého &lt;a class=&quot;tagselect__close&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;tagselect__item tagselect__item--selected&quot;&gt;Pohár ulice &lt;a class=&quot;tagselect__close&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;icon icon--remove&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;input class=&quot;tagselect__input&quot; placeholder=&quot;Vodách realitu&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot;/&gt;
+&lt;/div&gt;
+</pre>
+                            </div>
+                            </section>
+            </article>
+        </div><!--
+    --></div>
+</div>
+
+<div class="kss__footer">
+    <div class="wrapper">
+        <div class="grid"><!--
+            --><div class="grid__item">
+                    <div class="text--center">
+                        <a href="#top">&uarr; Go to top</a>
+                    </div>
+            </div><!--
+        --></div>
+    </div>
+</div>
+<footer id="lmc-footer">
+    <p class="lmc-footer__family"><strong>We are a member of LMC family</strong></p>
+    <ul class="lmc-footer__bar-list">
+        <li><a href="http://www.jobs.cz/">Jobs.cz</a></li>
+        <li><a href="http://www.prace.cz/">Prace.cz</a></li>
+        <li><a href="https://pracezarohem.cz/">Práce za rohem</a></li>
+        <li><a href="https://www.seduo.cz/">Seduo.cz</a></li>
+        <li><a href="http://www.teamio.com/">Teamio</a></li>
+        <li><a href="https://www.jobote.com/">Jobote</a></li>
+        <li><a href="http://www.vysokeskoly.cz/">VysokéŠkoly.cz</a></li>
+        <li><a href="https://easytask.cz/">Easytask.cz</a></li>
+    </ul>
+    <div class="lmc-footer__logo">
+        <a href="https://www.lmc.eu/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="67.19" height="54.61" viewBox="0 0 391.1 317.9" enable-background="new 0 0 391.1 317.9" role="img" aria-label="LMC"><title>LMC</title><path d="m120.7 208.6c-1.4 2-5.6 10.6-6.5 12.5-1.1 2.1-.6 4.1.6 5.9 1 1.4 4.8 3.4 6.3.4 2.2-3.1 3.5-7.8 5.2-11.4-.1-.8 7.3-14 7.2-14.8-.5-3.6-8.6 5.3-10.1 2.4-.8 1.4-1.4 2.7-2.7 5" fill="#003e7e"/><path d="m31.5 290.4c-9.8 1.5-29.7 10.3-8.7 13.4 21.1 3.1 243.1-17.9 344.4-7.4 16 1.7 12.8-4-3.1-5.5-29.1-5.5-294.8-7.5-332.6-.5" fill="#12bcca"/><g fill="#003e7e"><path d="m141 238.2c-2.2.7-20.7 16.5-39.6 5.1-9.1-5.3-11.5-13.4-14.7-24.9 67.3-89.7 73.9-146.1 68.9-173.5-2.1-11.3-7.8-25-30.3-17.5-23 8.9-47.1 43.8-56.3 107.6-4.4 30.6.1 66.7 4.7 84.2-19.1 19-37.8 22.3-37.8 22.3s-9.2 1.7-7.7 11.2c.1.5.9 11.7 35.4-12.8 4.8-3.4 9.5-6.5 14.2-11.3 14.2 33.2 54.1 23.8 66.4 19.4.7-.3 2-1.1 2.3-1.4 3.9-4.1-1.7-10.2-5.5-8.4m-56.3-28.1c-6.8-43.8 13.4-125.8 26.3-148.7 7.4-13.1 23.2-30 31.1-21.7 7.9 8.4 11.9 48.1-11.3 99.7-6.8 15-36.4 59.3-46.1 70.7"/><path d="m328.5 193.1c-18.7 28-43.9 36.1-43.9 36.1s-38.4 15.3-50.2.7c-11.8-14.6 3.8-39.5 6.6-44 2.7-4.3 14-15.6 14-8.1 0 6.8-2.8 19.7 5.2 16 1.8-.9 4.3-3.7 5.7-6.8 2.9-6.3 5.7-16.9-4.4-23-15-9-31.1 10.1-35.5 24.1-3.1 10.4-8.9 29.4 1.5 41.3 24.8 27.6 72.7 15.6 106-10.7 25.5-21.4 13.7-53.6-5-25.6"/><path d="m213.9 238.4c-7.1-2.7-9.2-9.8-9.2-14 .2-18.6 8.5-35 10.5-39.3 2-4.3-6.5-10.6-16.6-8.3-10.1 2.3-17.5 15-19.3 17.3-1.8 2.3-4.4 3.1-2.8-2.5 0-.6.9-3 1.1-3.5.4-1.4.7-2.9-.4-4.7-1.5-2.5-12.8-4.3-19.4-.5-8.3 4.8-14.1 18.2-15.1 12.7.1-.2-.4-2.5-.9-3.3-1-1.5-5.3-2.4-9.5-.4-4.2 2-6.6 7.7-7.8 9.7-2.4 4-6.3 11.6-5.8 20.9.3 2.6.6-.4 1.9-1.2.8-.5 3-1.6 3-4.6 0-5.1 3.8-4 6.8-8.9 1.4-2.3 5.2-4 4.3.8-.4 2.6-2 7.6-2.9 10.8-.5 1.8 3.2 6 5.9-.7 2.1-6.4 7.3-15.1 12.5-20.1 2-1.7 6.5-3.1 5.5 1.3-1.4 7.9-1.1 19.3 1 29.4s10.3 11.5 14.7-2.4c2.6-8.2 9.2-24 15.1-32.4 4.4-6.3 12.3-8.3 9.1-1.3-.2.8-3.3 8.2-4.5 13-1.8 7.4-4 19.9-.8 27.4 3.8 8.9 20.9 14.9 24 11.5 2.2-2.2 2.2-5.4-.4-6.7"/><path d="m154.1 185.7c0 0-9.1 11.3-10.2 16.8s-.5 1.4-.5 1.4l8.5-7.6 2.2-10.6"/><path d="m134.4 203.8c-4-5.1-11.4 20.1-11.4 20.1l5.8-17.5 9.8-7.3c0 0-.3 9.8-4.2 4.7"/></g></svg>
+        </a>
+    </div>
+    <p class="lmc-footer__career"><a href="http://lmc.jobs.cz/">Work with us</a></p>
+    <p class="lmc-footer__copy">&copy; 1996&ndash;<span id="currentYear">2017</span> LMC s.r.o., a member of <a href="http://www.almacareer.com/">Alma Career</a>, all rights reserved</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="dist/index.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        // Ensure code blocks are highlighted properly...
+        $('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        var sidebar = $('#kss-sidebar'),
+            sidebarOffset = sidebar.offset().top;
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > (sidebarOffset - 40)) {
+                sidebar.addClass('kss__sidebar--alone');
+            } else {
+                sidebar.removeClass('kss__sidebar--alone');
+            }
+        });
+
+        $('#currentYear').text(new Date().getFullYear());
+    });
+</script>
+</body>
+</html>
