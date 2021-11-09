@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+## v7.1.0
+- Downgrade *Remodal* to jobs-ui stylesheet compatible version
+
 ## v7.0.0
 - BC: migrate from Bower to npm/Yarn
 
