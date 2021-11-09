@@ -1382,11 +1382,6 @@ isstream@~0.1.2:
   version "1.8.3"
   resolved "git+ssh://git@github.com:FrDH/dotdotdot-js.git#779ab93d259c3a67c45b2f80124aa8391ef49165"
 
-jquery@*:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
-  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
-
 js-base64@^2.1.9:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
@@ -2026,12 +2021,9 @@ regenerator-runtime@^0.11.0:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
-remodal@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/remodal/-/remodal-1.1.1.tgz#00f580b09417b2b7e7a425b17327ec10f3d596c3"
-  integrity sha1-APWAsJQXsrfnpCWxcyfsEPPVlsM=
-  dependencies:
-    jquery "*"
+remodal@lmc-eu/Remodal#fix-escape:
+  version "0.2.1"
+  resolved "https://codeload.github.com/lmc-eu/Remodal/tar.gz/da785b8421bd42e0892fdafc49849b5da66ae3f8"
 
 rename-function-calls@~0.1.0:
   version "0.1.1"
